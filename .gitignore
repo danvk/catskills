@@ -160,3 +160,10 @@ cython_debug/
 #.idea/
 
 catskills
+
+# Jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

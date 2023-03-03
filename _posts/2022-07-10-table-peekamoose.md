@@ -1,12 +1,12 @@
 ---
 title: Table & Peekamoose aka "The Blackburnian Hike"
-Date: 2022-07-10
-Type: Out & Back
+date: 2022-07-10
+type: Out & Back
 slug: 2022-07-10-table-peekamoose
-Mileage (mi): 10.1
-Hiking Time (h): 7.0
-Peaks: Table, Peekamoose
-Other Participants: Alex, John G
+miles: 10.1
+hike_hours: 7.0
+peaks: Table, Peekamoose
+hikers: Dan, Alex, John G
 ---
 
 https://ebird.org/checklist/S114987728

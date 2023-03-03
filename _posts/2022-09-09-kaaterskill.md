@@ -1,12 +1,12 @@
 ---
 title: Kaaterskill High Peak (look, it's a plane!)
-Date: 2022-09-09
-Type: Out & Back
+date: 2022-09-09
+type: Out & Back
 slug: 2022-09-09-kaaterskill
-Mileage (mi): 7.8
-Hiking Time (h): 6.0
-Peaks: Kaaterskill High Peak
-Other Participants: Alex, John G
+miles: 7.8
+hike_hours: 6.0
+peaks: Kaaterskill High Peak
+hikers: Dan, Alex, John G
 ---
 
 - https://ebird.org/atlasny/checklist/S118410998

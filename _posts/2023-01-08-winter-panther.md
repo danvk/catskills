@@ -1,12 +1,12 @@
 ---
 title: Panther (Winter)
-Date: 2023-01-08
-Type: Out & Back
+date: 2023-01-08
+type: Out & Back
 slug: 2023-01-08-winter-panther
-Mileage (mi): 8.0
-Hiking Time (h): 5.0
-Peaks: Panther
-Other Participants: Alex
+miles: 8.0
+hike_hours: 5.0
+peaks: Panther
+hikers: Dan, Alex
 ---
 
 https://ebird.org/checklist/S125780244

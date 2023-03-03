@@ -1,12 +1,12 @@
 ---
-Date: 2016-05-28
+date: 2016-05-28
 title: Sugarloaf and Twin overnight (my first Catskills hike)
-Type: Loop
+type: Loop
 slug: 2016-05-28-sugarloaf-twin
-Peaks: Sugarloaf, Twin
-Other Participants: Max
-Hiking Time (h): ???
-Mileage (mi): ???
+peaks: Sugarloaf, Twin
+hikers: Dan, Max
+hike_hours: ???
+miles: ???
 ---
 
 Overnight hiking w/ Max. My first visit to the Catskills!

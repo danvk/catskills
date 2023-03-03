@@ -1,12 +1,12 @@
 ---
 title: Indian Head
-Date: 2018-07-08
-Type: Out & Back
+date: 2018-07-08
+type: Out & Back
 slug: 2018-07-08-indian-head
-Mileage (mi): None
-Hiking Time (h): None
-Peaks: Indian Head
-Other Participants: Alex
+miles: None
+hike_hours: None
+peaks: Indian Head
+hikers: Dan, Alex
 ---
 
 I have no memory of this hike! We must have hit it up on the way back from Bovina. It also looks like we drove to Platte Clove Falls (which I do remember).

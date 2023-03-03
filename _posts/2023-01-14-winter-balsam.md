@@ -1,16 +1,18 @@
 ---
 title: Balsam (Winter)
-Date: 2023-01-14
-Type: Out & Back
+date: 2023-01-14
+type: Out & Back
 slug: 2023-01-14-winter-balsam
-Mileage (mi): 6.5
-Hiking Time (h): 5.0
-Peaks: Balsam
-Other Participants: Alex, Max
+miles: 6.5
+hike_hours: 5.0
+peaks: Balsam
+hikers: Dan, Alex, Max
 ---
 
 https://ebird.org/checklist/S126143226
-Start 10:30 AM, 6.5mi, 5h
+
+- Start 10:30 AM
+- End 3:30 PM
 
 This wound up being 6.5mi and exactly 5 hours. Max came up Friday night for dinner and he, Alex and I drove up to McKenley Hollow Trailhead. This was yet another route to the Catskills. On the drive up, we debated whether there would be any snow, even on the peaks. About 500 feet from the trailhead, there was suddenly snow everywhere. Amazing!
 

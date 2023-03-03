@@ -1,12 +1,12 @@
 ---
 title: "Indian Head & Twin: Baby Birds!"
-Date: 2022-07-16
-Type: Loop?
+date: 2022-07-16
+type: Loop?
 slug: 2022-07-16-indian-twin
-Mileage (mi): None
-Hiking Time (h): None
-Peaks: Indian Head, Twin
-Other Participants: Alex
+miles: ???
+hike_hours: ???
+peaks: Indian Head, Twin
+hikers: Dan, Alex
 ---
 
 - https://ebird.org/atlasny/checklist/S115214851

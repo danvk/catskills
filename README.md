@@ -10,15 +10,32 @@ Things to include:
 
 ## TODO
 
-- [ ] Collect GPX data for all hikes
-  - [x] How do I get GPX from eBird? (Lat/Lng seq in `data-maptrack-data`, no times)
-  - [x] convert to properly-formatted zulu time in `fc_to_track.py`
-  - [x] Make per-day tracks
-  - [ ] Add campsites
-  - [ ] Consolidate scripts in one repo (not `danvk.github.io`)
-- [ ] Collect photos for all hikes
-- [ ] Ask Max, John, Alex for photos from our hikes
-- [ ] Make a map visualization
+- Blog
+  - [x] Collect notes for all hikes
+  - [x] Make slugged directories for all hikes
+  - [x] Make spreadsheet listing of all hikes
+  - [x] Make the "blog" -- posts for each hike
+  - [ ] Format frontmatter for each post
+  - [ ] Add make visualization for each post
+  - [ ] Make a root page
+    - [ ] Mention 2013 hiker's blog
+    - [ ] Mention my interest in birding
+    - [ ] Link to Catskill 3500 Club organized hikes
+  - [ ] Make an RSS feed
+
+- Data collection
+  - [ ] Collect GPX data for all hikes
+    - [x] How do I get GPX from eBird? (Lat/Lng seq in `data-maptrack-data`, no times)
+    - [x] convert to properly-formatted zulu time in `fc_to_track.py`
+    - [x] Make per-day tracks
+    - [ ] Add campsites
+    - [x] Consolidate scripts in one repo (not `danvk.github.io`)
+  - [ ] Collect photos for all hikes
+  - [ ] Ask Max, John, Alex for photos from our hikes
+  - [ ] Do I have Google location data for old hikes?
+        (Do I have Google location data in any form?)
+
+- Map visualization
   - [x] Write a script to convert GPX -> GeoJSON FeatureCollection
   - [x] Add all peaks to the Mapbox map
   - [ ] Make peak style look more like AllTrails
@@ -34,14 +51,6 @@ Things to include:
   - [ ] Filter hikes by dates (winter, month, etc.)
   - [ ] Eliminate the scroll bounce
   - [ ] Convert this to a CRA app
-- [x] Collect notes for all hikes
-- [x] Make slugged directories for all hikes
-- [x] Make spreadsheet listing of all hikes
-- [ ] Do I have Google location data for old hikes?
-      (Do I have Google location data in any form?)
-- [ ] Make the "blog" -- posts for each hike
-- [ ] Make a root page
-- [ ] Make an RSS feed
 
 ## Notes on making GPX tracks
 

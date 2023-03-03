@@ -1,12 +1,12 @@
 ---
 title: Winter Slide
-Date: 2023-02-18
-Type: Out & Back
+date: 2023-02-18
+type: Out & Back
 slug: 2023-02-18-winter-slide
-Mileage (mi): 5.8
-Hiking Time (h): 3.5
-Peaks: Slide
-Other Participants: Alex
+miles: 5.8
+hike_hours: 3.5
+peaks: Slide
+Hikers: Dan, Alex
 ---
 
 Participants: Dan & Alex

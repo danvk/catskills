@@ -1,12 +1,12 @@
 ---
 title: Panther (failed) aka "The time when Google Maps took us to the wrong trailhead"
-Date: 2022-04-24
-Type: Out & Back
+date: 2022-04-24
+type: Out & Back
 slug: 2022-04-24-giant-ledge
-Mileage (mi): 8.8
-Hiking Time (h): 5.5
-Peaks: None
-Other Participants: Alex
+miles: 8.8
+hike_hours: 5.5
+peaks: None
+hikers: Dan, Alex
 ---
 
 - https://ebird.org/checklist/S107959978

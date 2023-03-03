@@ -1,12 +1,12 @@
 ---
 title: Late Fall in the Blackhead Range
-Date: 2022-10-19
-Type: Through (Car Stack)
+date: 2022-10-19
+type: Through (Car Stack)
 slug: 2022-10-19-blackhead-range
-Mileage (mi): 8.2
-Hiking Time (h): 6.5
-Peaks: Blackhead, Black Dome, Thomas Cole
-Other Participants: Max, Sarah, John G
+miles: 8.2
+hike_hours: 6.5
+peaks: Blackhead, Black Dome, Thomas Cole
+hikers: Max, Sarah, John G
 ---
 
 - https://ebird.org/checklist/S120975359

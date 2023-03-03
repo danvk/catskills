@@ -21,6 +21,7 @@ Things to include:
     - [ ] Mention 2013 hiker's blog
     - [ ] Mention my interest in birding
     - [ ] Link to Catskill 3500 Club organized hikes
+    - [ ] Reconstruct how I got interested in this
   - [ ] Make an RSS feed
 
 - Data collection

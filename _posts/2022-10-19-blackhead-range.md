@@ -9,9 +9,13 @@ peaks: Blackhead, Black Dome, Thomas Cole
 hikers: Max, Sarah, John G
 ---
 
-- https://ebird.org/checklist/S120975359
+- Tracks: [eBird](https://ebird.org/checklist/S120975359)
+
+<!-- excerpt -->
 
 This was originally planned as another backpacking trip but plans and constraints shifted so much that it just made more sense to do a day hike. We stashed Max and Sarah's car at Big Hollow Rd, crammed into Big Blue and drove over to the Barnum Rd Lot. Both lots were quite small. Especially the Barnum lot it was unclear what was lot and what was snowplow turnaround.
+
+<!-- /excerpt -->
 
 It really felt like fall at the start of the hike. The leaf litter was spectacularly colorful, but this also made following the trail harder since it didn't stand out from the surroundings. We had lunch at the Camel's Hump, by which point very few trees had any leaves left and it had gotten quite cold. My first experience of cold fingers this season! We saw thousands of red leaf stems along the trail which we eventually identified as Smooth Sumac.
 

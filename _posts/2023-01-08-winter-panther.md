@@ -7,11 +7,12 @@ miles: 8.0
 hike_hours: 5.0
 peaks: Panther
 hikers: Dan, Alex
+excerpt: First of the four required winter peaks, in which Alex and I finally summit Panther and do a surprise bushwhack on the way down.
 ---
 
-https://ebird.org/checklist/S125780244
+- Tracks: [eBird](https://ebird.org/checklist/S125780244)
 
-Perfect sunny day for a winter hike. I saw the day before that there was a Catskills 3500 group going up Panther. I contacted Christopher, the group leader, but they were meeting at 8:15, which was earlier than we wanted to go. Instead we had a leisurely breakfast with John (crumpets, eggs, chard) and were on the trail around 10:50. We drove through Ellenville, which was a new (and beautiful!) approach to the Catskills for us. Other hikers must have been taking advantage of the perfect day -- the parking lots for Panther and Slider were both overflowing.
+Perfect sunny day for a winter hike. I saw the day before that there was a Catskills 3500 group going up Panther. I contacted Christopher, the group leader, but they were meeting at 8:15, which was earlier than we wanted to go. Instead we had a leisurely breakfast with John (crumpets, eggs, chard) and were on the trail around 10:50. We drove through Ellenville, which was a new (and beautiful!) approach to the Catskills for us. Other hikers must have been taking advantage of the perfect day -- the parking lots for Panther and Slide were both overflowing.
 
 Giant Ledge came surprisingly quickly, but then the hike from there up to Panther peak was pretty long. I understand why we didn't go for the summit last April. There was relatively little snow at the bottom, then lots of ice and snow once we got past Giant Ledge. We didn't put on spikes until the hike down, but in retrospect we would have been happier putting them on after Giant on the way up. We crossed paths with the Catskills 3500 group on their way down maybe half a mile after Giant Ledge. There were eight or nine of them — I'm pretty happy we did the hike on our own.
 

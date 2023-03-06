@@ -6,16 +6,15 @@ slug: 2023-02-18-winter-slide
 miles: 5.8
 hike_hours: 3.5
 peaks: Slide
-Hikers: Dan, Alex
+hikers: Dan, Alex
+excerpt: Third of the four required winter peaks, part of a "very upstate day" that involved birding, boiling maple syrup and going to a dinner party.
 ---
 
-Participants: Dan & Alex
-Distance: 5.8mi out & back
-Time: 3h53m including ~20m lunch break at summit
+Timeline:
 
-Start: 11:08 AM
-Summit: 1:09 PM (2h)
-Back: 3:01 PM (~1h30m excluding lunch)
+- Start: 11:08 AM
+- Summit: 1:09 PM (2h)
+- Back: 3:01 PM (~1h30m excluding lunch)
 
 A beautiful, sunny winter day for a hike. After much logisticing (see below) we decided to do a bird walk at Kingston Beach at 8 AM, followed by Slide. Around 9:45 we reached a decision point: continue for part two of the bird walk, or head to Slide. Slide!
 

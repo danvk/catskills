@@ -7,12 +7,15 @@ miles: 6.5
 hike_hours: 5.0
 peaks: Balsam
 hikers: Dan, Alex, Max
+excerpt: Second of the four required winter peaks, in which Alex, Max and I become the very first customers at the Eastwind bar.
 ---
 
-https://ebird.org/checklist/S126143226
+Timeline:
 
 - Start 10:30 AM
 - End 3:30 PM
+
+- Tracks: [eBird](https://ebird.org/checklist/S126143226)
 
 This wound up being 6.5mi and exactly 5 hours. Max came up Friday night for dinner and he, Alex and I drove up to McKenley Hollow Trailhead. This was yet another route to the Catskills. On the drive up, we debated whether there would be any snow, even on the peaks. About 500 feet from the trailhead, there was suddenly snow everywhere. Amazing!
 

@@ -22,11 +22,23 @@ Tracks: [AllTrails], [eBird]
 
 This hike had originally been planned for last week but we moved it around several times to try and catch just the right conditions: lots of snow in the previous days, but sun on the day of the hike. We basically nailed it! According to [summit weather], Blackhead got ~8in of snow last Monday and another 15in on Friday. We were able to snowshoe the entire way up. The snow was about a foot deep at the base and maybe more like 18" at the summit. The hike was a bit longer than expected: unlike last fall, we weren't able to drive all the way to the trailhead. The last quarter mile was unplowed, so that added a half mile to the round trip. It was good to have some flat hiking to get used to our snowshoes, though.
 
+![Flat section at the start of the trail]({{ site.baseurl }}/assets/2023-03-05-winter-blackhead/flat-trail.jpeg)
+
 Snowshoeing is hard work! We weren't blazing the trail anywhere (that would have been even harder). There was a very clear track for us to follow the whole way up. I think this is just the cumulative effect of previous snowshoers. The winter conditions were truly spectacular. Deep snow over the creeks, snow-covered bridges and pine trees.
+
+![Beautiful snowy creek]({{ site.baseurl }}/assets/2023-03-05-winter-blackhead/snowy-creek.jpeg)
 
 The route we took delayed the truly steep section until the last ~mile. We descended this last fall and I remember it being quite steep, even scrambly at times. The deep snow filled in all the rocky scrambles, but it was still very steep. Near the top we really had to kick into the snow with every footstep to keep from sliding. Alex called this section "her personal Everest." After lots of stops and starts, we made it to the summit and had our traditional sourdough PB&J lunches.
 
+![Getting steeper]({{ site.baseurl }}/assets/2023-03-05-winter-blackhead/hiking-up.jpeg)
+
+![Getting really steep]({{ site.baseurl }}/assets/2023-03-05-winter-blackhead/steep-section.jpeg)
+
+![At the summit]({{ site.baseurl }}/assets/2023-03-05-winter-blackhead/summit.jpeg)
+
 The descent towards Black Dome was also very steep and had spectacular views. At some point the trail started to look more like a "chute" and Alex started sliding down on her butt. I noticed John behind me was doing the same. I figured he'd stop before he got to me, but that started to look increasingly unlikely. I barely jumped out of the way in time! Sliding down was fun and very fast.
+
+![Panorama of from just after Blackhead summit showing nice views of Black Dome]({{ site.baseurl }}/assets/2023-03-05-winter-blackhead/blackhead-pano.jpeg)
 
 When we got down to the col, there wasn't much debate about whether to do Black Dome. Alex was exhausted and John's feet were cold and wet. So down we went. Other than a brief stop for dessert back at the wooden bridge, we hiked straight back to the car. The snow near the end was noticeably slushier than it had been earlier in the day.
 

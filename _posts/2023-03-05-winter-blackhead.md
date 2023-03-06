@@ -7,7 +7,10 @@ miles: 6.2
 hike_hours: 5.0
 peaks: Blackhead
 hikers: Dan, Alex, John G
+excerpt: The last of the four required winter peaks and my first Catskills snowshoeing adventure. Alex's "personal Everest".
 ---
+
+Timeline:
 
 - 9:40 AM leave home
 - 11:05 AM at parking lot
@@ -17,7 +20,7 @@ hikers: Dan, Alex, John G
 
 Tracks: [AllTrails], [eBird]
 
-This hike had originally been planned for last week but we moved it around several times to try and catch just the right conditions: lots of snow in the previous days, but sun on the day of the hike. We basically nailed it! According to summit weather, Blackhead got ~8in of snow last Monday and another 15in on Friday. We were able to snowshoe the entire way up. The snow was about a foot deep at the base and maybe more like 18" at the summit. The hike was a bit longer than expected: unlike last fall, we weren't able to drive all the way to the trailhead. The last quarter mile was unplowed, so that added a half mile to the round trip. It was good to have some flat hiking to get used to our snowshoes, though.
+This hike had originally been planned for last week but we moved it around several times to try and catch just the right conditions: lots of snow in the previous days, but sun on the day of the hike. We basically nailed it! According to [summit weather], Blackhead got ~8in of snow last Monday and another 15in on Friday. We were able to snowshoe the entire way up. The snow was about a foot deep at the base and maybe more like 18" at the summit. The hike was a bit longer than expected: unlike last fall, we weren't able to drive all the way to the trailhead. The last quarter mile was unplowed, so that added a half mile to the round trip. It was good to have some flat hiking to get used to our snowshoes, though.
 
 Snowshoeing is hard work! We weren't blazing the trail anywhere (that would have been even harder). There was a very clear track for us to follow the whole way up. I think this is just the cumulative effect of previous snowshoers. The winter conditions were truly spectacular. Deep snow over the creeks, snow-covered bridges and pine trees.
 
@@ -31,3 +34,4 @@ Alex and I have now completed the four required winter peaks. At the start of th
 
 [AllTrails]: https://www.alltrails.com/explore/recording/afternoon-snowshoe-at-black-dome-and-thomas-cole-mountain-via-batavia-kill-trail-d40d35b
 [eBird]: https://ebird.org/checklist/S130308701
+[summit weather]: https://www.mountain-forecast.com/peaks/Blackhead-New-York/forecasts/1204

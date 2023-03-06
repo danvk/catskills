@@ -9,8 +9,12 @@ peaks: Table, Peekamoose
 hikers: Dan, Alex, John G
 ---
 
-https://ebird.org/checklist/S114987728
+- Tracks: [eBird](https://ebird.org/checklist/S114987728)
+
+<!-- excerpt -->
 
 Alex, John G and I hiked Table and Peekamoose. The birding was spectacular -- we heard thrushes and winter wrens throughout the hike and saw at least ten Blackburnian Warblers, including a family!
+
+<!-- /excerpt -->
 
 The Denning St parking lot was a cool place to start a hike — I'd go there again!

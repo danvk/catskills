@@ -52,12 +52,13 @@ def dom_to_feature(path: str, dom):
         }
     }
 
+BASE_DIR = '/Users/danvk/github/danvk.github.io/catskills'
 
 def main():
     features = []
-    for path in glob.glob('*/*.gpx'):
+    for path in glob.glob(BASE_DIR + '/*/*.gpx'):
         dom = xml.dom.minidom.parse(path)
-        feature = dom_to_feature(path, dom)
+        feature = dom_to_feature(path.replace(BASE_DIR + '/', ''), dom)
         features.append(feature)
 
     with open('tracks.geojson', 'w') as out:

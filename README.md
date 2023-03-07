@@ -15,7 +15,7 @@ Things to include:
   - [x] Make slugged directories for all hikes
   - [x] Make spreadsheet listing of all hikes
   - [x] Make the "blog" -- posts for each hike
-  - [ ] Format frontmatter for each post
+  - [x] Format frontmatter for each post
   - [ ] Add make visualization for each post
   - [ ] Make a root page
     - [ ] Mention 2013 hiker's blog

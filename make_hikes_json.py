@@ -28,11 +28,16 @@ def format_meta(meta: dict) -> dict:
     if 'excerpt' not in meta:
         # TODO: fill in excerpt based on the post
         pass
+    slug = meta['slug']
+    date = meta['date']
+    slashed_date = date.strftime('%Y/%m/%d')
+    dashed_date = date.strftime('%Y-%m-%d')
     return {
         **meta,
-        'date': meta['date'].strftime('%Y-%m-%d'),
+        'date': dashed_date,
         'peaks': meta['peaks'].split(', '),
-        'hikers': meta['hikers'].split(', ')
+        'hikers': meta['hikers'].split(', '),
+        'url': f'/catskills/{slashed_date}/{slug}.html'
     }
 
 

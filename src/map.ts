@@ -120,13 +120,14 @@ map.on("load", () => {
 
 interface Hike {
   title: string;
+  url: string;
   slug: string;
   date: string;
   type: string;
   miles: string;
   hike_hours: string;
-  peaks: string;
-  hikers: string;
+  peaks: string[];
+  hikers: string[];
 }
 
 (async () => {
@@ -141,8 +142,9 @@ interface Hike {
     const div = document.createElement('div');
     div.className = 'hike';
     div.innerHTML = `
-      ${hike.title}<br>
-      ${hike.date} ${hike.peaks}<br>
+      <span class="date">${hike.date}</span>
+      <h2><a href="${hike.url}">${hike.title}</a></h2>
+      ${hike.peaks.map(peak => `<span class="peak">${peak}</span>`).join('')}<br>
       ${hike.miles} mi - ${hike.hike_hours} h
     `
     hikeContainer?.append(div);

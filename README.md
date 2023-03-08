@@ -16,13 +16,13 @@ Things to include:
   - [x] Make spreadsheet listing of all hikes
   - [x] Make the "blog" -- posts for each hike
   - [x] Format frontmatter for each post
-  - [ ] Add make visualization for each post
+  - [ ] Add map visualization for each post
   - [ ] Make a root page
     - [ ] Mention 2013 hiker's blog
     - [ ] Mention my interest in birding
     - [ ] Link to Catskill 3500 Club organized hikes
     - [ ] Reconstruct how I got interested in this
-  - [ ] Make an RSS feed
+  - [x] Make an RSS feed
 
 - Data collection
   - [ ] Collect GPX data for all hikes
@@ -40,7 +40,7 @@ Things to include:
   - [x] Write a script to convert GPX -> GeoJSON FeatureCollection
   - [x] Add all peaks to the Mapbox map
   - [ ] Make peak style look more like AllTrails
-  - [ ] Add elevation to the Mapbox map
+  - [x] Add elevation to the Mapbox map
   - [ ] Show which peaks I've hiked and which I haven't
   - [x] Show all tracks on a map
   - [ ] Zoom map to Catskills State Park on page load

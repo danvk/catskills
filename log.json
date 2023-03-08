@@ -1,0 +1,343 @@
+[
+  {
+    "date": "2016-05-28",
+    "title": "Sugarloaf and Twin overnight (my first Catskills hike)",
+    "type": "Loop",
+    "slug": "2016-05-28-sugarloaf-twin",
+    "peaks": [
+      "Sugarloaf",
+      "Twin"
+    ],
+    "hikers": [
+      "Dan",
+      "Max"
+    ],
+    "hike_hours": "???",
+    "miles": "???"
+  },
+  {
+    "title": "Windham and Blackhead overnight",
+    "date": "2016-08-06",
+    "type": "Out & Back?",
+    "slug": "2016-08-06-windham-blackhead",
+    "miles": "???",
+    "hike_hours": "???",
+    "peaks": [
+      "Windham",
+      "Blackhead"
+    ],
+    "hikers": [
+      "Dan",
+      "Max",
+      "Gabe"
+    ]
+  },
+  {
+    "title": "Indian Head",
+    "date": "2018-07-08",
+    "type": "Out & Back",
+    "slug": "2018-07-08-indian-head",
+    "miles": "None",
+    "hike_hours": "None",
+    "peaks": [
+      "Indian Head"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ]
+  },
+  {
+    "title": "Windham (solo)",
+    "date": "2020-05-14",
+    "type": "Out & Back",
+    "slug": "2020-05-14-windham-solo",
+    "miles": "???",
+    "hike_hours": "???",
+    "peaks": [
+      "Windham"
+    ],
+    "hikers": [
+      "Dan"
+    ]
+  },
+  {
+    "title": "Windham with Alex",
+    "date": "2020-05-22",
+    "type": "Out & Back",
+    "slug": "2020-05-22-windham2",
+    "miles": "???",
+    "hike_hours": "???",
+    "peaks": [
+      "Windham"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ]
+  },
+  {
+    "title": "Summer Slide",
+    "date": "2020-06-21",
+    "type": "Out & Back",
+    "slug": "2020-06-21-slide",
+    "miles": "???",
+    "hike_hours": "???",
+    "peaks": [
+      "Slide"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ]
+  },
+  {
+    "title": "Balsam Summer Hike",
+    "date": "2020-09-03",
+    "type": "Out & Back",
+    "slug": "2020-09-03-balsam",
+    "miles": "None",
+    "hike_hours": "None",
+    "peaks": [
+      "Balsam"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ]
+  },
+  {
+    "title": "Foggy Black Dome",
+    "date": "2020-09-27",
+    "type": "Out & Back",
+    "slug": "2020-09-27-blackdome",
+    "miles": "None",
+    "hike_hours": "None",
+    "peaks": [
+      "Black Dome"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ]
+  },
+  {
+    "title": "Fall Windham",
+    "date": "2020-10-04",
+    "type": "Out & Back",
+    "slug": "2020-10-04-fall-windham",
+    "miles": "None",
+    "hike_hours": "None",
+    "peaks": [
+      "Windham"
+    ],
+    "hikers": [
+      "Alex"
+    ]
+  },
+  {
+    "title": "Panther (failed) aka \"The time when Google Maps took us to the wrong trailhead\"",
+    "date": "2022-04-24",
+    "type": "Out & Back",
+    "slug": "2022-04-24-giant-ledge",
+    "miles": 8.8,
+    "hike_hours": 5.5,
+    "peaks": [
+      "None"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "excerpt": "Not the hike we expected to do, and we didn't bag the peak we wanted, but we did see some great birds (including a lifer!) and views along the way."
+  },
+  {
+    "title": "Table & Peekamoose aka \"The Blackburnian Hike\"",
+    "date": "2022-07-10",
+    "type": "Out & Back",
+    "slug": "2022-07-10-table-peekamoose",
+    "miles": 10.1,
+    "hike_hours": 7.0,
+    "peaks": [
+      "Table",
+      "Peekamoose"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex",
+      "John G"
+    ]
+  },
+  {
+    "title": "Indian Head & Twin: Baby Birds!",
+    "date": "2022-07-16",
+    "type": "Loop?",
+    "slug": "2022-07-16-indian-twin",
+    "miles": "???",
+    "hike_hours": "???",
+    "peaks": [
+      "Indian Head",
+      "Twin"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ]
+  },
+  {
+    "title": "Kaaterskill High Peak (look, it's a plane!)",
+    "date": "2022-09-09",
+    "type": "Out & Back",
+    "slug": "2022-09-09-kaaterskill",
+    "miles": 7.8,
+    "hike_hours": 6.0,
+    "peaks": [
+      "Kaaterskill High Peak"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex",
+      "John G"
+    ],
+    "excerpt": "Quite surprising to find an airplane in the woods at the top of your hike!"
+  },
+  {
+    "title": "Hunter and Southwest Hunter aka the COVID hike",
+    "date": "2022-09-21",
+    "type": "Loop",
+    "slug": "2022-09-21-hunter-sw",
+    "miles": 5.75,
+    "hike_hours": 10.5,
+    "peaks": [
+      "Hunter",
+      "Southwest Hunter"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ]
+  },
+  {
+    "title": "The Nine",
+    "date": "2022-09-28",
+    "type": "Loop",
+    "slug": "2022-09-28-the-nine",
+    "miles": 23.6,
+    "hike_hours": 16.5,
+    "peaks": [
+      "Slide",
+      "Cornell",
+      "Wittenberg",
+      "Friday",
+      "Balsam Cap",
+      "Rocky",
+      "Lone",
+      "Peekamoose",
+      "Table"
+    ],
+    "hikers": [
+      "Dan",
+      "Max",
+      "John G"
+    ]
+  },
+  {
+    "title": "Plateau: Peak Fall",
+    "date": "2022-10-09",
+    "type": "Out & Back",
+    "slug": "2022-10-09-plateau",
+    "miles": "???",
+    "hike_hours": "???",
+    "peaks": [
+      "Plateau"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ]
+  },
+  {
+    "title": "Late Fall in the Blackhead Range",
+    "date": "2022-10-19",
+    "type": "Through (Car Stack)",
+    "slug": "2022-10-19-blackhead-range",
+    "miles": 8.2,
+    "hike_hours": 6.5,
+    "peaks": [
+      "Blackhead",
+      "Black Dome",
+      "Thomas Cole"
+    ],
+    "hikers": [
+      "Max",
+      "Sarah",
+      "John G"
+    ]
+  },
+  {
+    "title": "Panther (Winter)",
+    "date": "2023-01-08",
+    "type": "Out & Back",
+    "slug": "2023-01-08-winter-panther",
+    "miles": 8.0,
+    "hike_hours": 5.0,
+    "peaks": [
+      "Panther"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "excerpt": "First of the four required winter peaks, in which Alex and I finally summit Panther and do a surprise bushwhack on the way down."
+  },
+  {
+    "title": "Balsam (Winter)",
+    "date": "2023-01-14",
+    "type": "Out & Back",
+    "slug": "2023-01-14-winter-balsam",
+    "miles": 6.5,
+    "hike_hours": 5.0,
+    "peaks": [
+      "Balsam"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex",
+      "Max"
+    ],
+    "excerpt": "Second of the four required winter peaks, in which Alex, Max and I become the very first customers at the Eastwind bar."
+  },
+  {
+    "title": "Winter Slide",
+    "date": "2023-02-18",
+    "type": "Out & Back",
+    "slug": "2023-02-18-winter-slide",
+    "miles": 5.8,
+    "hike_hours": 3.5,
+    "peaks": [
+      "Slide"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "excerpt": "Third of the four required winter peaks, part of a \"very upstate day\" that involved birding, boiling maple syrup and going to a dinner party."
+  },
+  {
+    "title": "Blackhead Snowshoe Adventure",
+    "date": "2023-03-05",
+    "type": "Loop",
+    "slug": "2023-03-05-winter-blackhead",
+    "miles": 6.2,
+    "hike_hours": 5.0,
+    "peaks": [
+      "Blackhead"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex",
+      "John G"
+    ],
+    "excerpt": "The last of the four required winter peaks and my first Catskills snowshoeing adventure. Alex's \"personal Everest\"."
+  }
+]

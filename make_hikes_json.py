@@ -25,21 +25,20 @@ def read_frontmatter(stream) -> dict:
 
 
 def format_meta(meta: dict) -> dict:
+    if 'excerpt' not in meta:
+        # TODO: fill in excerpt based on the post
+        pass
     return {
-        'title': meta['title'],
-        'date': meta['Date'].strftime('%Y-%m-%d'),
-        'type': meta['Type'],
-        'slug': meta['slug'],
-        'miles': meta['Mileage (mi)'],
-        'hike_hours': meta['Hiking Time (h)'],
-        'peaks': meta['Peaks'].split(', '),
-        'hikers': ['DanVK'] + meta['Other Participants'].split(', ')
+        **meta,
+        'date': meta['date'].strftime('%Y-%m-%d'),
+        'peaks': meta['peaks'].split(', '),
+        'hikers': meta['hikers'].split(', ')
     }
 
 
 def main():
     hikes = []
-    for path in BLOG_ROOT.glob('20*/*.md'):
+    for path in BLOG_ROOT.glob('_posts/*.md'):
         sys.stderr.write(str(path) + '\n')
         meta = read_frontmatter(open(path))
         hikes.append(format_meta(meta))

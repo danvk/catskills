@@ -101,10 +101,12 @@ map.on("load", () => {
           );
         }
         hoveredStateId = e.features[0].id;
+        const hoverSlug = e.features[0].properties.slug;
         map.setFeatureState(
           { source: "tracks", id: hoveredStateId },
           { hover: true }
         );
+        document.querySelector(`[data-slug="${hoverSlug}"]`)?.classList.add('hovered');
       }
     })
     .on("mouseleave", "tracks", (e) => {
@@ -115,6 +117,9 @@ map.on("load", () => {
         );
       }
       hoveredStateId = undefined;
+      for (const el of document.querySelectorAll('.hike')) {
+        el.classList.remove('hovered');
+      }
     });
 });
 
@@ -155,6 +160,7 @@ interface Hike {
       <h2><a href="${hike.url}">${hike.title}</a></h2>
       ${hike.peaks.map(peak => `<span class="peak">${peak}</span>`).join('')}<br>
     `
+    div.setAttribute('data-slug', hike.slug);
     hikeContainer?.append(div);
   }
 })().catch(e => {

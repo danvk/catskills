@@ -232,6 +232,21 @@
     "url": "/catskills/2020/10/04/2020-10-04-fall-windham.html"
   },
   {
+    "title": "A through hike on the long path",
+    "date": "2020-09-30",
+    "type": "Through (Car Stack)",
+    "slug": "2020-09-30-pisgah",
+    "miles": 7.1,
+    "hike_hours": 3.5,
+    "peaks": [
+      "Pisgah"
+    ],
+    "hikers": [
+      "Dan"
+    ],
+    "url": "/catskills/2020/09/30/2020-09-30-pisgah.html"
+  },
+  {
     "title": "Foggy Black Dome",
     "date": "2020-09-27",
     "type": "Out & Back",
@@ -278,6 +293,21 @@
       "Alex"
     ],
     "url": "/catskills/2020/06/21/2020-06-21-slide.html"
+  },
+  {
+    "title": "A dull pandemic hike on the Long Path",
+    "date": "2020-06-10",
+    "type": "Out & Back",
+    "slug": "2020-06-10-hayden",
+    "miles": 5.2,
+    "hike_hours": 2,
+    "peaks": [
+      "Hayden"
+    ],
+    "hikers": [
+      "Dan"
+    ],
+    "url": "/catskills/2020/06/10/2020-06-10-hayden.html"
   },
   {
     "title": "Windham with Alex",

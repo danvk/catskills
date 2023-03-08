@@ -1,0 +1,20 @@
+---
+title: A through hike on the long path
+Date: 2020-09-30
+Type: Through (Car Stack)
+slug: 2020-09-30-pisgah
+Mileage (mi): 7.1
+Hiking Time (h): 3.5
+Peaks: Pisgah
+Other Participants: None
+---
+
+# Mt. Pisgah Through Hike
+
+I remember wanting to do this while we still had two cars. I stashed one car at the Mt. Pisgah trailhead and through-hiked to another exit (Partridge Rd), where Alex picked me up. The last bit of the road was hillier and more treacherous than I'd expected, so Alex didn't want to drive it and I had to walk another half mile or so. I remember listening to some pre-election podcasts on my hike, then getting worried about batteries. A big discovery was that there _was_ a viewpoint on the Mt. Pisgah trail, we'd just never hiked far enough to see it.
+
+9/30/2020 was a Wednesday, so this must have been a Covid Wednesday hike.
+
+Here's my review from AllTrails (4 stars):
+
+Extremely quiet on a Wednesday afternoon. I hiked seven miles and didn’t see a single other person. Beautiful viewpoint at 2.5mi. I continued on the ridge towards Ashland Pinnacle (red blazes) and walked out on that side. Would recommend!

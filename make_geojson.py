@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Make the combined tracks.geojson file from GPX files."""
 
-import glob
 import xml.dom.minidom
 import json
 from pathlib import Path
+
+from constants import BLOG_ROOT
 
 
 def extract_date(path):
@@ -52,13 +53,13 @@ def dom_to_feature(path: str, dom):
         }
     }
 
-BASE_DIR = '/Users/danvk/github/danvk.github.io/catskills'
+ASSETS = BLOG_ROOT / 'assets'
 
 def main():
     features = []
-    for path in glob.glob(BASE_DIR + '/*/*.gpx'):
-        dom = xml.dom.minidom.parse(path)
-        feature = dom_to_feature(path.replace(BASE_DIR + '/', ''), dom)
+    for path in ASSETS.glob('*/*.gpx'):
+        dom = xml.dom.minidom.parse(str(path))
+        feature = dom_to_feature(str(path.relative_to(ASSETS)), dom)
         features.append(feature)
 
     with open('tracks.geojson', 'w') as out:

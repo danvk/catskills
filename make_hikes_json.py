@@ -42,7 +42,7 @@ def main():
         sys.stderr.write(str(path) + '\n')
         meta = read_frontmatter(open(path))
         hikes.append(format_meta(meta))
-    hikes.sort(key=lambda hike: hike['date'])
+    hikes.sort(key=lambda hike: hike['date'], reverse=True)
     json.dump(hikes, sys.stdout, indent=2)
 
 

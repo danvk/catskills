@@ -138,17 +138,25 @@ interface Hike {
   const hikes = await logR.json() as Hike[];
 
   const hikeContainer = document.getElementById('hike-list');
-  const divs = hikes.map(hike => {
+  let lastYear = null;
+  for (const hike of hikes) {
+    const year = hike.date.slice(0, 4);
+    if (year !== lastYear) {
+      lastYear = year;
+      const yearH = document.createElement('h1');
+      yearH.textContent = String(year);
+      hikeContainer?.append(yearH);
+    }
     const div = document.createElement('div');
     div.className = 'hike';
     div.innerHTML = `
       <span class="date">${hike.date}</span>
+      <span class="stats">${hike.miles}mi ${hike.type} / ${hike.hike_hours}h</span>
       <h2><a href="${hike.url}">${hike.title}</a></h2>
       ${hike.peaks.map(peak => `<span class="peak">${peak}</span>`).join('')}<br>
-      ${hike.miles} mi - ${hike.hike_hours} h
     `
     hikeContainer?.append(div);
-  });
+  }
 })().catch(e => {
   console.error(e);
 });

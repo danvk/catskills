@@ -20,6 +20,13 @@ const map = new mapboxgl.Map({
   zoom: 10,
 });
 
+// TODO: only fetch this once
+const hiked = (async () => {
+  const r = await fetch('/catskills/map/log.json');
+  const hikes = await r.json();
+  return [...new Set(hikes.flatMap((hike: any) => hike.peaks))];
+})();
+
 // images:
 // "mountain"
 // "border-dot-13", "dot-11", "dot-10", "dot-9"
@@ -27,7 +34,17 @@ const map = new mapboxgl.Map({
 // "observation-tower"
 // Font is DIN PRO MEDIUM
 
-map.on("load", () => {
+async function loadImage(map: mapboxglType.Map, src: string, name: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    map.loadImage(src, (err, image) => {
+      if (err) reject(err);
+      map.addImage(name, image!, {sdf: true});
+      resolve();
+    });
+  });
+}
+
+map.on("load", async () => {
   // map.addSource('mapbox-dem', {
   //   'type': 'raster-dem',
   //   'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
@@ -70,7 +87,40 @@ map.on("load", () => {
       type: "geojson",
       data: "high-peaks.geojson",
     })
-    .addLayer({
+
+  const upArrow = loadImage(map, '/catskills/assets/img/up-arrow-20.png', 'up-arrow-8');
+  upArrow.then(() => {
+    map.addLayer({
+      id: "track-arrows",
+      source: "tracks",
+      ...trackArrowStyle,
+    })
+  });
+  const circleOn = loadImage(map, '/catskills/assets/img/circle-on.png', 'circle-on');
+  const circleOff = loadImage(map, '/catskills/assets/img/circle-off.png', 'circle-off');
+  Promise.all([circleOn, circleOff, hiked]).then(([_a, _b, peaks]) => {
+    map.addLayer({
+      id: "peaks",
+      type: "symbol",
+      source: "peaks",
+      layout: {
+        'icon-image': [
+          'match',
+          ['get', 'name'],
+          peaks,
+          'circle-on',
+          'circle-off',
+        ],
+        'icon-allow-overlap': true,
+        'icon-size': 0.25,
+      },
+      paint: {
+        // 'circle-radius': 4,
+        'icon-color': peakTypeColor,
+        // 'circle-stroke-color': 'white',
+      },
+    });
+    map.addLayer({
       id: "peak-labels",
       type: "symbol",
       source: "peaks",
@@ -80,33 +130,12 @@ map.on("load", () => {
         "text-size": 12,
         "text-offset": [0, 1],
         "text-anchor": "top",
+        // 'text-allow-overlap': true,
+        // 'icon-allow-overlap': true,
       },
       paint: {
         "text-color": peakTypeColor,
       },
-    })
-    .addLayer({
-      id: "peaks",
-      type: "circle",
-      source: "peaks",
-      layout: {
-      },
-      paint: {
-        'circle-radius': 4,
-        'circle-color': peakTypeColor,
-        'circle-stroke-color': 'white',
-      },
-    });
-
-  map.loadImage('/catskills/assets/img/up-arrow-20.png', (err, image) => {
-    if (err) throw err;
-    map.addImage("up-arrow-8", image!, {
-      "sdf": true
-    });
-    map.addLayer({
-      id: "track-arrows",
-      source: "tracks",
-      ...trackArrowStyle,
     })
   });
 

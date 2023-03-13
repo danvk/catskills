@@ -17,7 +17,7 @@
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.347499, 42.008336]}, "properties": {"type": "dec", "name": "Wittenberg"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.244166, 42.162501]}, "properties": {"type": "trail", "name": "Southwest Hunter"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.595, 42.045558   ]}, "properties": {"type": "dec", "name": "Balsam Lake"}},
-{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.394722, 41.969171]}, "properties": {"type": "bushwhack", "name": "Lone"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.389722, 41.969167]}, "properties": {"type": "bushwhack", "name": "Lone"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.394719, 42.056392]}, "properties": {"type": "dec", "name": "Panther"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.49694, 42.035001 ]}, "properties": {"type": "trail", "name": "Big Indian"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.362498, 41.98778 ]}, "properties": {"type": "bushwhack", "name": "Friday"}},

@@ -29,7 +29,7 @@ export const trackArrowStyle = {
     "icon-image": "up-arrow-8",
     // "icon-image": "mountain",
     "symbol-placement": "line",
-    "symbol-spacing": 10,
+    "symbol-spacing": 20,
     'icon-allow-overlap': true,
     'icon-size': 0.4,
     'icon-rotate': 90,

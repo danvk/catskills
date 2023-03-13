@@ -86,10 +86,10 @@ club_html = ''
 num_done = 0
 num_left = 0
 for peak in completed_winter_peaks.intersection(winter_peaks):
-    club_html += f'<span class="winter complete" title="{peak}"></span>\n'
+    club_html += f'<span class="winter complete" title="{peak} (Winter)"></span>\n'
     num_done += 1
 for peak in set(winter_peaks).difference(completed_winter_peaks):
-    club_html += f'<span class="winter incomplete" title="{peak}"></span>\n'
+    club_html += f'<span class="winter incomplete" title="{peak} (Winter)"></span>\n'
     num_left += 1
 for peak in qualifying:
     club_html += f'<span class="3500 complete" title="{peak}"></span>\n'
@@ -110,9 +110,18 @@ num_done = len([*completed_winter_peaks])
 num_total = len(peaks)
 winter_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
 
+def sub(html: str, tag: str, repl: str):
+    start_tag = f'<!--{tag}-->'
+    end_tag = f'<!--/{tag}-->'
+    start_pos = html.index(start_tag) + len(start_tag)
+    end_pos = html.index(end_tag)
+    return html[:start_pos] + repl + html[end_pos:]
+
+
 # Patch index.md
-old_contents = open('index.md').read()
-contents = re.sub(r'(<!--progress-3500-->).*(<!--/progress-3500-->)', r'\1' + club_html + r'\2', old_contents)
-contents = re.sub(r'(<!--progress-winter-->).*(<!--/progress-winter-->)', r'\1' + winter_html + r'\2', contents)
+NEW8 = '\n        '
+contents = open('index.md').read()
+contents = sub(contents, 'progress-3500', NEW8 + club_html.replace('\n', NEW8))
+contents = sub(contents, 'progress-winter', NEW8 + winter_html.replace('\n', NEW8))
 with open('index.md', 'w') as out:
     out.write(contents)

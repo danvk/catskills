@@ -17,10 +17,10 @@ Things to include:
   - [x] Make the "blog" -- posts for each hike
   - [x] Format frontmatter for each post
   - [ ] Add map visualization for each post
-  - [ ] Make a root page
-    - [ ] Mention 2013 hiker's blog
+  - [x] Make a root page
+    - [x] Mention 2013 hiker's blog
     - [ ] Mention my interest in birding
-    - [ ] Link to Catskill 3500 Club organized hikes
+    - [x] Link to Catskill 3500 Club organized hikes
     - [ ] Reconstruct how I got interested in this
   - [x] Make an RSS feed
 

@@ -2,3 +2,43 @@
     font-size: 14px;
     color: #828282;
 }
+
+.progress-bar {
+    height: 16px;
+    /* display: inline-block; */
+    font-size: 0;
+    margin-bottom: 4px;
+}
+
+.complete, .incomplete {
+    display: inline-block;
+    height: 16px;
+    width: 10px;
+    border: 1px solid black;
+    /* margin: 0; */
+    border-left: 0;
+}
+
+.complete {
+    background: lightgreen;
+}
+
+.winter.complete {
+    background: #ddd;
+}
+
+.progress-bar > span:first-child {
+    border-left: 1px solid black;
+}
+
+#progress {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+.progress-label {
+    text-align: right;
+}

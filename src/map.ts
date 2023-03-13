@@ -1,5 +1,5 @@
-import type mapboxglType from "mapbox-gl";
-import { parkStyle, peakTypeColor, trackStyle, trackStyleSelected, trackStyleSelectedOutline } from "./style";
+import mapboxglType from "mapbox-gl";
+import { parkStyle, peakTypeColor, trackArrowStyle, trackStyle, trackStyleSelected, trackStyleSelectedOutline } from "./style";
 
 // TODO: disable in production
 new EventSource('/esbuild').addEventListener('change', () => location.reload())
@@ -13,21 +13,29 @@ mapboxgl.accessToken =
 
 const map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/mapbox/outdoors-v12",
+  style: "mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t",
+  // style: "mapbox://styles/mapbox/outdoors-v12",
   // style: 'mapbox://styles/mapbox/satellite-streets-v12',
   center: [-74.36398700976565, 42.0922169187148],
   zoom: 10,
 });
 
+// images:
+// "mountain"
+// "border-dot-13", "dot-11", "dot-10", "dot-9"
+// "campsite"
+// "observation-tower"
+// Font is DIN PRO MEDIUM
+
 map.on("load", () => {
-  map.addSource('mapbox-dem', {
-    'type': 'raster-dem',
-    'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-    'tileSize': 512,
-    'maxzoom': 14
-  });
+  // map.addSource('mapbox-dem', {
+  //   'type': 'raster-dem',
+  //   'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+  //   'tileSize': 512,
+  //   'maxzoom': 14
+  // });
   // add the DEM source as a terrain layer with exaggerated height
-  map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+  // map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
   map
     .addSource("tracks", {
@@ -89,6 +97,18 @@ map.on("load", () => {
         'circle-stroke-color': 'white',
       },
     });
+
+  map.loadImage('/catskills/assets/img/up-arrow-20.png', (err, image) => {
+    if (err) throw err;
+    map.addImage("up-arrow-8", image!, {
+      "sdf": true
+    });
+    map.addLayer({
+      id: "track-arrows",
+      source: "tracks",
+      ...trackArrowStyle,
+    })
+  });
 
   let hoveredStateId: string | number | undefined;
   map

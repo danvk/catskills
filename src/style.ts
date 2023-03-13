@@ -23,6 +23,24 @@ export const trackStyle = {
     "line-width": 4
   },
 } satisfies Partial<mapboxgl.AnyLayer>;
+export const trackArrowStyle = {
+  type: 'symbol',
+  layout: {
+    "icon-image": "up-arrow-8",
+    // "icon-image": "mountain",
+    "symbol-placement": "line",
+    "symbol-spacing": 10,
+    'icon-allow-overlap': true,
+    'icon-size': 0.4,
+    'icon-rotate': 90,
+    visibility: 'visible',
+  },
+  paint: {
+    'icon-color': 'white',
+    'icon-opacity': 1,
+  },
+  minzoom: 13,
+} satisfies Partial<mapboxgl.AnyLayer>;
 
 export const trackStyleSelected = {
   ...trackStyle,

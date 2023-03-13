@@ -84,3 +84,10 @@ In the time it took to run `brew install gdal` I learned about an npm alternativ
 
     npx osmtogeojson /Users/danvk/Downloads/catskill-relation.xml > catskill-park.geojson
 
+This site has a bunch of hike logs:
+https://mountain-hiking.com/friday-balsam-cap-b25/#B-25_Military_Bomber_Wreck
+
+And it links to this site, which has a GPX viewer:
+https://www.gaiagps.com/public/R2eaNlqY3lgk4dZEYezOoI6O/R2eaNlqY3lgk4dZEYezOoI6O?layer=GaiaTopoRasterFeet
+
+https://www.catskillhiker.net/Catskill35/peaks/friday.shtml

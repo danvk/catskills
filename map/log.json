@@ -1,5 +1,26 @@
 [
   {
+    "title": "Winter Six (Catskills 3500 Club)",
+    "date": "2023-03-09",
+    "type": "Through (Car Stack)",
+    "slug": "2023-03-09-winter-six",
+    "miles": 12.7,
+    "hike_hours": 10,
+    "peaks": [
+      "Friday",
+      "Balsam Cap",
+      "Rocky",
+      "Lone",
+      "Table",
+      "Peekamoose"
+    ],
+    "hikers": [
+      "Dan",
+      "Michael D + Eight more from 3500 Club"
+    ],
+    "url": "/catskills/2023/03/09/2023-03-09-winter-six.html"
+  },
+  {
     "title": "Blackhead Snowshoe Adventure",
     "date": "2023-03-05",
     "type": "Loop",

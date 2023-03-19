@@ -1,5 +1,24 @@
 [
   {
+    "title": "Fir Snowshoe: The Bushes Whack YOU!",
+    "date": "2023-03-18",
+    "type": "Out and Back",
+    "slug": "2023-03-18-fir",
+    "miles": 8.9,
+    "elevation_ft": 1975,
+    "hike_hours": 7.5,
+    "peaks": [
+      "Fir"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex",
+      "John G",
+      "Sam L"
+    ],
+    "url": "/catskills/2023/03/18/2023-03-18-fir.html"
+  },
+  {
     "title": "Winter Six (Catskills 3500 Club)",
     "date": "2023-03-09",
     "type": "Through (Car Stack)",

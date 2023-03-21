@@ -43,7 +43,7 @@ def format_meta(meta: dict) -> dict:
 
 def main():
     hikes = []
-    for path in BLOG_ROOT.glob('_posts/*.md'):
+    for path in sorted(BLOG_ROOT.glob('_posts/*.md')):
         sys.stderr.write(str(path) + '\n')
         meta = read_frontmatter(open(path))
         hikes.append(format_meta(meta))

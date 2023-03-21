@@ -26,16 +26,28 @@
     vertical-align: bottom;
 }
 
+.progress-bar > span:first-child {
+    border-left: 1px solid black;
+}
+
+@media (max-width: 600px) {
+    .complete, .incomplete {
+        width: 4px;
+        border: 1px solid #ccc;
+        border-left: 0;
+    }
+
+    .progress-bar > span:first-child {
+        border-left-color: #ccc;
+    }
+}
+
 .complete {
     background: lightgreen;
 }
 
 .winter.complete {
     background: #ddd;
-}
-
-.progress-bar > span:first-child {
-    border-left: 1px solid black;
 }
 
 #progress {

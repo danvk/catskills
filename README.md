@@ -59,7 +59,7 @@ I can generate a GeoJSON FeatureCollection from photos by downloading a ZIP file
 
 To snap the lines in that GPX to trails, load it into gpx.studio and add some new waypoints, following trail routing.
 
-[1]: https://www.njnyhikes.com/p/map.html
+It's hard to [see time][time] in gpx.studio. I tried using placemark.io but it's not much better (you can click a GPX point to see the time but can't get direction arrows) and it costs $20/month.
 
 ## Notes on setting up the site
 
@@ -91,3 +91,6 @@ And it links to this site, which has a GPX viewer:
 https://www.gaiagps.com/public/R2eaNlqY3lgk4dZEYezOoI6O/R2eaNlqY3lgk4dZEYezOoI6O?layer=GaiaTopoRasterFeet
 
 https://www.catskillhiker.net/Catskill35/peaks/friday.shtml
+
+[1]: https://www.njnyhikes.com/p/map.html
+[time]: https://github.com/gpxstudio/gpxstudio.github.io/issues/227

@@ -1,5 +1,24 @@
 [
   {
+    "title": "Bearpen & Vly, the start of spring",
+    "date": "2023-03-21",
+    "type": "Out and Back",
+    "slug": "2023-03-21-bearpen-vly",
+    "miles": 7.4,
+    "elevation_ft": 2064,
+    "hike_hours": 5.3,
+    "peaks": [
+      "Vly",
+      "Bearpen"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "excerpt": "A special dinner presents an opportunity to knock these two remote peaks out on what the 3500 club considers the last day of winter.",
+    "url": "/catskills/2023/03/21/2023-03-21-bearpen-vly.html"
+  },
+  {
     "title": "Fir Snowshoe: The Bushes Whack YOU!",
     "date": "2023-03-18",
     "type": "Out and Back",
@@ -16,6 +35,7 @@
       "John G",
       "Sam L"
     ],
+    "excerpt": "A long, snowy bushwhack through beautiful woods and a surprising first high peak.",
     "url": "/catskills/2023/03/18/2023-03-18-fir.html"
   },
   {

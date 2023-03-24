@@ -1,5 +1,4 @@
 import { UseQueryResult } from "@tanstack/react-query";
-import React from "react";
 
 export interface Hike {
   title: string;
@@ -21,7 +20,7 @@ export function HikeList(props: Props) {
   const { status, data, error } = props.hikes;
 
   return (
-    <div id="hikes">
+    <div id="hike-list">
       {status === "loading" ? (
         "Loading…"
       ) : status === "error" ? (

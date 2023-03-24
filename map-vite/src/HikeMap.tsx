@@ -109,6 +109,13 @@ export function HikeMap(props: Props) {
         }}
         mapStyle="mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t"
         mapboxAccessToken={MAPBOX_TOKEN}
+        onClick={e => {
+          const {properties} = e.features?.[0] ?? {};
+          if (properties?.slug) {
+            props.onSelectHike(properties.slug);
+          }
+        }}
+        interactiveLayerIds={['tracks']}
       >
         <Source id="catskill-park" type="geojson" data="catskill-park.geojson">
           <Layer id="catskill-park" {...parkStyle} />
@@ -181,6 +188,7 @@ interface HikeTrackProps {
 function HikeTracks(props: HikeTrackProps) {
   const { selectedHikeSlug } = props;
 
+  // TODO: show selected track on top
   const trackStyle = React.useMemo(
     () =>
       ({

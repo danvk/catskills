@@ -48,7 +48,7 @@ const peakLabelStyle = {
     "text-offset": [0, 1],
     "text-anchor": "top",
     // 'text-allow-overlap': true,
-    // 'icon-allow-overlap': true,
+    'icon-allow-overlap': true,
   },
   paint: {
     "text-color": peakTypeColor,
@@ -157,7 +157,7 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
     <Source id="high-peaks" type="geojson" data="high-peaks.geojson">
       <Layer id="peak-labels" {...peakLabelStyle} />
       {circleOn === "ok" && circleOff === "ok" ? (
-        <Layer id="peaks" {...peakSymbols} />
+        <Layer id="peaks" {...peakSymbols} beforeId="peak-labels" />
       ) : null}
     </Source>
   );

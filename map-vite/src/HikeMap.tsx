@@ -1,4 +1,4 @@
-import Map, { Layer, Marker, Source, useMap } from "react-map-gl";
+import Map, { Layer, Source, useMap } from "react-map-gl";
 
 import { UseQueryResult } from "@tanstack/react-query";
 import { Hike } from "./HikeList";
@@ -11,6 +11,8 @@ const MAPBOX_TOKEN =
 
 export interface Props {
   hikes: UseQueryResult<readonly Hike[], unknown>;
+  selectedHikeSlug: string | null;
+  onSelectHike: (slug: string) => void;
 }
 
 export const parkStyle = {
@@ -48,7 +50,7 @@ const peakLabelStyle = {
     "text-offset": [0, 1],
     "text-anchor": "top",
     // 'text-allow-overlap': true,
-    'icon-allow-overlap': true,
+    "icon-allow-overlap": true,
   },
   paint: {
     "text-color": peakTypeColor,
@@ -85,6 +87,8 @@ export function useMapImage({
   return state;
 }
 
+function noop() {}
+
 export function HikeMap(props: Props) {
   const { hikes } = props;
   const hiked = React.useMemo(
@@ -110,7 +114,11 @@ export function HikeMap(props: Props) {
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
         <MountainPeaks hiked={hiked} />
-        <HikeTracks />
+        <HikeTracks
+          selectedHikeSlug={props.selectedHikeSlug}
+          onSelectHike={props.onSelectHike}
+          onHoverHike={noop}
+        />
       </Map>
     </div>
   );
@@ -164,22 +172,44 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
   );
 }
 
-export const trackStyle = {
-  type: "line",
-  layout: {
-    "line-join": "round",
-    "line-cap": "round",
-  },
-  paint: {
-    "line-color": "darkblue",
-    "line-width": 3
-  },
-} satisfies Partial<mapboxgl.AnyLayer>;
+interface HikeTrackProps {
+  selectedHikeSlug: string | null;
+  onSelectHike: (slug: string) => void;
+  onHoverHike: (slug: string) => void;
+}
 
-function HikeTracks() {
+function HikeTracks(props: HikeTrackProps) {
+  const { selectedHikeSlug } = props;
+
+  const trackStyle = React.useMemo(
+    () =>
+      ({
+        type: "line",
+        layout: {
+          "line-join": "round",
+          "line-cap": "round",
+        },
+        paint: {
+          "line-color": [
+            "case",
+            ["==", ["get", "slug"], selectedHikeSlug],
+            'darkblue',
+            'rgb(28,109,163)',
+          ],
+          "line-width": [
+            "case",
+            ["==", ["get", "slug"], selectedHikeSlug],
+            6,
+            3,
+          ],
+        },
+      } satisfies Partial<mapboxgl.AnyLayer>),
+    [selectedHikeSlug]
+  );
+
   return (
     <Source type="geojson" id="tracks" data="tracks.geojson">
       <Layer id="tracks" {...trackStyle} />
     </Source>
-  )
+  );
 }

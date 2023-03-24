@@ -1,4 +1,7 @@
 import { UseQueryResult } from "@tanstack/react-query";
+import classNames from 'classnames';
+
+import './HikeList.css';
 
 export interface Hike {
   title: string;
@@ -14,6 +17,8 @@ export interface Hike {
 
 export interface Props {
   hikes: UseQueryResult<readonly Hike[], unknown>;
+  selectedHikeSlug: string | null;
+  onSelectHike: (slug: string) => void;
 }
 
 export function HikeList(props: Props) {
@@ -26,36 +31,47 @@ export function HikeList(props: Props) {
       ) : status === "error" ? (
         String(error)
       ) : (
-        <LoadedHikesList hikes={data} />
+        <LoadedHikesList {...props} hikes={data} />
       )}
     </div>
   );
 }
 
-interface HikeProps {
+type HikeProps = Omit<Props, "hikes"> & {
   hikes: readonly Hike[];
-}
+};
 
 function LoadedHikesList(props: HikeProps) {
   return (
     <>
       {props.hikes.map((hike) => (
-        <HikeCard hike={hike} key={hike.slug} />
+        <HikeCard
+          hike={hike}
+          key={hike.slug}
+          isSelected={hike.slug === props.selectedHikeSlug}
+          onSelect={() => props.onSelectHike(hike.slug)}
+        />
       ))}
     </>
   );
 }
 
-function HikeCard(props: { hike: Hike }) {
-  const { hike } = props;
+interface HikeCardProps {
+  hike: Hike;
+  isSelected: boolean;
+  onSelect: () => void;
+}
+
+function HikeCard(props: HikeCardProps) {
+  const { hike, isSelected, onSelect } = props;
   return (
-    <div className="hike" key={hike.slug}>
+    <div className={classNames("hike", isSelected && "selected")} key={hike.slug} onClick={onSelect}>
       <span className="date">{hike.date}</span>
       <span className="stats">
         {hike.miles}mi {hike.type} / {hike.hike_hours}h
       </span>
       <h2>
-        <a href="{hike.url}">{hike.title}</a>
+        <a href={hike.url}>{hike.title}</a>
       </h2>
       {hike.peaks.map((peak) => (
         <span className="peak" key={peak}>

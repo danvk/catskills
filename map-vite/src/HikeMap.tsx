@@ -143,6 +143,11 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
     name: "circle-off",
     sdf: true,
   });
+  const mountainIcon = useMapImage({
+    url: "mountain-solid.png",
+    name: "mountain-solid",
+    sdf: true,
+  });
 
   const peakSymbols = React.useMemo(
     () =>
@@ -150,13 +155,14 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
         type: "symbol",
         source: "peaks",
         layout: {
-          "icon-image": [
-            "match",
-            ["get", "name"],
-            hiked,
-            "circle-on",
-            "circle-off",
-          ],
+          "icon-image": "mountain-solid",
+          // "icon-image": [
+          //   "match",
+          //   ["get", "name"],
+          //   hiked,
+          //   "circle-on",
+          //   "circle-off",
+          // ],
           "icon-allow-overlap": true,
           "icon-size": 0.25,
         },
@@ -172,7 +178,7 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
   return (
     <Source id="high-peaks" type="geojson" data="high-peaks.geojson">
       <Layer id="peak-labels" {...peakLabelStyle} />
-      {circleOn === "ok" && circleOff === "ok" ? (
+      {mountainIcon === "ok" ? (
         <Layer id="peaks" {...peakSymbols} beforeId="peak-labels" />
       ) : null}
     </Source>

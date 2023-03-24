@@ -29,7 +29,7 @@ Tracks: [AllTrails], [eBird]
 
 [![GPS Track of the hike]({{site.baseurl}}/assets/2023-03-21-bearpen-vly/bearpen-vly-track.png)]({{site.baseurl}}/map/#2023-03-21-bearpen-vly)
 
-Bearpen and Vly peaks are the farthest from my home but are close to Andes, NY, in Deleware County, where Alex and I often vacationed before the pandemic. I'd always had aims to hike these peaks on an otherwise-planned trip to the area to save on driving.
+Bearpen and Vly peaks are the farthest from my home but are close to Andes, NY, in Delaware County, where Alex and I often vacationed before the pandemic. I'd always had aims to hike these peaks on an otherwise-planned trip to the area to save on driving.
 
 That opportunity came when Alex saw [Brushland Eating House] advertising a [Nowruz Feast] on March 21st, a celebration of Persian New Year on the Vernal Equinox. We booked a hotel in Andes and decided to make a trip of it.
 
@@ -43,7 +43,7 @@ The hike starts where the pavement ends on Greene County Route 3. But what you'r
 
 ![The hunters lodge at the Bearpen/Vly col]({{site.baseurl}}/assets/2023-03-21-bearpen-vly/hunters-lodge.jpeg)
 
-After just under a mile, we arrived at the hunter's cabin in the col between Bearpend and Vly. We did Vly first. This is sometimes described as a bushwhack, but it was more of a footpath. There were even (numerous) blazes. With the track from yesterday's 3500 Club hike, it was very easy to follow the path.
+After just under a mile, we arrived at the hunter's cabin in the col between Bearpen and Vly. We did Vly first. This is sometimes described as a bushwhack, but it was more of a footpath. There were even (numerous) blazes. With the track from yesterday's 3500 Club hike, it was very easy to follow the path.
 
 ![Trail getting steep (Bearpen in background)]({{site.baseurl}}/assets/2023-03-21-bearpen-vly/steep-vly.jpeg)
 

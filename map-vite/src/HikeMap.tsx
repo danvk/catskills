@@ -110,6 +110,7 @@ export function HikeMap(props: Props) {
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
         <MountainPeaks hiked={hiked} />
+        <HikeTracks />
       </Map>
     </div>
   );
@@ -161,4 +162,24 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
       ) : null}
     </Source>
   );
+}
+
+export const trackStyle = {
+  type: "line",
+  layout: {
+    "line-join": "round",
+    "line-cap": "round",
+  },
+  paint: {
+    "line-color": "darkblue",
+    "line-width": 3
+  },
+} satisfies Partial<mapboxgl.AnyLayer>;
+
+function HikeTracks() {
+  return (
+    <Source type="geojson" id="tracks" data="tracks.geojson">
+      <Layer id="tracks" {...trackStyle} />
+    </Source>
+  )
 }

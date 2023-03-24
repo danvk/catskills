@@ -1,4 +1,4 @@
-import Map, { Layer, Marker, Source } from "react-map-gl";
+import Map, { Layer, Marker, Source, useMap } from "react-map-gl";
 
 import { UseQueryResult } from "@tanstack/react-query";
 import { Hike } from "./HikeList";
@@ -55,6 +55,36 @@ const peakLabelStyle = {
   },
 } satisfies Partial<mapboxgl.AnyLayer>;
 
+interface UseMapImageOptions {
+  url: string;
+  name: string;
+  sdf?: boolean;
+}
+
+type MapImageResult = "loading" | "ok";
+export function useMapImage({
+  url,
+  name,
+  sdf = false,
+}: UseMapImageOptions): MapImageResult {
+  const [state, setState] = React.useState<MapImageResult>("loading");
+  const mapRef = useMap();
+  React.useEffect(() => {
+    if (mapRef.current) {
+      const map = mapRef.current.getMap() as mapboxgl.Map;
+
+      map.loadImage(url, (error, image) => {
+        if (error) throw error;
+        if (!image) throw "Unable to load image";
+        if (!map.hasImage(name)) map.addImage(name, image, { sdf });
+        setState("ok");
+      });
+    }
+  }, [mapRef.current]);
+
+  return state;
+}
+
 export function HikeMap(props: Props) {
   const { hikes } = props;
   const hiked = React.useMemo(
@@ -79,10 +109,56 @@ export function HikeMap(props: Props) {
         <Source id="catskill-park" type="geojson" data="catskill-park.geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
-        <Source id="high-peaks" type="geojson" data="high-peaks.geojson">
-          <Layer id="peak-labels" {...peakLabelStyle} />
-        </Source>
+        <MountainPeaks hiked={hiked} />
       </Map>
     </div>
+  );
+}
+
+function MountainPeaks(props: { hiked: readonly string[] | null }) {
+  const { hiked } = props;
+  const circleOn = useMapImage({
+    url: "circle-on.png",
+    name: "circle-on",
+    sdf: true,
+  });
+  const circleOff = useMapImage({
+    url: "circle-off.png",
+    name: "circle-off",
+    sdf: true,
+  });
+
+  const peakSymbols = React.useMemo(
+    () =>
+      ({
+        type: "symbol",
+        source: "peaks",
+        layout: {
+          "icon-image": [
+            "match",
+            ["get", "name"],
+            hiked,
+            "circle-on",
+            "circle-off",
+          ],
+          "icon-allow-overlap": true,
+          "icon-size": 0.25,
+        },
+        paint: {
+          // 'circle-radius': 4,
+          "icon-color": peakTypeColor,
+          // 'circle-stroke-color': 'white',
+        },
+      } satisfies Partial<mapboxgl.AnyLayer>),
+    [hiked]
+  );
+
+  return (
+    <Source id="high-peaks" type="geojson" data="high-peaks.geojson">
+      <Layer id="peak-labels" {...peakLabelStyle} />
+      {circleOn === "ok" && circleOff === "ok" ? (
+        <Layer id="peaks" {...peakSymbols} />
+      ) : null}
+    </Source>
   );
 }

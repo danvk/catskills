@@ -5,6 +5,7 @@ import {
 } from '@tanstack/react-query'
 import { fetchJSON } from './fetch';
 import { Hike, HikeList } from './HikeList';
+import { HikeMap } from './HikeMap';
 
 function App() {
   const hikeResource = useQuery({queryKey: ['log.json'], queryFn: fetchJSON<Hike[]>});
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <HikeList hikes={hikeResource} />
-      <div id='map'>Map</div>
+      <HikeMap hikes={hikeResource} />
     </div>
   )
 }

@@ -11,7 +11,7 @@ import React from "react";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HikePage />}></Route>
+      <Route path="/catskills/map" element={<HikePage />}></Route>
     </Routes>
   );
 }

@@ -44,7 +44,7 @@ To generate the AllTrails images:
   - [x] Make an RSS feed
 
 - Data collection
-  - [ ] Collect GPX data for all hikes
+  - [x] Collect GPX data for all hikes
     - [x] How do I get GPX from eBird? (Lat/Lng seq in `data-maptrack-data`, no times)
     - [x] convert to properly-formatted zulu time in `fc_to_track.py`
     - [x] Make per-day tracks
@@ -54,23 +54,6 @@ To generate the AllTrails images:
   - [ ] Ask Max, John, Alex for photos from our hikes
   - [ ] Do I have Google location data for old hikes?
         (Do I have Google location data in any form?)
-
-- Map visualization
-  - [x] Write a script to convert GPX -> GeoJSON FeatureCollection
-  - [x] Add all peaks to the Mapbox map
-  - [ ] Make peak style look more like AllTrails
-  - [x] Add elevation to the Mapbox map
-  - [ ] Show which peaks I've hiked and which I haven't
-  - [x] Show all tracks on a map
-  - [ ] Zoom map to Catskills State Park on page load
-  - [ ] Add distance scale to map
-  - [ ] Show photos on the map
-  - [ ] Fix the position of Lone
-  - [ ] Show notes for each hike
-  - [ ] Organize hikes by type
-  - [ ] Filter hikes by dates (winter, month, etc.)
-  - [ ] Eliminate the scroll bounce
-  - [ ] Convert this to a CRA app
 
 ## Notes on making GPX tracks
 

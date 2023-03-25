@@ -62,7 +62,7 @@ def main():
         feature = dom_to_feature(str(path.relative_to(ASSETS)), dom)
         features.append(feature)
 
-    with open('map/tracks.geojson', 'w') as out:
+    with open('map-src/public/tracks.geojson', 'w') as out:
         json.dump({'type': 'FeatureCollection', 'features': features}, out)
 
 

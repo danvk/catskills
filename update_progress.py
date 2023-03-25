@@ -2,7 +2,6 @@
 """Update progress in index.md using log.json"""
 
 import json
-import re
 from collections import Counter
 
 from make_geojson import extract_season
@@ -58,7 +57,7 @@ assert len(winter_peaks) == 4
 assert set(winter_peaks).issubset(peaks)
 assert set(others).isdisjoint(set(peaks))
 
-LOG = json.load(open('map/log.json'))
+LOG = json.load(open('map-src/public/log.json'))
 
 completed_peaks = Counter()
 completed_nonwinter_peaks = set()

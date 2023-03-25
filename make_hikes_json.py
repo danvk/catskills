@@ -48,7 +48,7 @@ def main():
         meta = read_frontmatter(open(path))
         hikes.append(format_meta(meta))
     hikes.sort(key=lambda hike: hike['date'], reverse=True)
-    with open('map/log.json', 'w') as out:
+    with open('map-src/public/log.json', 'w') as out:
         json.dump(hikes, out, indent=2)
 
 

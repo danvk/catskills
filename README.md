@@ -8,6 +8,25 @@ Things to include:
 - Interactive map with all hikes
 - Notes on planning / logistics
 
+## Development
+
+    bundle exec jekyll serve
+
+## Writing posts
+
+Links and image sources should start with `{{site.baseurl}}`.
+
+Use `<!-- excerpt --> ... <!-- /excerpt -->` to delineate an excerpt paragraph.
+
+To generate the AllTrails images:
+
+- print the track on AllTrails
+- position the map as you like
+- Download as PDF
+- Open in Preview
+- Export at PNG at 144dpi
+- Use `pngquant` to shrink the resulting PNG
+
 ## TODO
 
 - Blog

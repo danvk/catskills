@@ -26,6 +26,8 @@ Timeline:
 
 Tracks: [AllTrails](https://www.alltrails.com/explore/recording/afternoon-hike-324545e--372), [eBird](https://ebird.org/checklist/S130610273)
 
+[![GPS Track of the hike]({{site.baseurl}}/assets/2023-03-09-winter-six/winter-six-track.png)]({{site.baseurl}}/map/#2023-03-09-winter-six)
+
 <!-- excerpt -->
 
 After [hiking Blackhead][blackhead] last week, I'd completed the Catskills 3500 Club's four [required winter peaks]. But I wasn't quite done. I'd quit my job March 1st and suddenly found myself with lots of free time. I'd known about the 3500 Club's [organized hikes] for years but never gotten around to doing one. If ever there was a time, it was now!

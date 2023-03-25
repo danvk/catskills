@@ -20,6 +20,8 @@ Timeline:
 
 Tracks: [AllTrails], [eBird]
 
+[![GPS Track of the hike]({{site.baseurl}}/assets/2023-03-05-winter-blackhead/winter-blackhead-track.png)]({{site.baseurl}}/map/#2023-03-05-winter-blackhead)
+
 This hike had originally been planned for last week but we moved it around several times to try and catch just the right conditions: lots of snow in the previous days, but sun on the day of the hike. We basically nailed it! According to [summit weather], Blackhead got ~8in of snow last Monday and another 15in on Friday. We were able to snowshoe the entire way up. The snow was about a foot deep at the base and maybe more like 18" at the summit. The hike was a bit longer than expected: unlike last fall, we weren't able to drive all the way to the trailhead. The last quarter mile was unplowed, so that added a half mile to the round trip. It was good to have some flat hiking to get used to our snowshoes, though.
 
 ![Flat section at the start of the trail]({{ site.baseurl }}/assets/2023-03-05-winter-blackhead/flat-trail.jpeg)

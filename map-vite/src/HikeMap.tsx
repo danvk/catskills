@@ -22,7 +22,7 @@ export const parkStyle = {
     "line-cap": "round",
   },
   paint: {
-    "line-color": "brown",
+    "line-color": "rgb(0, 32, 248)",
     "line-width": 1,
   },
 } satisfies Partial<mapboxgl.AnyLayer>;
@@ -133,16 +133,6 @@ export function HikeMap(props: Props) {
 
 function MountainPeaks(props: { hiked: readonly string[] | null }) {
   const { hiked } = props;
-  const circleOn = useMapImage({
-    url: "circle-on.png",
-    name: "circle-on",
-    sdf: true,
-  });
-  const circleOff = useMapImage({
-    url: "circle-off.png",
-    name: "circle-off",
-    sdf: true,
-  });
   const mountainIcon = useMapImage({
     url: "mountain-solid.png",
     name: "mountain-solid",
@@ -156,19 +146,15 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
         source: "peaks",
         layout: {
           "icon-image": "mountain-solid",
-          // "icon-image": [
-          //   "match",
-          //   ["get", "name"],
-          //   hiked,
-          //   "circle-on",
-          //   "circle-off",
-          // ],
           "icon-allow-overlap": true,
           "icon-size": 0.25,
         },
         paint: {
           // 'circle-radius': 4,
           "icon-color": peakTypeColor,
+          // 'icon-halo-color': 'rgba(0, 0, 0, 0.5)',
+          // 'icon-halo-width': 2,
+          // 'icon-halo-blur': 0.5,
           // 'circle-stroke-color': 'white',
         },
       } satisfies Partial<mapboxgl.AnyLayer>),

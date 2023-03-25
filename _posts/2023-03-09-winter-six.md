@@ -26,7 +26,7 @@ Timeline:
 
 Tracks: [AllTrails](https://www.alltrails.com/explore/recording/afternoon-hike-324545e--372), [eBird](https://ebird.org/checklist/S130610273)
 
-[![GPS Track of the hike]({{site.baseurl}}/assets/2023-03-09-winter-six/winter-six-track.png)]({{site.baseurl}}/map/#2023-03-09-winter-six)
+[![GPS Track of the hike]({{site.baseurl}}/assets/2023-03-09-winter-six/winter-six-track.png)]({{site.baseurl}}/map/?hike=2023-03-09-winter-six)
 
 <!-- excerpt -->
 

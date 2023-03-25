@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { useQuery } from "@tanstack/react-query";
-import { Routes, Route, useLocation, useSearchParams } from "react-router-dom";
+import { Routes, Route, useSearchParams } from "react-router-dom";
 
 import { fetchJSON } from "./fetch";
 import { Hike, HikeList } from "./HikeList";

@@ -27,7 +27,7 @@ Timeline:
 
 Tracks: [AllTrails], [eBird]
 
-[![GPS Track of the hike]({{site.baseurl}}/assets/2023-03-21-bearpen-vly/bearpen-vly-track.png)]({{site.baseurl}}/map/#2023-03-21-bearpen-vly)
+[![GPS Track of the hike]({{site.baseurl}}/assets/2023-03-21-bearpen-vly/bearpen-vly-track.png)]({{site.baseurl}}/map/?hike=2023-03-21-bearpen-vly)
 
 Bearpen and Vly peaks are the farthest from my home but are close to Andes, NY, in Delaware County, where Alex and I often vacationed before the pandemic. I'd always had aims to hike these peaks on an otherwise-planned trip to the area to save on driving.
 

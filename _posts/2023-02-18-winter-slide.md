@@ -1,8 +1,6 @@
 ---
 title: Winter Slide
-date: 2023-02-18
 type: Out & Back
-slug: 2023-02-18-winter-slide
 miles: 5.8
 hike_hours: 3.5
 elevation_ft: 1788

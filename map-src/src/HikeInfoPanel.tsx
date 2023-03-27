@@ -38,7 +38,7 @@ export function HikeInfoPanel(props: Props) {
     const parser = new GpxParser();
     parser.parse(gpxResource.data);
     return parser;
-  }, [gpxResource]);
+  }, [gpxResource.status, gpxResource.data]);
 
   return (
     <div id="hike-details">
@@ -63,6 +63,8 @@ export interface Point {
   lng: number;
 }
 
+type HighlightCallback = React.ComponentProps<typeof Dygraph>["highlightCallback"] & Function;
+
 function ElevationChart(props: {
   gpx: GpxParser;
   onScrubPoint: (latLng: Point | null) => void;
@@ -72,10 +74,9 @@ function ElevationChart(props: {
     return gpx.tracks[0].points.map((p) => [p.time, p.ele * FT_IN_M]);
   }, [gpx]);
 
-  const highlightCallback: React.ComponentProps<
-    typeof Dygraph
-  >["highlightCallback"] = React.useCallback(
+  const highlightCallback = React.useCallback<HighlightCallback>(
     (_e, _x, _pt, row) => {
+      // XXX this doesn't work when you're zoomed :(
       const pt = gpx.tracks[0].points[row];
       onScrubPoint({ lat: pt.lat, lng: pt.lon });
     },

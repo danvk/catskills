@@ -5,6 +5,7 @@ type: Out & Back
 slug: 2020-10-04-fall-windham
 miles: None
 hike_hours: None
+elevation_ft: ???
 peaks: Windham
 hikers: Alex
 ---

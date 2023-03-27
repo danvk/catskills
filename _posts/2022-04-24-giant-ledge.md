@@ -5,6 +5,7 @@ type: Out & Back
 slug: 2022-04-24-giant-ledge
 miles: 8.8
 hike_hours: 5.5
+elevation_ft: ???
 peaks: None
 hikers: Dan, Alex
 excerpt: Not the hike we expected to do, and we didn't bag the peak we wanted, but we did see some great birds (including a lifer!) and views along the way.

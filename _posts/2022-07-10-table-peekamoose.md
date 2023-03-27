@@ -5,6 +5,7 @@ type: Out & Back
 slug: 2022-07-10-table-peekamoose
 miles: 10.1
 hike_hours: 7.0
+elevation_ft: ???
 peaks: Table, Peekamoose
 hikers: Dan, Alex, John G
 ---

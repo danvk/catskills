@@ -27,7 +27,7 @@ layout: base
       <li>
         <span class="post-meta">
           {{ post.date | date: date_format }}:
-          {{ post.peaks }} ({{ post.miles }}mi {{post.type}} / {{post.hike_hours}}h)
+          {{ post.peaks }} ({{ post.miles }}mi+{{ post.elevation_ft }}ft {{post.type}} / {{post.hike_hours}}h)
         </span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">

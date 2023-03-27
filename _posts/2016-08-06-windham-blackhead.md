@@ -5,6 +5,7 @@ type: Out & Back?
 slug: 2016-08-06-windham-blackhead
 miles: ???
 hike_hours: ???
+elevation_ft: ???
 peaks: Windham, Blackhead
 hikers: Dan, Max, Gabe
 ---

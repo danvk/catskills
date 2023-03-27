@@ -3,8 +3,9 @@ title: Indian Head
 date: 2018-07-08
 type: Out & Back
 slug: 2018-07-08-indian-head
-miles: None
-hike_hours: None
+miles: ???
+hike_hours: ???
+elevation_ft: ???
 peaks: Indian Head
 hikers: Dan, Alex
 ---

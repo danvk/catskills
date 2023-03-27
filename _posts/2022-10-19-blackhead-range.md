@@ -5,6 +5,7 @@ type: Through (Car Stack)
 slug: 2022-10-19-blackhead-range
 miles: 8.2
 hike_hours: 6.5
+elevation_ft: ???
 peaks: Blackhead, Black Dome, Thomas Cole
 hikers: Max, Sarah, John G
 ---

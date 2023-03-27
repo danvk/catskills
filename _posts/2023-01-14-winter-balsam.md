@@ -5,6 +5,7 @@ title: Balsam (Winter)
 type: Out & Back
 miles: 6.5
 hike_hours: 5.0
+elevation_ft: 2070
 peaks: Balsam
 hikers: Dan, Alex, Max
 excerpt: Second of the four required winter peaks, in which Alex, Max and I become the very first customers at the Eastwind bar.

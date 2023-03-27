@@ -5,6 +5,7 @@ type: Out & Back
 slug: 2022-09-09-kaaterskill
 miles: 7.8
 hike_hours: 6.0
+elevation_ft: ???
 peaks: Kaaterskill High Peak
 hikers: Dan, Alex, John G
 excerpt: Quite surprising to find an airplane in the woods at the top of your hike!

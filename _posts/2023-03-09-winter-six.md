@@ -5,6 +5,7 @@ type: Through (Car Stack)
 slug: 2023-03-09-winter-six
 miles: 12.7
 hike_hours: 10
+elevation_ft: 4200
 peaks: Friday, Balsam Cap, Rocky, Lone, Table, Peekamoose
 hikers: Dan, Michael D + Eight more from 3500 Club
 ---

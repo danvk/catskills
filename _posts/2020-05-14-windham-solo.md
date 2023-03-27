@@ -5,6 +5,7 @@ type: Out & Back
 slug: 2020-05-14-windham-solo
 miles: ???
 hike_hours: ???
+elevation_ft: ???
 peaks: Windham
 hikers: Dan
 ---

@@ -5,6 +5,7 @@ type: Loop?
 slug: 2022-07-16-indian-twin
 miles: ???
 hike_hours: ???
+elevation_ft: ???
 peaks: Indian Head, Twin
 hikers: Dan, Alex
 ---

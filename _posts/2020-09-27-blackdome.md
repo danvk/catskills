@@ -3,8 +3,9 @@ title: Foggy Black Dome
 date: 2020-09-27
 type: Out & Back
 slug: 2020-09-27-blackdome
-miles: None
-hike_hours: None
+miles: ???
+hike_hours: ???
+elevation_ft: ???
 peaks: Black Dome
 hikers: Dan, Alex
 ---

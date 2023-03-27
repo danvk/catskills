@@ -7,6 +7,7 @@ peaks: Sugarloaf, Twin
 hikers: Dan, Max
 hike_hours: ???
 miles: ???
+elevation_ft: ???
 ---
 
 Overnight hiking w/ Max. My first visit to the Catskills!

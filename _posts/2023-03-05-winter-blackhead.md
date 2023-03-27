@@ -5,6 +5,7 @@ type: Loop
 slug: 2023-03-05-winter-blackhead
 miles: 6.2
 hike_hours: 5.0
+elevation_ft: 1811
 peaks: Blackhead
 hikers: Dan, Alex, John G
 excerpt: The last of the four required winter peaks and my first Catskills snowshoeing adventure. Alex's "personal Everest".

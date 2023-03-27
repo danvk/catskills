@@ -5,6 +5,7 @@ type: Out & Back
 slug: 2023-01-08-winter-panther
 miles: 8.0
 hike_hours: 5.0
+elevation_ft: ???
 peaks: Panther
 hikers: Dan, Alex
 excerpt: First of the four required winter peaks, in which Alex and I finally summit Panther and do a surprise bushwhack on the way down.

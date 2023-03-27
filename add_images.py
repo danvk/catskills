@@ -14,12 +14,12 @@ if __name__ == '__main__':
     assets_dir = Path('.') / 'assets' / slug
     date = slug[:10]
 
+    baseurl = '{{site.baseurl}}'
     images = [
-        f'![Alt Text]({{site.baseurl}}/{path})'
+        f'![Alt Text]({baseurl}/{path})'
         for path in assets_dir.glob('*.jpeg')
     ]
     images_md = '\n'.join(images)
-    baseurl = '{{site.baseurl}}'
 
     old_post = open(md_file).read()
     _, frontmatter, post = old_post.split('---')

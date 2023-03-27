@@ -11,6 +11,7 @@
   "dependencies": {
     "@tanstack/react-query": "^4.28.0",
     "classnames": "^2.3.2",
+    "dygraphs": "^2.2.1",
     "gpxparser": "^3.0.8",
     "mapbox-gl": "^2.13.0",
     "react": "^18.2.0",
@@ -19,6 +20,7 @@
     "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
+    "@types/dygraphs": "^2.1.4",
     "@types/geojson": "^7946.0.10",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",

@@ -6,7 +6,8 @@ import { Hike } from "./HikeList";
 import "mapbox-gl/dist/mapbox-gl.css";
 import React from "react";
 import { FeatureCollection, LineString } from "geojson";
-import { TrackProps } from "./HikeInfoPanel";
+import { Point, TrackProps } from "./HikeInfoPanel";
+import mapboxgl from "mapbox-gl";
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoiZGFudmsiLCJhIjoiY2lrZzJvNDR0MDBhNXR4a2xqNnlsbWx3ciJ9.myJhweYd_hrXClbKk8XLgQ";
@@ -14,6 +15,7 @@ const MAPBOX_TOKEN =
 export interface Props {
   hikes: UseQueryResult<readonly Hike[], unknown>;
   tracks: UseQueryResult<FeatureCollection<LineString, TrackProps>, unknown>;
+  scrubPoint: Point | null;
   selectedHikeSlug: string | null;
   onSelectHike: (slug: string) => void;
 }
@@ -28,6 +30,15 @@ export const parkStyle = {
     "line-color": "rgb(0, 32, 248)",
     "line-width": 1,
   },
+} satisfies Partial<mapboxgl.AnyLayer>;
+
+const scrubStyle = {
+  type: 'circle',
+  paint: {
+    'circle-color': 'blue',
+    'circle-stroke-color': 'white',
+    'circle-stroke-width': 1,
+  }
 } satisfies Partial<mapboxgl.AnyLayer>;
 
 const peakTypeColor: mapboxgl.Expression = [
@@ -91,10 +102,13 @@ export function useMapImage({
 }
 
 function noop() {}
-const EMPTY_FC: FeatureCollection<any, any> = {type: 'FeatureCollection', features: []};
+const EMPTY_FC: FeatureCollection<any, any> = {
+  type: "FeatureCollection",
+  features: [],
+};
 
 export function HikeMap(props: Props) {
-  const { hikes, tracks } = props;
+  const { hikes, tracks, scrubPoint } = props;
   const hiked = React.useMemo(
     () =>
       hikes.status === "success"
@@ -102,6 +116,24 @@ export function HikeMap(props: Props) {
         : null,
     [hikes]
   );
+
+  const scrubFeature: FeatureCollection = React.useMemo(() => {
+    return {
+      type: "FeatureCollection",
+      features: scrubPoint
+        ? [
+            {
+              type: "Feature",
+              properties: {},
+              geometry: {
+                type: "Point",
+                coordinates: [scrubPoint.lng, scrubPoint.lat],
+              },
+            },
+          ]
+        : [],
+    };
+  }, [scrubPoint]);
 
   return (
     <div id="map">
@@ -113,24 +145,31 @@ export function HikeMap(props: Props) {
         }}
         mapStyle="mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t"
         mapboxAccessToken={MAPBOX_TOKEN}
-        onClick={e => {
-          const {properties} = e.features?.[0] ?? {};
+        onClick={(e) => {
+          const { properties } = e.features?.[0] ?? {};
           if (properties?.slug) {
             props.onSelectHike(properties.slug);
           }
         }}
-        interactiveLayerIds={['tracks']}
+        interactiveLayerIds={["tracks"]}
       >
         <Source id="catskill-park" type="geojson" data="catskill-park.geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
         <MountainPeaks hiked={hiked} />
         <HikeTracks
-          tracks={tracks.status === 'loading' || tracks.status === 'error' ? EMPTY_FC : tracks.data}
+          tracks={
+            tracks.status === "loading" || tracks.status === "error"
+              ? EMPTY_FC
+              : tracks.data
+          }
           selectedHikeSlug={props.selectedHikeSlug}
           onSelectHike={props.onSelectHike}
           onHoverHike={noop}
         />
+        <Source id="scrub" type="geojson" data={scrubFeature}>
+          <Layer id="scrub" {...scrubStyle} />
+        </Source>
       </Map>
     </div>
   );
@@ -199,8 +238,8 @@ function HikeTracks(props: HikeTrackProps) {
           "line-color": [
             "case",
             ["==", ["get", "slug"], selectedHikeSlug],
-            'darkblue',
-            'rgb(28,109,163)',
+            "darkblue",
+            "rgb(28,109,163)",
           ],
           "line-width": [
             "case",

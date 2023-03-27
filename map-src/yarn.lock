@@ -607,10 +607,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/dygraphs@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "@types/dygraphs@npm:2.1.4"
+  dependencies:
+    "@types/google.visualization": "*"
+  checksum: e101fd80a13703ebd21fe43b10872b3bd7bba9f899575b4eb604840e0f61be833f067dbe0511320122dd09f6ae7fa239984514769fb4f853bb99eba734cad61c
+  languageName: node
+  linkType: hard
+
 "@types/geojson@npm:*, @types/geojson@npm:^7946.0.10":
   version: 7946.0.10
   resolution: "@types/geojson@npm:7946.0.10"
   checksum: 12c407c2dc93ecb26c08af533ee732f1506a9b29456616ba7ba1d525df96206c28ddf44a528f6a5415d7d22893e9d967420940a9c095ee5e539c1eba5fefc1f4
+  languageName: node
+  linkType: hard
+
+"@types/google.visualization@npm:*":
+  version: 0.0.68
+  resolution: "@types/google.visualization@npm:0.0.68"
+  checksum: b0cf2b416c3159fbd2f2284c5e3fdcd31b5f540549be6ad71639f40b697732d1d22d086f21288d7f7caf88eb85367f69321bf7dc1c34c03b7c02c7e5c0bf82ce
   languageName: node
   linkType: hard
 
@@ -1133,6 +1149,13 @@ __metadata:
   dependencies:
     webidl-conversions: ^4.0.2
   checksum: f564a9c0915dcb83ceefea49df14aaed106b1468fbe505119e8bcb0b77e242534f3aba861978537c0fc9dc6f35b176d0ffc77b3e342820fb27a8f215e7ae4d52
+  languageName: node
+  linkType: hard
+
+"dygraphs@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "dygraphs@npm:2.2.1"
+  checksum: 871d4c2fdf441d8cb819ddca7cd2aa4321587d625775fe85560b902c7d443412503393100e1375489f3ecd36ae4e90fbe1b1e6d68adb04952cd9f8ff3201354e
   languageName: node
   linkType: hard
 
@@ -1973,11 +1996,13 @@ __metadata:
   resolution: "map-vite@workspace:."
   dependencies:
     "@tanstack/react-query": ^4.28.0
+    "@types/dygraphs": ^2.1.4
     "@types/geojson": ^7946.0.10
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
     "@vitejs/plugin-react": ^3.1.0
     classnames: ^2.3.2
+    dygraphs: ^2.2.1
     gpxparser: ^3.0.8
     mapbox-gl: ^2.13.0
     react: ^18.2.0

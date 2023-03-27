@@ -7,7 +7,7 @@ import { fetchJSON } from "./fetch";
 import { Hike, HikeList } from "./HikeList";
 import { HikeMap } from "./HikeMap";
 import React from "react";
-import { HikeInfoPanel, TrackProps } from "./HikeInfoPanel";
+import { HikeInfoPanel, Point, TrackProps } from "./HikeInfoPanel";
 import { FeatureCollection, LineString } from "geojson";
 
 function App() {
@@ -34,6 +34,8 @@ function HikePage() {
     setSearchParams({ hike });
   }, []);
 
+  const [scrubPoint, setScrubPoint] = React.useState<Point | null>(null);
+
   return (
     <div className="App">
       <HikeList
@@ -46,6 +48,7 @@ function HikePage() {
         tracks={tracksResource}
         selectedHikeSlug={selectedHikeSlug}
         onSelectHike={handleSelectHike}
+        scrubPoint={scrubPoint}
       />
       {selectedHikeSlug && tracksResource.status === "success" && hikeResource.status === 'success' ? (
         <HikeInfoPanel
@@ -54,6 +57,8 @@ function HikePage() {
           trackFeatureProps={tracksResource.data.features
             .map(f => f.properties)
             .filter(p => p.slug === selectedHikeSlug)}
+
+          onScrubPoint={setScrubPoint}
         />
       ) : null}
     </div>

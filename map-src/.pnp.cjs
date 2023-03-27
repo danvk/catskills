@@ -29,11 +29,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@tanstack/react-query", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:4.28.0"],\
+            ["@types/dygraphs", "npm:2.1.4"],\
             ["@types/geojson", "npm:7946.0.10"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:3.1.0"],\
             ["classnames", "npm:2.3.2"],\
+            ["dygraphs", "npm:2.2.1"],\
             ["gpxparser", "npm:3.0.8"],\
             ["mapbox-gl", "npm:2.13.0"],\
             ["react", "npm:18.2.0"],\
@@ -798,11 +800,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/dygraphs", [\
+        ["npm:2.1.4", {\
+          "packageLocation": "./.yarn/cache/@types-dygraphs-npm-2.1.4-754ad1d198-e101fd80a1.zip/node_modules/@types/dygraphs/",\
+          "packageDependencies": [\
+            ["@types/dygraphs", "npm:2.1.4"],\
+            ["@types/google.visualization", "npm:0.0.68"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/geojson", [\
         ["npm:7946.0.10", {\
           "packageLocation": "./.yarn/cache/@types-geojson-npm-7946.0.10-deca8d1263-12c407c2dc.zip/node_modules/@types/geojson/",\
           "packageDependencies": [\
             ["@types/geojson", "npm:7946.0.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/google.visualization", [\
+        ["npm:0.0.68", {\
+          "packageLocation": "./.yarn/cache/@types-google.visualization-npm-0.0.68-cc0870fc0a-b0cf2b416c.zip/node_modules/@types/google.visualization/",\
+          "packageDependencies": [\
+            ["@types/google.visualization", "npm:0.0.68"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1427,6 +1448,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["domexception", "npm:1.0.1"],\
             ["webidl-conversions", "npm:4.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dygraphs", [\
+        ["npm:2.2.1", {\
+          "packageLocation": "./.yarn/cache/dygraphs-npm-2.2.1-1df6957209-871d4c2fdf.zip/node_modules/dygraphs/",\
+          "packageDependencies": [\
+            ["dygraphs", "npm:2.2.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2345,11 +2375,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["map-vite", "workspace:."],\
             ["@tanstack/react-query", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:4.28.0"],\
+            ["@types/dygraphs", "npm:2.1.4"],\
             ["@types/geojson", "npm:7946.0.10"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:3.1.0"],\
             ["classnames", "npm:2.3.2"],\
+            ["dygraphs", "npm:2.2.1"],\
             ["gpxparser", "npm:3.0.8"],\
             ["mapbox-gl", "npm:2.13.0"],\
             ["react", "npm:18.2.0"],\

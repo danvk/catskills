@@ -1,35 +1,38 @@
 import { useQuery } from "@tanstack/react-query";
-import GpxParser from 'gpxparser';
+import GpxParser from "gpxparser";
+import React from "react";
+
 import { fetchText } from "./fetch";
 import { Hike } from "./HikeList";
 
 import "./HikeDetails.css";
-import React from "react";
+import { Dygraph } from "./Dygraph";
 
 export interface TrackProps {
   slug: string;
   date: string;
   path: string;
-  season: 'spring' | 'summer' | 'fall' | 'winter';
+  season: "spring" | "summer" | "fall" | "winter";
 }
 
 export interface Props {
   selectedHikeSlug: string;
   hike: Hike;
   trackFeatureProps: TrackProps[];
+  onScrubPoint: (latLng: Point | null) => void;
 }
 
 export function HikeInfoPanel(props: Props) {
-  const {selectedHikeSlug, hike, trackFeatureProps} = props;
+  const { selectedHikeSlug, hike, trackFeatureProps } = props;
   const track = trackFeatureProps[0];
-  const gpxPath = '../assets/' + track.path;
+  const gpxPath = "../assets/" + track.path;
   const gpxResource = useQuery({
     queryKey: [gpxPath],
     queryFn: fetchText,
-  })
+  });
 
   const gpx = React.useMemo(() => {
-    if (gpxResource.status !== 'success') {
+    if (gpxResource.status !== "success") {
       return null;
     }
     const parser = new GpxParser();
@@ -40,17 +43,49 @@ export function HikeInfoPanel(props: Props) {
   return (
     <div id="hike-details">
       <h3>{hike.title}</h3>
-      {track.date} ({track.season})
-      {gpx ? <ElevationChart gpx={gpx} /> : null}
+      {gpx ? <ElevationChart gpx={gpx} onScrubPoint={props.onScrubPoint} /> : null}
     </div>
-  )
+  );
 }
 
-function ElevationChart(props: {gpx: GpxParser}) {
-  const {gpx} = props;
+const FT_IN_M = 3.28084;
+
+const DYGRAPH_STYLE: React.CSSProperties = {
+  width: 500,
+  height: 160,
+};
+const CHART_LABELS = ["Date/Time", "Elevation (ft)"];
+
+export interface Point {
+  lat: number;
+  lng: number;
+}
+
+function ElevationChart(props: {
+  gpx: GpxParser;
+  onScrubPoint: (latLng: Point | null) => void;
+}) {
+  const { gpx } = props;
+  const table = React.useMemo(() => {
+    return gpx.tracks[0].points.map((p) => [p.time, p.ele * FT_IN_M]);
+  }, [gpx]);
+
+  console.log(table);
+
   return (
     <div id="elevation-chart">
-      {gpx.tracks[0].points.length} points
+      <Dygraph
+        file={table}
+        ylabel="Elevation (ft)"
+        axisLabelWidth={60}
+        labels={CHART_LABELS}
+        style={DYGRAPH_STYLE}
+        labelsSeparateLines
+        highlightCallback={(_e, _x, _pt, row) => {
+          const pt = gpx.tracks[0].points[row];
+          props.onScrubPoint({ lat: pt.lat, lng: pt.lon });
+        }}
+      />
     </div>
-  )
+  );
 }

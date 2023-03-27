@@ -25,8 +25,7 @@ if __name__ == '__main__':
     _, frontmatter, post = old_post.split('---')
     new_post = f'''---
 date: {date}
-slug: {slug}{frontmatter}
----
+slug: {slug}{frontmatter}---
 [![GPS Track of the hike]({baseurl}/assets/{slug}/track.png)]({baseurl}/map/?hike={slug})
 
 {images_md}{post}'''

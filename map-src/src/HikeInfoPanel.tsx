@@ -43,7 +43,9 @@ export function HikeInfoPanel(props: Props) {
   return (
     <div id="hike-details">
       <h3>{hike.title}</h3>
-      {gpx ? <ElevationChart gpx={gpx} onScrubPoint={props.onScrubPoint} /> : null}
+      {gpx ? (
+        <ElevationChart gpx={gpx} onScrubPoint={props.onScrubPoint} />
+      ) : null}
     </div>
   );
 }
@@ -65,12 +67,20 @@ function ElevationChart(props: {
   gpx: GpxParser;
   onScrubPoint: (latLng: Point | null) => void;
 }) {
-  const { gpx } = props;
+  const { gpx, onScrubPoint } = props;
   const table = React.useMemo(() => {
     return gpx.tracks[0].points.map((p) => [p.time, p.ele * FT_IN_M]);
   }, [gpx]);
 
-  console.log(table);
+  const highlightCallback: React.ComponentProps<
+    typeof Dygraph
+  >["highlightCallback"] = React.useCallback(
+    (_e, _x, _pt, row) => {
+      const pt = gpx.tracks[0].points[row];
+      onScrubPoint({ lat: pt.lat, lng: pt.lon });
+    },
+    [gpx, onScrubPoint]
+  );
 
   return (
     <div id="elevation-chart">
@@ -81,10 +91,7 @@ function ElevationChart(props: {
         labels={CHART_LABELS}
         style={DYGRAPH_STYLE}
         labelsSeparateLines
-        highlightCallback={(_e, _x, _pt, row) => {
-          const pt = gpx.tracks[0].points[row];
-          props.onScrubPoint({ lat: pt.lat, lng: pt.lon });
-        }}
+        highlightCallback={highlightCallback}
       />
     </div>
   );

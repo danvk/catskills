@@ -4,43 +4,9 @@
 import json
 from collections import Counter
 
+from constants import peaks
 from make_geojson import extract_season
-
-peaks = [
-    'Slide',
-    'Wittenberg',
-    'Cornell',
-    'Friday',
-    'Balsam Cap',
-    'Rocky',
-    'Lone',
-    'Table',
-    'Peekamoose',
-    'Panther',
-    'Balsam',
-    'Eagle',
-    'Big Indian',
-    'Fir',
-    'Balsam Lake',
-    'Bearpen',
-    'Vly',
-    'Halcott',
-    'North Dome',
-    'Sherrill',
-    'Rusk',
-    'Westkill',
-    'Southwest Hunter',
-    'Hunter',
-    'Plateau',
-    'Sugarloaf',
-    'Indian Head',
-    'Twin',
-    'Blackhead',
-    'Black Dome',
-    'Thomas Cole',
-    'Windham',
-    'Kaaterskill High Peak',
-]
+from utils import sub
 
 winter_peaks = [
     'Slide',
@@ -121,14 +87,6 @@ for peak in set(peaks).difference(completed_2023):
 num_done = len([*completed_2023])
 num_total = len(peaks)
 year_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
-
-def sub(html: str, tag: str, repl: str):
-    start_tag = f'<!--{tag}-->'
-    end_tag = f'<!--/{tag}-->'
-    start_pos = html.index(start_tag) + len(start_tag)
-    end_pos = html.index(end_tag)
-    return html[:start_pos] + repl + html[end_pos:]
-
 
 # Patch index.md
 NEW8 = '\n        '

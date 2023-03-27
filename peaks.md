@@ -5,8 +5,9 @@ layout: page
 
 ## Catskills High Peaks
 
-| Rank | Height (ft) | Peak | Hike |
-| ---- | ---- | ---- | ---- |
-| 1 | 4184 | Slide | blah blah<br>blah blah |
+http://catskill-3500-club.org/peaks.php
+
+<!--by-peak-->
+<!--/by-peak-->
 
 ## Other Peaks

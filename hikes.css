@@ -62,3 +62,7 @@
 .progress-label {
     text-align: right;
 }
+
+#catskills-high-peaks ~ table tr {
+    vertical-align: top;
+}

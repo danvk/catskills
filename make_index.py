@@ -20,8 +20,9 @@ for hike in hikes:
         hikes_by_peak[peak].append(hike)
 
 table_md = '''
-| Rank | Peak | Height (ft) | Type | Hike |
-| ---- | ---- | ----------- | ---- | ---- |
+
+| Rank | Peak | Height | Type | Hike(s) |
+| :--: | ---- | -----: | ---- | ------- |
 '''
 
 for peak in peak_details:
@@ -34,7 +35,7 @@ for peak in peak_details:
         slug = hike['slug']
         hike_links.append(f'[{date}: {title}][{slug}]')
     hikes_md = '<br>'.join(hike_links) if hike_links else '_None Yet!_'
-    table_md += f'| {peak.rank} | {peak.name} | {peak.height_ft} | {peak.type} | {hikes_md} |\n'
+    table_md += f'| {peak.rank} | {peak.name} | {peak.height_ft}\' | {peak.type} | {hikes_md} |\n'
 
 table_md += '\n'
 for hike in hikes:

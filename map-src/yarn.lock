@@ -630,7 +630,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mapbox-gl@npm:^2.6.0":
+"@types/mapbox-gl@npm:^2.6.0, @types/mapbox-gl@npm:^2.7.10":
   version: 2.7.10
   resolution: "@types/mapbox-gl@npm:2.7.10"
   dependencies:
@@ -1998,6 +1998,7 @@ __metadata:
     "@tanstack/react-query": ^4.28.0
     "@types/dygraphs": ^2.1.4
     "@types/geojson": ^7946.0.10
+    "@types/mapbox-gl": ^2.7.10
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
     "@vitejs/plugin-react": ^3.1.0

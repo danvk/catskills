@@ -4,7 +4,7 @@ Quickstart:
 
     yarn dev
 
-Then open the URL it prints.
+Then open http://localhost:5173/catskills/map/ (note: trailing slash is required).
 
 To use VS Code with this project, you need to open it from this directory.
 

@@ -7,6 +7,8 @@ import { fetchJSON } from "./fetch";
 import { Hike, HikeList } from "./HikeList";
 import { HikeMap } from "./HikeMap";
 import React from "react";
+import { HikeInfoPanel, TrackProps } from "./HikeInfoPanel";
+import { FeatureCollection, LineString } from "geojson";
 
 function App() {
   return (
@@ -21,11 +23,15 @@ function HikePage() {
     queryKey: ["log.json"],
     queryFn: fetchJSON<Hike[]>,
   });
+  const tracksResource = useQuery({
+    queryKey: ["tracks.geojson"],
+    queryFn: fetchJSON<FeatureCollection<LineString, TrackProps>>,
+  })
 
   const [searchParams, setSearchParams] = useSearchParams();
-  const selectedHikeSlug = searchParams.get('hike');
+  const selectedHikeSlug = searchParams.get("hike");
   const handleSelectHike = React.useCallback((hike: string) => {
-    setSearchParams({hike});
+    setSearchParams({ hike });
   }, []);
 
   return (
@@ -37,9 +43,19 @@ function HikePage() {
       />
       <HikeMap
         hikes={hikeResource}
+        tracks={tracksResource}
         selectedHikeSlug={selectedHikeSlug}
         onSelectHike={handleSelectHike}
       />
+      {selectedHikeSlug && tracksResource.status === "success" && hikeResource.status === 'success' ? (
+        <HikeInfoPanel
+          selectedHikeSlug={selectedHikeSlug}
+          hike={hikeResource.data.find(hike => hike.slug === selectedHikeSlug)!}
+          trackFeatureProps={tracksResource.data.features
+            .map(f => f.properties)
+            .filter(p => p.slug === selectedHikeSlug)}
+        />
+      ) : null}
     </div>
   );
 }

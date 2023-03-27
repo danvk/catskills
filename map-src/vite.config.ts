@@ -8,4 +8,10 @@ export default defineConfig({
   build: {
     outDir: '../map',
   },
+  server: {
+    // See https://vitejs.dev/config/server-options.html#server-proxy
+    proxy: {
+      '/catskills/assets': 'http://127.0.0.1:4000'
+    }
+  }
 })

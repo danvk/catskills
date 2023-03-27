@@ -5,12 +5,15 @@ import { Hike } from "./HikeList";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import React from "react";
+import { FeatureCollection, LineString } from "geojson";
+import { TrackProps } from "./HikeInfoPanel";
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoiZGFudmsiLCJhIjoiY2lrZzJvNDR0MDBhNXR4a2xqNnlsbWx3ciJ9.myJhweYd_hrXClbKk8XLgQ";
 
 export interface Props {
   hikes: UseQueryResult<readonly Hike[], unknown>;
+  tracks: UseQueryResult<FeatureCollection<LineString, TrackProps>, unknown>;
   selectedHikeSlug: string | null;
   onSelectHike: (slug: string) => void;
 }
@@ -88,9 +91,10 @@ export function useMapImage({
 }
 
 function noop() {}
+const EMPTY_FC: FeatureCollection<any, any> = {type: 'FeatureCollection', features: []};
 
 export function HikeMap(props: Props) {
-  const { hikes } = props;
+  const { hikes, tracks } = props;
   const hiked = React.useMemo(
     () =>
       hikes.status === "success"
@@ -122,6 +126,7 @@ export function HikeMap(props: Props) {
         </Source>
         <MountainPeaks hiked={hiked} />
         <HikeTracks
+          tracks={tracks.status === 'loading' || tracks.status === 'error' ? EMPTY_FC : tracks.data}
           selectedHikeSlug={props.selectedHikeSlug}
           onSelectHike={props.onSelectHike}
           onHoverHike={noop}
@@ -172,13 +177,14 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
 }
 
 interface HikeTrackProps {
+  tracks: FeatureCollection<LineString, TrackProps>;
   selectedHikeSlug: string | null;
   onSelectHike: (slug: string) => void;
   onHoverHike: (slug: string) => void;
 }
 
 function HikeTracks(props: HikeTrackProps) {
-  const { selectedHikeSlug } = props;
+  const { selectedHikeSlug, tracks } = props;
 
   // TODO: show selected track on top
   const trackStyle = React.useMemo(
@@ -208,7 +214,7 @@ function HikeTracks(props: HikeTrackProps) {
   );
 
   return (
-    <Source type="geojson" id="tracks" data="tracks.geojson">
+    <Source type="geojson" id="tracks" data={tracks}>
       <Layer id="tracks" {...trackStyle} />
     </Source>
   );

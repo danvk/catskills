@@ -1,13 +1,13 @@
+import type mapboxgl from "mapbox-gl";
 import Map, { Layer, Source, useMap } from "react-map-gl";
-
 import { UseQueryResult } from "@tanstack/react-query";
-import { Hike } from "./HikeList";
-
-import "mapbox-gl/dist/mapbox-gl.css";
 import React from "react";
+
+import { Hike } from "./HikeList";
 import { FeatureCollection, LineString } from "geojson";
 import { Point, TrackProps } from "./HikeInfoPanel";
-import mapboxgl from "mapbox-gl";
+
+import "mapbox-gl/dist/mapbox-gl.css";
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoiZGFudmsiLCJhIjoiY2lrZzJvNDR0MDBhNXR4a2xqNnlsbWx3ciJ9.myJhweYd_hrXClbKk8XLgQ";

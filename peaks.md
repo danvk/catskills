@@ -1,7 +1,9 @@
 ---
 title: By Peak
-layout: page
+layout: base
 ---
+
+# Hikes by Peak
 
 ## Catskills High Peaks
 

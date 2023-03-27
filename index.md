@@ -133,10 +133,10 @@ Progress:
     </div>
 </div>
 
-
-Check out the posts below for individual hikes, or this nifty interactive map view:
+Check out the posts below for individual hikes. You can also view [hikes by peak] or use this nifty interactive map view:
 
 [<img src="/catskills/assets/img/map-preview.png" width="368" height="368" alt="Map of the Catskills">](map/)
 
 [club]: http://catskill-3500-club.org/
 [njny]: https://www.njnyhikes.com/p/map.html
+[hikes by peak]: peaks.html

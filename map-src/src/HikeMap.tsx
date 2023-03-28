@@ -43,20 +43,6 @@ const scrubStyle = {
   },
 } satisfies Partial<mapboxgl.AnyLayer>;
 
-const peakTypeColor: mapboxgl.Expression = [
-  "match",
-  ["get", "type"],
-  "dec",
-  "darkgreen",
-  "trail",
-  "brown",
-  "bushwhack",
-  "red",
-  "closed",
-  "pink",
-  "black",
-];
-
 const peakLabelStyleBase = {
   type: "symbol",
   layout: {
@@ -69,7 +55,6 @@ const peakLabelStyleBase = {
     "icon-allow-overlap": true,
   },
   paint: {
-    "text-color": peakTypeColor,
   },
 } satisfies Partial<mapboxgl.AnyLayer>;
 
@@ -194,6 +179,7 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
   const hikedColorExpr = React.useMemo(
     (): mapboxgl.Expression => [
       "case",
+      ["==", ["get", "type"], "closed"], "pink",
       ["in", ["get", "name"], ["literal", hiked]],
       "green",
       "red",

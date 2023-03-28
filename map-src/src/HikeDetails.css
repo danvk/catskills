@@ -10,3 +10,9 @@
     padding: 8px;
     box-sizing: border-box;
 }
+
+#elevation-legend {
+    position: absolute;
+    top: 24px;
+    right: 12px;
+}

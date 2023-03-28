@@ -5,7 +5,7 @@ import React from "react";
 
 import { Hike } from "./HikeList";
 import { FeatureCollection, LineString } from "geojson";
-import { Point, TrackProps } from "./HikeInfoPanel";
+import { ScrubPoint, TrackProps } from "./HikeInfoPanel";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 
@@ -15,7 +15,7 @@ const MAPBOX_TOKEN =
 export interface Props {
   hikes: UseQueryResult<readonly Hike[], unknown>;
   tracks: UseQueryResult<FeatureCollection<LineString, TrackProps>, unknown>;
-  scrubPoint: Point | null;
+  scrubPoint: ScrubPoint | null;
   selectedHikeSlug: string | null;
   onSelectHike: (slug: string) => void;
 }
@@ -33,12 +33,13 @@ export const parkStyle = {
 } satisfies Partial<mapboxgl.AnyLayer>;
 
 const scrubStyle = {
-  type: 'circle',
+  type: "circle",
   paint: {
-    'circle-color': 'blue',
-    'circle-stroke-color': 'white',
-    'circle-stroke-width': 1,
-  }
+    "circle-color": "blue",
+    "circle-stroke-color": "white",
+    "circle-stroke-width": 2,
+    "circle-radius": 7,
+  },
 } satisfies Partial<mapboxgl.AnyLayer>;
 
 const peakTypeColor: mapboxgl.Expression = [
@@ -55,7 +56,7 @@ const peakTypeColor: mapboxgl.Expression = [
   "black",
 ];
 
-const peakLabelStyle = {
+const peakLabelStyleBase = {
   type: "symbol",
   layout: {
     "text-field": ["get", "name"],
@@ -183,6 +184,16 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
     sdf: true,
   });
 
+  const hikedColorExpr = React.useMemo(
+    (): mapboxgl.Expression => [
+      "case",
+      ["in", ["get", "name"], ["literal", hiked]],
+      "green",
+      "red",
+    ],
+    [hiked]
+  );
+
   const peakSymbols = React.useMemo(
     () =>
       ({
@@ -194,15 +205,20 @@ function MountainPeaks(props: { hiked: readonly string[] | null }) {
           "icon-size": 0.25,
         },
         paint: {
-          // 'circle-radius': 4,
-          "icon-color": peakTypeColor,
-          // 'icon-halo-color': 'rgba(0, 0, 0, 0.5)',
-          // 'icon-halo-width': 2,
-          // 'icon-halo-blur': 0.5,
-          // 'circle-stroke-color': 'white',
+          "icon-color": hikedColorExpr,
         },
       } satisfies Partial<mapboxgl.AnyLayer>),
-    [hiked]
+    [hikedColorExpr]
+  );
+
+  const peakLabelStyle = React.useMemo(
+    () => ({
+      ...peakLabelStyleBase,
+      paint: {
+        "text-color": hikedColorExpr,
+      },
+    }),
+    [hikedColorExpr]
   );
 
   return (

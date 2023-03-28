@@ -7,7 +7,7 @@ import { fetchJSON } from "./fetch";
 import { Hike, HikeList } from "./HikeList";
 import { HikeMap } from "./HikeMap";
 import React from "react";
-import { HikeInfoPanel, Point, TrackProps } from "./HikeInfoPanel";
+import { HikeInfoPanel, ScrubPoint, TrackProps } from "./HikeInfoPanel";
 import { FeatureCollection, LineString } from "geojson";
 
 function App() {
@@ -26,7 +26,7 @@ function HikePage() {
   const tracksResource = useQuery({
     queryKey: ["tracks.geojson"],
     queryFn: fetchJSON<FeatureCollection<LineString, TrackProps>>,
-  })
+  });
 
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedHikeSlug = searchParams.get("hike");
@@ -34,7 +34,7 @@ function HikePage() {
     setSearchParams({ hike });
   }, []);
 
-  const [scrubPoint, setScrubPoint] = React.useState<Point | null>(null);
+  const [scrubPoint, setScrubPoint] = React.useState<ScrubPoint | null>(null);
 
   return (
     <div className="App">
@@ -50,15 +50,19 @@ function HikePage() {
         onSelectHike={handleSelectHike}
         scrubPoint={scrubPoint}
       />
-      {selectedHikeSlug && tracksResource.status === "success" && hikeResource.status === 'success' ? (
+      {selectedHikeSlug &&
+      tracksResource.status === "success" &&
+      hikeResource.status === "success" ? (
         <HikeInfoPanel
           selectedHikeSlug={selectedHikeSlug}
-          hike={hikeResource.data.find(hike => hike.slug === selectedHikeSlug)!}
+          hike={
+            hikeResource.data.find((hike) => hike.slug === selectedHikeSlug)!
+          }
           trackFeatureProps={tracksResource.data.features
-            .map(f => f.properties)
-            .filter(p => p.slug === selectedHikeSlug)}
-
+            .map((f) => f.properties)
+            .filter((p) => p.slug === selectedHikeSlug)}
           onScrubPoint={setScrubPoint}
+          scrubPoint={scrubPoint}
         />
       ) : null}
     </div>

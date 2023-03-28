@@ -19,7 +19,8 @@ export interface Props {
   selectedHikeSlug: string;
   hike: Hike;
   trackFeatureProps: TrackProps[];
-  onScrubPoint: (latLng: Point | null) => void;
+  scrubPoint: ScrubPoint | null;
+  onScrubPoint: (latLng: ScrubPoint | null) => void;
 }
 
 export function HikeInfoPanel(props: Props) {
@@ -44,7 +45,7 @@ export function HikeInfoPanel(props: Props) {
     <div id="hike-details">
       <h3>{hike.title}</h3>
       {gpx ? (
-        <ElevationChart gpx={gpx} onScrubPoint={props.onScrubPoint} />
+        <ElevationChart gpx={gpx} scrubPoint={props.scrubPoint} onScrubPoint={props.onScrubPoint} />
       ) : null}
     </div>
   );
@@ -53,46 +54,72 @@ export function HikeInfoPanel(props: Props) {
 const FT_IN_M = 3.28084;
 
 const DYGRAPH_STYLE: React.CSSProperties = {
-  width: 500,
+  width: 550,
   height: 160,
 };
 const CHART_LABELS = ["Date/Time", "Elevation (ft)"];
 
-export interface Point {
+export interface ScrubPoint {
+  time: Date;
   lat: number;
   lng: number;
+  eleMeters: number;
 }
 
-type HighlightCallback = React.ComponentProps<typeof Dygraph>["highlightCallback"] & Function;
+type HighlightCallback = React.ComponentProps<
+  typeof Dygraph
+>["highlightCallback"] &
+  Function;
 
 function ElevationChart(props: {
   gpx: GpxParser;
-  onScrubPoint: (latLng: Point | null) => void;
+  scrubPoint: ScrubPoint | null;
+  onScrubPoint: (latLng: ScrubPoint | null) => void;
 }) {
-  const { gpx, onScrubPoint } = props;
+  const { gpx, scrubPoint, onScrubPoint } = props;
   const table = React.useMemo(() => {
-    return gpx.tracks[0].points.map((p) => [p.time, p.ele * FT_IN_M]);
+    return gpx.tracks[0].points.filter(p => p.ele).map((p) => [p.time, p.ele * FT_IN_M]);
   }, [gpx]);
 
   const highlightCallback = React.useCallback<HighlightCallback>(
-    (_e, _x, _pt, row) => {
-      // XXX this doesn't work when you're zoomed :(
+    function (this: Dygraph, _e, x, _pt, row) {
       const pt = gpx.tracks[0].points[row];
-      onScrubPoint({ lat: pt.lat, lng: pt.lon });
+      onScrubPoint({
+        lat: pt.lat,
+        lng: pt.lon,
+        time: pt.time,
+        eleMeters: pt.ele,
+      });
     },
     [gpx, onScrubPoint]
   );
 
+  const unhighlightCallback = React.useCallback(
+    () => onScrubPoint(null),
+    [onScrubPoint]
+  );
+
   return (
     <div id="elevation-chart">
+      <div id="elevation-legend">
+        {scrubPoint ? (
+          <>
+            {scrubPoint.time.toLocaleTimeString()}:{" "}
+            {Math.round(scrubPoint.eleMeters * FT_IN_M)}ft
+          </>
+        ) : null}
+      </div>
       <Dygraph
         file={table}
         ylabel="Elevation (ft)"
         axisLabelWidth={60}
+        strokeWidth={2}
+        highlightCircleSize={5}
         labels={CHART_LABELS}
         style={DYGRAPH_STYLE}
-        labelsSeparateLines
+        legend="never"
         highlightCallback={highlightCallback}
+        unhighlightCallback={unhighlightCallback}
       />
     </div>
   );

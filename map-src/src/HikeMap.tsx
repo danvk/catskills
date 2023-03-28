@@ -2,6 +2,7 @@ import type mapboxgl from "mapbox-gl";
 import Map, { Layer, Source, useMap } from "react-map-gl";
 import { UseQueryResult } from "@tanstack/react-query";
 import React from "react";
+import bbox from "@turf/bbox";
 
 import { Hike } from "./HikeList";
 import { FeatureCollection, LineString } from "geojson";
@@ -109,7 +110,7 @@ const EMPTY_FC: FeatureCollection<any, any> = {
 };
 
 export function HikeMap(props: Props) {
-  const { hikes, tracks, scrubPoint } = props;
+  const { hikes, tracks, selectedHikeSlug, scrubPoint } = props;
   const hiked = React.useMemo(
     () =>
       hikes.status === "success"
@@ -171,6 +172,12 @@ export function HikeMap(props: Props) {
         <Source id="scrub" type="geojson" data={scrubFeature}>
           <Layer id="scrub" {...scrubStyle} />
         </Source>
+        {tracks.status === "success" ? (
+          <ZoomToTrack
+            tracks={tracks.data}
+            selectedHikeSlug={selectedHikeSlug}
+          />
+        ) : null}
       </Map>
     </div>
   );
@@ -273,4 +280,31 @@ function HikeTracks(props: HikeTrackProps) {
       <Layer id="tracks" {...trackStyle} />
     </Source>
   );
+}
+
+function ZoomToTrack(props: {
+  tracks: FeatureCollection<LineString, TrackProps>;
+  selectedHikeSlug: string | null;
+}) {
+  const { tracks, selectedHikeSlug } = props;
+  const map = useMap().current;
+  React.useEffect(() => {
+    if (selectedHikeSlug && map) {
+      const hikeTracks = tracks.features.filter(
+        (f) => f.properties.slug === selectedHikeSlug
+      );
+      if (hikeTracks.length) {
+        const [minX, minY, maxX, maxY] = bbox({
+          type: "FeatureCollection",
+          features: hikeTracks,
+        });
+        map.fitBounds([minX, minY, maxX, maxY], {
+          animate: true,
+          offset: [0, -50],
+          padding: 200,
+        });
+      }
+    }
+  }, [tracks, selectedHikeSlug, map]);
+  return null;
 }

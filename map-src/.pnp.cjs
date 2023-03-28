@@ -29,6 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@tanstack/react-query", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:4.28.0"],\
+            ["@turf/bbox", "npm:6.5.0"],\
             ["@types/dygraphs", "npm:2.1.4"],\
             ["@types/geojson", "npm:7946.0.10"],\
             ["@types/mapbox-gl", "npm:2.7.10"],\
@@ -797,6 +798,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@tootallnate-once-npm-2.0.0-e36cf4f140-ad87447820.zip/node_modules/@tootallnate/once/",\
           "packageDependencies": [\
             ["@tootallnate/once", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@turf/bbox", [\
+        ["npm:6.5.0", {\
+          "packageLocation": "./.yarn/cache/@turf-bbox-npm-6.5.0-7e0db31887-537be56ae0.zip/node_modules/@turf/bbox/",\
+          "packageDependencies": [\
+            ["@turf/bbox", "npm:6.5.0"],\
+            ["@turf/helpers", "npm:6.5.0"],\
+            ["@turf/meta", "npm:6.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@turf/helpers", [\
+        ["npm:6.5.0", {\
+          "packageLocation": "./.yarn/cache/@turf-helpers-npm-6.5.0-a40ad42565-d57f746351.zip/node_modules/@turf/helpers/",\
+          "packageDependencies": [\
+            ["@turf/helpers", "npm:6.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@turf/meta", [\
+        ["npm:6.5.0", {\
+          "packageLocation": "./.yarn/cache/@turf-meta-npm-6.5.0-66a9378eac-c6bb936aa9.zip/node_modules/@turf/meta/",\
+          "packageDependencies": [\
+            ["@turf/meta", "npm:6.5.0"],\
+            ["@turf/helpers", "npm:6.5.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2376,6 +2407,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["map-vite", "workspace:."],\
             ["@tanstack/react-query", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:4.28.0"],\
+            ["@turf/bbox", "npm:6.5.0"],\
             ["@types/dygraphs", "npm:2.1.4"],\
             ["@types/geojson", "npm:7946.0.10"],\
             ["@types/mapbox-gl", "npm:2.7.10"],\

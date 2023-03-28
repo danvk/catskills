@@ -1,6 +1,6 @@
 [
   {
-    "title": "Bearpen & Vly, the start of spring",
+    "title": "Bearpen & Vly, Spring or Winter?",
     "date": "2023-03-21",
     "type": "Out and Back",
     "slug": "2023-03-21-bearpen-vly",
@@ -45,6 +45,7 @@
     "slug": "2023-03-09-winter-six",
     "miles": 12.7,
     "hike_hours": 10,
+    "elevation_ft": 4200,
     "peaks": [
       "Friday",
       "Balsam Cap",
@@ -66,6 +67,7 @@
     "slug": "2023-03-05-winter-blackhead",
     "miles": 6.2,
     "hike_hours": 5.0,
+    "elevation_ft": 1811,
     "peaks": [
       "Blackhead"
     ],
@@ -78,12 +80,13 @@
     "url": "/catskills/2023/03/05/2023-03-05-winter-blackhead.html"
   },
   {
-    "title": "Winter Slide",
-    "date": "2023-02-18",
-    "type": "Out & Back",
     "slug": "2023-02-18-winter-slide",
+    "date": "2023-02-18",
+    "title": "Winter Slide",
+    "type": "Out & Back",
     "miles": 5.8,
     "hike_hours": 3.5,
+    "elevation_ft": 1788,
     "peaks": [
       "Slide"
     ],
@@ -95,12 +98,13 @@
     "url": "/catskills/2023/02/18/2023-02-18-winter-slide.html"
   },
   {
-    "title": "Balsam (Winter)",
     "date": "2023-01-14",
-    "type": "Out & Back",
     "slug": "2023-01-14-winter-balsam",
+    "title": "Balsam (Winter)",
+    "type": "Out & Back",
     "miles": 6.5,
     "hike_hours": 5.0,
+    "elevation_ft": 2070,
     "peaks": [
       "Balsam"
     ],
@@ -113,12 +117,13 @@
     "url": "/catskills/2023/01/14/2023-01-14-winter-balsam.html"
   },
   {
-    "title": "Panther (Winter)",
     "date": "2023-01-08",
-    "type": "Out & Back",
     "slug": "2023-01-08-winter-panther",
+    "title": "Panther (Winter)",
+    "type": "Out & Back",
     "miles": 8.0,
     "hike_hours": 5.0,
+    "elevation_ft": 2060,
     "peaks": [
       "Panther"
     ],
@@ -136,6 +141,7 @@
     "slug": "2022-10-19-blackhead-range",
     "miles": 8.2,
     "hike_hours": 6.5,
+    "elevation_ft": "???",
     "peaks": [
       "Blackhead",
       "Black Dome",
@@ -155,6 +161,7 @@
     "slug": "2022-10-09-plateau",
     "miles": "???",
     "hike_hours": "???",
+    "elevation_ft": "???",
     "peaks": [
       "Plateau"
     ],
@@ -171,6 +178,7 @@
     "slug": "2022-09-28-the-nine",
     "miles": 23.6,
     "hike_hours": 16.5,
+    "elevation_ft": "???",
     "peaks": [
       "Slide",
       "Cornell",
@@ -196,6 +204,7 @@
     "slug": "2022-09-21-hunter-sw",
     "miles": 5.75,
     "hike_hours": 10.5,
+    "elevation_ft": "???",
     "peaks": [
       "Hunter",
       "Southwest Hunter"
@@ -213,6 +222,7 @@
     "slug": "2022-09-09-kaaterskill",
     "miles": 7.8,
     "hike_hours": 6.0,
+    "elevation_ft": "???",
     "peaks": [
       "Kaaterskill High Peak"
     ],
@@ -231,6 +241,7 @@
     "slug": "2022-07-16-indian-twin",
     "miles": "???",
     "hike_hours": "???",
+    "elevation_ft": "???",
     "peaks": [
       "Indian Head",
       "Twin"
@@ -248,6 +259,7 @@
     "slug": "2022-07-10-table-peekamoose",
     "miles": 10.1,
     "hike_hours": 7.0,
+    "elevation_ft": "???",
     "peaks": [
       "Table",
       "Peekamoose"
@@ -266,6 +278,7 @@
     "slug": "2022-04-24-giant-ledge",
     "miles": 8.8,
     "hike_hours": 5.5,
+    "elevation_ft": "???",
     "peaks": [
       "None"
     ],
@@ -283,6 +296,7 @@
     "slug": "2020-10-04-fall-windham",
     "miles": "None",
     "hike_hours": "None",
+    "elevation_ft": "???",
     "peaks": [
       "Windham"
     ],
@@ -298,6 +312,7 @@
     "slug": "2020-09-30-pisgah",
     "miles": 7.1,
     "hike_hours": 3.5,
+    "elevation_ft": "???",
     "peaks": [
       "Pisgah"
     ],
@@ -311,8 +326,9 @@
     "date": "2020-09-27",
     "type": "Out & Back",
     "slug": "2020-09-27-blackdome",
-    "miles": "None",
-    "hike_hours": "None",
+    "miles": "???",
+    "hike_hours": "???",
+    "elevation_ft": "???",
     "peaks": [
       "Black Dome"
     ],
@@ -327,8 +343,9 @@
     "date": "2020-09-03",
     "type": "Out & Back",
     "slug": "2020-09-03-balsam",
-    "miles": "None",
-    "hike_hours": "None",
+    "miles": "???",
+    "hike_hours": "???",
+    "elevation_ft": "???",
     "peaks": [
       "Balsam"
     ],
@@ -345,6 +362,7 @@
     "slug": "2020-06-21-slide",
     "miles": "???",
     "hike_hours": "???",
+    "elevation_ft": "???",
     "peaks": [
       "Slide"
     ],
@@ -361,6 +379,7 @@
     "slug": "2020-06-10-hayden",
     "miles": 5.2,
     "hike_hours": 2,
+    "elevation_ft": "???",
     "peaks": [
       "Hayden"
     ],
@@ -376,6 +395,7 @@
     "slug": "2020-05-22-windham2",
     "miles": "???",
     "hike_hours": "???",
+    "elevation_ft": "???",
     "peaks": [
       "Windham"
     ],
@@ -392,6 +412,7 @@
     "slug": "2020-05-14-windham-solo",
     "miles": "???",
     "hike_hours": "???",
+    "elevation_ft": "???",
     "peaks": [
       "Windham"
     ],
@@ -405,8 +426,9 @@
     "date": "2018-07-08",
     "type": "Out & Back",
     "slug": "2018-07-08-indian-head",
-    "miles": "None",
-    "hike_hours": "None",
+    "miles": "???",
+    "hike_hours": "???",
+    "elevation_ft": "???",
     "peaks": [
       "Indian Head"
     ],
@@ -423,6 +445,7 @@
     "slug": "2016-08-06-windham-blackhead",
     "miles": "???",
     "hike_hours": "???",
+    "elevation_ft": "???",
     "peaks": [
       "Windham",
       "Blackhead"
@@ -449,6 +472,7 @@
     ],
     "hike_hours": "???",
     "miles": "???",
+    "elevation_ft": "???",
     "url": "/catskills/2016/05/28/2016-05-28-sugarloaf-twin.html"
   }
 ]

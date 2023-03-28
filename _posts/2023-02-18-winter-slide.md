@@ -1,4 +1,6 @@
 ---
+slug: 2023-02-18-winter-slide
+date: 2023-02-18
 title: Winter Slide
 type: Out & Back
 miles: 5.8

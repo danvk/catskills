@@ -35,10 +35,13 @@ At the top of Black Dome, we ran into the first other person of the day: a ham r
 
 ![Panorama looking at Black Dome]({{site.baseurl}}/assets/2022-10-19-blackhead-range/blackdome-pano.jpeg)
 
-We had the best views coming down off Black Dome and up to Blackhead. Since it's the northernmost part of the Catskills, we could see all the way to other ranges: the Adirondacks, the Taconics and even to Vermont! Looking south at the other Catskills was also an unusual view for me. We could clearly see the steep ridge we'd climbed up Plateau, and even Mt. Pisgah from our days in the hollow!
+We had the best views coming down off Black Dome and up to Blackhead. Since it's the northernmost part of the Catskills, we could see all the way to other ranges: the Adirondacks, the Taconics and even to Vermont! Looking south at the other Catskills was also an unusual view for me. We could clearly see the [steep ridge we'd climbed up Plateau][plateau], and even [Mt. Pisgah] from our days in the hollow!
 
 ![Sketchy walk through leaf litter]({{site.baseurl}}/assets/2022-10-19-blackhead-range/sketchy-leaf-litter.jpeg)
 
 The hike down was steep and slower than we expected. Even on the straightaways, we were losing daylight and it was treacherous walking over leaf-covered rocks and streams. We got back to Max & Sarah's car just as it was getting really dark and met up with Alex for dinner at Hotel Kinsley in Kingston.
 
 ![Scenic viewpoint with glowing fall colors]({{site.baseurl}}/assets/2022-10-19-blackhead-range/glowing-fall.jpeg)
+
+[plateau]: /catskills/2022/10/09/2022-10-09-plateau.html
+[Mt. Pisgah]: /catskills/2020/09/30/2020-09-30-pisgah.html

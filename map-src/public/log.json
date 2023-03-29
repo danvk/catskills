@@ -156,13 +156,13 @@
     "url": "/catskills/2022/10/19/2022-10-19-blackhead-range.html"
   },
   {
-    "title": "Plateau: Peak Fall",
     "date": "2022-10-09",
-    "type": "Out & Back",
     "slug": "2022-10-09-plateau",
-    "miles": "???",
-    "hike_hours": "???",
-    "elevation_ft": "???",
+    "title": "Plateau: Peak Fall",
+    "type": "Out & Back",
+    "miles": 3.2,
+    "hike_hours": 3,
+    "elevation_ft": 1637,
     "peaks": [
       "Plateau"
     ],

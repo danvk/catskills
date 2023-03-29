@@ -1,0 +1,305 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3285.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 12:07:37"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.06862777777778,
+          42.14695833333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3287.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 13:05:48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07305277777778,
+          42.16618611111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3288.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 13:12:44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0761111111111,
+          42.16783611111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3291.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:03:32"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08128333333333,
+          42.16433333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3292.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:21:14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08016944444444,
+          42.162524999999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3295.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:25:51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08026944444444,
+          42.162219444444446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3296.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:25:53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08027777777778,
+          42.16222777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3297.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:25:54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08026944444444,
+          42.16222777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3298.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:25:56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08027777777778,
+          42.16222777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3299.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:25:58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08026944444444,
+          42.16222777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3300.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:25:59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08026944444444,
+          42.16222777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3301.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:26:03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08027777777778,
+          42.162216666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3302.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:26:05"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08027777777778,
+          42.162216666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3303.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:26:06"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08026944444444,
+          42.162219444444446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3304.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:39:07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07776666666666,
+          42.162166666666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3305.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 14:54:54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07771944444444,
+          42.162147222222224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3307.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 15:03:33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07867499999999,
+          42.16251111111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3308.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 15:06:01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07873611111111,
+          42.162480555555554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3309.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 15:26:10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08238888888889,
+          42.16038888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3310.HEIC",
+        "zipfile": "/Users/danvk/Downloads/kaaterskill-photos.zip",
+        "date": "2022:09:09 16:11:58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08174166666666,
+          42.16681944444444
+        ]
+      }
+    }
+  ]
+}

@@ -135,13 +135,13 @@
     "url": "/catskills/2023/01/08/2023-01-08-winter-panther.html"
   },
   {
-    "title": "Late Fall in the Blackhead Range",
     "date": "2022-10-19",
-    "type": "Through (Car Stack)",
     "slug": "2022-10-19-blackhead-range",
+    "title": "Late Fall in the Blackhead Range",
+    "type": "Through (Car Stack)",
     "miles": 8.2,
     "hike_hours": 6.5,
-    "elevation_ft": "???",
+    "elevation_ft": 2730,
     "peaks": [
       "Blackhead",
       "Black Dome",
@@ -152,6 +152,7 @@
       "Sarah",
       "John G"
     ],
+    "excerpt": "A planned overnight turns into a day hike across the Blackhead range. Fall colors are just past peak, and we discover a curious new pandemic hobby.",
     "url": "/catskills/2022/10/19/2022-10-19-blackhead-range.html"
   },
   {

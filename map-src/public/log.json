@@ -217,13 +217,13 @@
     "url": "/catskills/2022/09/21/2022-09-21-hunter-sw.html"
   },
   {
-    "title": "Kaaterskill High Peak (look, it's a plane!)",
     "date": "2022-09-09",
-    "type": "Out & Back",
     "slug": "2022-09-09-kaaterskill",
+    "title": "Kaaterskill High Peak (look, it's a plane!)",
+    "type": "Out & Back",
     "miles": 7.8,
     "hike_hours": 6.0,
-    "elevation_ft": "???",
+    "elevation_ft": 1729,
     "peaks": [
       "Kaaterskill High Peak"
     ],

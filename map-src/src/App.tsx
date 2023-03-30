@@ -54,6 +54,7 @@ function HikePage() {
       tracksResource.status === "success" &&
       hikeResource.status === "success" ? (
         <HikeInfoPanel
+          key={selectedHikeSlug}
           selectedHikeSlug={selectedHikeSlug}
           hike={
             hikeResource.data.find((hike) => hike.slug === selectedHikeSlug)!

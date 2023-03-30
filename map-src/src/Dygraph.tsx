@@ -41,7 +41,6 @@ export class Dygraph extends React.Component<Props> {
       }
     }
     if (Object.keys(diff).length > 0) {
-      console.log('updateOptions', options);
       this.dygraph.updateOptions(options);
     }
   }

@@ -319,36 +319,6 @@
     {
       "type": "Feature",
       "properties": {
-        "file": "IMG_3497.HEIC",
-        "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
-        "date": "2022:09:28 18:03:47"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.50699722222222,
-          41.89002222222222
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "file": "IMG_3499.HEIC",
-        "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
-        "date": "2022:09:28 18:50:26"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.10700277777777,
-          41.745669444444445
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "file": "IMG_3469.HEIC",
         "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
         "date": "2022:09:28 13:37:39"
@@ -358,21 +328,6 @@
         "coordinates": [
           -74.38880833333334,
           41.968916666666665
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "file": "IMG_3498.HEIC",
-        "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
-        "date": "2022:09:28 18:03:48"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.50700277777777,
-          41.89002222222222
         ]
       }
     },
@@ -1347,7 +1302,7 @@
         "type": "Point",
         "coordinates": [
           -74.38696944444445,
-          42.0
+          42
         ]
       }
     },

@@ -25,7 +25,10 @@ export interface Props {
 
 export function HikeInfoPanel(props: Props) {
   const { selectedHikeSlug, hike, trackFeatureProps } = props;
-  const track = trackFeatureProps[0];
+
+  const [selectedTrack, setSelectedTrack] = React.useState(0);
+
+  const track = trackFeatureProps[selectedTrack];
   const gpxPath = "../assets/" + track.path;
   const gpxResource = useQuery({
     queryKey: [gpxPath],
@@ -44,8 +47,21 @@ export function HikeInfoPanel(props: Props) {
   return (
     <div id="hike-details">
       <h3>{hike.title}</h3>
+      {trackFeatureProps.length > 0 ? (
+        <select onChange={e => setSelectedTrack(Number(e.target.value))}>
+          {trackFeatureProps.map((t, i) => (
+            <option key={i} value={i} selected={i === selectedTrack}>
+              {t.path}
+            </option>
+          ))}
+        </select>
+      ) : null}
       {gpx ? (
-        <ElevationChart gpx={gpx} scrubPoint={props.scrubPoint} onScrubPoint={props.onScrubPoint} />
+        <ElevationChart
+          gpx={gpx}
+          scrubPoint={props.scrubPoint}
+          onScrubPoint={props.onScrubPoint}
+        />
       ) : null}
     </div>
   );
@@ -78,7 +94,9 @@ function ElevationChart(props: {
 }) {
   const { gpx, scrubPoint, onScrubPoint } = props;
   const table = React.useMemo(() => {
-    return gpx.tracks[0].points.filter(p => p.ele).map((p) => [p.time, p.ele * FT_IN_M]);
+    return gpx.tracks[0].points
+      .filter((p) => p.ele)
+      .map((p) => [p.time, p.ele * FT_IN_M]);
   }, [gpx]);
 
   const highlightCallback = React.useCallback<HighlightCallback>(
@@ -114,6 +132,7 @@ function ElevationChart(props: {
         ylabel="Elevation (ft)"
         axisLabelWidth={60}
         strokeWidth={2}
+        color="darkblue"
         highlightCircleSize={5}
         labels={CHART_LABELS}
         style={DYGRAPH_STYLE}

@@ -47,7 +47,7 @@ export function HikeInfoPanel(props: Props) {
   return (
     <div id="hike-details">
       <h3>{hike.title}</h3>
-      {trackFeatureProps.length > 0 ? (
+      {trackFeatureProps.length > 1 ? (
         <select onChange={e => setSelectedTrack(Number(e.target.value))}>
           {trackFeatureProps.map((t, i) => (
             <option key={i} value={i} selected={i === selectedTrack}>

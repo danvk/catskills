@@ -7,7 +7,15 @@
             "label": "Add images and slugs",
             "type": "shell",
             "command": "./add_images.py ${file}",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
         }
     ]
 }

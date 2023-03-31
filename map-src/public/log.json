@@ -196,16 +196,17 @@
       "Max",
       "John G"
     ],
+    "excerpt": "An overnight bushwhacking experience with two friends nets me six new peaks and a whole lot of newfound hiking confidence.",
     "url": "/catskills/2022/09/28/2022-09-28-the-nine.html"
   },
   {
-    "title": "Hunter and Southwest Hunter aka the COVID hike",
     "date": "2022-09-21",
-    "type": "Loop",
     "slug": "2022-09-21-hunter-sw",
-    "miles": 5.75,
-    "hike_hours": 10.5,
-    "elevation_ft": "???",
+    "title": "Hunter and Southwest Hunter aka the COVID hike",
+    "type": "Loop",
+    "miles": 10.5,
+    "hike_hours": 6.5,
+    "elevation_ft": 2260.5,
     "peaks": [
       "Hunter",
       "Southwest Hunter"

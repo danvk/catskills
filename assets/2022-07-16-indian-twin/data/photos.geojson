@@ -1,0 +1,260 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2996.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 11:38:59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10431666666666,
+          42.133975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2999.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 14:13:36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10191388888889,
+          42.11518888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3001.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 14:13:39"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10191388888889,
+          42.11518888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3002.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 14:13:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10191388888889,
+          42.11518888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3003.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 14:13:45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10191388888889,
+          42.11518888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3004.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 14:13:47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10191388888889,
+          42.11518888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3005.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 14:13:48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10191388888889,
+          42.11518888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3006.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 14:13:49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10191388888889,
+          42.11518888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3007.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 14:58:47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10637777777777,
+          42.11595555555556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3008.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 14:58:58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10639166666667,
+          42.11595555555556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3011.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 16:30:52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.12593888888888,
+          42.11801944444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3012.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 16:31:14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.12592222222221,
+          42.118027777777776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3013.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 16:31:29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.12593055555556,
+          42.118030555555556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3014.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 16:32:07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.12594722222221,
+          42.11802222222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3015.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 16:52:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.12941111111111,
+          42.125569444444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3016.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 16:52:57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.129425,
+          42.125575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_3017.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin-photos.zip",
+        "date": "2022:07:16 18:50:50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10434722222222,
+          42.13391388888889
+        ]
+      }
+    }
+  ]
+}

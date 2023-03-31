@@ -173,13 +173,13 @@
     "url": "/catskills/2022/10/09/2022-10-09-plateau.html"
   },
   {
-    "title": "The Nine",
     "date": "2022-09-28",
-    "type": "Loop",
     "slug": "2022-09-28-the-nine",
+    "title": "The Nine",
+    "type": "Loop",
     "miles": 23.6,
     "hike_hours": 16.5,
-    "elevation_ft": "???",
+    "elevation_ft": 5500,
     "peaks": [
       "Slide",
       "Cornell",
@@ -236,13 +236,13 @@
     "url": "/catskills/2022/09/09/2022-09-09-kaaterskill.html"
   },
   {
-    "title": "Indian Head & Twin: Baby Birds!",
     "date": "2022-07-16",
-    "type": "Loop?",
     "slug": "2022-07-16-indian-twin",
-    "miles": "???",
-    "hike_hours": "???",
-    "elevation_ft": "???",
+    "title": "Indian Head & Twin: Baby Birds!",
+    "type": "Loop",
+    "miles": 8,
+    "hike_hours": 7,
+    "elevation_ft": 2339,
     "peaks": [
       "Indian Head",
       "Twin"
@@ -251,6 +251,7 @@
       "Dan",
       "Alex"
     ],
+    "excerpt": "Loop hike with Alex in which we see a Junco nest in a rock face and encounter our first Blackpoll Warbler.",
     "url": "/catskills/2022/07/16/2022-07-16-indian-twin.html"
   },
   {

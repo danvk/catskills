@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2940.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 11:02:20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.45203333333333,
+          41.9665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2942.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:01:54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40579166666667,
+          41.958961111111115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2943.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:13:57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40437222222222,
+          41.95845833333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2944.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:13:59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40439722222223,
+          41.958466666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2945.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:14:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40438055555556,
+          41.958450000000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2946.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:14:01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40438055555556,
+          41.958450000000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2947.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:14:02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40438055555556,
+          41.958450000000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2948.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:14:03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40438055555556,
+          41.958450000000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2949.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:14:04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40436666666668,
+          41.958450000000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2950.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:14:05"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40436666666668,
+          41.95845277777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2951.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 14:25:02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40268055555556,
+          41.95875277777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2953.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 15:04:11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.39775,
+          41.952872222222226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2954.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 15:05:44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.39784166666668,
+          41.95286666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2955.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 16:23:11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.42096666666667,
+          41.963547222222225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2956.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 17:06:10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.42824444444445,
+          41.972613888888894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_2957.HEIC",
+        "zipfile": "/Users/danvk/Downloads/indian-twin.zip",
+        "date": "2022:07:10 17:47:14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.45243055555555,
+          41.96581944444445
+        ]
+      }
+    }
+  ]
+}

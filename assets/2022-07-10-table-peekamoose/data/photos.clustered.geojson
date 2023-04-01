@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.45203333333333,
+          41.9665
+        ]
+      },
+      "properties": {
+        "date": "2022-07-10T15:02:20Z",
+        "num_photos": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40579166666667,
+          41.958961111111115
+        ]
+      },
+      "properties": {
+        "date": "2022-07-10T18:01:54Z",
+        "num_photos": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40437812500001,
+          41.958453472222224
+        ]
+      },
+      "properties": {
+        "date": "2022-07-10T18:14:01Z",
+        "num_photos": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.40268055555556,
+          41.95875277777778
+        ]
+      },
+      "properties": {
+        "date": "2022-07-10T18:25:02Z",
+        "num_photos": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.39779583333333,
+          41.952869444444445
+        ]
+      },
+      "properties": {
+        "date": "2022-07-10T19:04:57Z",
+        "num_photos": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.42096666666667,
+          41.963547222222225
+        ]
+      },
+      "properties": {
+        "date": "2022-07-10T20:23:11Z",
+        "num_photos": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.42824444444445,
+          41.972613888888894
+        ]
+      },
+      "properties": {
+        "date": "2022-07-10T21:06:10Z",
+        "num_photos": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.45243055555555,
+          41.96581944444445
+        ]
+      },
+      "properties": {
+        "date": "2022-07-10T21:47:14Z",
+        "num_photos": 1
+      }
+    }
+  ]
+}

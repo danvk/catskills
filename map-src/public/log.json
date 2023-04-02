@@ -256,13 +256,13 @@
     "url": "/catskills/2022/07/16/2022-07-16-indian-twin.html"
   },
   {
-    "title": "Table & Peekamoose aka \"The Blackburnian Hike\"",
     "date": "2022-07-10",
-    "type": "Out & Back",
     "slug": "2022-07-10-table-peekamoose",
-    "miles": 10.1,
-    "hike_hours": 7.0,
-    "elevation_ft": "???",
+    "title": "Table & Peekamoose aka \"The Blackburnian Hike\"",
+    "type": "Out & Back",
+    "miles": 9,
+    "hike_hours": 7,
+    "elevation_ft": 2520,
     "peaks": [
       "Table",
       "Peekamoose"
@@ -275,13 +275,13 @@
     "url": "/catskills/2022/07/10/2022-07-10-table-peekamoose.html"
   },
   {
-    "title": "Panther (failed) aka \"The time when Google Maps took us to the wrong trailhead\"",
     "date": "2022-04-24",
-    "type": "Out & Back",
     "slug": "2022-04-24-giant-ledge",
+    "title": "Panther (failed) aka \"The time when Google Maps took us to the wrong trailhead\"",
+    "type": "Out & Back",
     "miles": 8.8,
     "hike_hours": 5.5,
-    "elevation_ft": "???",
+    "elevation_ft": 2300,
     "peaks": [
       "None"
     ],

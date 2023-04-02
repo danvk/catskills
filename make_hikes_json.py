@@ -46,6 +46,9 @@ def main():
     for path in sorted(BLOG_ROOT.glob('_posts/*.md')):
         sys.stderr.write(str(path) + '\n')
         meta = read_frontmatter(open(path))
+        if meta.get('layout') == 'non-hike-post':
+            sys.stderr.write(f'Skipping non-post {path}\n')
+            continue
         hikes.append(format_meta(meta))
     hikes.sort(key=lambda hike: hike['date'], reverse=True)
     with open('map-src/public/log.json', 'w') as out:

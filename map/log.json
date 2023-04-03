@@ -293,13 +293,13 @@
     "url": "/catskills/2022/04/24/2022-04-24-giant-ledge.html"
   },
   {
-    "title": "Fall Windham",
     "date": "2020-10-04",
-    "type": "Out & Back",
     "slug": "2020-10-04-fall-windham",
-    "miles": "None",
-    "hike_hours": "None",
-    "elevation_ft": "???",
+    "title": "Fall Windham",
+    "type": "Out & Back",
+    "miles": 6.7,
+    "hike_hours": 4.5,
+    "elevation_ft": 1765,
     "peaks": [
       "Windham"
     ],

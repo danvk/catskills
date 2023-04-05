@@ -1,5 +1,22 @@
 [
   {
+    "date": "2023-04-04",
+    "slug": "2023-04-04-rusk",
+    "title": "Rusk Bushwhack: Snowshoes and a T-Shirt",
+    "type": "Loop",
+    "miles": 5.8,
+    "hike_hours": 3.5,
+    "elevation_ft": 1709,
+    "peaks": [
+      "Rusk"
+    ],
+    "hikers": [
+      "Dan"
+    ],
+    "excerpt": "My first solo bushwhack",
+    "url": "/catskills/2023/04/04/2023-04-04-rusk.html"
+  },
+  {
     "title": "Bearpen & Vly, Spring or Winter?",
     "date": "2023-03-21",
     "type": "Out and Back",

@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@tanstack/react-query", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:4.28.0"],\
             ["@turf/bbox", "npm:6.5.0"],\
+            ["@turf/distance", "npm:6.5.0"],\
             ["@types/dygraphs", "npm:2.1.4"],\
             ["@types/geojson", "npm:7946.0.10"],\
             ["@types/mapbox-gl", "npm:2.7.10"],\
@@ -813,10 +814,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@turf/distance", [\
+        ["npm:6.5.0", {\
+          "packageLocation": "./.yarn/cache/@turf-distance-npm-6.5.0-31f0d31a23-f311e19a5d.zip/node_modules/@turf/distance/",\
+          "packageDependencies": [\
+            ["@turf/distance", "npm:6.5.0"],\
+            ["@turf/helpers", "npm:6.5.0"],\
+            ["@turf/invariant", "npm:6.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@turf/helpers", [\
         ["npm:6.5.0", {\
           "packageLocation": "./.yarn/cache/@turf-helpers-npm-6.5.0-a40ad42565-d57f746351.zip/node_modules/@turf/helpers/",\
           "packageDependencies": [\
+            ["@turf/helpers", "npm:6.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@turf/invariant", [\
+        ["npm:6.5.0", {\
+          "packageLocation": "./.yarn/cache/@turf-invariant-npm-6.5.0-63bdebfa9a-f45109ee41.zip/node_modules/@turf/invariant/",\
+          "packageDependencies": [\
+            ["@turf/invariant", "npm:6.5.0"],\
             ["@turf/helpers", "npm:6.5.0"]\
           ],\
           "linkType": "HARD"\
@@ -2408,6 +2430,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["map-vite", "workspace:."],\
             ["@tanstack/react-query", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:4.28.0"],\
             ["@turf/bbox", "npm:6.5.0"],\
+            ["@turf/distance", "npm:6.5.0"],\
             ["@types/dygraphs", "npm:2.1.4"],\
             ["@types/geojson", "npm:7946.0.10"],\
             ["@types/mapbox-gl", "npm:2.7.10"],\

@@ -11,6 +11,7 @@
   "dependencies": {
     "@tanstack/react-query": "^4.28.0",
     "@turf/bbox": "^6.5.0",
+    "@turf/distance": "^6.5.0",
     "classnames": "^2.3.2",
     "dygraphs": "^2.2.1",
     "gpxparser": "^3.0.8",

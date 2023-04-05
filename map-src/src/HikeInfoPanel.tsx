@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import GpxParser from "gpxparser";
 import React from "react";
+import distance from '@turf/distance';
 
 import { fetchText } from "./fetch";
 import { Hike } from "./HikeList";
@@ -14,6 +15,8 @@ export interface TrackProps {
   path: string;
   season: "spring" | "summer" | "fall" | "winter";
 }
+
+type Viz = 'ele-vs-time' | 'ele-vs-distance' | 'distance-vs-time';
 
 export interface Props {
   selectedHikeSlug: string;
@@ -44,6 +47,8 @@ export function HikeInfoPanel(props: Props) {
     return parser;
   }, [gpxResource.status, gpxResource.data]);
 
+  const [viz, setViz] = React.useState<Viz>('ele-vs-time');
+
   return (
     <div id="hike-details">
       <h3>{hike.title}</h3>
@@ -56,9 +61,15 @@ export function HikeInfoPanel(props: Props) {
           ))}
         </select>
       ) : null}
+      <select value={viz} onChange={e => setViz(e.target.value as Viz)}>
+        <option value="ele-vs-time">Elevation vs. Time</option>
+        <option value="ele-vs-distance">Elevation vs. Distance</option>
+        <option value="distance-vs-time">Distance vs. Time</option>
+      </select>
       {gpx ? (
         <ElevationChart
           gpx={gpx}
+          viz={viz}
           scrubPoint={props.scrubPoint}
           onScrubPoint={props.onScrubPoint}
         />
@@ -73,7 +84,7 @@ const DYGRAPH_STYLE: React.CSSProperties = {
   width: 550,
   height: 160,
 };
-const CHART_LABELS = ["Date/Time", "Elevation (ft)"];
+const CHART_LABELS = ["Date/Time", "Elevation (ft)", "Distance (miles)"];
 
 export interface ScrubPoint {
   time: Date;
@@ -91,13 +102,32 @@ function ElevationChart(props: {
   gpx: GpxParser;
   scrubPoint: ScrubPoint | null;
   onScrubPoint: (latLng: ScrubPoint | null) => void;
+  viz: Viz,
 }) {
-  const { gpx, scrubPoint, onScrubPoint } = props;
+  const { gpx, scrubPoint, onScrubPoint, viz } = props;
   const table = React.useMemo(() => {
-    return gpx.tracks[0].points
-      .filter((p) => p.ele)
-      .map((p) => [p.time, p.ele * FT_IN_M]);
+    let cumD = 0;
+    let lastPt = null;
+    const rows = [];
+    for (const pt of gpx.tracks[0].points) {
+      if (!pt.ele) continue
+      if (lastPt) {
+        const d = distance([pt.lon, pt.lat], [lastPt.lon, lastPt.lat], {units: 'miles'});
+        cumD += d;
+      }
+      lastPt = pt;
+      rows.push([pt.time, pt.ele * FT_IN_M, cumD]);
+    }
+    return rows;
   }, [gpx]);
+
+  const [labels, tableViz] = React.useMemo(() => {
+    const cols = viz === 'ele-vs-time' ? [0, 1] : viz === 'ele-vs-distance' ? [2, 1] : [0, 2];
+    return [
+      [CHART_LABELS[cols[0]], CHART_LABELS[cols[1]]],
+      table.map(row => [row[cols[0]], row[cols[1]]])
+    ];
+  }, [table, viz]);
 
   const highlightCallback = React.useCallback<HighlightCallback>(
     function (this: Dygraph, _e, x, _pt, row) {
@@ -128,13 +158,14 @@ function ElevationChart(props: {
         ) : null}
       </div>
       <Dygraph
-        file={table}
+        key={viz}
+        file={tableViz}
         ylabel="Elevation (ft)"
         axisLabelWidth={60}
         strokeWidth={2}
         color="darkblue"
         highlightCircleSize={5}
-        labels={CHART_LABELS}
+        labels={labels}
         style={DYGRAPH_STYLE}
         legend="never"
         highlightCallback={highlightCallback}

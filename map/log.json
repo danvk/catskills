@@ -13,7 +13,7 @@
     "hikers": [
       "Dan"
     ],
-    "excerpt": "My first solo bushwhack",
+    "excerpt": "My first solo bushwhack, a climb to find winter hanging on in the high peaks.",
     "url": "/catskills/2023/04/04/2023-04-04-rusk.html"
   },
   {
@@ -326,19 +326,20 @@
     "url": "/catskills/2020/10/04/2020-10-04-fall-windham.html"
   },
   {
-    "title": "A through hike on the long path",
     "date": "2020-09-30",
-    "type": "Through (Car Stack)",
     "slug": "2020-09-30-pisgah",
+    "title": "A through hike on the long path",
+    "type": "Through (Car Stack)",
     "miles": 7.1,
     "hike_hours": 3.5,
-    "elevation_ft": "???",
+    "elevation_ft": 2083,
     "peaks": [
       "Pisgah"
     ],
     "hikers": [
       "Dan"
     ],
+    "excerpt": "A brief window during which we have two cars presents an opportunity to do a through hike and yields a surprise viewpoint.",
     "url": "/catskills/2020/09/30/2020-09-30-pisgah.html"
   },
   {

@@ -1,0 +1,200 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9965.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:22:43"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11715833333332,
+          42.27061388888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9966.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:22:44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11715833333332,
+          42.27061388888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9967.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:24:53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11722499999999,
+          42.27048611111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9968.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:28:36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11770555555555,
+          42.27053333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9969.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:28:41"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11769166666666,
+          42.27053333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9970.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:28:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11769166666666,
+          42.27053333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9971.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:28:44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1177,
+          42.27053333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9972.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:28:45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1177,
+          42.27053333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9975.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:59:06"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11776666666665,
+          42.270625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9976.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 14:59:10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11775277777777,
+          42.270783333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9977.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 15:07:16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11772222222221,
+          42.270697222222225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9978.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 15:24:07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11479166666666,
+          42.27118055555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_9979.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (4).zip",
+        "date": "2020:09:27 16:25:53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.13079166666667,
+          42.29238888888889
+        ]
+      }
+    }
+  ]
+}

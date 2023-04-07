@@ -357,16 +357,17 @@
       "Dan",
       "Alex"
     ],
+    "excerpt": "An attempt to see peak fall foliage lands us in the middle of a cloud.",
     "url": "/catskills/2020/09/27/2020-09-27-blackdome.html"
   },
   {
-    "title": "Balsam Summer Hike",
     "date": "2020-09-03",
-    "type": "Out & Back",
     "slug": "2020-09-03-balsam",
-    "miles": "???",
-    "hike_hours": "???",
-    "elevation_ft": "???",
+    "title": "Balsam Summer Hike",
+    "type": "Loop",
+    "miles": 4.75,
+    "hike_hours": 3,
+    "elevation_ft": 1725,
     "peaks": [
       "Balsam"
     ],

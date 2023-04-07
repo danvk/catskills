@@ -8,6 +8,7 @@ hike_hours: 3.25
 elevation_ft: 1762
 peaks: Black Dome
 hikers: Dan, Alex
+excerpt: An attempt to see peak fall foliage lands us in the middle of a cloud.
 ---
 
 [![GPS Track of the hike]({{site.baseurl}}/assets/2020-09-27-blackdome/track.png)]({{site.baseurl}}/map/?hike=2020-09-27-blackdome)

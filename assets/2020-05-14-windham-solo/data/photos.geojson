@@ -1,0 +1,260 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8906.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 13:19:52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.18963611111111,
+          42.31285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8907.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 13:27:57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.18399166666667,
+          42.310138888888886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8913.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 14:38:56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14817777777779,
+          42.31162777777777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8914.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 14:42:25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14611111111111,
+          42.31293611111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8915.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 14:47:09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14498055555556,
+          42.31468333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8916.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 14:48:17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14455277777779,
+          42.31449444444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8917.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 14:48:34"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14453055555556,
+          42.314499999999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8918.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 14:50:58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14458333333334,
+          42.31485833333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8919.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 14:51:26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14453888888889,
+          42.31486944444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8920.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 14:54:20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14249444444445,
+          42.31496388888888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8922.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 15:18:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14453055555556,
+          42.314816666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8921.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 15:18:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14453055555556,
+          42.314816666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8925.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 15:46:55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16623055555556,
+          42.308705555555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8926.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 15:46:55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16623055555556,
+          42.308705555555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8927.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 15:47:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16587777777778,
+          42.30861944444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8928.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 15:47:01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16587777777778,
+          42.30861944444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_8929.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001 (1).zip",
+        "date": "2020:05:14 16:24:04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.16584722222223,
+          42.30860833333333
+        ]
+      }
+    }
+  ]
+}

@@ -383,9 +383,9 @@
     "slug": "2020-06-21-slide",
     "title": "Summer Slide",
     "type": "Out & Back",
-    "miles": "???",
-    "hike_hours": "???",
-    "elevation_ft": "???",
+    "miles": 6.1,
+    "hike_hours": 4,
+    "elevation_ft": 1780,
     "peaks": [
       "Slide"
     ],
@@ -393,16 +393,17 @@
       "Dan",
       "Alex"
     ],
+    "excerpt": "An afternoon hike up the tallest of the Catskills peaks on the longest day of the year. Daylight was not an issue!",
     "url": "/catskills/2020/06/21/2020-06-21-slide.html"
   },
   {
-    "title": "A dull pandemic hike on the Long Path",
     "date": "2020-06-10",
-    "type": "Out & Back",
     "slug": "2020-06-10-hayden",
+    "title": "A dull pandemic hike on the Long Path",
+    "type": "Out & Back",
     "miles": 5.2,
     "hike_hours": 2,
-    "elevation_ft": "???",
+    "elevation_ft": 1345,
     "peaks": [
       "Hayden"
     ],
@@ -429,19 +430,20 @@
     "url": "/catskills/2020/05/22/2020-05-22-windham2.html"
   },
   {
-    "title": "Windham (solo)",
     "date": "2020-05-14",
-    "type": "Out & Back",
     "slug": "2020-05-14-windham-solo",
-    "miles": "???",
-    "hike_hours": "???",
-    "elevation_ft": "???",
+    "title": "Windham (solo)",
+    "type": "Out & Back",
+    "miles": 6.7,
+    "hike_hours": 3,
+    "elevation_ft": 1750,
     "peaks": [
       "Windham"
     ],
     "hikers": [
       "Dan"
     ],
+    "excerpt": "After a self-imposed Covid quarantine, a solo hike up a high peak provides a much-needed escape.",
     "url": "/catskills/2020/05/14/2020-05-14-windham-solo.html"
   },
   {

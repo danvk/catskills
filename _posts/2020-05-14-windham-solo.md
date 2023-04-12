@@ -37,7 +37,7 @@ And the view from the summit was spectacular. I could see the Blackhead range as
 
 ![View from the summit]({{site.baseurl}}/assets/2020-05-14-windham-solo/summit-view.jpeg)
 
-My reviews were glowing enough that Alex wanted to do the hike, too. We [repeated this hike][repeat] two weeks later, when it was noticeably more springy.
+My reviews were glowing enough that Alex wanted to do the hike, too. We [repeated it][repeat] a week later when it was noticeably more spring-like.
 
 Looking back, this was a pretty speedy hike! Just over 3h for ~6.5mi. I also remember getting the idea for what would eventually become my [tsconf 2021 talk][talk] ("TypeScript Types: The First 500 Years") on this hike.
 

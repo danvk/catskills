@@ -413,13 +413,13 @@
     "url": "/catskills/2020/06/10/2020-06-10-hayden.html"
   },
   {
-    "title": "Windham with Alex",
     "date": "2020-05-22",
-    "type": "Out & Back",
     "slug": "2020-05-22-windham2",
-    "miles": 6.1,
+    "title": "Windham with Alex",
+    "type": "Out & Back",
+    "miles": 6,
     "hike_hours": 3.7,
-    "elevation_ft": 1422,
+    "elevation_ft": 1486,
     "peaks": [
       "Windham"
     ],
@@ -427,6 +427,7 @@
       "Dan",
       "Alex"
     ],
+    "excerpt": "A variation on the previous week's hike with a companion and more abundant signs of spring.",
     "url": "/catskills/2020/05/22/2020-05-22-windham2.html"
   },
   {
@@ -447,13 +448,13 @@
     "url": "/catskills/2020/05/14/2020-05-14-windham-solo.html"
   },
   {
-    "title": "Indian Head",
     "date": "2018-07-08",
-    "type": "Out & Back",
     "slug": "2018-07-08-indian-head",
-    "miles": "???",
-    "hike_hours": "???",
-    "elevation_ft": "???",
+    "title": "Indian Head",
+    "type": "Out & Back",
+    "miles": 4.75,
+    "hike_hours": 3.5,
+    "elevation_ft": 1585,
     "peaks": [
       "Indian Head"
     ],
@@ -461,6 +462,7 @@
       "Dan",
       "Alex"
     ],
+    "excerpt": "A pit stop for a hike and a waterfall on our way back from Delaware County.",
     "url": "/catskills/2018/07/08/2018-07-08-indian-head.html"
   },
   {

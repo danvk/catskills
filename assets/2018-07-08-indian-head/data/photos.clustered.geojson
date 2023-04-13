@@ -1,0 +1,153 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10002777777777,
+          42.11701111111111
+        ]
+      },
+      "properties": {
+        "date": "2018-07-08T17:17:23Z",
+        "num_photos": 2,
+        "photos": [
+          {
+            "file": "Photos-001/IMG_3506.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:17:23"
+          },
+          {
+            "file": "Photos-001/IMG_3507.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:17:24"
+          }
+        ]
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10192083333332,
+          42.11513888888889
+        ]
+      },
+      "properties": {
+        "date": "2018-07-08T17:35:10Z",
+        "num_photos": 4,
+        "photos": [
+          {
+            "file": "Photos-001/IMG_3508.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:35:03"
+          },
+          {
+            "file": "Photos-001/IMG_3509.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:35:04"
+          },
+          {
+            "file": "Photos-001/IMG_3510.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:35:16"
+          },
+          {
+            "file": "Photos-001/IMG_3511.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:35:18"
+          }
+        ]
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10391851851853,
+          42.11405679012344
+        ]
+      },
+      "properties": {
+        "date": "2018-07-08T17:55:59Z",
+        "num_photos": 9,
+        "photos": [
+          {
+            "file": "Photos-001/IMG_3512.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:54:51"
+          },
+          {
+            "file": "Photos-001/IMG_3513.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:54:55"
+          },
+          {
+            "file": "Photos-001/IMG_3514.JPG",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:55:15"
+          },
+          {
+            "file": "Photos-001/IMG_3515.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:55:50"
+          },
+          {
+            "file": "Photos-001/IMG_3516.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:55:50"
+          },
+          {
+            "file": "Photos-001/IMG_3517.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:55:55"
+          },
+          {
+            "file": "Photos-001/IMG_3518.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:55:56"
+          },
+          {
+            "file": "Photos-001/IMG_3519.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:57:40"
+          },
+          {
+            "file": "Photos-001/IMG_3520.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 13:57:40"
+          }
+        ]
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1062861111111,
+          42.11601666666667
+        ]
+      },
+      "properties": {
+        "date": "2018-07-08T18:04:28Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "Photos-001/IMG_3521.HEIC",
+            "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+            "date": "2018:07:08 14:04:28"
+          }
+        ]
+      },
+      "id": 3
+    }
+  ]
+}

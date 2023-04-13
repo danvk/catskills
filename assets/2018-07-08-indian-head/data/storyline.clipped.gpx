@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx 
+creator="Moves" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:tns="http://www.topografix.com/GPX/1/1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <desc>Moves Storyline</desc>
+    <link href="http://www.moves-app.com"/>
+    <time>2018-07-10T12:38:52.426Z</time>
+  </metadata>
+  <trk>
+    <name>7/8/18</name>
+    <trkseg>
+      <trkpt lon="-74.085835" lat="42.133225">
+        <time>2018-07-08T12:21:31.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087946" lat="42.132226">
+        <time>2018-07-08T12:23:31.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088102" lat="42.131998">
+        <time>2018-07-08T12:23:57.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088126" lat="42.131969">
+        <time>2018-07-08T12:24:33.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088705" lat="42.130659">
+        <time>2018-07-08T12:27:53.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088461" lat="42.130545">
+        <time>2018-07-08T12:28:27.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.08756" lat="42.128852">
+        <time>2018-07-08T12:31:26.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.08763" lat="42.12866">
+        <time>2018-07-08T12:31:42.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087621" lat="42.128618">
+        <time>2018-07-08T12:31:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087362" lat="42.126771">
+        <time>2018-07-08T12:35:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087401" lat="42.12662">
+        <time>2018-07-08T12:35:36.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.08742" lat="42.126599">
+        <time>2018-07-08T12:35:58.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088088" lat="42.124784">
+        <time>2018-07-08T12:38:56.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088161" lat="42.124676">
+        <time>2018-07-08T12:39:12.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088157" lat="42.124499">
+        <time>2018-07-08T12:39:42.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087981" lat="42.124283">
+        <time>2018-07-08T12:40:09.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086651" lat="42.122731">
+        <time>2018-07-08T12:43:09.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086517" lat="42.12254">
+        <time>2018-07-08T12:43:26.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086125" lat="42.121505">
+        <time>2018-07-08T12:46:27.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086202" lat="42.121503">
+        <time>2018-07-08T12:46:45.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086255" lat="42.121517">
+        <time>2018-07-08T12:47:05.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087903" lat="42.121557">
+        <time>2018-07-08T12:50:29.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088143" lat="42.121719">
+        <time>2018-07-08T12:50:47.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088167" lat="42.121712">
+        <time>2018-07-08T12:51:03.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.090109" lat="42.12141">
+        <time>2018-07-08T12:54:02.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.090349" lat="42.121193">
+        <time>2018-07-08T12:54:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.090403" lat="42.121246">
+        <time>2018-07-08T12:54:34.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.092639" lat="42.12011">
+        <time>2018-07-08T12:54:35.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.092639" lat="42.12011">
+        <time>2018-07-08T13:00:33.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.092639" lat="42.12011">
+        <time>2018-07-08T13:00:33.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.094793" lat="42.119712">
+        <time>2018-07-08T13:01:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.094951" lat="42.11962">
+        <time>2018-07-08T13:02:17.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.096643" lat="42.118914">
+        <time>2018-07-08T13:05:53.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.096858" lat="42.11881">
+        <time>2018-07-08T13:06:17.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.09691" lat="42.118788">
+        <time>2018-07-08T13:06:36.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.098094" lat="42.118449">
+        <time>2018-07-08T13:09:16.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.098416" lat="42.118298">
+        <time>2018-07-08T13:10:02.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.098568" lat="42.118112">
+        <time>2018-07-08T13:10:23.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099677" lat="42.117298">
+        <time>2018-07-08T13:13:48.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099829" lat="42.117312">
+        <time>2018-07-08T13:14:09.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100126" lat="42.116994">
+        <time>2018-07-08T13:16:16.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.100126" lat="42.116994">
+        <time>2018-07-08T13:16:17.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.100126" lat="42.116994">
+        <time>2018-07-08T13:19:30.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.100126" lat="42.116994">
+        <time>2018-07-08T13:19:30.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100393" lat="42.116466">
+        <time>2018-07-08T13:20:58.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100424" lat="42.116399">
+        <time>2018-07-08T13:21:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101962" lat="42.115075">
+        <time>2018-07-08T13:24:26.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.101962" lat="42.115075">
+        <time>2018-07-08T13:24:27.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.101962" lat="42.115075">
+        <time>2018-07-08T13:45:29.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.101962" lat="42.115075">
+        <time>2018-07-08T13:45:29.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102067" lat="42.11525">
+        <time>2018-07-08T13:46:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101977" lat="42.11496">
+        <time>2018-07-08T13:46:40.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102261" lat="42.113857">
+        <time>2018-07-08T13:50:14.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102396" lat="42.113956">
+        <time>2018-07-08T13:50:30.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102683" lat="42.113976">
+        <time>2018-07-08T13:51:26.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102863" lat="42.113968">
+        <time>2018-07-08T13:52:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.103798" lat="42.113928">
+        <time>2018-07-08T13:54:25.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.103784" lat="42.113886">
+        <time>2018-07-08T13:55:12.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.103813" lat="42.113883">
+        <time>2018-07-08T13:55:29.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.103972" lat="42.114123">
+        <time>2018-07-08T13:56:05.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.104329" lat="42.114547">
+        <time>2018-07-08T13:57:13.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.104374" lat="42.114512">
+        <time>2018-07-08T13:57:47.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.105429" lat="42.115476">
+        <time>2018-07-08T13:59:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.10543" lat="42.115476">
+        <time>2018-07-08T14:00:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.105993" lat="42.115991">
+        <time>2018-07-08T14:01:11.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.106141" lat="42.11588">
+        <time>2018-07-08T14:01:29.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.106311" lat="42.115996">
+        <time>2018-07-08T14:02:23.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.106311" lat="42.115996">
+        <time>2018-07-08T14:02:23.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.106311" lat="42.115996">
+        <time>2018-07-08T14:14:30.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.106311" lat="42.115996">
+        <time>2018-07-08T14:14:30.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.106142" lat="42.115866">
+        <time>2018-07-08T14:14:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.10465" lat="42.114815">
+        <time>2018-07-08T14:18:11.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.104504" lat="42.114752">
+        <time>2018-07-08T14:18:28.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.104383" lat="42.114644">
+        <time>2018-07-08T14:18:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102563" lat="42.113744">
+        <time>2018-07-08T14:22:11.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102445" lat="42.113836">
+        <time>2018-07-08T14:22:31.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101888" lat="42.114432">
+        <time>2018-07-08T14:26:07.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101929" lat="42.114516">
+        <time>2018-07-08T14:26:23.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101943" lat="42.114573">
+        <time>2018-07-08T14:26:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.10241" lat="42.115194">
+        <time>2018-07-08T14:30:16.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102328" lat="42.115319">
+        <time>2018-07-08T14:30:34.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102351" lat="42.115348">
+        <time>2018-07-08T14:30:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.102165" lat="42.116238">
+        <time>2018-07-08T14:30:51.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.102165" lat="42.116238">
+        <time>2018-07-08T14:36:46.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.102165" lat="42.116238">
+        <time>2018-07-08T14:36:46.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100539" lat="42.116122">
+        <time>2018-07-08T14:38:12.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100458" lat="42.116231">
+        <time>2018-07-08T14:38:36.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.09967" lat="42.117306">
+        <time>2018-07-08T14:42:02.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099751" lat="42.117329">
+        <time>2018-07-08T14:42:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099673" lat="42.117347">
+        <time>2018-07-08T14:42:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.098628" lat="42.117704">
+        <time>2018-07-08T14:46:17.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.098693" lat="42.117869">
+        <time>2018-07-08T14:46:40.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.097731" lat="42.118758">
+        <time>2018-07-08T14:50:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.097596" lat="42.118745">
+        <time>2018-07-08T14:50:35.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.097524" lat="42.118754">
+        <time>2018-07-08T14:50:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.095916" lat="42.11924">
+        <time>2018-07-08T14:54:22.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.09578" lat="42.119307">
+        <time>2018-07-08T14:54:39.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.094181" lat="42.119743">
+        <time>2018-07-08T14:58:08.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.093959" lat="42.119715">
+        <time>2018-07-08T14:58:31.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.093932" lat="42.119735">
+        <time>2018-07-08T14:58:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.093233" lat="42.120032">
+        <time>2018-07-08T14:59:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.093232" lat="42.120032">
+        <time>2018-07-08T15:00:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.091813" lat="42.120633">
+        <time>2018-07-08T15:02:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.091551" lat="42.120758">
+        <time>2018-07-08T15:02:39.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.089116" lat="42.121725">
+        <time>2018-07-08T15:06:08.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.08948" lat="42.121434">
+        <time>2018-07-08T15:06:24.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.089134" lat="42.121447">
+        <time>2018-07-08T15:06:40.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.089091" lat="42.121465">
+        <time>2018-07-08T15:06:56.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087063" lat="42.121656">
+        <time>2018-07-08T15:10:14.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086912" lat="42.1216">
+        <time>2018-07-08T15:10:41.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086899" lat="42.121599">
+        <time>2018-07-08T15:10:58.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086586" lat="42.121592">
+        <time>2018-07-08T15:12:23.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086153" lat="42.121584">
+        <time>2018-07-08T15:14:39.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086144" lat="42.121594">
+        <time>2018-07-08T15:14:55.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087259" lat="42.123656">
+        <time>2018-07-08T15:18:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087384" lat="42.123747">
+        <time>2018-07-08T15:18:35.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087464" lat="42.123779">
+        <time>2018-07-08T15:18:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087717" lat="42.125816">
+        <time>2018-07-08T15:22:12.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087877" lat="42.125638">
+        <time>2018-07-08T15:22:28.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087748" lat="42.125816">
+        <time>2018-07-08T15:22:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087205" lat="42.127705">
+        <time>2018-07-08T15:25:53.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087341" lat="42.127792">
+        <time>2018-07-08T15:26:10.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087964" lat="42.129858">
+        <time>2018-07-08T15:29:33.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088111" lat="42.130102">
+        <time>2018-07-08T15:29:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088156" lat="42.130139">
+        <time>2018-07-08T15:30:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088014" lat="42.131835">
+        <time>2018-07-08T15:33:28.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088015" lat="42.132031">
+        <time>2018-07-08T15:33:44.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.08609" lat="42.133126">
+        <time>2018-07-08T15:37:17.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085414" lat="42.132425">
+        <time>2018-07-08T15:37:34.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.0854142643706" lat="42.13242486995591">
+        <time>2018-07-08T15:37:35.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.0854142643706" lat="42.13242486995591">
+        <time>2018-07-08T16:09:29.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.085414" lat="42.132425">
+        <time>2018-07-08T16:09:29.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.084356" lat="42.131888">
+        <time>2018-07-08T16:12:03.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.084093" lat="42.131974">
+        <time>2018-07-08T16:12:30.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085791" lat="42.133282">
+        <time>2018-07-08T16:15:55.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085916" lat="42.133362">
+        <time>2018-07-08T16:16:11.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

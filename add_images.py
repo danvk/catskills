@@ -22,10 +22,12 @@ if __name__ == '__main__':
     images_md = '\n'.join(images)
 
     old_post = open(md_file).read()
+
     _, frontmatter, post = old_post.split('---')
-    new_post = f'''---
-date: {date}
-slug: {slug}{frontmatter}---
+    if 'date:' not in frontmatter:
+        frontmatter = f'date: {date}\nslug: {slug}{frontmatter}'
+
+    new_post = f'''---{frontmatter}---
 [![GPS Track of the hike]({baseurl}/assets/{slug}/track.png)]({baseurl}/map/?hike={slug})
 
 {images_md}{post}'''

@@ -31,7 +31,7 @@
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.488328, 42.090836]}, "properties": {"type": "dec", "name": "Balsam"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.474165, 42.265283]}, "properties": {"type": "trail", "name": "Bearpen"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.115, 42.116389   ]}, "properties": {"type": "dec", "name": "Indian Head"}},
-{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.373331, 42.175558]}, "properties": {"type": "bushwhack", "name": "Sherrill"}},
+{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.373331, 42.175558]}, "properties": {"type": "bushwhack", "name": "Mount Sherrill"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.438331, 42.180003]}, "properties": {"type": "bushwhack", "name": "Halcott"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.448885, 42.245836]}, "properties": {"type": "trail", "name": "Vly"}},
 {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.143611, 42.314724]}, "properties": {"type": "dec", "name": "Windham"}},

@@ -18,7 +18,7 @@ See the Catskill 3500 Club's [official list of peaks].
 | 3 | Black Dome | 3980' | Trailed | [2022-10-19: Late Fall in the Blackhead Range][2022-10-19-blackhead-range]<br>[2020-09-27: Foggy Black Dome][2020-09-27-blackdome] |
 | 4 | Thomas Cole | 3940' | Trailed | [2022-10-19: Late Fall in the Blackhead Range][2022-10-19-blackhead-range] |
 | 5 | Blackhead | 3940' | Trailed | [2023-03-05: Blackhead Snowshoe Adventure][2023-03-05-winter-blackhead]<br>[2022-10-19: Late Fall in the Blackhead Range][2022-10-19-blackhead-range]<br>[2016-08-06: Windham and Blackhead overnight][2016-08-06-windham-blackhead] |
-| 6 | Westkill | 3880' | Trailed | _None Yet!_ |
+| 6 | Westkill | 3880' | Trailed | [2023-04-15: Spruceton Doubleshot, a Race Against the Storm][2023-04-15-spruceton] |
 | 7 | Cornell | 3860' | Trailed | [2022-09-28: The Nine][2022-09-28-the-nine] |
 | 8 | Table | 3847' | Trailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine]<br>[2022-07-10: Table & Peekamoose aka "The Blackburnian Hike"][2022-07-10-table-peekamoose] |
 | 9 | Peekamoose | 3843' | Trailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine]<br>[2022-07-10: Table & Peekamoose aka "The Blackburnian Hike"][2022-07-10-table-peekamoose] |
@@ -36,17 +36,19 @@ See the Catskill 3500 Club's [official list of peaks].
 | 21 | Twin | 3640' | Trailed | [2022-07-16: Indian Head & Twin: Baby Birds!][2022-07-16-indian-twin]<br>[2016-05-28: Sugarloaf and Twin overnight (my first Catskills hike)][2016-05-28-sugarloaf-twin] |
 | 22 | Balsam Cap | 3623' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 | 23 | Fir | 3620' | Untrailed | [2023-03-18: Fir Snowshoe: The Bushes Whack YOU!][2023-03-18-fir] |
-| 24 | North Dome | 3610' | Untrailed | _None Yet!_ |
+| 24 | North Dome | 3610' | Untrailed | [2023-04-15: Spruceton Doubleshot, a Race Against the Storm][2023-04-15-spruceton] |
 | 25 | Eagle | 3600' | Trailed | _None Yet!_ |
 | 26 | Balsam | 3600' | Trailed | [2023-01-14: Balsam (Winter)][2023-01-14-winter-balsam]<br>[2020-09-03: Balsam Summer Hike][2020-09-03-balsam] |
 | 27 | Bearpen | 3600' | Trailed | [2023-03-21: Bearpen & Vly, Spring or Winter?][2023-03-21-bearpen-vly] |
 | 28 | Indian Head | 3573' | Trailed | [2022-07-16: Indian Head & Twin: Baby Birds!][2022-07-16-indian-twin]<br>[2018-07-08: Indian Head][2018-07-08-indian-head] |
-| 29 | Sherrill | 3540' | Untrailed | _None Yet!_ |
-| 30 | Halcott | 3537' | Untrailed | _None Yet!_ |
+| 29 | Mount Sherrill | 3540' | Untrailed | [2023-04-15: Spruceton Doubleshot, a Race Against the Storm][2023-04-15-spruceton] |
+| 30 | Halcott | 3537' | Untrailed | [2023-04-14: Spring on Halcott: A tale of two trails][2023-04-14-halcott] |
 | 31 | Vly | 3529' | Untrailed | [2023-03-21: Bearpen & Vly, Spring or Winter?][2023-03-21-bearpen-vly] |
 | 32 | Windham High Peak | 3524' | Trailed | [2020-10-04: Fall Windham][2020-10-04-fall-windham]<br>[2020-05-22: Windham with Alex][2020-05-22-windham2]<br>[2020-05-14: Windham (solo)][2020-05-14-windham-solo]<br>[2016-08-06: Windham and Blackhead overnight][2016-08-06-windham-blackhead] |
 | 33 | Rocky | 3487' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 
+[2023-04-15-spruceton]: /catskills/2023/04/15/2023-04-15-spruceton.html
+[2023-04-14-halcott]: /catskills/2023/04/14/2023-04-14-halcott.html
 [2023-04-04-rusk]: /catskills/2023/04/04/2023-04-04-rusk.html
 [2023-03-21-bearpen-vly]: /catskills/2023/03/21/2023-03-21-bearpen-vly.html
 [2023-03-18-fir]: /catskills/2023/03/18/2023-03-18-fir.html

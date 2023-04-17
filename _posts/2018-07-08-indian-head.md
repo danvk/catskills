@@ -19,7 +19,7 @@ Timeline:
 
 [![GPS Track of the hike]({{site.baseurl}}/assets/2018-07-08-indian-head/track.png)]({{site.baseurl}}/map/?hike=2018-07-08-indian-head)
 
-We hit this up on the way back from Bovina (we'd do this [many more] [times] in the future). I'd been to Plattekill falls once before with my friend Richard during a rest day on a climbing trip and wanted to show it to Alex.
+We hit this up on the way back from Bovina (we'd do this [many] more [times] in the future). I'd been to Plattekill falls once before with my friend Richard during a rest day on a climbing trip and wanted to show it to Alex.
 
 ![Plattekill Falls]({{site.baseurl}}/assets/2018-07-08-indian-head/waterfall.jpeg)
 
@@ -42,5 +42,5 @@ The track for this hike from Moves has lots of data but is a bit tough to work w
 -->
 
 [again in 2022]: /catskills/2022/07/16/2022-07-16-indian-twin.html
-[many more]: /catskills/2023/03/21/2023-03-21-bearpen-vly.html
+[many]: /catskills/2023/03/21/2023-03-21-bearpen-vly.html
 [times]: /catskills/2020/09/03/2020-09-03-balsam.html

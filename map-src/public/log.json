@@ -1,5 +1,42 @@
 [
   {
+    "title": "Spruceton Doubleshot, a Race Against the Storm",
+    "type": "Through",
+    "slug": "2023-04-15-spruceton",
+    "date": "2023-04-15",
+    "miles": 11.7,
+    "hike_hours": 8,
+    "elevation_ft": 4245,
+    "peaks": [
+      "Mount Sherrill",
+      "North Dome",
+      "Westkill"
+    ],
+    "hikers": [
+      "Dan",
+      "John G"
+    ],
+    "excerpt": "An epic three-peak day in which we narrowly dodge an approaching spring thunderstorm.",
+    "url": "/catskills/2023/04/15/2023-04-15-spruceton.html"
+  },
+  {
+    "title": "Spring on Halcott: A tale of two trails",
+    "type": "Loop",
+    "miles": 4.4,
+    "slug": "2023-04-14-halcott",
+    "date": "2023-04-14",
+    "hike_hours": 3,
+    "elevation_ft": 1795,
+    "peaks": [
+      "Halcott"
+    ],
+    "hikers": [
+      "Dan"
+    ],
+    "excerpt": "Spring is springing in the mountains, and one side of this loop is considerably harder than the other.",
+    "url": "/catskills/2023/04/14/2023-04-14-halcott.html"
+  },
+  {
     "date": "2023-04-04",
     "slug": "2023-04-04-rusk",
     "title": "Rusk Bushwhack: Snowshoes and a T-Shirt",

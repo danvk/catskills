@@ -1,0 +1,218 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.32205277777777,
+          42.171324999999996
+        ]
+      },
+      "properties": {
+        "date": "2023-04-15T19:06:15Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_5190.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 15:06:15"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.30525833333333,
+          42.167605555555554
+        ]
+      },
+      "properties": {
+        "date": "2023-04-15T19:37:58Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_5191.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 15:37:58"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.293725,
+          42.166225
+        ]
+      },
+      "properties": {
+        "date": "2023-04-15T19:55:10Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_5192.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 15:55:10"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.29174722222223,
+          42.16589444444444
+        ]
+      },
+      "properties": {
+        "date": "2023-04-15T20:01:22Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_5193.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 16:01:22"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2882349206349,
+          42.16855238095237
+        ]
+      },
+      "properties": {
+        "date": "2023-04-15T20:08:56Z",
+        "num_photos": 7,
+        "photos": [
+          {
+            "file": "IMG_5194.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 16:05:49"
+          },
+          {
+            "file": "IMG_5195.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 16:08:08"
+          },
+          {
+            "file": "IMG_5196.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 16:08:17"
+          },
+          {
+            "file": "IMG_5197.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 16:09:32"
+          },
+          {
+            "file": "IMG_5198.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 16:09:35"
+          },
+          {
+            "file": "IMG_5199.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 16:10:32"
+          },
+          {
+            "file": "IMG_5200.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 16:10:40"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.268525,
+          42.169125
+        ]
+      },
+      "properties": {
+        "date": "2023-04-15T20:50:26Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_5201.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 16:50:26"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2645111111111,
+          42.17161111111111
+        ]
+      },
+      "properties": {
+        "date": "2023-04-15T21:09:46Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_5202.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 17:09:46"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.25781944444444,
+          42.17513888888888
+        ]
+      },
+      "properties": {
+        "date": "2023-04-15T21:32:30Z",
+        "num_photos": 4,
+        "photos": [
+          {
+            "file": "IMG_5203.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 17:31:41"
+          },
+          {
+            "file": "IMG_5204.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 17:31:46"
+          },
+          {
+            "file": "IMG_5205.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 17:33:12"
+          },
+          {
+            "file": "IMG_5206.heic",
+            "zipfile": "/Users/danvk/Downloads/Spruceton Doubleshot.zip",
+            "date": "2023:04:15 17:33:21"
+          }
+        ]
+      }
+    }
+  ]
+}

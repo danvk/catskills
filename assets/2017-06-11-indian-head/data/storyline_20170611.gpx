@@ -1,0 +1,2665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx 
+creator="Moves" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:tns="http://www.topografix.com/GPX/1/1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <desc>Moves Storyline</desc>
+    <link href="http://www.moves-app.com"/>
+    <time>2018-07-10T12:38:57.644Z</time>
+  </metadata>
+  <wpt lon="-74.185651" lat="41.73054">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.185457" lat="41.732057">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.086204" lat="41.747716">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.087332" lat="41.747272">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.104287" lat="42.133926">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.106311" lat="42.115996">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.101787" lat="42.115364">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.087235" lat="42.118561">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.088295" lat="42.130401">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.085414" lat="42.132425">
+    <name>Unknown</name>
+  </wpt>
+  <wpt lon="-74.185497" lat="41.731677">
+    <name>Unknown</name>
+  </wpt>
+  <trk>
+    <name>6/11/17</name>
+    <trkseg>
+      <trkpt lon="-74.185651" lat="41.73054">
+        <time>2017-06-11T00:00:00.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.185651" lat="41.73054">
+        <time>2017-06-11T09:01:38.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.185651" lat="41.73054">
+        <time>2017-06-11T09:01:38.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.185346" lat="41.730777">
+        <time>2017-06-11T09:03:04.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.185513" lat="41.730893">
+        <time>2017-06-11T09:03:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.185574" lat="41.731041">
+        <time>2017-06-11T09:03:35.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.185457" lat="41.732057">
+        <time>2017-06-11T09:06:46.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.185457" lat="41.732057">
+        <time>2017-06-11T09:06:47.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.185457" lat="41.732057">
+        <time>2017-06-11T09:28:19.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.185457" lat="41.732057">
+        <time>2017-06-11T09:28:19.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.183794" lat="41.733176">
+        <time>2017-06-11T09:28:34.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.181274" lat="41.734802">
+        <time>2017-06-11T09:28:56.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.126554" lat="41.741175">
+        <time>2017-06-11T09:32:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.120616" lat="41.741612">
+        <time>2017-06-11T09:32:40.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.082284" lat="41.747914">
+        <time>2017-06-11T09:36:15.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.082188" lat="41.747964">
+        <time>2017-06-11T09:36:39.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.08376" lat="41.748017">
+        <time>2017-06-11T09:38:09.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.08376" lat="41.748017">
+        <time>2017-06-11T09:38:25.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.08376" lat="41.748017">
+        <time>2017-06-11T09:38:41.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.08376" lat="41.748017">
+        <time>2017-06-11T09:38:57.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.085219" lat="41.748174">
+        <time>2017-06-11T09:39:13.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086126" lat="41.747882">
+        <time>2017-06-11T09:39:32.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.085847" lat="41.748452">
+        <time>2017-06-11T09:39:48.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.085752" lat="41.749252">
+        <time>2017-06-11T09:40:09.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086198" lat="41.749591">
+        <time>2017-06-11T09:40:25.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086593" lat="41.749069">
+        <time>2017-06-11T09:40:41.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.087009" lat="41.747716">
+        <time>2017-06-11T09:40:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086204" lat="41.747716">
+        <time>2017-06-11T09:41:58.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.086204" lat="41.747716">
+        <time>2017-06-11T09:41:59.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.086204" lat="41.747716">
+        <time>2017-06-11T10:46:58.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.087332" lat="41.747272">
+        <time>2017-06-11T10:46:58.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.087332" lat="41.747272">
+        <time>2017-06-11T11:13:26.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.087332" lat="41.747272">
+        <time>2017-06-11T11:13:26.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086951" lat="41.747505">
+        <time>2017-06-11T11:13:49.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086831" lat="41.747543">
+        <time>2017-06-11T11:14:12.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086774" lat="41.74753">
+        <time>2017-06-11T11:14:35.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086676" lat="41.747562">
+        <time>2017-06-11T11:14:55.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086462" lat="41.747627">
+        <time>2017-06-11T11:15:10.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086275" lat="41.747658">
+        <time>2017-06-11T11:15:27.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.086275" lat="41.747658">
+        <time>2017-06-11T11:15:27.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086187" lat="41.747721">
+        <time>2017-06-11T11:15:49.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086181" lat="41.747741">
+        <time>2017-06-11T11:16:14.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086189" lat="41.747756">
+        <time>2017-06-11T11:16:30.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086172" lat="41.747784">
+        <time>2017-06-11T11:16:45.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.08563" lat="41.748003">
+        <time>2017-06-11T11:18:24.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.067273" lat="41.741798">
+        <time>2017-06-11T11:20:45.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.061754" lat="41.740189">
+        <time>2017-06-11T11:21:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.064942" lat="41.739169">
+        <time>2017-06-11T11:22:30.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.064302" lat="41.743276">
+        <time>2017-06-11T11:22:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.061647" lat="41.749302">
+        <time>2017-06-11T11:23:08.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.059156" lat="41.75376">
+        <time>2017-06-11T11:23:24.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.05576" lat="41.760887">
+        <time>2017-06-11T11:23:48.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.052657" lat="41.769778">
+        <time>2017-06-11T11:24:19.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.051185" lat="41.775843">
+        <time>2017-06-11T11:24:41.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.049926" lat="41.784479">
+        <time>2017-06-11T11:25:09.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.050128" lat="41.78936">
+        <time>2017-06-11T11:25:25.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.051289" lat="41.794045">
+        <time>2017-06-11T11:25:41.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.051533" lat="41.799187">
+        <time>2017-06-11T11:25:58.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.051524" lat="41.803716">
+        <time>2017-06-11T11:26:13.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.052639" lat="41.808451">
+        <time>2017-06-11T11:26:29.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.055323" lat="41.815035">
+        <time>2017-06-11T11:26:51.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.056651" lat="41.819853">
+        <time>2017-06-11T11:27:07.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057158" lat="41.827884">
+        <time>2017-06-11T11:27:33.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057171" lat="41.832709">
+        <time>2017-06-11T11:27:49.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.05783" lat="41.838623">
+        <time>2017-06-11T11:28:08.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.058949" lat="41.844299">
+        <time>2017-06-11T11:28:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.059113" lat="41.852479">
+        <time>2017-06-11T11:28:53.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.058034" lat="41.857317">
+        <time>2017-06-11T11:29:10.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057062" lat="41.861751">
+        <time>2017-06-11T11:29:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057148" lat="41.867166">
+        <time>2017-06-11T11:29:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.058045" lat="41.873019">
+        <time>2017-06-11T11:30:06.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.058094" lat="41.879845">
+        <time>2017-06-11T11:30:29.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.054831" lat="41.887599">
+        <time>2017-06-11T11:30:58.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.049003" lat="41.891689">
+        <time>2017-06-11T11:31:19.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.043195" lat="41.898372">
+        <time>2017-06-11T11:31:48.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.04182" lat="41.904038">
+        <time>2017-06-11T11:32:09.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.042782" lat="41.909593">
+        <time>2017-06-11T11:32:28.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.043652" lat="41.915148">
+        <time>2017-06-11T11:32:47.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.044175" lat="41.919749">
+        <time>2017-06-11T11:33:03.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.044216" lat="41.926865">
+        <time>2017-06-11T11:33:27.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.0397" lat="41.934606">
+        <time>2017-06-11T11:33:55.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.035547" lat="41.939699">
+        <time>2017-06-11T11:34:15.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.028603" lat="41.946589">
+        <time>2017-06-11T11:34:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.025765" lat="41.947096">
+        <time>2017-06-11T11:35:02.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.026659" lat="41.945172">
+        <time>2017-06-11T11:35:27.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.029206" lat="41.944508">
+        <time>2017-06-11T11:36:05.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.031529" lat="41.946897">
+        <time>2017-06-11T11:36:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.034835" lat="41.948661">
+        <time>2017-06-11T11:36:42.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.039566" lat="41.949043">
+        <time>2017-06-11T11:36:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.042608" lat="41.949286">
+        <time>2017-06-11T11:37:15.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.045705" lat="41.950709">
+        <time>2017-06-11T11:37:31.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.049737" lat="41.956224">
+        <time>2017-06-11T11:38:02.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.05291" lat="41.958354">
+        <time>2017-06-11T11:38:18.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.056026" lat="41.959926">
+        <time>2017-06-11T11:38:34.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.061405" lat="41.962976">
+        <time>2017-06-11T11:39:00.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.06559" lat="41.965348">
+        <time>2017-06-11T11:39:19.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.070648" lat="41.969297">
+        <time>2017-06-11T11:39:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.074144" lat="41.971218">
+        <time>2017-06-11T11:40:02.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.080569" lat="41.973468">
+        <time>2017-06-11T11:40:29.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.085271" lat="41.9789">
+        <time>2017-06-11T11:41:00.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.08607" lat="41.981955">
+        <time>2017-06-11T11:41:16.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086077" lat="41.985339">
+        <time>2017-06-11T11:41:32.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086156" lat="41.989708">
+        <time>2017-06-11T11:41:53.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.087206" lat="41.993157">
+        <time>2017-06-11T11:42:13.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.087696" lat="41.993768">
+        <time>2017-06-11T11:42:29.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.089694" lat="41.995245">
+        <time>2017-06-11T11:42:45.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.096145" lat="41.996052">
+        <time>2017-06-11T11:43:10.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.101779" lat="41.996861">
+        <time>2017-06-11T11:43:30.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.104868" lat="41.997458">
+        <time>2017-06-11T11:43:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.105084" lat="41.999555">
+        <time>2017-06-11T11:44:02.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.105255" lat="42.002264">
+        <time>2017-06-11T11:44:18.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.106109" lat="42.005738">
+        <time>2017-06-11T11:44:39.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.106833" lat="42.008488">
+        <time>2017-06-11T11:45:00.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.107908" lat="42.010723">
+        <time>2017-06-11T11:45:16.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.106957" lat="42.013354">
+        <time>2017-06-11T11:45:32.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.105688" lat="42.017003">
+        <time>2017-06-11T11:45:54.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.105951" lat="42.02197">
+        <time>2017-06-11T11:46:24.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.106233" lat="42.024475">
+        <time>2017-06-11T11:46:40.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.105906" lat="42.026714">
+        <time>2017-06-11T11:46:56.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.106648" lat="42.028979">
+        <time>2017-06-11T11:47:12.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.108384" lat="42.031351">
+        <time>2017-06-11T11:47:29.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.109529" lat="42.033808">
+        <time>2017-06-11T11:47:47.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.110935" lat="42.03606">
+        <time>2017-06-11T11:48:04.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.110839" lat="42.03691">
+        <time>2017-06-11T11:48:20.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.110851" lat="42.036978">
+        <time>2017-06-11T11:48:39.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.118512" lat="42.040931">
+        <time>2017-06-11T11:50:13.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.120214" lat="42.040436">
+        <time>2017-06-11T11:50:35.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.121747" lat="42.040374">
+        <time>2017-06-11T11:50:53.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.123427" lat="42.040328">
+        <time>2017-06-11T11:51:09.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.123984" lat="42.040364">
+        <time>2017-06-11T11:51:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.122366" lat="42.040341">
+        <time>2017-06-11T11:51:51.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.120661" lat="42.040497">
+        <time>2017-06-11T11:52:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.119106" lat="42.040652">
+        <time>2017-06-11T11:52:34.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.118562" lat="42.040942">
+        <time>2017-06-11T11:52:50.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.118299" lat="42.041097">
+        <time>2017-06-11T11:53:18.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.118238" lat="42.042011">
+        <time>2017-06-11T11:53:34.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.118276" lat="42.043644">
+        <time>2017-06-11T11:53:50.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.118738" lat="42.046235">
+        <time>2017-06-11T11:54:10.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.118066" lat="42.048778">
+        <time>2017-06-11T11:54:30.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.117262" lat="42.04922">
+        <time>2017-06-11T11:54:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.114525" lat="42.049051">
+        <time>2017-06-11T11:55:02.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.111547" lat="42.049306">
+        <time>2017-06-11T11:55:18.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.108586" lat="42.050557">
+        <time>2017-06-11T11:55:36.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.104845" lat="42.051671">
+        <time>2017-06-11T11:55:56.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.101" lat="42.052557">
+        <time>2017-06-11T11:56:16.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.098259" lat="42.053724">
+        <time>2017-06-11T11:56:32.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.092178" lat="42.055267">
+        <time>2017-06-11T11:57:01.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.087038" lat="42.055752">
+        <time>2017-06-11T11:57:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.084811" lat="42.05672">
+        <time>2017-06-11T11:57:42.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.081898" lat="42.058676">
+        <time>2017-06-11T11:57:58.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.079081" lat="42.060954">
+        <time>2017-06-11T11:58:14.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.077087" lat="42.063359">
+        <time>2017-06-11T11:58:30.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.074951" lat="42.065721">
+        <time>2017-06-11T11:58:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.073103" lat="42.068057">
+        <time>2017-06-11T11:59:02.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.074881" lat="42.06995">
+        <time>2017-06-11T11:59:18.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.073318" lat="42.07143">
+        <time>2017-06-11T11:59:34.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.071187" lat="42.073378">
+        <time>2017-06-11T11:59:50.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.069722" lat="42.07481">
+        <time>2017-06-11T11:59:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.069721" lat="42.074811">
+        <time>2017-06-11T12:00:00.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.068841" lat="42.075671">
+        <time>2017-06-11T12:00:06.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.065771" lat="42.079397">
+        <time>2017-06-11T12:00:27.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.063552" lat="42.082058">
+        <time>2017-06-11T12:00:43.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.061647" lat="42.084805">
+        <time>2017-06-11T12:01:01.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.060059" lat="42.087879">
+        <time>2017-06-11T12:01:20.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.058084" lat="42.091453">
+        <time>2017-06-11T12:01:43.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.056809" lat="42.094893">
+        <time>2017-06-11T12:02:02.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.055455" lat="42.097716">
+        <time>2017-06-11T12:02:18.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.054528" lat="42.100536">
+        <time>2017-06-11T12:02:34.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.051921" lat="42.105353">
+        <time>2017-06-11T12:03:03.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.049412" lat="42.110055">
+        <time>2017-06-11T12:03:33.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.047805" lat="42.112138">
+        <time>2017-06-11T12:03:50.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.047845" lat="42.112963">
+        <time>2017-06-11T12:04:06.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.049909" lat="42.113294">
+        <time>2017-06-11T12:04:22.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.054979" lat="42.115616">
+        <time>2017-06-11T12:04:51.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.056753" lat="42.116892">
+        <time>2017-06-11T12:05:07.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057487" lat="42.117453">
+        <time>2017-06-11T12:05:23.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057462" lat="42.11747">
+        <time>2017-06-11T12:05:40.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.05733" lat="42.117448">
+        <time>2017-06-11T12:05:56.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.0575" lat="42.117473">
+        <time>2017-06-11T12:06:14.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.05754" lat="42.117511">
+        <time>2017-06-11T12:06:35.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057511" lat="42.11749">
+        <time>2017-06-11T12:06:52.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057514" lat="42.117465">
+        <time>2017-06-11T12:07:08.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057511" lat="42.117448">
+        <time>2017-06-11T12:07:24.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.05862" lat="42.117724">
+        <time>2017-06-11T12:07:51.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.059895" lat="42.11813">
+        <time>2017-06-11T12:08:07.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.061479" lat="42.118989">
+        <time>2017-06-11T12:08:24.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.06247" lat="42.12007">
+        <time>2017-06-11T12:09:48.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.063621" lat="42.121499">
+        <time>2017-06-11T12:10:07.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.064242" lat="42.122169">
+        <time>2017-06-11T12:10:23.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.065722" lat="42.123903">
+        <time>2017-06-11T12:10:50.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.068022" lat="42.125116">
+        <time>2017-06-11T12:11:12.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.07072" lat="42.126379">
+        <time>2017-06-11T12:11:42.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.071594" lat="42.127683">
+        <time>2017-06-11T12:12:06.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.071929" lat="42.128876">
+        <time>2017-06-11T12:12:24.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.074591" lat="42.129463">
+        <time>2017-06-11T12:12:55.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.075804" lat="42.130217">
+        <time>2017-06-11T12:13:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.077123" lat="42.130788">
+        <time>2017-06-11T12:13:37.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.078702" lat="42.131286">
+        <time>2017-06-11T12:13:53.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.081073" lat="42.131963">
+        <time>2017-06-11T12:14:16.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.08206" lat="42.132867">
+        <time>2017-06-11T12:14:35.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.083585" lat="42.133399">
+        <time>2017-06-11T12:14:51.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.085276" lat="42.13317">
+        <time>2017-06-11T12:15:10.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086497" lat="42.133885">
+        <time>2017-06-11T12:15:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.088349" lat="42.134431">
+        <time>2017-06-11T12:15:42.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.090833" lat="42.135184">
+        <time>2017-06-11T12:15:58.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.093167" lat="42.136043">
+        <time>2017-06-11T12:16:14.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.095953" lat="42.136735">
+        <time>2017-06-11T12:16:34.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.097936" lat="42.137656">
+        <time>2017-06-11T12:16:50.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.098258" lat="42.137482">
+        <time>2017-06-11T12:17:06.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.098841" lat="42.136304">
+        <time>2017-06-11T12:17:22.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.100049" lat="42.134957">
+        <time>2017-06-11T12:17:41.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.101092" lat="42.13425">
+        <time>2017-06-11T12:18:00.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.102774" lat="42.133817">
+        <time>2017-06-11T12:18:31.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.103648" lat="42.134127">
+        <time>2017-06-11T12:18:51.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.104103" lat="42.134281">
+        <time>2017-06-11T12:19:09.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.104287" lat="42.133926">
+        <time>2017-06-11T12:19:35.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.104287" lat="42.133926">
+        <time>2017-06-11T12:19:36.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.104287" lat="42.133926">
+        <time>2017-06-11T12:35:29.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.104287" lat="42.133926">
+        <time>2017-06-11T12:35:29.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.10489" lat="42.133838">
+        <time>2017-06-11T12:37:03.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.104998" lat="42.133922">
+        <time>2017-06-11T12:37:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.106381" lat="42.131779">
+        <time>2017-06-11T12:40:56.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.106253" lat="42.131681">
+        <time>2017-06-11T12:41:25.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.107493" lat="42.130762">
+        <time>2017-06-11T12:44:56.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.10776" lat="42.130781">
+        <time>2017-06-11T12:45:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.111075" lat="42.130804">
+        <time>2017-06-11T12:49:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.111512" lat="42.130834">
+        <time>2017-06-11T12:49:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.113604" lat="42.129797">
+        <time>2017-06-11T12:52:56.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.113654" lat="42.129797">
+        <time>2017-06-11T12:53:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.113062" lat="42.128468">
+        <time>2017-06-11T12:56:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.112872" lat="42.12835">
+        <time>2017-06-11T12:57:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.114169" lat="42.12735">
+        <time>2017-06-11T12:59:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.114169" lat="42.12735">
+        <time>2017-06-11T13:00:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.11459" lat="42.127026">
+        <time>2017-06-11T13:00:52.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.114476" lat="42.127002">
+        <time>2017-06-11T13:01:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.113594" lat="42.125663">
+        <time>2017-06-11T13:04:56.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.114011" lat="42.125533">
+        <time>2017-06-11T13:05:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.11578" lat="42.124139">
+        <time>2017-06-11T13:08:54.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.115858" lat="42.124035">
+        <time>2017-06-11T13:09:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.115858" lat="42.123993">
+        <time>2017-06-11T13:09:39.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.116162" lat="42.12244">
+        <time>2017-06-11T13:12:49.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.116276" lat="42.122365">
+        <time>2017-06-11T13:13:07.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.11633" lat="42.122303">
+        <time>2017-06-11T13:13:22.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.116356" lat="42.122286">
+        <time>2017-06-11T13:13:39.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.117907" lat="42.121154">
+        <time>2017-06-11T13:17:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.118064" lat="42.121115">
+        <time>2017-06-11T13:17:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.119915" lat="42.119512">
+        <time>2017-06-11T13:23:04.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.119928" lat="42.11938">
+        <time>2017-06-11T13:23:24.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.12072" lat="42.11841">
+        <time>2017-06-11T13:26:53.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.120673" lat="42.118319">
+        <time>2017-06-11T13:27:09.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.120739" lat="42.118209">
+        <time>2017-06-11T13:27:25.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.120543" lat="42.117893">
+        <time>2017-06-11T13:30:48.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.120454" lat="42.117839">
+        <time>2017-06-11T13:31:05.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.120456" lat="42.117811">
+        <time>2017-06-11T13:31:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.118951" lat="42.117025">
+        <time>2017-06-11T13:34:47.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.118909" lat="42.117129">
+        <time>2017-06-11T13:35:04.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.118867" lat="42.117136">
+        <time>2017-06-11T13:35:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.117479" lat="42.116691">
+        <time>2017-06-11T13:38:47.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.117341" lat="42.116655">
+        <time>2017-06-11T13:39:03.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.117325" lat="42.11669">
+        <time>2017-06-11T13:39:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.116259" lat="42.115958">
+        <time>2017-06-11T13:42:49.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.116105" lat="42.115905">
+        <time>2017-06-11T13:43:06.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.116029" lat="42.115996">
+        <time>2017-06-11T13:43:23.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.113889" lat="42.116512">
+        <time>2017-06-11T13:46:46.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.113823" lat="42.116469">
+        <time>2017-06-11T13:47:02.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.113728" lat="42.116456">
+        <time>2017-06-11T13:47:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.112456" lat="42.116479">
+        <time>2017-06-11T13:50:48.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.112383" lat="42.116617">
+        <time>2017-06-11T13:51:09.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.112273" lat="42.116594">
+        <time>2017-06-11T13:51:32.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.110755" lat="42.116049">
+        <time>2017-06-11T13:54:46.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.110649" lat="42.116128">
+        <time>2017-06-11T13:55:02.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.110599" lat="42.116116">
+        <time>2017-06-11T13:55:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.109502" lat="42.116351">
+        <time>2017-06-11T13:58:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.109376" lat="42.11639">
+        <time>2017-06-11T13:59:07.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.109292" lat="42.116394">
+        <time>2017-06-11T13:59:22.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.109261" lat="42.116391">
+        <time>2017-06-11T13:59:41.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.109041" lat="42.116377">
+        <time>2017-06-11T13:59:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.109041" lat="42.116377">
+        <time>2017-06-11T14:00:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.107124" lat="42.116253">
+        <time>2017-06-11T14:02:44.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.106911" lat="42.116292">
+        <time>2017-06-11T14:03:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.106877" lat="42.11629">
+        <time>2017-06-11T14:03:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.106311" lat="42.115996">
+        <time>2017-06-11T14:06:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.106311" lat="42.115996">
+        <time>2017-06-11T14:06:19.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.106311" lat="42.115996">
+        <time>2017-06-11T14:38:48.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.106311" lat="42.115996">
+        <time>2017-06-11T14:38:48.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.106065" lat="42.115749">
+        <time>2017-06-11T14:39:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.105903" lat="42.115592">
+        <time>2017-06-11T14:39:52.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.105718" lat="42.115422">
+        <time>2017-06-11T14:40:28.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.105559" lat="42.115286">
+        <time>2017-06-11T14:40:58.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.105429" lat="42.115183">
+        <time>2017-06-11T14:41:22.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.105193" lat="42.115014">
+        <time>2017-06-11T14:42:07.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.103867" lat="42.114147">
+        <time>2017-06-11T14:46:30.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.103746" lat="42.114144">
+        <time>2017-06-11T14:46:54.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.103603" lat="42.114204">
+        <time>2017-06-11T14:47:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.103467" lat="42.11427">
+        <time>2017-06-11T14:47:43.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.102592" lat="42.114709">
+        <time>2017-06-11T14:50:14.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101973" lat="42.115039">
+        <time>2017-06-11T14:52:21.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101962" lat="42.11507">
+        <time>2017-06-11T14:54:35.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101962" lat="42.115075">
+        <time>2017-06-11T14:55:03.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.101787" lat="42.115364">
+        <time>2017-06-11T14:55:03.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.101787" lat="42.115364">
+        <time>2017-06-11T15:02:56.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.101787" lat="42.115364">
+        <time>2017-06-11T15:02:56.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101188" lat="42.116289">
+        <time>2017-06-11T15:03:16.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.101014" lat="42.116404">
+        <time>2017-06-11T15:04:17.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099577" lat="42.117539">
+        <time>2017-06-11T15:07:56.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099517" lat="42.117603">
+        <time>2017-06-11T15:08:12.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099472" lat="42.117647">
+        <time>2017-06-11T15:08:30.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099419" lat="42.117717">
+        <time>2017-06-11T15:08:55.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099318" lat="42.117758">
+        <time>2017-06-11T15:09:12.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.099172" lat="42.117811">
+        <time>2017-06-11T15:09:35.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.0984" lat="42.118154">
+        <time>2017-06-11T15:11:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.098241" lat="42.118217">
+        <time>2017-06-11T15:12:06.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.09688" lat="42.118763">
+        <time>2017-06-11T15:15:22.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.096107" lat="42.119073">
+        <time>2017-06-11T15:17:10.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.095646" lat="42.11923">
+        <time>2017-06-11T15:18:27.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.095709" lat="42.119249">
+        <time>2017-06-11T15:18:43.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.095674" lat="42.119272">
+        <time>2017-06-11T15:19:05.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.094025" lat="42.119639">
+        <time>2017-06-11T15:22:22.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.093981" lat="42.119732">
+        <time>2017-06-11T15:22:37.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.093842" lat="42.119806">
+        <time>2017-06-11T15:22:55.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.093632" lat="42.119888">
+        <time>2017-06-11T15:23:20.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.089094" lat="42.121648">
+        <time>2017-06-11T15:30:36.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088938" lat="42.121638">
+        <time>2017-06-11T15:30:52.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088864" lat="42.121616">
+        <time>2017-06-11T15:31:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088737" lat="42.121602">
+        <time>2017-06-11T15:31:40.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088665" lat="42.1216">
+        <time>2017-06-11T15:31:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088616" lat="42.121596">
+        <time>2017-06-11T15:32:15.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087703" lat="42.121498">
+        <time>2017-06-11T15:33:33.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.08742" lat="42.121468">
+        <time>2017-06-11T15:33:58.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087196" lat="42.121444">
+        <time>2017-06-11T15:34:17.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086586" lat="42.121485">
+        <time>2017-06-11T15:35:16.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086238" lat="42.121418">
+        <time>2017-06-11T15:35:34.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086523" lat="42.12072">
+        <time>2017-06-11T15:37:54.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087235" lat="42.118561">
+        <time>2017-06-11T15:38:53.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.087235" lat="42.118561">
+        <time>2017-06-11T15:38:54.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.087235" lat="42.118561">
+        <time>2017-06-11T15:54:26.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.087235" lat="42.118561">
+        <time>2017-06-11T15:54:26.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087278" lat="42.118465">
+        <time>2017-06-11T15:54:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086357" lat="42.120695">
+        <time>2017-06-11T15:58:26.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086304" lat="42.120824">
+        <time>2017-06-11T15:58:48.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086428" lat="42.121594">
+        <time>2017-06-11T15:59:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086428" lat="42.121594">
+        <time>2017-06-11T16:00:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086672" lat="42.123106">
+        <time>2017-06-11T16:02:21.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086794" lat="42.123289">
+        <time>2017-06-11T16:02:49.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086802" lat="42.1233">
+        <time>2017-06-11T16:03:09.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087895" lat="42.124671">
+        <time>2017-06-11T16:06:16.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087948" lat="42.124837">
+        <time>2017-06-11T16:06:33.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088011" lat="42.124979">
+        <time>2017-06-11T16:06:49.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087136" lat="42.126936">
+        <time>2017-06-11T16:10:16.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087202" lat="42.127094">
+        <time>2017-06-11T16:10:35.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087211" lat="42.127152">
+        <time>2017-06-11T16:10:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087737" lat="42.129139">
+        <time>2017-06-11T16:14:23.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087805" lat="42.129311">
+        <time>2017-06-11T16:14:39.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087841" lat="42.129374">
+        <time>2017-06-11T16:15:01.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.088295" lat="42.130401">
+        <time>2017-06-11T16:15:02.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.088295" lat="42.130401">
+        <time>2017-06-11T16:20:14.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.088295" lat="42.130401">
+        <time>2017-06-11T16:20:14.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087749" lat="42.131914">
+        <time>2017-06-11T16:21:29.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.08792" lat="42.132051">
+        <time>2017-06-11T16:21:46.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087906" lat="42.132087">
+        <time>2017-06-11T16:22:01.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086452" lat="42.132989">
+        <time>2017-06-11T16:25:16.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086317" lat="42.132996">
+        <time>2017-06-11T16:25:34.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086245" lat="42.133045">
+        <time>2017-06-11T16:25:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085791" lat="42.132804">
+        <time>2017-06-11T16:29:14.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085826" lat="42.132772">
+        <time>2017-06-11T16:29:32.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085809" lat="42.132805">
+        <time>2017-06-11T16:29:47.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085755" lat="42.132842">
+        <time>2017-06-11T16:30:04.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085682" lat="42.132858">
+        <time>2017-06-11T16:30:24.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085414" lat="42.132425">
+        <time>2017-06-11T16:31:31.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.085414" lat="42.132425">
+        <time>2017-06-11T16:31:32.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.085414" lat="42.132425">
+        <time>2017-06-11T17:11:03.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.085414" lat="42.132425">
+        <time>2017-06-11T17:11:03.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.084325" lat="42.13167">
+        <time>2017-06-11T17:13:32.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.084277" lat="42.131793">
+        <time>2017-06-11T17:13:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.084205" lat="42.131828">
+        <time>2017-06-11T17:14:05.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.083818" lat="42.131981">
+        <time>2017-06-11T17:14:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.083986" lat="42.132145">
+        <time>2017-06-11T17:15:09.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085496" lat="42.133064">
+        <time>2017-06-11T17:17:41.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.085739" lat="42.133239">
+        <time>2017-06-11T17:17:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086365" lat="42.133651">
+        <time>2017-06-11T17:18:30.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086548" lat="42.133788">
+        <time>2017-06-11T17:18:47.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086645" lat="42.133856">
+        <time>2017-06-11T17:19:06.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086808" lat="42.133929">
+        <time>2017-06-11T17:19:42.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.086995" lat="42.133998">
+        <time>2017-06-11T17:20:02.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087294" lat="42.134092">
+        <time>2017-06-11T17:20:31.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.087558" lat="42.134151">
+        <time>2017-06-11T17:20:48.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088167" lat="42.134285">
+        <time>2017-06-11T17:21:11.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088411" lat="42.134361">
+        <time>2017-06-11T17:21:27.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.08835" lat="42.134353">
+        <time>2017-06-11T17:21:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.088372" lat="42.134367">
+        <time>2017-06-11T17:22:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.089021" lat="42.134543">
+        <time>2017-06-11T17:22:55.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.089673" lat="42.134719">
+        <time>2017-06-11T17:23:26.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.090089" lat="42.13483">
+        <time>2017-06-11T17:23:42.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.091114" lat="42.135119">
+        <time>2017-06-11T17:24:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.091328" lat="42.135187">
+        <time>2017-06-11T17:24:35.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.091715" lat="42.135333">
+        <time>2017-06-11T17:25:02.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.092158" lat="42.135505">
+        <time>2017-06-11T17:25:33.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.092384" lat="42.135594">
+        <time>2017-06-11T17:25:48.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.092873" lat="42.13579">
+        <time>2017-06-11T17:26:19.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.093422" lat="42.136007">
+        <time>2017-06-11T17:26:52.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.094838" lat="42.136485">
+        <time>2017-06-11T17:28:24.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.095217" lat="42.136595">
+        <time>2017-06-11T17:28:39.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.096106" lat="42.136831">
+        <time>2017-06-11T17:29:13.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.096274" lat="42.13688">
+        <time>2017-06-11T17:29:29.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.096388" lat="42.136921">
+        <time>2017-06-11T17:29:46.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.096499" lat="42.136967">
+        <time>2017-06-11T17:30:02.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.09655" lat="42.136983">
+        <time>2017-06-11T17:30:26.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.09701" lat="42.137161">
+        <time>2017-06-11T17:30:59.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.097412" lat="42.137258">
+        <time>2017-06-11T17:31:21.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.097869" lat="42.137509">
+        <time>2017-06-11T17:31:44.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.0981" lat="42.137635">
+        <time>2017-06-11T17:32:00.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.098238" lat="42.137655">
+        <time>2017-06-11T17:32:18.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.098497" lat="42.137334">
+        <time>2017-06-11T17:33:33.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.10012" lat="42.134826">
+        <time>2017-06-11T17:37:16.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.10024" lat="42.134589">
+        <time>2017-06-11T17:37:37.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100328" lat="42.134424">
+        <time>2017-06-11T17:37:53.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100367" lat="42.134298">
+        <time>2017-06-11T17:38:13.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100438" lat="42.134265">
+        <time>2017-06-11T17:38:39.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100595" lat="42.134237">
+        <time>2017-06-11T17:39:01.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.100958" lat="42.134177">
+        <time>2017-06-11T17:39:22.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.10326" lat="42.13382">
+        <time>2017-06-11T17:41:01.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.10343" lat="42.133932">
+        <time>2017-06-11T17:41:17.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.103853" lat="42.13393">
+        <time>2017-06-11T17:43:11.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.103853" lat="42.13393">
+        <time>2017-06-11T17:43:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.104239" lat="42.133878">
+        <time>2017-06-11T17:44:06.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.103186" lat="42.133739">
+        <time>2017-06-11T17:44:30.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.101965" lat="42.133723">
+        <time>2017-06-11T17:44:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.100263" lat="42.134507">
+        <time>2017-06-11T17:45:12.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.099457" lat="42.135761">
+        <time>2017-06-11T17:45:33.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.099644" lat="42.135525">
+        <time>2017-06-11T17:46:02.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.086653" lat="42.133834">
+        <time>2017-06-11T17:47:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.069156" lat="42.123883">
+        <time>2017-06-11T17:50:32.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.068875" lat="42.123818">
+        <time>2017-06-11T17:50:53.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.067159" lat="42.122923">
+        <time>2017-06-11T17:51:09.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.051356" lat="42.113999">
+        <time>2017-06-11T17:54:43.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.04895" lat="42.112831">
+        <time>2017-06-11T17:54:58.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.029655" lat="42.106883">
+        <time>2017-06-11T17:57:24.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.018793" lat="42.098581">
+        <time>2017-06-11T17:59:14.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.018626" lat="42.096271">
+        <time>2017-06-11T17:59:29.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.017892" lat="42.093494">
+        <time>2017-06-11T17:59:45.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.017346" lat="42.091355">
+        <time>2017-06-11T17:59:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.017346" lat="42.091353">
+        <time>2017-06-11T18:00:00.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.017281" lat="42.091099">
+        <time>2017-06-11T18:00:01.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.016076" lat="42.089534">
+        <time>2017-06-11T18:00:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.014649" lat="42.085374">
+        <time>2017-06-11T18:00:47.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.013114" lat="42.084216">
+        <time>2017-06-11T18:01:03.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.011323" lat="42.084004">
+        <time>2017-06-11T18:01:19.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.008107" lat="42.082732">
+        <time>2017-06-11T18:01:35.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.004913" lat="42.081278">
+        <time>2017-06-11T18:01:51.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.000259" lat="42.081922">
+        <time>2017-06-11T18:02:15.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.995697" lat="42.081093">
+        <time>2017-06-11T18:02:37.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.992276" lat="42.080132">
+        <time>2017-06-11T18:02:56.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.988801" lat="42.080577">
+        <time>2017-06-11T18:03:12.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.985254" lat="42.081345">
+        <time>2017-06-11T18:03:28.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.981592" lat="42.082393">
+        <time>2017-06-11T18:03:45.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.978182" lat="42.083031">
+        <time>2017-06-11T18:04:01.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.976317" lat="42.083376">
+        <time>2017-06-11T18:04:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.97483" lat="42.083508">
+        <time>2017-06-11T18:04:33.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971746" lat="42.083703">
+        <time>2017-06-11T18:04:50.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971462" lat="42.083994">
+        <time>2017-06-11T18:05:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971491" lat="42.084005">
+        <time>2017-06-11T18:05:53.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971498" lat="42.084002">
+        <time>2017-06-11T18:06:15.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971513" lat="42.084">
+        <time>2017-06-11T18:06:34.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971534" lat="42.083997">
+        <time>2017-06-11T18:06:57.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971552" lat="42.083996">
+        <time>2017-06-11T18:07:48.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971552" lat="42.083996">
+        <time>2017-06-11T18:08:15.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971552" lat="42.083996">
+        <time>2017-06-11T18:08:48.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971552" lat="42.083996">
+        <time>2017-06-11T18:09:14.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971546" lat="42.083986">
+        <time>2017-06-11T18:09:51.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971544" lat="42.083984">
+        <time>2017-06-11T18:10:23.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971544" lat="42.083984">
+        <time>2017-06-11T18:10:48.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.971442" lat="42.083895">
+        <time>2017-06-11T18:11:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.976116" lat="42.08391">
+        <time>2017-06-11T18:12:31.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.974988" lat="42.086092">
+        <time>2017-06-11T18:12:57.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-73.999845" lat="42.01359">
+        <time>2017-06-11T18:17:49.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.006008" lat="41.990588">
+        <time>2017-06-11T18:19:19.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.007631" lat="41.985712">
+        <time>2017-06-11T18:19:38.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.010608" lat="41.97827">
+        <time>2017-06-11T18:20:05.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.013121" lat="41.971317">
+        <time>2017-06-11T18:20:30.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.014354" lat="41.966762">
+        <time>2017-06-11T18:20:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.015623" lat="41.960648">
+        <time>2017-06-11T18:21:07.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.01637" lat="41.957402">
+        <time>2017-06-11T18:21:53.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.020314" lat="41.95291">
+        <time>2017-06-11T18:22:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.024815" lat="41.949696">
+        <time>2017-06-11T18:22:27.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.028957" lat="41.946676">
+        <time>2017-06-11T18:22:43.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.032462" lat="41.943675">
+        <time>2017-06-11T18:22:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.037589" lat="41.937541">
+        <time>2017-06-11T18:23:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.04122" lat="41.933079">
+        <time>2017-06-11T18:23:45.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.043855" lat="41.928937">
+        <time>2017-06-11T18:24:01.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.044754" lat="41.924184">
+        <time>2017-06-11T18:24:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.044275" lat="41.917028">
+        <time>2017-06-11T18:24:40.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.043598" lat="41.912172">
+        <time>2017-06-11T18:24:57.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.042568" lat="41.906133">
+        <time>2017-06-11T18:25:20.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.042419" lat="41.901223">
+        <time>2017-06-11T18:25:38.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.046775" lat="41.894647">
+        <time>2017-06-11T18:26:05.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.049924" lat="41.891311">
+        <time>2017-06-11T18:26:21.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.055475" lat="41.887435">
+        <time>2017-06-11T18:26:43.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.058141" lat="41.883676">
+        <time>2017-06-11T18:27:01.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.058363" lat="41.879655">
+        <time>2017-06-11T18:27:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.058396" lat="41.872346">
+        <time>2017-06-11T18:27:43.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057539" lat="41.867227">
+        <time>2017-06-11T18:28:01.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.05727" lat="41.862694">
+        <time>2017-06-11T18:28:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.058212" lat="41.85812">
+        <time>2017-06-11T18:28:33.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.059814" lat="41.851189">
+        <time>2017-06-11T18:28:57.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.059539" lat="41.845497">
+        <time>2017-06-11T18:29:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.05864" lat="41.841079">
+        <time>2017-06-11T18:29:33.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057638" lat="41.833595">
+        <time>2017-06-11T18:29:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.057589" lat="41.826951">
+        <time>2017-06-11T18:30:22.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.056953" lat="41.819709">
+        <time>2017-06-11T18:30:47.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.055674" lat="41.815221">
+        <time>2017-06-11T18:31:03.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.053759" lat="41.810433">
+        <time>2017-06-11T18:31:20.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.052392" lat="41.805921">
+        <time>2017-06-11T18:31:36.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.052194" lat="41.799935">
+        <time>2017-06-11T18:31:57.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.05206" lat="41.794794">
+        <time>2017-06-11T18:32:15.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.051083" lat="41.790227">
+        <time>2017-06-11T18:32:31.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.050897" lat="41.782931">
+        <time>2017-06-11T18:32:57.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.051829" lat="41.776319">
+        <time>2017-06-11T18:33:21.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.052806" lat="41.771981">
+        <time>2017-06-11T18:33:37.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.054454" lat="41.766912">
+        <time>2017-06-11T18:33:55.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.056549" lat="41.760736">
+        <time>2017-06-11T18:34:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.059989" lat="41.753651">
+        <time>2017-06-11T18:34:44.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.062636" lat="41.748888">
+        <time>2017-06-11T18:35:03.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.064304" lat="41.744691">
+        <time>2017-06-11T18:35:19.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.06524" lat="41.73957">
+        <time>2017-06-11T18:35:38.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.06599" lat="41.735347">
+        <time>2017-06-11T18:35:57.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.068016" lat="41.734781">
+        <time>2017-06-11T18:36:13.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.06668" lat="41.7362">
+        <time>2017-06-11T18:36:33.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.063028" lat="41.73599">
+        <time>2017-06-11T18:36:50.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.061975" lat="41.737981">
+        <time>2017-06-11T18:37:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.061844" lat="41.73833">
+        <time>2017-06-11T18:37:53.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.061612" lat="41.740932">
+        <time>2017-06-11T18:38:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.062472" lat="41.741305">
+        <time>2017-06-11T18:38:36.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.065175" lat="41.741536">
+        <time>2017-06-11T18:38:52.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.068091" lat="41.74221">
+        <time>2017-06-11T18:39:08.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.070137" lat="41.743165">
+        <time>2017-06-11T18:39:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.069407" lat="41.743841">
+        <time>2017-06-11T18:39:48.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.069425" lat="41.744488">
+        <time>2017-06-11T18:40:17.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.069451" lat="41.744498">
+        <time>2017-06-11T18:40:41.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.069451" lat="41.744498">
+        <time>2017-06-11T18:40:41.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.069454" lat="41.744493">
+        <time>2017-06-11T18:40:58.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.069465" lat="41.744487">
+        <time>2017-06-11T18:41:22.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.069476" lat="41.744481">
+        <time>2017-06-11T18:41:55.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.069476" lat="41.744475">
+        <time>2017-06-11T18:42:27.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.069477" lat="41.74445">
+        <time>2017-06-11T18:42:50.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.069489" lat="41.744399">
+        <time>2017-06-11T18:43:13.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.06945" lat="41.744456">
+        <time>2017-06-11T18:43:42.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.06945" lat="41.744456">
+        <time>2017-06-11T18:43:42.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.069503" lat="41.744531">
+        <time>2017-06-11T18:44:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.069908" lat="41.744078">
+        <time>2017-06-11T18:44:38.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.073088" lat="41.743939">
+        <time>2017-06-11T18:45:24.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.073325" lat="41.743785">
+        <time>2017-06-11T18:45:42.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.073325" lat="41.743785">
+        <time>2017-06-11T18:45:42.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.07336" lat="41.74367">
+        <time>2017-06-11T18:46:06.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073341" lat="41.743575">
+        <time>2017-06-11T18:46:29.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073356" lat="41.74352">
+        <time>2017-06-11T18:46:52.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073391" lat="41.743483">
+        <time>2017-06-11T18:47:09.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073502" lat="41.743406">
+        <time>2017-06-11T18:47:30.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073521" lat="41.74326">
+        <time>2017-06-11T18:47:47.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073357" lat="41.743323">
+        <time>2017-06-11T18:48:02.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073321" lat="41.743467">
+        <time>2017-06-11T18:48:28.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073314" lat="41.743514">
+        <time>2017-06-11T18:48:51.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073311" lat="41.743538">
+        <time>2017-06-11T18:49:25.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073309" lat="41.743535">
+        <time>2017-06-11T18:49:48.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073314" lat="41.743527">
+        <time>2017-06-11T18:50:11.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073314" lat="41.743516">
+        <time>2017-06-11T18:50:34.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073316" lat="41.743481">
+        <time>2017-06-11T18:50:56.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073399" lat="41.74346">
+        <time>2017-06-11T18:51:12.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073392" lat="41.743478">
+        <time>2017-06-11T18:51:28.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073341" lat="41.74359">
+        <time>2017-06-11T18:51:47.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-74.073289" lat="41.743705">
+        <time>2017-06-11T18:52:12.000-04:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.073289" lat="41.743705">
+        <time>2017-06-11T18:52:12.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.073251" lat="41.743816">
+        <time>2017-06-11T18:52:29.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.073278" lat="41.743893">
+        <time>2017-06-11T18:52:49.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.090692" lat="41.746794">
+        <time>2017-06-11T18:56:03.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.094586" lat="41.747097">
+        <time>2017-06-11T18:56:24.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.143395" lat="41.740258">
+        <time>2017-06-11T18:59:48.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.145939" lat="41.739588">
+        <time>2017-06-11T18:59:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.145941" lat="41.739588">
+        <time>2017-06-11T19:00:00.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.146804" lat="41.739361">
+        <time>2017-06-11T19:00:04.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.149081" lat="41.73831">
+        <time>2017-06-11T19:00:22.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.185497" lat="41.731677">
+        <time>2017-06-11T19:03:22.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.185497" lat="41.731677">
+        <time>2017-06-11T19:03:22.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.185497" lat="41.731677">
+        <time>2017-06-11T21:03:04.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.185497" lat="41.731677">
+        <time>2017-06-11T21:03:04.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.178656" lat="41.736165">
+        <time>2017-06-11T21:03:42.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.17549" lat="41.737122">
+        <time>2017-06-11T21:03:58.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.173083" lat="41.738681">
+        <time>2017-06-11T21:04:14.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.169531" lat="41.738952">
+        <time>2017-06-11T21:04:30.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.165883" lat="41.738596">
+        <time>2017-06-11T21:04:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.161346" lat="41.737981">
+        <time>2017-06-11T21:05:07.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.156296" lat="41.736499">
+        <time>2017-06-11T21:05:37.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.152743" lat="41.737005">
+        <time>2017-06-11T21:05:53.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.148964" lat="41.738268">
+        <time>2017-06-11T21:06:09.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.142021" lat="41.740421">
+        <time>2017-06-11T21:06:40.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.137934" lat="41.740281">
+        <time>2017-06-11T21:06:56.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.133752" lat="41.740525">
+        <time>2017-06-11T21:07:12.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.128012" lat="41.74095">
+        <time>2017-06-11T21:07:35.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.120683" lat="41.741562">
+        <time>2017-06-11T21:08:04.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.117319" lat="41.743081">
+        <time>2017-06-11T21:08:20.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.113578" lat="41.744871">
+        <time>2017-06-11T21:08:39.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.109819" lat="41.744784">
+        <time>2017-06-11T21:08:55.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.106288" lat="41.745956">
+        <time>2017-06-11T21:09:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.101695" lat="41.746557">
+        <time>2017-06-11T21:09:30.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.097538" lat="41.746743">
+        <time>2017-06-11T21:09:46.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.093474" lat="41.74707">
+        <time>2017-06-11T21:10:02.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.090439" lat="41.746688">
+        <time>2017-06-11T21:10:18.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.088952" lat="41.746837">
+        <time>2017-06-11T21:10:33.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.087792" lat="41.747165">
+        <time>2017-06-11T21:11:18.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.087332" lat="41.747272">
+        <time>2017-06-11T21:11:39.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.087332" lat="41.747272">
+        <time>2017-06-11T21:11:40.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.087332" lat="41.747272">
+        <time>2017-06-11T22:58:29.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.087332" lat="41.747272">
+        <time>2017-06-11T22:58:29.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.090828" lat="41.746768">
+        <time>2017-06-11T22:59:49.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.093143" lat="41.746737">
+        <time>2017-06-11T22:59:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.093145" lat="41.746737">
+        <time>2017-06-11T23:00:00.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.097978" lat="41.746673">
+        <time>2017-06-11T23:00:20.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.102215" lat="41.746501">
+        <time>2017-06-11T23:00:39.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.105906" lat="41.746025">
+        <time>2017-06-11T23:00:55.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.109589" lat="41.744892">
+        <time>2017-06-11T23:01:11.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.113303" lat="41.744867">
+        <time>2017-06-11T23:01:27.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.116709" lat="41.743676">
+        <time>2017-06-11T23:01:43.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.121823" lat="41.741512">
+        <time>2017-06-11T23:02:07.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.128913" lat="41.74094">
+        <time>2017-06-11T23:02:34.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.132146" lat="41.74069">
+        <time>2017-06-11T23:03:05.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.136444" lat="41.740325">
+        <time>2017-06-11T23:03:21.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.140735" lat="41.740487">
+        <time>2017-06-11T23:03:37.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.145951" lat="41.739719">
+        <time>2017-06-11T23:03:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.149" lat="41.738272">
+        <time>2017-06-11T23:04:15.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.153948" lat="41.736696">
+        <time>2017-06-11T23:04:38.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.157499" lat="41.736831">
+        <time>2017-06-11T23:04:54.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.161808" lat="41.738128">
+        <time>2017-06-11T23:05:13.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.168599" lat="41.738863">
+        <time>2017-06-11T23:05:41.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.172726" lat="41.738854">
+        <time>2017-06-11T23:05:59.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.177836" lat="41.736336">
+        <time>2017-06-11T23:06:27.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.18101" lat="41.735062">
+        <time>2017-06-11T23:06:43.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.185396" lat="41.732683">
+        <time>2017-06-11T23:07:10.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.185258" lat="41.732119">
+        <time>2017-06-11T23:07:26.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+      <trkpt lon="-74.185651" lat="41.73054">
+        <time>2017-06-11T23:07:41.000-04:00</time>
+        <type>transport</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-74.185651" lat="41.73054">
+        <time>2017-06-11T23:07:42.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-74.185651" lat="41.73054">
+        <time>2017-06-12T00:00:00.000-04:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,12 +1,12 @@
 [
   {
-    "title": "Spruceton Doubleshot, a Race Against the Storm",
+    "title": "Spruceton Straightshot, a Race Against the Storm",
     "type": "Through",
     "slug": "2023-04-15-spruceton",
     "date": "2023-04-15",
-    "miles": 11.7,
+    "miles": 11,
     "hike_hours": 8,
-    "elevation_ft": 4245,
+    "elevation_ft": 4350,
     "peaks": [
       "Mount Sherrill",
       "North Dome",
@@ -16,7 +16,7 @@
       "Dan",
       "John G"
     ],
-    "excerpt": "An epic three-peak day in which we narrowly dodge an approaching spring thunderstorm.",
+    "excerpt": "An epic three-peak day in which we narrowly dodge an approaching spring thunderstorm and a hiker gets his trail name.",
     "url": "/catskills/2023/04/15/2023-04-15-spruceton.html"
   },
   {
@@ -501,6 +501,24 @@
     ],
     "excerpt": "A pit stop for a hike and a waterfall on our way back from Delaware County.",
     "url": "/catskills/2018/07/08/2018-07-08-indian-head.html"
+  },
+  {
+    "title": "Indian Head and Plattekill Falls Rest Day",
+    "type": "Loop",
+    "miles": 7,
+    "date": "2017-06-11",
+    "slug": "2017-06-11-indian-head",
+    "hike_hours": 5,
+    "elevation_ft": 1900,
+    "peaks": [
+      "Indian Head"
+    ],
+    "hikers": [
+      "Dan",
+      "Richard B"
+    ],
+    "excerpt": "A climbing rest day on which we really earn our dip in the waterfall.",
+    "url": "/catskills/2017/06/11/2017-06-11-indian-head.html"
   },
   {
     "title": "Windham and Blackhead overnight",

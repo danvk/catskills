@@ -26,7 +26,7 @@ Timeline:
 
 [![GPS Track of the hike]({{site.baseurl}}/assets/2023-04-15-spruceton/track.png)]({{site.baseurl}}/map/?hike=2023-04-15-spruceton)
 
-I'd been eyeing this weekend in April for Catskills hiking since [way back in January] when Alex signed up for a yoga retreat in nearby Phoenicia. While I was doing winter hikes in March, I worried that mid-April would still feel like winter on the high peaks. I hadn't considered that it might feel more like summer! After yesterday's 90°F [hike up Halcott], I was hoping for slightly more wintery weather.
+I'd been eyeing this weekend in April for Catskills hiking since [way back in January][plan] when Alex signed up for a yoga retreat in nearby Phoenicia. While I was doing winter hikes in March, I worried that mid-April would still feel like winter on the high peaks. I hadn't considered that it might feel more like summer! After yesterday's 90°F [hike up Halcott], I was hoping for slightly more wintery weather.
 
 My original [plan] for this weekend had been to hike Halcott Friday, hike Sherrill and North Dome Saturday, and then to hike Rusk and Westkill Sunday. In retrospect that was crazy, particularly the Sunday twofer. I [hiked Rusk][rusk] a week earlier to take off some of the pressure, but that still left three days of hiking in a row. I was skeptical that I'd be up for Westkill after two solid days of hiking, and it was also unclear whether there would be time for it with Alex's yoga schedule.
 

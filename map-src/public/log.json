@@ -552,9 +552,10 @@
       "Dan",
       "Max"
     ],
-    "hike_hours": "???",
-    "miles": "???",
-    "elevation_ft": "???",
+    "hike_hours": 11.5,
+    "miles": 8.25,
+    "elevation_ft": 3250,
+    "excerpt": "Overnight hiking w/ Max. My first visit to the Catskills!",
     "url": "/catskills/2016/05/28/2016-05-28-sugarloaf-twin.html"
   }
 ]

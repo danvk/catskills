@@ -523,11 +523,11 @@
   {
     "title": "Windham and Blackhead overnight",
     "date": "2016-08-06",
-    "type": "Out & Back?",
+    "type": "Through?",
     "slug": "2016-08-06-windham-blackhead",
-    "miles": "???",
-    "hike_hours": "???",
-    "elevation_ft": "???",
+    "miles": 11.5,
+    "hike_hours": 9,
+    "elevation_ft": 3560,
     "peaks": [
       "Windham",
       "Blackhead"
@@ -537,6 +537,7 @@
       "Max",
       "Gabe"
     ],
+    "excerpt": "My second trip to the Catskills, another overnight. Two high peaks, magic fire, a happy trail runner and a hiking mystery.",
     "url": "/catskills/2016/08/06/2016-08-06-windham-blackhead.html"
   },
   {

@@ -1,7 +1,7 @@
 ---
 title: Windham and Blackhead overnight
 date: 2016-08-06
-type: Out & Back?
+type: Through?
 slug: 2016-08-06-windham-blackhead
 miles: 11.5
 hike_hours: 9

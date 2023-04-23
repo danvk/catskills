@@ -1,0 +1,100 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10152708333334,
+          42.275986805555554
+        ]
+      },
+      "properties": {
+        "date": "2016-08-07T13:13:56Z",
+        "num_photos": 4,
+        "photos": [
+          {
+            "file": "IMG_3035.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-07.zip",
+            "date": "2016:08:07 09:12:40"
+          },
+          {
+            "file": "IMG_3036.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-07.zip",
+            "date": "2016:08:07 09:13:06"
+          },
+          {
+            "file": "IMG_3044.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-07.zip",
+            "date": "2016:08:07 09:15:00"
+          },
+          {
+            "file": "IMG_3037.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-07.zip",
+            "date": "2016:08:07 09:15:00"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10451388888889,
+          42.267875
+        ]
+      },
+      "properties": {
+        "date": "2016-08-07T14:56:09Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_3038.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-07.zip",
+            "date": "2016:08:07 10:56:09"
+          }
+        ]
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10991666666666,
+          42.269888888888886
+        ]
+      },
+      "properties": {
+        "date": "2016-08-07T15:20:43Z",
+        "num_photos": 4,
+        "photos": [
+          {
+            "file": "IMG_3040.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-07.zip",
+            "date": "2016:08:07 11:20:42"
+          },
+          {
+            "file": "IMG_3041.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-07.zip",
+            "date": "2016:08:07 11:20:43"
+          },
+          {
+            "file": "IMG_3042.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-07.zip",
+            "date": "2016:08:07 11:20:44"
+          },
+          {
+            "file": "IMG_3043.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-07.zip",
+            "date": "2016:08:07 11:20:46"
+          }
+        ]
+      },
+      "id": 3
+    }
+  ]
+}

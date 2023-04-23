@@ -1,0 +1,584 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.17400625000002,
+          42.307217361111114
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T12:19:20Z",
+        "num_photos": 4,
+        "photos": [
+          {
+            "file": "IMG_2973.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 08:19:05"
+          },
+          {
+            "file": "IMG_2974.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 08:19:20"
+          },
+          {
+            "file": "IMG_2975.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 08:19:28"
+          },
+          {
+            "file": "IMG_2976.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 08:19:30"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.17402361111112,
+          42.30715416666666
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T13:23:32Z",
+        "num_photos": 2,
+        "photos": [
+          {
+            "file": "IMG_2977.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 09:23:29"
+          },
+          {
+            "file": "IMG_2978.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 09:23:36"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1622388888889,
+          42.30877777777778
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T14:06:35Z",
+        "num_photos": 2,
+        "photos": [
+          {
+            "file": "IMG_2981.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 10:06:33"
+          },
+          {
+            "file": "IMG_2982.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 10:06:38"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.144525,
+          42.31455555555555
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T14:59:34Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_2983.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 10:59:34"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14454833333335,
+          42.31484944444444
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T15:02:19Z",
+        "num_photos": 5,
+        "photos": [
+          {
+            "file": "IMG_2984.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:02:09"
+          },
+          {
+            "file": "IMG_2985.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:02:12"
+          },
+          {
+            "file": "IMG_2986.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:02:25"
+          },
+          {
+            "file": "IMG_2987.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:02:26"
+          },
+          {
+            "file": "IMG_2988.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:02:27"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.14243819444445,
+          42.31485625
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T15:15:45Z",
+        "num_photos": 4,
+        "photos": [
+          {
+            "file": "IMG_2989.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:15:34"
+          },
+          {
+            "file": "IMG_2990.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:15:38"
+          },
+          {
+            "file": "IMG_2991.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:15:41"
+          },
+          {
+            "file": "IMG_2992.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:16:08"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.13796111111112,
+          42.313513888888885
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T15:36:46Z",
+        "num_photos": 2,
+        "photos": [
+          {
+            "file": "IMG_2995.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:36:46"
+          },
+          {
+            "file": "IMG_2994.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 11:36:46"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.12893472222221,
+          42.30473472222223
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T16:20:09Z",
+        "num_photos": 12,
+        "photos": [
+          {
+            "file": "IMG_2998.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:18:08"
+          },
+          {
+            "file": "IMG_2999.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:18:08"
+          },
+          {
+            "file": "IMG_3001.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:18:36"
+          },
+          {
+            "file": "IMG_3002.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:20:41"
+          },
+          {
+            "file": "IMG_3003.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:20:42"
+          },
+          {
+            "file": "IMG_3004.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:20:43"
+          },
+          {
+            "file": "IMG_3005.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:20:44"
+          },
+          {
+            "file": "IMG_3006.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:20:49"
+          },
+          {
+            "file": "IMG_3007.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:20:50"
+          },
+          {
+            "file": "IMG_3009.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:20:51"
+          },
+          {
+            "file": "IMG_3008.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:20:51"
+          },
+          {
+            "file": "IMG_3010.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 12:20:52"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.12879166666666,
+          42.30464444444444
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T17:13:26Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_3011.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 13:13:26"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1229861111111,
+          42.30405833333333
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T17:54:38Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_3012.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 13:54:38"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11544722222222,
+          42.29991944444444
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T18:23:55Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_3013.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 14:23:55"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11066388888888,
+          42.30059444444444
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T18:56:08Z",
+        "num_photos": 2,
+        "photos": [
+          {
+            "file": "IMG_3014.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 14:56:08"
+          },
+          {
+            "file": "IMG_3015.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 14:56:08"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10651388888888,
+          42.29980555555555
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T19:14:13Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_3016.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 15:14:13"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.09814166666666,
+          42.27873055555555
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T20:08:22Z",
+        "num_photos": 3,
+        "photos": [
+          {
+            "file": "IMG_3017.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 16:08:11"
+          },
+          {
+            "file": "IMG_3018.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 16:08:24"
+          },
+          {
+            "file": "IMG_3019.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 16:08:33"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.09787777777777,
+          42.27608796296297
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T20:22:07Z",
+        "num_photos": 3,
+        "photos": [
+          {
+            "file": "IMG_3020.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 16:20:48"
+          },
+          {
+            "file": "IMG_3022.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 16:22:47"
+          },
+          {
+            "file": "IMG_3021.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 16:22:47"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.09930648148148,
+          42.275817592592595
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T20:28:17Z",
+        "num_photos": 3,
+        "photos": [
+          {
+            "file": "IMG_3023.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 16:28:13"
+          },
+          {
+            "file": "IMG_3024.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 16:28:17"
+          },
+          {
+            "file": "IMG_3025.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 16:28:21"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10128055555555,
+          42.27593888888889
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T21:56:03Z",
+        "num_photos": 3,
+        "photos": [
+          {
+            "file": "IMG_3026.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 17:56:01"
+          },
+          {
+            "file": "IMG_3027.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 17:56:03"
+          },
+          {
+            "file": "IMG_3028.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 17:56:07"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10132499999999,
+          42.27611944444445
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T22:04:09Z",
+        "num_photos": 1,
+        "photos": [
+          {
+            "file": "IMG_3029.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 18:04:09"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1013361111111,
+          42.276124305555555
+        ]
+      },
+      "properties": {
+        "date": "2016-08-06T23:44:29Z",
+        "num_photos": 4,
+        "photos": [
+          {
+            "file": "IMG_3031.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 19:44:17"
+          },
+          {
+            "file": "IMG_3032.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 19:44:27"
+          },
+          {
+            "file": "IMG_3033.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 19:44:35"
+          },
+          {
+            "file": "IMG_3034.JPG",
+            "zipfile": "/Users/danvk/Downloads/2016-08-06.zip",
+            "date": "2016:08:06 19:44:40"
+          }
+        ]
+      }
+    }
+  ]
+}

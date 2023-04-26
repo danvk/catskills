@@ -63,6 +63,14 @@ I was in Brooklyn hanging out w/ Melissa by 10pm on 8/7.
 Maybe there's more information in text messages?
 My messages with Melissa G on my current iPhone only go back to the end of 2016, not the start.
 Maybe there's more in the Messages app on my old laptop?
+
+From messages with Melissa, Max, Gabe:
+
+- We all planned to take the 5:29 PM train up from Grand Central on 8/5
+- I took the 7pm train home from Poughkeepsie on 8/7
+- We met Max's parents in Poughkeepsie, picked up Max's camping stuff at their place and borrowed their car.
+- Max's suggestion for our hike route was just "Escarpment Trail"
+- There was reference to not having coffee on our last hike.
 -->
 
 [in May]: /catskills/2016/05/28/2016-05-28-sugarloaf-twin.html

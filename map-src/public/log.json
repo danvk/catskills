@@ -1,5 +1,23 @@
 [
   {
+    "date": "2023-04-25",
+    "slug": "2023-04-25-balsam-lake",
+    "title": "Balsam Lake Mountain, a Carpet of Trout Lilies",
+    "type": "Loop",
+    "miles": 4.7,
+    "hike_hours": 3,
+    "elevation_ft": 1181,
+    "peaks": [
+      "Balsam Lake"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "excerpt": "A longer drive than a hike to a remote mountain. The spring wildflowers are starting to come out, and we have an exciting encounter with a porcupine.",
+    "url": "/catskills/2023/04/25/2023-04-25-balsam-lake.html"
+  },
+  {
     "title": "Spruceton Straightshot, a Race Against the Storm",
     "type": "Through",
     "slug": "2023-04-15-spruceton",

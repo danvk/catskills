@@ -11,6 +11,13 @@
     box-sizing: border-box;
 }
 
+#close-info-panel {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+
 #elevation-legend {
     position: absolute;
     top: 24px;

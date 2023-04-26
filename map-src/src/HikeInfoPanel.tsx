@@ -24,6 +24,7 @@ export interface Props {
   trackFeatureProps: TrackProps[];
   scrubPoint: ScrubPoint | null;
   onScrubPoint: (latLng: ScrubPoint | null) => void;
+  onChangeSelectedHike: (hike: string|null) => void;
 }
 
 export function HikeInfoPanel(props: Props) {
@@ -51,6 +52,7 @@ export function HikeInfoPanel(props: Props) {
 
   return (
     <div id="hike-details">
+      <div id="close-info-panel" onClick={() => props.onChangeSelectedHike(null)}>✗</div>
       <h3>{hike.title}</h3>
       {trackFeatureProps.length > 1 ? (
         <select onChange={e => setSelectedTrack(Number(e.target.value))}>

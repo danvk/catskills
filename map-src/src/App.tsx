@@ -30,8 +30,8 @@ function HikePage() {
 
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedHikeSlug = searchParams.get("hike");
-  const handleSelectHike = React.useCallback((hike: string) => {
-    setSearchParams({ hike });
+  const handleSelectHike = React.useCallback((hike: string | null) => {
+    setSearchParams(hike ? { hike } : {});
   }, []);
 
   const [scrubPoint, setScrubPoint] = React.useState<ScrubPoint | null>(null);
@@ -56,6 +56,7 @@ function HikePage() {
         <HikeInfoPanel
           key={selectedHikeSlug}
           selectedHikeSlug={selectedHikeSlug}
+          onChangeSelectedHike={handleSelectHike}
           hike={
             hikeResource.data.find((hike) => hike.slug === selectedHikeSlug)!
           }

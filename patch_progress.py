@@ -53,16 +53,16 @@ for peak in set(peaks).intersection(completed_peaks):
 club_html = ''
 num_done = 0
 num_left = 0
-for peak in completed_winter_peaks.intersection(winter_peaks):
+for peak in sorted(completed_winter_peaks.intersection(winter_peaks)):
     club_html += f'<span class="winter complete" title="{peak} (Winter)"></span>\n'
     num_done += 1
-for peak in set(winter_peaks).difference(completed_winter_peaks):
+for peak in sorted(set(winter_peaks).difference(completed_winter_peaks)):
     club_html += f'<span class="winter incomplete" title="{peak} (Winter)"></span>\n'
     num_left += 1
-for peak in qualifying:
+for peak in sorted(qualifying):
     club_html += f'<span class="3500 complete" title="{peak}"></span>\n'
     num_done += 1
-for peak in set(peaks).difference(qualifying):
+for peak in sorted(set(peaks).difference(qualifying)):
     num_left += 1
     club_html += f'<span class="3500 incomplete" title="{peak}"></span>\n'
 num_total = num_left + num_done
@@ -70,9 +70,9 @@ club_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
 
 # Winter peaks
 winter_html = ''
-for peak in completed_winter_peaks:
+for peak in sorted(completed_winter_peaks):
     winter_html += f'<span class="winter complete" title="{peak}"></span>\n'
-for peak in set(peaks).difference(completed_winter_peaks):
+for peak in sorted(set(peaks).difference(completed_winter_peaks)):
     winter_html += f'<span class="winter incomplete" title="{peak}"></span>\n'
 num_done = len([*completed_winter_peaks])
 num_total = len(peaks)
@@ -80,9 +80,9 @@ winter_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
 
 # 2023
 year_html = ''
-for peak in completed_2023:
+for peak in sorted(completed_2023):
     year_html += f'<span class="complete" title="{peak}"></span>\n'
-for peak in set(peaks).difference(completed_2023):
+for peak in sorted(set(peaks).difference(completed_2023)):
     year_html += f'<span class="incomplete" title="{peak}"></span>\n'
 num_done = len([*completed_2023])
 num_total = len(peaks)

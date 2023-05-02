@@ -25,7 +25,7 @@ Timeline:
 
 [![GPS Track of the hike]({{site.baseurl}}/assets/2023-04-25-balsam-lake/track.png)]({{site.baseurl}}/map/?hike=2023-04-25-balsam-lake)
 
-Since the [closure] of Graham and Doubletop in 2021, Balsam Lake Mountain has stood out on the [map] as a lone high peak far west of all the others. I knew it would be a long drive and a short hike. An opportunity presented itself this week when Alex said we could do a high peak after our regular Tuesday morning [early birders] walk at Minnewaska. Since we wouldn't have a full day, a short hike to Balsam Lake made more sense than a more ambitious hike to Big Indian and Eagle.
+Since the [closure] of Graham and Doubletop in 2021, Balsam Lake Mountain has stood out on the [map] as a lone high peak far west of all the others. I knew it would be a long drive and a short hike. An opportunity presented itself this week when Alex sa;id we could do a high peak after our regular Tuesday morning [early birders] walk at Minnewaska. Since we wouldn't have a full day, a short hike to Balsam Lake made more sense than a more ambitious hike to Big Indian and Eagle.
 
 There was a kid at early birders with a Catskills 3500 hat on. I chatted with him and his grandmother about hiking the high peaks. It's a rich topic for anyone who's done this! Our plan started to look in jeopardy when it began to _hail_ at the end of the bird walk. But we figured the weather would improve and we pushed on.
 

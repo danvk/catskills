@@ -1,0 +1,665 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5295.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 10:54:05"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46572222222223,
+          42.05345555555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5296.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 11:54:26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46870555555556,
+          42.042625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5297.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 11:59:35"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.4683,
+          42.041355555555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5298.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:06:47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46795555555556,
+          42.039525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5299.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:07:35"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46796388888889,
+          42.03946944444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5300.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:12:21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46782777777779,
+          42.03869722222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5301.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:12:25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46782777777779,
+          42.03869722222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5302.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:13:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46781944444444,
+          42.03859444444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5303.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:14:07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46775,
+          42.03850555555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5304.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:21:41"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46759166666666,
+          42.03698055555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5305.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:22:39"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46761388888889,
+          42.036811111111106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5306.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:43:07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46889444444444,
+          42.03339444444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5307.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:51:12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.47000833333334,
+          42.031238888888886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5308.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 12:59:51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.46903333333333,
+          42.027741666666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5309.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 13:22:14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.4711,
+          42.02978888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5310.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 13:29:39"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.47107777777778,
+          42.031933333333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5311.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 13:39:47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.47457222222222,
+          42.032130555555554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5313.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 13:42:29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.47525,
+          42.03223055555556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5314.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 13:49:44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.47715833333334,
+          42.03303611111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5315.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 14:28:03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49411111111111,
+          42.03406944444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5316.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 14:28:07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49413333333334,
+          42.034058333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5317.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 14:29:10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.494575,
+          42.03413888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5318.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 14:40:24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49664444444444,
+          42.03511111111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5319.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 14:47:48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49887222222222,
+          42.03623333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5320.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 15:29:10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.497925,
+          42.053438888888884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5321.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 15:43:56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.50480555555555,
+          42.0578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5322.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 15:58:09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.50752222222222,
+          42.06164166666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5323.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 16:31:48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.50821666666667,
+          42.07659166666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5324.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 16:34:23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.50823333333334,
+          42.07819722222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5325.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 16:49:33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.50018333333334,
+          42.08304166666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5326.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 16:56:31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49753611111112,
+          42.08488333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5327.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:02:19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49667222222223,
+          42.083263888888894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5329.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:19:18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49095277777778,
+          42.08101388888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5330.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:20:37"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49135555555556,
+          42.08135555555556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5331.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:20:38"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49135555555556,
+          42.081361111111114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5332.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:20:40"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49136388888888,
+          42.081361111111114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5334.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:25:16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49035555555555,
+          42.081183333333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5335.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:26:18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49008055555555,
+          42.08094722222223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5336.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:40:13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.48546666666667,
+          42.076347222222225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5337.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:48:36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.48013333333334,
+          42.07317777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5338.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:56:29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.47444166666666,
+          42.07040277777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5339.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 17:58:41"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.47445555555555,
+          42.07042777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5340.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 18:33:27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.45768611111112,
+          42.05459722222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5341.HEIC",
+        "zipfile": "/Users/danvk/Downloads/firbie.zip",
+        "date": "2023:05:08 18:44:12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.466775,
+          42.05479444444444
+        ]
+      }
+    }
+  ]
+}

@@ -1,5 +1,25 @@
 [
   {
+    "date": "2023-05-08",
+    "slug": "2023-05-08-firbie",
+    "title": "Firbie Loop, A Flowery Finish for the High Peaks",
+    "type": "Loop",
+    "miles": 12.8,
+    "hike_hours": 8,
+    "elevation_ft": 3435,
+    "peaks": [
+      "Fir",
+      "Big Indian",
+      "Eagle"
+    ],
+    "hikers": [
+      "Dan",
+      "John"
+    ],
+    "excerpt": "A beautiful flower-filled bushwhack to complete the last of my high peaks.",
+    "url": "/catskills/2023/05/08/2023-05-08-firbie.html"
+  },
+  {
     "date": "2023-04-25",
     "slug": "2023-04-25-balsam-lake",
     "title": "Balsam Lake Mountain, a Carpet of Trout Lilies",

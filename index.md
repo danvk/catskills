@@ -21,9 +21,11 @@ Progress:
         <span class="3500 complete" title="Balsam Cap"></span>
         <span class="3500 complete" title="Balsam Lake"></span>
         <span class="3500 complete" title="Bearpen"></span>
+        <span class="3500 complete" title="Big Indian"></span>
         <span class="3500 complete" title="Black Dome"></span>
         <span class="3500 complete" title="Blackhead"></span>
         <span class="3500 complete" title="Cornell"></span>
+        <span class="3500 complete" title="Eagle"></span>
         <span class="3500 complete" title="Fir"></span>
         <span class="3500 complete" title="Friday"></span>
         <span class="3500 complete" title="Halcott"></span>
@@ -47,10 +49,8 @@ Progress:
         <span class="3500 complete" title="Westkill"></span>
         <span class="3500 complete" title="Windham"></span>
         <span class="3500 complete" title="Wittenberg"></span>
-        <span class="3500 incomplete" title="Big Indian"></span>
-        <span class="3500 incomplete" title="Eagle"></span>
         <span class="3500 incomplete" title="Panther"></span>
-        <span class="summary">34/37</span>
+        <span class="summary">36/37</span>
         <!--/progress-3500-->
     </div>
     <div class="progress-label">Winter Peaks:</div>
@@ -99,7 +99,9 @@ Progress:
         <span class="complete" title="Balsam Cap"></span>
         <span class="complete" title="Balsam Lake"></span>
         <span class="complete" title="Bearpen"></span>
+        <span class="complete" title="Big Indian"></span>
         <span class="complete" title="Blackhead"></span>
+        <span class="complete" title="Eagle"></span>
         <span class="complete" title="Fir"></span>
         <span class="complete" title="Friday"></span>
         <span class="complete" title="Halcott"></span>
@@ -114,10 +116,8 @@ Progress:
         <span class="complete" title="Table"></span>
         <span class="complete" title="Vly"></span>
         <span class="complete" title="Westkill"></span>
-        <span class="incomplete" title="Big Indian"></span>
         <span class="incomplete" title="Black Dome"></span>
         <span class="incomplete" title="Cornell"></span>
-        <span class="incomplete" title="Eagle"></span>
         <span class="incomplete" title="Hunter"></span>
         <span class="incomplete" title="Indian Head"></span>
         <span class="incomplete" title="Kaaterskill High Peak"></span>
@@ -128,7 +128,7 @@ Progress:
         <span class="incomplete" title="Twin"></span>
         <span class="incomplete" title="Windham"></span>
         <span class="incomplete" title="Wittenberg"></span>
-        <span class="summary">19/33</span>
+        <span class="summary">21/33</span>
         <!--/progress-2023-->
     </div>
 </div>

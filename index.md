@@ -35,6 +35,7 @@ Progress:
         <span class="3500 complete" title="Lone"></span>
         <span class="3500 complete" title="Mount Sherrill"></span>
         <span class="3500 complete" title="North Dome"></span>
+        <span class="3500 complete" title="Panther"></span>
         <span class="3500 complete" title="Peekamoose"></span>
         <span class="3500 complete" title="Plateau"></span>
         <span class="3500 complete" title="Rocky"></span>
@@ -49,8 +50,7 @@ Progress:
         <span class="3500 complete" title="Westkill"></span>
         <span class="3500 complete" title="Windham"></span>
         <span class="3500 complete" title="Wittenberg"></span>
-        <span class="3500 incomplete" title="Panther"></span>
-        <span class="summary">36/37</span>
+        <span class="summary">37/37</span>
         <!--/progress-3500-->
     </div>
     <div class="progress-label">Winter Peaks:</div>

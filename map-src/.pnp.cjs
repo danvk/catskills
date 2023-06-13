@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/geojson", "npm:7946.0.10"],\
             ["@types/lodash", "npm:4.14.195"],\
             ["@types/mapbox-gl", "npm:2.7.10"],\
+            ["@types/node", "npm:20.3.1"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:3.1.0"],\
@@ -899,6 +900,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@types/mapbox-gl", "npm:2.7.10"],\
             ["@types/geojson", "npm:7946.0.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/node", [\
+        ["npm:20.3.1", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.3.1-86012346c0-63a393ab6d.zip/node_modules/@types/node/",\
+          "packageDependencies": [\
+            ["@types/node", "npm:20.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2446,6 +2456,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/geojson", "npm:7946.0.10"],\
             ["@types/lodash", "npm:4.14.195"],\
             ["@types/mapbox-gl", "npm:2.7.10"],\
+            ["@types/node", "npm:20.3.1"],\
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:3.1.0"],\
@@ -3670,7 +3681,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["vite", "virtual:cdbe146e78fee7859217616e60320c6ac7434dc6deca7008920a0dd63cf729de5fc150271f2db32b43cd3640c13607893dd67da613e53db74100e28c9279a865#npm:4.1.4"],\
             ["@types/less", null],\
-            ["@types/node", null],\
+            ["@types/node", "npm:20.3.1"],\
             ["@types/sass", null],\
             ["@types/stylus", null],\
             ["@types/sugarss", null],\

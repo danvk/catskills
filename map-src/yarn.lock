@@ -691,6 +691,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.3.1":
+  version: 20.3.1
+  resolution: "@types/node@npm:20.3.1"
+  checksum: 63a393ab6d947be17320817b35d7277ef03728e231558166ed07ee30b09fd7c08861be4d746f10fdc63ca7912e8cd023939d4eab887ff6580ff704ff24ed810c
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.5
   resolution: "@types/prop-types@npm:15.7.5"
@@ -2054,6 +2061,7 @@ __metadata:
     "@types/geojson": ^7946.0.10
     "@types/lodash": ^4.14.195
     "@types/mapbox-gl": ^2.7.10
+    "@types/node": ^20.3.1
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
     "@vitejs/plugin-react": ^3.1.0

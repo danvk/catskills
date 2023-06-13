@@ -1,5 +1,8 @@
+import { Feature } from "geojson";
 import React from "react";
 import Map, { Layer, Source, useMap } from "react-map-gl";
+import { UseQueryResult } from "@tanstack/react-query";
+
 import { MAPBOX_TOKEN, MountainPeaks, parkStyle } from "./HikeMap";
 
 const PEAKS = {
@@ -37,7 +40,57 @@ const PEAKS = {
   Ha: "Halcott Mountain",
   Ro: "Rocky Mountain",
 };
-const ALL_PEAKS = Object.keys(PEAKS) as (keyof typeof PEAKS)[];
+type Peak = keyof typeof PEAKS;
+const ALL_PEAKS = Object.keys(PEAKS) as Peak[];
+
+const MODES = [
+  'unrestricted',
+  'loops-only',
+  'day-only',
+  'day-loop-only',
+  'prefer-loop',
+  'day-only-prefer-loop',
+] as const;
+type Mode = typeof MODES[number];
+
+interface HikePlannerRequest {
+  peaks: Peak[];
+  mode: Mode;
+}
+
+interface HikePlannerResponse {
+  solution: {
+    d_km: number;
+    d_mi: number;
+    num_hikes: number;
+    hikes: [number, number[]][];
+    features: Feature[];
+  }
+}
+
+async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
+  const r = await fetch('https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes', {
+    method: 'post',
+    body: JSON.stringify(req),
+  });
+  return r.json();
+}
+
+// TODO: use react-query for this
+export interface LoadingState {
+  state: 'loading';
+}
+export interface ErrorState {
+  state: 'error';
+  error: unknown;
+}
+export interface SuccessState<T> {
+  state: 'ok';
+  data: T;
+}
+/** A deferred/promised value can be in one of three states: loading, error or success. */
+export type PromiseState<T> = LoadingState | ErrorState | SuccessState<T>;
+
 
 export function HikePlanner() {
   const [peaks, setPeaks] = React.useState(ALL_PEAKS);
@@ -60,8 +113,27 @@ export function HikePlanner() {
     );
   }, []);
 
-  const search = React.useCallback(() => {
-    console.log(peaks);
+  const [proposedHikes, setProposedHikes] = React.useState<PromiseState<HikePlannerResponse> | null>(null);
+  const search = React.useCallback(async () => {
+    let isInvalidated = false;
+    const r: HikePlannerRequest = {
+      peaks,
+      mode: 'unrestricted',
+    };
+    setProposedHikes({state: 'loading'});
+    try {
+      const proposals = await getHikes(r);
+      if (!isInvalidated) {
+        setProposedHikes({state: 'ok', data: proposals});
+      }
+    } catch (e) {
+      if (!isInvalidated) {
+        setProposedHikes({state: 'error', error: e});
+      }
+    }
+    return () => {
+      isInvalidated = true;
+    }
   }, [peaks]);
 
   return (
@@ -87,6 +159,9 @@ export function HikePlanner() {
             <br />
           </React.Fragment>
         ))}
+        <div className="proposed-hikes">
+          {JSON.stringify(proposedHikes)}
+        </div>
       </div>
       <HikePlannerMap peaks={peaks} />
     </div>

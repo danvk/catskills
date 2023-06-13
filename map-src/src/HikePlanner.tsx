@@ -1,7 +1,7 @@
 import { Feature, FeatureCollection } from "geojson";
+import _ from 'lodash';
 import React from "react";
 import Map, { Layer, Source, useMap } from "react-map-gl";
-import { UseQueryResult } from "@tanstack/react-query";
 
 import { EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle } from "./HikeMap";
 
@@ -22,7 +22,7 @@ const PEAKS = {
   L: "Lone Mountain",
   BL: "Balsam Lake Mountain",
   P: "Panther Mountain",
-  BI: "Big Indian Mtn Mountain",
+  BI: "Big Indian Mountain",
   Fr: "Friday Mountain",
   Ru: "Rusk Mountain",
   KHP: "Kaaterskill High Peak",
@@ -44,14 +44,14 @@ type Peak = keyof typeof PEAKS;
 const ALL_PEAKS = Object.keys(PEAKS) as Peak[];
 
 const MODES = [
-  'unrestricted',
-  'loops-only',
-  'day-only',
-  'day-loop-only',
-  'prefer-loop',
-  'day-only-prefer-loop',
+  "unrestricted",
+  "loops-only",
+  "day-only",
+  "day-loop-only",
+  "prefer-loop",
+  "day-only-prefer-loop",
 ] as const;
-type Mode = typeof MODES[number];
+type Mode = (typeof MODES)[number];
 
 interface HikePlannerRequest {
   peaks: Peak[];
@@ -66,33 +66,35 @@ interface HikePlannerResponse {
     hikes: [number, number[]][];
     // XXX weird that this isn't Feature[]
     features: FeatureCollection;
-  }
+  };
 }
 
 // TODO: increase memory limit / timeout for function
 async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
-  const r = await fetch('https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes', {
-    method: 'post',
-    body: JSON.stringify(req),
-  });
+  const r = await fetch(
+    "https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes",
+    {
+      method: "post",
+      body: JSON.stringify(req),
+    }
+  );
   return r.json();
 }
 
 // TODO: use react-query for this
 export interface LoadingState {
-  state: 'loading';
+  state: "loading";
 }
 export interface ErrorState {
-  state: 'error';
+  state: "error";
   error: unknown;
 }
 export interface SuccessState<T> {
-  state: 'ok';
+  state: "ok";
   data: T;
 }
 /** A deferred/promised value can be in one of three states: loading, error or success. */
 export type PromiseState<T> = LoadingState | ErrorState | SuccessState<T>;
-
 
 export function HikePlanner() {
   const [peaks, setPeaks] = React.useState(ALL_PEAKS);
@@ -115,27 +117,28 @@ export function HikePlanner() {
     );
   }, []);
 
-  const [proposedHikes, setProposedHikes] = React.useState<PromiseState<HikePlannerResponse> | null>(null);
+  const [proposedHikes, setProposedHikes] =
+    React.useState<PromiseState<HikePlannerResponse> | null>(null);
   const search = React.useCallback(async () => {
     let isInvalidated = false;
     const r: HikePlannerRequest = {
       peaks,
-      mode: 'unrestricted',
+      mode: "unrestricted",
     };
-    setProposedHikes({state: 'loading'});
+    setProposedHikes({ state: "loading" });
     try {
       const proposals = await getHikes(r);
       if (!isInvalidated) {
-        setProposedHikes({state: 'ok', data: proposals});
+        setProposedHikes({ state: "ok", data: proposals });
       }
     } catch (e) {
       if (!isInvalidated) {
-        setProposedHikes({state: 'error', error: e});
+        setProposedHikes({ state: "error", error: e });
       }
     }
     return () => {
       isInvalidated = true;
-    }
+    };
   }, [peaks]);
 
   return (
@@ -161,28 +164,49 @@ export function HikePlanner() {
             <br />
           </React.Fragment>
         ))}
-        {proposedHikes ?
+        {proposedHikes ? (
           <div className="proposed-hikes">
-            {
-            proposedHikes.state === 'loading'
-            ? 'Loading…'
-            : proposedHikes.state === 'error'
-            ? `Error: ${proposedHikes.error}`
-            : <>
-                Proposed Hikes:
-                {proposedHikes.data.solution.d_mi} miles, {proposedHikes.data.solution.num_hikes} hikes.
-                <ul>
-                  {proposedHikes.data.solution.hikes.map((hike, i) =>
-                    <li key={i}>{JSON.stringify(hike)}</li>
-                  )}
-                </ul>
-              </>
-            }
+            {proposedHikes.state === "loading" ? (
+              "Loading…"
+            ) : proposedHikes.state === "error" ? (
+              `Error: ${proposedHikes.error}`
+            ) : (
+              <ProposedHikesList plan={proposedHikes.data} />
+            )}
           </div>
-        : null}
+        ) : null}
       </div>
-      <HikePlannerMap peaks={peaks} hikes={proposedHikes?.state === 'ok' ? proposedHikes.data.solution.features.features : null} />
+      <HikePlannerMap
+        peaks={peaks}
+        hikes={
+          proposedHikes?.state === "ok"
+            ? proposedHikes.data.solution.features.features
+            : null
+        }
+      />
     </div>
+  );
+}
+
+interface ProposedHikesProps {
+  plan: HikePlannerResponse;
+}
+
+function ProposedHikesList(props: ProposedHikesProps) {
+  const { plan } = props;
+  const { solution } = plan;
+  const idToName = _.fromPairs(solution.features.features.map(f => [f.properties?.id, f.properties?.name]));
+
+  return (
+    <>
+      Proposed Hikes:
+      {solution.num_hikes} hikes, {solution.d_mi.toFixed(1)} miles.
+      <ul>
+        {plan.solution.hikes.map((hike, i) => (
+          <li key={i}>{hike[0].toFixed(1)} mi: {hike[1].map(id => idToName[id]).filter(x => !!x).join('→')}</li>
+        ))}
+      </ul>
+    </>
   );
 }
 
@@ -204,9 +228,18 @@ const hikeStyle = {
 } satisfies Partial<mapboxgl.AnyLayer>;
 
 function HikePlannerMap(props: HikePlannerMapProps) {
-  const {peaks, hikes} = props;
+  const { peaks, hikes } = props;
   const hikeFeatures = React.useMemo((): FeatureCollection => {
-    return hikes ? {type: 'FeatureCollection', features: hikes.filter(f => f.geometry.type === 'LineString' || f.geometry.type === 'MultiLineString')} : EMPTY_FC;
+    return hikes
+      ? {
+          type: "FeatureCollection",
+          features: hikes.filter(
+            (f) =>
+              f.geometry.type === "LineString" ||
+              f.geometry.type === "MultiLineString"
+          ),
+        }
+      : EMPTY_FC;
   }, [hikes]);
 
   return (
@@ -267,3 +300,39 @@ const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
   Ha: "Windham",
   Ro: "Rocky",
 };
+
+const OSM_IDS: [string, number, string][] = [
+  ['S', 2426171552, 'Slide Mountain'],
+  ['H', 1938201532, 'Hunter Mountain'],
+  ['BD', 2473476912, 'Blackdome Mountain'],
+  ['BH', 2473476747, 'Blackhead Mountain'],
+  ['TC', 2473476927, 'Thomas Cole Mountain'],
+  ['We', 2955311547, 'West Kill Mountain'],
+  ['C', 2884119551, 'Cornell Mountain'],
+  ['Ta', 7292479776, 'Table Mountain'],
+  ['Pk', 2398015279, 'Peekamoose Mountain'],
+  ['Pl', 2882649917, 'Plateau Mountain'],
+  ['Su', 2882649730, 'Sugarloaf Mountain'],
+  ['W', 2884119672, 'Wittenberg Mountain'],
+  ['SW', 1938215682, 'Southwest Hunter'],
+  ['L', -1136, 'Lone Mountain'],
+  ['BL', 2897919022, 'Balsam Lake Mountain'],
+  ['P', 9147145385, 'Panther Mountain'],
+  ['BI', 357548762, 'Big Indian Mtn Mountain'],
+  ['Fr', 9953707705, 'Friday Mountain'],
+  ['Ru', 10033501291, 'Rusk Mountain'],
+  ['KHP', 9785950126, 'Kaaterskill High Peak'],
+  ['Tw', 7982977638, 'Twin Mountain'],
+  ['BC', 9953729846, 'Balsam Cap Mountain'],
+  ['Fi', 357559622, 'Fir Mountain'],
+  ['ND', 357574030, 'North Dome Mountain'],
+  ['B', 2845338212, 'Balsam Mountain'],
+  ['Bp', 212348771, 'Bearpen Mountain'],
+  ['E', 357557378, 'Eagle Mountain'],
+  ['IH', 7978185605, 'Indian Head Mountain'],
+  ['Sh', 10010091368, 'Sherrill Mountain'],
+  ['V', 10010051278, 'Vly Mountain'],
+  ['WHP', 2426236522, 'Windham High Peak'],
+  ['Ha', 357563196, 'Halcott Mountain'],
+  ['Ro', -538, 'Rocky Mountain'],
+];

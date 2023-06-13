@@ -15,6 +15,7 @@
     "classnames": "^2.3.2",
     "dygraphs": "^2.2.1",
     "gpxparser": "^3.0.8",
+    "lodash": "^4.17.21",
     "mapbox-gl": "^2.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@types/dygraphs": "^2.1.4",
     "@types/geojson": "^7946.0.10",
+    "@types/lodash": "^4.14.195",
     "@types/mapbox-gl": "^2.7.10",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",

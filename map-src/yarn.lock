@@ -675,6 +675,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash@npm:^4.14.195":
+  version: 4.14.195
+  resolution: "@types/lodash@npm:4.14.195"
+  checksum: 39b75ca635b3fa943d17d3d3aabc750babe4c8212485a4df166fe0516e39288e14b0c60afc6e21913cc0e5a84734633c71e617e2bd14eaa1cf51b8d7799c432e
+  languageName: node
+  linkType: hard
+
 "@types/mapbox-gl@npm:^2.6.0, @types/mapbox-gl@npm:^2.7.10":
   version: 2.7.10
   resolution: "@types/mapbox-gl@npm:2.7.10"
@@ -1960,7 +1967,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.19":
+"lodash@npm:^4.17.19, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -2045,6 +2052,7 @@ __metadata:
     "@turf/distance": ^6.5.0
     "@types/dygraphs": ^2.1.4
     "@types/geojson": ^7946.0.10
+    "@types/lodash": ^4.14.195
     "@types/mapbox-gl": ^2.7.10
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
@@ -2052,6 +2060,7 @@ __metadata:
     classnames: ^2.3.2
     dygraphs: ^2.2.1
     gpxparser: ^3.0.8
+    lodash: ^4.17.21
     mapbox-gl: ^2.13.0
     react: ^18.2.0
     react-dom: ^18.2.0

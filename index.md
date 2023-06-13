@@ -101,6 +101,7 @@ Progress:
         <span class="complete" title="Bearpen"></span>
         <span class="complete" title="Big Indian"></span>
         <span class="complete" title="Blackhead"></span>
+        <span class="complete" title="Dry Brook Ridge"></span>
         <span class="complete" title="Eagle"></span>
         <span class="complete" title="Fir"></span>
         <span class="complete" title="Friday"></span>
@@ -128,7 +129,7 @@ Progress:
         <span class="incomplete" title="Twin"></span>
         <span class="incomplete" title="Windham"></span>
         <span class="incomplete" title="Wittenberg"></span>
-        <span class="summary">21/33</span>
+        <span class="summary">22/33</span>
         <!--/progress-2023-->
     </div>
 </div>

@@ -47,6 +47,7 @@ See the Catskill 3500 Club's [official list of peaks].
 | 32 | Windham High Peak | 3524' | Trailed | [2020-10-04: Fall Windham][2020-10-04-fall-windham]<br>[2020-05-22: Windham with Alex][2020-05-22-windham2]<br>[2020-05-14: Windham (solo)][2020-05-14-windham-solo]<br>[2016-08-06: Windham and Blackhead overnight][2016-08-06-windham-blackhead] |
 | 33 | Rocky | 3487' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 
+[2023-06-10-dry-brook-ridge]: /catskills/2023/06/10/2023-06-10-dry-brook-ridge.html
 [2023-05-14-panther]: /catskills/2023/05/14/2023-05-14-panther.html
 [2023-05-08-firbie]: /catskills/2023/05/08/2023-05-08-firbie.html
 [2023-04-25-balsam-lake]: /catskills/2023/04/25/2023-04-25-balsam-lake.html

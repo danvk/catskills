@@ -9,11 +9,13 @@ import { HikeMap } from "./HikeMap";
 import React from "react";
 import { HikeInfoPanel, ScrubPoint, TrackProps } from "./HikeInfoPanel";
 import { FeatureCollection, LineString } from "geojson";
+import { HikePlanner } from "./HikePlanner";
 
 function App() {
   return (
     <Routes>
-      <Route path="/catskills/map" element={<HikePage />}></Route>
+      <Route path="/catskills/map" element={<HikePage />} />
+      <Route path="/catskills/map/planner" element={<HikePlanner />} />
     </Routes>
   );
 }

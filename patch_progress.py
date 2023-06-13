@@ -15,7 +15,7 @@ winter_peaks = [
     'Blackhead'
 ]
 
-others = ['Pisgah', 'Hayden', 'None']
+others = ['Pisgah', 'Hayden', 'None', 'Dry Brook Ridge']
 known_peaks = set(peaks).union(set(others))
 
 assert len(peaks) == 33

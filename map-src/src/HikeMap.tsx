@@ -10,7 +10,7 @@ import { ScrubPoint, TrackProps } from "./HikeInfoPanel";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 
-const MAPBOX_TOKEN =
+export const MAPBOX_TOKEN =
   "pk.eyJ1IjoiZGFudmsiLCJhIjoiY2lrZzJvNDR0MDBhNXR4a2xqNnlsbWx3ciJ9.myJhweYd_hrXClbKk8XLgQ";
 
 export interface Props {
@@ -168,7 +168,7 @@ export function HikeMap(props: Props) {
   );
 }
 
-function MountainPeaks(props: { hiked: readonly string[] | null }) {
+export function MountainPeaks(props: { hiked: readonly string[] | null }) {
   const { hiked } = props;
   const mountainIcon = useMapImage({
     url: "mountain-solid.png",

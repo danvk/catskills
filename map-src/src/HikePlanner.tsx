@@ -231,6 +231,14 @@ const hikeStyle = {
   },
 } satisfies Partial<mapboxgl.AnyLayer>;
 
+const parkingLotStyle = {
+  type: 'symbol',
+  layout: {
+    'icon-image': 'parking',
+    'icon-allow-overlap': true,
+  }
+} satisfies Partial<mapboxgl.AnyLayer>
+
 function HikePlannerMap(props: HikePlannerMapProps) {
   const { peaks, hikes } = props;
   const hikeFeatures = React.useMemo((): FeatureCollection => {
@@ -244,6 +252,12 @@ function HikePlannerMap(props: HikePlannerMapProps) {
           ),
         }
       : EMPTY_FC;
+  }, [hikes]);
+  const parkingLotFeatures = React.useMemo((): FeatureCollection => {
+    return hikes ? {
+      type: 'FeatureCollection',
+      features: hikes.filter(f => f.properties?.type === 'parking-lot')
+    } : EMPTY_FC;
   }, [hikes]);
 
   return (
@@ -263,6 +277,9 @@ function HikePlannerMap(props: HikePlannerMapProps) {
         <Source type="geojson" id="hikes" data={hikeFeatures}>
           <Layer id="hikes" {...hikeStyle} />
         </Source>
+        <Source type="geojson" id="lots" data={parkingLotFeatures}>
+          <Layer id="lots" {...parkingLotStyle} />
+        </Source>
         <MountainPeaks hiked={peaks.map((p) => SHORT_PEAKS[p])} />
       </Map>
     </div>
@@ -273,8 +290,8 @@ const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
   S: "Slide",
   H: "Hunter",
   BD: "Black Dome",
-  BH: "Thomas Cole",
-  TC: "Blackhead",
+  BH: "Blackhead",
+  TC: "Thomas Cole",
   We: "Westkill",
   C: "Cornell",
   Ta: "Table",
@@ -283,8 +300,8 @@ const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
   Su: "Sugarloaf",
   W: "Wittenberg",
   SW: "Southwest Hunter",
-  L: "Balsam Lake",
-  BL: "Lone",
+  L: "Lone",
+  BL: "Balsam Lake",
   P: "Panther",
   BI: "Big Indian",
   Fr: "Friday",
@@ -294,14 +311,14 @@ const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
   BC: "Balsam Cap",
   Fi: "Fir",
   ND: "North Dome",
-  B: "Eagle",
-  Bp: "Balsam",
-  E: "Bearpen",
+  B: "Balsam",
+  Bp: "Bearpen",
+  E: "Eagle",
   IH: "Indian Head",
   Sh: "Mount Sherrill",
-  V: "Halcott",
-  WHP: "Vly",
-  Ha: "Windham",
+  V: "Vly",
+  WHP: "Windham",
+  Ha: "Halcott",
   Ro: "Rocky",
 };
 

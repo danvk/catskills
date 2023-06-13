@@ -271,7 +271,7 @@ function HikePlannerMap(props: HikePlannerMapProps) {
         mapStyle="mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t"
         mapboxAccessToken={MAPBOX_TOKEN}
       >
-        <Source id="catskill-park" type="geojson" data="catskill-park.geojson">
+        <Source id="catskill-park" type="geojson" data="/catskills/map/catskill-park.geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
         <Source type="geojson" id="hikes" data={hikeFeatures}>

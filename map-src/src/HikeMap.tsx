@@ -141,7 +141,7 @@ export function HikeMap(props: Props) {
         }}
         interactiveLayerIds={["tracks"]}
       >
-        <Source id="catskill-park" type="geojson" data="catskill-park.geojson">
+        <Source id="catskill-park" type="geojson" data="/catskills/map/catskill-park.geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
         <MountainPeaks hiked={hiked} />
@@ -172,7 +172,7 @@ export function HikeMap(props: Props) {
 export function MountainPeaks(props: { hiked: readonly string[] | null }) {
   const { hiked } = props;
   const mountainIcon = useMapImage({
-    url: "mountain-solid.png",
+    url: "/catskills/map/mountain-solid.png",
     name: "mountain-solid",
     sdf: true,
   });
@@ -216,7 +216,7 @@ export function MountainPeaks(props: { hiked: readonly string[] | null }) {
   );
 
   return (
-    <Source id="high-peaks" type="geojson" data="high-peaks.geojson">
+    <Source id="high-peaks" type="geojson" data="/catskills/map/high-peaks.geojson">
       <Layer id="peak-labels" {...peakLabelStyle} />
       {mountainIcon === "ok" ? (
         <Layer id="peaks" {...peakSymbols} beforeId="peak-labels" />

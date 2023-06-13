@@ -68,6 +68,7 @@ interface HikePlannerResponse {
   }
 }
 
+// TODO: increase memory limit / timeout for function
 async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
   const r = await fetch('https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes', {
     method: 'post',
@@ -159,9 +160,25 @@ export function HikePlanner() {
             <br />
           </React.Fragment>
         ))}
-        <div className="proposed-hikes">
-          {JSON.stringify(proposedHikes)}
-        </div>
+        {proposedHikes ?
+          <div className="proposed-hikes">
+            {
+            proposedHikes.state === 'loading'
+            ? 'Loading…'
+            : proposedHikes.state === 'error'
+            ? `Error: ${proposedHikes.error}`
+            : <>
+                Proposed Hikes:
+                {proposedHikes.data.solution.d_mi} miles, {proposedHikes.data.solution.num_hikes} hikes.
+                <ul>
+                  {proposedHikes.data.solution.hikes.map((hike, i) =>
+                    <li key={i}>{JSON.stringify(hike)}</li>
+                  )}
+                </ul>
+              </>
+            }
+          </div>
+        : null}
       </div>
       <HikePlannerMap peaks={peaks} />
     </div>

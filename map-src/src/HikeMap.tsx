@@ -5,7 +5,7 @@ import React from "react";
 import bbox from "@turf/bbox";
 
 import { Hike } from "./HikeList";
-import { FeatureCollection, LineString } from "geojson";
+import { FeatureCollection, LineString, MultiLineString } from "geojson";
 import { ScrubPoint, TrackProps } from "./HikeInfoPanel";
 
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -89,7 +89,8 @@ export function useMapImage({
 }
 
 function noop() {}
-const EMPTY_FC: FeatureCollection<any, any> = {
+
+export const EMPTY_FC: FeatureCollection<any, any> = {
   type: "FeatureCollection",
   features: [],
 };
@@ -225,13 +226,13 @@ export function MountainPeaks(props: { hiked: readonly string[] | null }) {
 }
 
 interface HikeTrackProps {
-  tracks: FeatureCollection<LineString, TrackProps>;
+  tracks: FeatureCollection<LineString | MultiLineString, TrackProps>;
   selectedHikeSlug: string | null;
   onSelectHike: (slug: string) => void;
   onHoverHike: (slug: string) => void;
 }
 
-function HikeTracks(props: HikeTrackProps) {
+export function HikeTracks(props: HikeTrackProps) {
   const { selectedHikeSlug, tracks } = props;
 
   // TODO: show selected track on top

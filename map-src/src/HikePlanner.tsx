@@ -1,9 +1,9 @@
-import { Feature } from "geojson";
+import { Feature, FeatureCollection } from "geojson";
 import React from "react";
 import Map, { Layer, Source, useMap } from "react-map-gl";
 import { UseQueryResult } from "@tanstack/react-query";
 
-import { MAPBOX_TOKEN, MountainPeaks, parkStyle } from "./HikeMap";
+import { EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle } from "./HikeMap";
 
 const PEAKS = {
   S: "Slide Mountain",
@@ -64,7 +64,8 @@ interface HikePlannerResponse {
     d_mi: number;
     num_hikes: number;
     hikes: [number, number[]][];
-    features: Feature[];
+    // XXX weird that this isn't Feature[]
+    features: FeatureCollection;
   }
 }
 
@@ -180,12 +181,34 @@ export function HikePlanner() {
           </div>
         : null}
       </div>
-      <HikePlannerMap peaks={peaks} />
+      <HikePlannerMap peaks={peaks} hikes={proposedHikes?.state === 'ok' ? proposedHikes.data.solution.features.features : null} />
     </div>
   );
 }
 
-function HikePlannerMap(props: { peaks: (keyof typeof PEAKS)[] }) {
+interface HikePlannerMapProps {
+  peaks: Peak[];
+  hikes: Feature[] | null;
+}
+
+const hikeStyle = {
+  type: "line",
+  layout: {
+    "line-join": "round",
+    "line-cap": "round",
+  },
+  paint: {
+    "line-color": "rgb(28,109,163)",
+    "line-width": 3,
+  },
+} satisfies Partial<mapboxgl.AnyLayer>;
+
+function HikePlannerMap(props: HikePlannerMapProps) {
+  const {peaks, hikes} = props;
+  const hikeFeatures = React.useMemo((): FeatureCollection => {
+    return hikes ? {type: 'FeatureCollection', features: hikes.filter(f => f.geometry.type === 'LineString' || f.geometry.type === 'MultiLineString')} : EMPTY_FC;
+  }, [hikes]);
+
   return (
     <div id="map">
       <Map
@@ -200,7 +223,10 @@ function HikePlannerMap(props: { peaks: (keyof typeof PEAKS)[] }) {
         <Source id="catskill-park" type="geojson" data="catskill-park.geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
-        <MountainPeaks hiked={props.peaks.map((p) => SHORT_PEAKS[p])} />
+        <Source type="geojson" id="hikes" data={hikeFeatures}>
+          <Layer id="hikes" {...hikeStyle} />
+        </Source>
+        <MountainPeaks hiked={peaks.map((p) => SHORT_PEAKS[p])} />
       </Map>
     </div>
   );

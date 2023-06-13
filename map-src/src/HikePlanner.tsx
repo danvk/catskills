@@ -37,22 +37,27 @@ const PEAKS = {
   Ha: "Halcott Mountain",
   Ro: "Rocky Mountain",
 };
+const ALL_PEAKS = Object.keys(PEAKS) as (keyof typeof PEAKS)[];
 
 export function HikePlanner() {
-  const [peaks, setPeaks] = React.useState(Object.keys(PEAKS));
+  const [peaks, setPeaks] = React.useState(ALL_PEAKS);
 
   const selectAll = React.useCallback(() => {
-    setPeaks(Object.keys(PEAKS));
+    setPeaks(ALL_PEAKS);
   }, []);
   const selectNone = React.useCallback(() => {
     setPeaks([]);
   }, []);
   const selectInvert = React.useCallback(() => {
-    setPeaks(oldPeaks => Object.keys(PEAKS).filter(code => oldPeaks.includes(code)));
+    setPeaks((oldPeaks) => ALL_PEAKS.filter((code) => oldPeaks.includes(code)));
   }, []);
-  const togglePeak = React.useCallback<React.ChangeEventHandler>(e => {
-    const peak = e.target.id;
-    setPeaks(oldPeaks => oldPeaks.includes(peak) ? oldPeaks.filter(p => p !== peak) : oldPeaks.concat([peak]));
+  const togglePeak = React.useCallback<React.ChangeEventHandler>((e) => {
+    const peak = e.target.id as keyof typeof PEAKS;
+    setPeaks((oldPeaks) =>
+      oldPeaks.includes(peak)
+        ? oldPeaks.filter((p) => p !== peak)
+        : oldPeaks.concat([peak])
+    );
   }, []);
 
   const search = React.useCallback(() => {
@@ -64,13 +69,20 @@ export function HikePlanner() {
       <div className="hike-control-panel">
         <button onClick={selectAll}>All</button>
         <button onClick={selectNone}>None</button>
-        <button onClick={selectInvert}>Invert</button><br/>
-        <button onClick={search}>Find Hikes</button><br/>
-        {Object.entries(PEAKS).map(([code, displayName]) => (
+        <button onClick={selectInvert}>Invert</button>
+        <br />
+        <button onClick={search}>Find Hikes</button>
+        <br />
+        {ALL_PEAKS.map((code) => (
           <React.Fragment key={code}>
             <label>
-            <input type="checkbox" checked={(() => { console.log(code, peaks.includes(code)); return peaks.includes(code); })()} id={code} onChange={togglePeak} />
-            {' '}{displayName}
+              <input
+                type="checkbox"
+                checked={peaks.includes(code)}
+                id={code}
+                onChange={togglePeak}
+              />{" "}
+              {PEAKS[code]}
             </label>
             <br />
           </React.Fragment>
@@ -81,7 +93,7 @@ export function HikePlanner() {
   );
 }
 
-function HikePlannerMap(props: {peaks: string[]}) {
+function HikePlannerMap(props: { peaks: (keyof typeof PEAKS)[] }) {
   return (
     <div id="map">
       <Map
@@ -96,8 +108,44 @@ function HikePlannerMap(props: {peaks: string[]}) {
         <Source id="catskill-park" type="geojson" data="catskill-park.geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
-        <MountainPeaks hiked={props.peaks} />
+        <MountainPeaks hiked={props.peaks.map((p) => SHORT_PEAKS[p])} />
       </Map>
     </div>
   );
 }
+
+const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
+  S: "Slide",
+  H: "Hunter",
+  BD: "Black Dome",
+  BH: "Thomas Cole",
+  TC: "Blackhead",
+  We: "Westkill",
+  C: "Cornell",
+  Ta: "Table",
+  Pk: "Peekamoose",
+  Pl: "Plateau",
+  Su: "Sugarloaf",
+  W: "Wittenberg",
+  SW: "Southwest Hunter",
+  L: "Balsam Lake",
+  BL: "Lone",
+  P: "Panther",
+  BI: "Big Indian",
+  Fr: "Friday",
+  Ru: "Rusk",
+  KHP: "Kaaterskill High Peak",
+  Tw: "Twin",
+  BC: "Balsam Cap",
+  Fi: "Fir",
+  ND: "North Dome",
+  B: "Eagle",
+  Bp: "Balsam",
+  E: "Bearpen",
+  IH: "Indian Head",
+  Sh: "Mount Sherrill",
+  V: "Halcott",
+  WHP: "Vly",
+  Ha: "Windham",
+  Ro: "Rocky",
+};

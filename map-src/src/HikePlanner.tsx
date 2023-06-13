@@ -1,7 +1,7 @@
 import { Feature, FeatureCollection } from "geojson";
 import _ from 'lodash';
 import React from "react";
-import Map, { Layer, Source, useMap } from "react-map-gl";
+import Map, { Layer, Source } from "react-map-gl";
 
 import { EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle } from "./HikeMap";
 
@@ -66,8 +66,7 @@ interface HikePlannerResponse {
     d_mi: number;
     num_hikes: number;
     hikes: [number, number[]][];
-    // XXX weird that this isn't Feature[]
-    features: FeatureCollection;
+    features: Feature[];
   };
 }
 
@@ -184,7 +183,7 @@ export function HikePlanner() {
         peaks={peaks}
         hikes={
           proposedHikes?.state === "ok"
-            ? proposedHikes.data.solution.features.features
+            ? proposedHikes.data.solution.features
             : null
         }
       />
@@ -199,7 +198,7 @@ interface ProposedHikesProps {
 function ProposedHikesList(props: ProposedHikesProps) {
   const { plan } = props;
   const { solution } = plan;
-  const idToName = _.fromPairs(solution.features.features.map(f => [f.properties?.id, f.properties?.name]));
+  const idToName = _.fromPairs(solution.features.map(f => [f.properties?.id, f.properties?.name]));
 
   return (
     <>

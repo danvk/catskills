@@ -5,6 +5,8 @@ import Map, { Layer, Source, useMap } from "react-map-gl";
 
 import { EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle } from "./HikeMap";
 
+import './HikePlanner.css';
+
 const PEAKS = {
   S: "Slide Mountain",
   H: "Hunter Mountain",

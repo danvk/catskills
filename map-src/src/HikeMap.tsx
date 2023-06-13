@@ -183,7 +183,7 @@ export function MountainPeaks(props: { hiked: readonly string[] | null }) {
       ["==", ["get", "type"], "closed"], "pink",
       ["in", ["get", "name"], ["literal", hiked]],
       "green",
-      "red",
+      "grey",
     ],
     [hiked]
   );

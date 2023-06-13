@@ -100,6 +100,7 @@ export type PromiseState<T> = LoadingState | ErrorState | SuccessState<T>;
 
 export function HikePlanner() {
   const [peaks, setPeaks] = React.useState(ALL_PEAKS);
+  const [mode, setMode] = React.useState<Mode>('unrestricted');
 
   const selectAll = React.useCallback(() => {
     setPeaks(ALL_PEAKS);
@@ -123,10 +124,7 @@ export function HikePlanner() {
     React.useState<PromiseState<HikePlannerResponse> | null>(null);
   const search = React.useCallback(async () => {
     let isInvalidated = false;
-    const r: HikePlannerRequest = {
-      peaks,
-      mode: "unrestricted",
-    };
+    const r: HikePlannerRequest = {peaks, mode};
     setProposedHikes({ state: "loading" });
     try {
       const proposals = await getHikes(r);
@@ -141,16 +139,20 @@ export function HikePlanner() {
     return () => {
       isInvalidated = true;
     };
-  }, [peaks]);
+  }, [peaks, mode]);
 
   return (
     <div className="App hike-planner">
       <div className="hike-control-panel">
+        Hike Preference: <select value={mode} onChange={e => setMode(e.currentTarget.value as Mode)}>
+          {MODES.map(m => <option key={m}>{m}</option>)}
+        </select>
+        <br/>
+        <button onClick={search}>Find Hikes</button>
+        <br />
         <button onClick={selectAll}>All</button>
         <button onClick={selectNone}>None</button>
         <button onClick={selectInvert}>Invert</button>
-        <br />
-        <button onClick={search}>Find Hikes</button>
         <br />
         {ALL_PEAKS.map((code) => (
           <React.Fragment key={code}>
@@ -201,11 +203,12 @@ function ProposedHikesList(props: ProposedHikesProps) {
 
   return (
     <>
+      <hr/>
       Proposed Hikes:
       {solution.num_hikes} hikes, {solution.d_mi.toFixed(1)} miles.
       <ul>
         {plan.solution.hikes.map((hike, i) => (
-          <li key={i}>{hike[0].toFixed(1)} mi: {hike[1].map(id => idToName[id]).filter(x => !!x).join('→')}</li>
+          <li key={i}>{(hike[0] * 0.621371).toFixed(1)} mi: {hike[1].map(id => idToName[id]).filter(x => !!x).join('→')}</li>
         ))}
       </ul>
     </>

@@ -71,6 +71,7 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
 
     // Built-in eslint rules where we'd like to be more strict.
     'arrow-body-style': 'warn',

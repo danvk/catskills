@@ -37,7 +37,8 @@ h2 a {
   color: #2a7ae2;
 }
 
-.date, .stats {
+.date,
+.stats {
   color: #777;
   font-size: 12px;
 }

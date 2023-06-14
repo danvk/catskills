@@ -7,18 +7,8 @@
     "miles": 7.5,
     "hike_hours": 5.75,
     "elevation_ft": 1500,
-    "peaks": [
-      "Dry Brook Ridge"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex",
-      "Pat",
-      "Tracy",
-      "Ira",
-      "Steve",
-      "Dave"
-    ],
+    "peaks": ["Dry Brook Ridge"],
+    "hikers": ["Dan", "Alex", "Pat", "Tracy", "Ira", "Steve", "Dave"],
     "excerpt": "A first visit to an almost-high peak to help find breeding bird behavior for the New York Breeding Bird Atlas",
     "url": "/catskills/2023/06/10/2023-06-10-dry-brook-ridge.html"
   },
@@ -30,9 +20,7 @@
     "miles": 8.7,
     "hike_hours": 7,
     "elevation_ft": 2910,
-    "peaks": [
-      "Panther"
-    ],
+    "peaks": ["Panther"],
     "hikers": [
       "Dan",
       "Alex",
@@ -56,15 +44,8 @@
     "miles": 12.8,
     "hike_hours": 8,
     "elevation_ft": 3435,
-    "peaks": [
-      "Fir",
-      "Big Indian",
-      "Eagle"
-    ],
-    "hikers": [
-      "Dan",
-      "John"
-    ],
+    "peaks": ["Fir", "Big Indian", "Eagle"],
+    "hikers": ["Dan", "John"],
     "excerpt": "A beautiful flower-filled bushwhack to complete the last of my high peaks.",
     "url": "/catskills/2023/05/08/2023-05-08-firbie.html"
   },
@@ -76,13 +57,8 @@
     "miles": 4.7,
     "hike_hours": 3,
     "elevation_ft": 1181,
-    "peaks": [
-      "Balsam Lake"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Balsam Lake"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "A longer drive than a hike to a remote mountain. The spring wildflowers are starting to come out, and we have an exciting encounter with a porcupine.",
     "url": "/catskills/2023/04/25/2023-04-25-balsam-lake.html"
   },
@@ -94,15 +70,8 @@
     "miles": 11,
     "hike_hours": 8,
     "elevation_ft": 4350,
-    "peaks": [
-      "Mount Sherrill",
-      "North Dome",
-      "Westkill"
-    ],
-    "hikers": [
-      "Dan",
-      "John G"
-    ],
+    "peaks": ["Mount Sherrill", "North Dome", "Westkill"],
+    "hikers": ["Dan", "John G"],
     "excerpt": "An epic three-peak day in which we narrowly dodge an approaching spring thunderstorm and a hiker gets his trail name.",
     "url": "/catskills/2023/04/15/2023-04-15-spruceton.html"
   },
@@ -114,12 +83,8 @@
     "date": "2023-04-14",
     "hike_hours": 3,
     "elevation_ft": 1795,
-    "peaks": [
-      "Halcott"
-    ],
-    "hikers": [
-      "Dan"
-    ],
+    "peaks": ["Halcott"],
+    "hikers": ["Dan"],
     "excerpt": "Spring is springing in the mountains, and one side of this loop is considerably harder than the other.",
     "url": "/catskills/2023/04/14/2023-04-14-halcott.html"
   },
@@ -131,12 +96,8 @@
     "miles": 5.8,
     "hike_hours": 3.5,
     "elevation_ft": 1709,
-    "peaks": [
-      "Rusk"
-    ],
-    "hikers": [
-      "Dan"
-    ],
+    "peaks": ["Rusk"],
+    "hikers": ["Dan"],
     "excerpt": "My first solo bushwhack, a climb to find winter hanging on in the high peaks.",
     "url": "/catskills/2023/04/04/2023-04-04-rusk.html"
   },
@@ -148,14 +109,8 @@
     "miles": 7.4,
     "elevation_ft": 2064,
     "hike_hours": 5.3,
-    "peaks": [
-      "Vly",
-      "Bearpen"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Vly", "Bearpen"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "A special dinner presents an opportunity to knock these two remote peaks out on what the 3500 club considers the last day of winter.",
     "url": "/catskills/2023/03/21/2023-03-21-bearpen-vly.html"
   },
@@ -167,15 +122,8 @@
     "miles": 8.9,
     "elevation_ft": 1975,
     "hike_hours": 7.5,
-    "peaks": [
-      "Fir"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex",
-      "John G",
-      "Sam L"
-    ],
+    "peaks": ["Fir"],
+    "hikers": ["Dan", "Alex", "John G", "Sam L"],
     "excerpt": "A long, snowy bushwhack through beautiful woods and a surprising first high peak.",
     "url": "/catskills/2023/03/18/2023-03-18-fir.html"
   },
@@ -187,18 +135,8 @@
     "miles": 12.7,
     "hike_hours": 10,
     "elevation_ft": 4200,
-    "peaks": [
-      "Friday",
-      "Balsam Cap",
-      "Rocky",
-      "Lone",
-      "Table",
-      "Peekamoose"
-    ],
-    "hikers": [
-      "Dan",
-      "Michael D + Eight more from 3500 Club"
-    ],
+    "peaks": ["Friday", "Balsam Cap", "Rocky", "Lone", "Table", "Peekamoose"],
+    "hikers": ["Dan", "Michael D + Eight more from 3500 Club"],
     "url": "/catskills/2023/03/09/2023-03-09-winter-six.html"
   },
   {
@@ -209,14 +147,8 @@
     "miles": 6.2,
     "hike_hours": 5.0,
     "elevation_ft": 1811,
-    "peaks": [
-      "Blackhead"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex",
-      "John G"
-    ],
+    "peaks": ["Blackhead"],
+    "hikers": ["Dan", "Alex", "John G"],
     "excerpt": "The last of the four required winter peaks and my first Catskills snowshoeing adventure. Alex's \"personal Everest\".",
     "url": "/catskills/2023/03/05/2023-03-05-winter-blackhead.html"
   },
@@ -228,13 +160,8 @@
     "miles": 5.8,
     "hike_hours": 3.5,
     "elevation_ft": 1788,
-    "peaks": [
-      "Slide"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Slide"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "Third of the four required winter peaks, part of a \"very upstate day\" that involved birding, boiling maple syrup and going to a dinner party.",
     "url": "/catskills/2023/02/18/2023-02-18-winter-slide.html"
   },
@@ -246,14 +173,8 @@
     "miles": 6.5,
     "hike_hours": 5.0,
     "elevation_ft": 2070,
-    "peaks": [
-      "Balsam"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex",
-      "Max"
-    ],
+    "peaks": ["Balsam"],
+    "hikers": ["Dan", "Alex", "Max"],
     "excerpt": "Second of the four required winter peaks, in which Alex, Max and I become the very first customers at the Eastwind bar.",
     "url": "/catskills/2023/01/14/2023-01-14-winter-balsam.html"
   },
@@ -265,13 +186,8 @@
     "miles": 8.0,
     "hike_hours": 5.0,
     "elevation_ft": 2060,
-    "peaks": [
-      "Panther"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Panther"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "First of the four required winter peaks, in which Alex and I finally summit Panther and do a surprise bushwhack on the way down.",
     "url": "/catskills/2023/01/08/2023-01-08-winter-panther.html"
   },
@@ -283,16 +199,8 @@
     "miles": 8.2,
     "hike_hours": 6.5,
     "elevation_ft": 2730,
-    "peaks": [
-      "Blackhead",
-      "Black Dome",
-      "Thomas Cole"
-    ],
-    "hikers": [
-      "Max",
-      "Sarah",
-      "John G"
-    ],
+    "peaks": ["Blackhead", "Black Dome", "Thomas Cole"],
+    "hikers": ["Max", "Sarah", "John G"],
     "excerpt": "A planned overnight turns into a day hike across the Blackhead range. Fall colors are just past peak, and we discover a curious new pandemic hobby.",
     "url": "/catskills/2022/10/19/2022-10-19-blackhead-range.html"
   },
@@ -304,13 +212,8 @@
     "miles": 3.2,
     "hike_hours": 3,
     "elevation_ft": 1637,
-    "peaks": [
-      "Plateau"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Plateau"],
+    "hikers": ["Dan", "Alex"],
     "url": "/catskills/2022/10/09/2022-10-09-plateau.html"
   },
   {
@@ -332,11 +235,7 @@
       "Peekamoose",
       "Table"
     ],
-    "hikers": [
-      "Dan",
-      "Max",
-      "John G"
-    ],
+    "hikers": ["Dan", "Max", "John G"],
     "excerpt": "An overnight bushwhacking experience with two friends nets me six new peaks and a whole lot of newfound hiking confidence.",
     "url": "/catskills/2022/09/28/2022-09-28-the-nine.html"
   },
@@ -348,14 +247,8 @@
     "miles": 10.5,
     "hike_hours": 6.5,
     "elevation_ft": 2260.5,
-    "peaks": [
-      "Hunter",
-      "Southwest Hunter"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Hunter", "Southwest Hunter"],
+    "hikers": ["Dan", "Alex"],
     "url": "/catskills/2022/09/21/2022-09-21-hunter-sw.html"
   },
   {
@@ -366,14 +259,8 @@
     "miles": 7.8,
     "hike_hours": 6.0,
     "elevation_ft": 1729,
-    "peaks": [
-      "Kaaterskill High Peak"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex",
-      "John G"
-    ],
+    "peaks": ["Kaaterskill High Peak"],
+    "hikers": ["Dan", "Alex", "John G"],
     "excerpt": "Quite surprising to find an airplane in the woods at the top of your hike!",
     "url": "/catskills/2022/09/09/2022-09-09-kaaterskill.html"
   },
@@ -385,14 +272,8 @@
     "miles": 8,
     "hike_hours": 7,
     "elevation_ft": 2339,
-    "peaks": [
-      "Indian Head",
-      "Twin"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Indian Head", "Twin"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "Loop hike with Alex in which we see a Junco nest in a rock face and encounter our first Blackpoll Warbler.",
     "url": "/catskills/2022/07/16/2022-07-16-indian-twin.html"
   },
@@ -404,15 +285,8 @@
     "miles": 9,
     "hike_hours": 7,
     "elevation_ft": 2520,
-    "peaks": [
-      "Table",
-      "Peekamoose"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex",
-      "John G"
-    ],
+    "peaks": ["Table", "Peekamoose"],
+    "hikers": ["Dan", "Alex", "John G"],
     "url": "/catskills/2022/07/10/2022-07-10-table-peekamoose.html"
   },
   {
@@ -423,13 +297,8 @@
     "miles": 8.8,
     "hike_hours": 5.5,
     "elevation_ft": 2300,
-    "peaks": [
-      "None"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["None"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "Not the hike we expected to do, and we didn't bag the peak we wanted, but we did see some great birds (including a lifer!) and views along the way.",
     "url": "/catskills/2022/04/24/2022-04-24-giant-ledge.html"
   },
@@ -441,12 +310,8 @@
     "miles": 6.7,
     "hike_hours": 4.5,
     "elevation_ft": 1765,
-    "peaks": [
-      "Windham"
-    ],
-    "hikers": [
-      "Alex"
-    ],
+    "peaks": ["Windham"],
+    "hikers": ["Alex"],
     "url": "/catskills/2020/10/04/2020-10-04-fall-windham.html"
   },
   {
@@ -457,12 +322,8 @@
     "miles": 7.1,
     "hike_hours": 3.5,
     "elevation_ft": 2083,
-    "peaks": [
-      "Pisgah"
-    ],
-    "hikers": [
-      "Dan"
-    ],
+    "peaks": ["Pisgah"],
+    "hikers": ["Dan"],
     "excerpt": "A brief window during which we have two cars presents an opportunity to do a through hike and yields a surprise viewpoint.",
     "url": "/catskills/2020/09/30/2020-09-30-pisgah.html"
   },
@@ -474,13 +335,8 @@
     "miles": 4.5,
     "hike_hours": 3.25,
     "elevation_ft": 1762,
-    "peaks": [
-      "Black Dome"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Black Dome"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "An attempt to see peak fall foliage lands us in the middle of a cloud.",
     "url": "/catskills/2020/09/27/2020-09-27-blackdome.html"
   },
@@ -492,13 +348,8 @@
     "miles": 4.75,
     "hike_hours": 3,
     "elevation_ft": 1725,
-    "peaks": [
-      "Balsam"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Balsam"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "A dinner in Delaware county presents an opportunity for a beautiful summer day hike.",
     "url": "/catskills/2020/09/03/2020-09-03-balsam.html"
   },
@@ -510,13 +361,8 @@
     "miles": 6.1,
     "hike_hours": 4,
     "elevation_ft": 1780,
-    "peaks": [
-      "Slide"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Slide"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "An afternoon hike up the tallest of the Catskills peaks on the longest day of the year. Daylight was not an issue!",
     "url": "/catskills/2020/06/21/2020-06-21-slide.html"
   },
@@ -528,12 +374,8 @@
     "miles": 5.2,
     "hike_hours": 2,
     "elevation_ft": 1345,
-    "peaks": [
-      "Hayden"
-    ],
-    "hikers": [
-      "Dan"
-    ],
+    "peaks": ["Hayden"],
+    "hikers": ["Dan"],
     "url": "/catskills/2020/06/10/2020-06-10-hayden.html"
   },
   {
@@ -544,13 +386,8 @@
     "miles": 6,
     "hike_hours": 3.7,
     "elevation_ft": 1486,
-    "peaks": [
-      "Windham"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Windham"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "A variation on the previous week's hike with a companion and more abundant signs of spring.",
     "url": "/catskills/2020/05/22/2020-05-22-windham2.html"
   },
@@ -562,12 +399,8 @@
     "miles": 6.7,
     "hike_hours": 3,
     "elevation_ft": 1750,
-    "peaks": [
-      "Windham"
-    ],
-    "hikers": [
-      "Dan"
-    ],
+    "peaks": ["Windham"],
+    "hikers": ["Dan"],
     "excerpt": "After a self-imposed Covid quarantine, a solo hike up a high peak provides a much-needed escape.",
     "url": "/catskills/2020/05/14/2020-05-14-windham-solo.html"
   },
@@ -579,13 +412,8 @@
     "miles": 4.75,
     "hike_hours": 3.5,
     "elevation_ft": 1585,
-    "peaks": [
-      "Indian Head"
-    ],
-    "hikers": [
-      "Dan",
-      "Alex"
-    ],
+    "peaks": ["Indian Head"],
+    "hikers": ["Dan", "Alex"],
     "excerpt": "A pit stop for a hike and a waterfall on our way back from Delaware County.",
     "url": "/catskills/2018/07/08/2018-07-08-indian-head.html"
   },
@@ -597,13 +425,8 @@
     "slug": "2017-06-11-indian-head",
     "hike_hours": 5,
     "elevation_ft": 1900,
-    "peaks": [
-      "Indian Head"
-    ],
-    "hikers": [
-      "Dan",
-      "Richard B"
-    ],
+    "peaks": ["Indian Head"],
+    "hikers": ["Dan", "Richard B"],
     "excerpt": "A climbing rest day on which we really earn our dip in the waterfall.",
     "url": "/catskills/2017/06/11/2017-06-11-indian-head.html"
   },
@@ -615,15 +438,8 @@
     "miles": 11.5,
     "hike_hours": 9,
     "elevation_ft": 3560,
-    "peaks": [
-      "Windham",
-      "Blackhead"
-    ],
-    "hikers": [
-      "Dan",
-      "Max",
-      "Gabe"
-    ],
+    "peaks": ["Windham", "Blackhead"],
+    "hikers": ["Dan", "Max", "Gabe"],
     "excerpt": "My second trip to the Catskills, another overnight. Two high peaks, magic fire, a happy trail runner and a hiking mystery.",
     "url": "/catskills/2016/08/06/2016-08-06-windham-blackhead.html"
   },
@@ -632,14 +448,8 @@
     "title": "Sugarloaf and Twin overnight (my first Catskills hike)",
     "type": "Loop",
     "slug": "2016-05-28-sugarloaf-twin",
-    "peaks": [
-      "Sugarloaf",
-      "Twin"
-    ],
-    "hikers": [
-      "Dan",
-      "Max"
-    ],
+    "peaks": ["Sugarloaf", "Twin"],
+    "hikers": ["Dan", "Max"],
     "hike_hours": 11.5,
     "miles": 8.25,
     "elevation_ft": 3250,

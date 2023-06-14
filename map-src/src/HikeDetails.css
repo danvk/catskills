@@ -1,25 +1,25 @@
 #hike-details {
-    position: absolute;
-    bottom: 0;
-    left: calc(50% + 300px/2);  /* 300px = width of left side panel */
-    border: 1px solid black;
-    width: 600px;
-    margin-left: -300px;
-    margin-bottom: 32px;
-    background: white;
-    padding: 8px;
-    box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 300px / 2); /* 300px = width of left side panel */
+  border: 1px solid black;
+  width: 600px;
+  margin-left: -300px;
+  margin-bottom: 32px;
+  background: white;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 #close-info-panel {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    cursor: pointer;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
 }
 
 #elevation-legend {
-    position: absolute;
-    top: 24px;
-    right: 12px;
+  position: absolute;
+  top: 24px;
+  right: 12px;
 }

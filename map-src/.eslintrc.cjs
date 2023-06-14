@@ -32,7 +32,11 @@ module.exports = {
     // Some rule where we'd like to be more strict that typescript-eslint.
     '@typescript-eslint/member-delimiter-style': 'error',
     '@typescript-eslint/no-unused-expressions': 'error',
-    '@typescript-eslint/quotes': ['error', 'single', { allowTemplateLiterals: true, avoidEscape: true }],
+    '@typescript-eslint/quotes': [
+      'error',
+      'single',
+      {allowTemplateLiterals: true, avoidEscape: true},
+    ],
     '@typescript-eslint/semi': ['error', 'always'],
     '@typescript-eslint/no-redeclare': ['error'],
     'no-shadow': 'off',
@@ -42,7 +46,7 @@ module.exports = {
         hoist: 'all',
       },
     ],
-    '@typescript-eslint/ban-ts-comment': ['warn', { minimumDescriptionLength: 10 }],
+    '@typescript-eslint/ban-ts-comment': ['warn', {minimumDescriptionLength: 10}],
     '@typescript-eslint/no-parameter-properties': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/no-floating-promises': [
@@ -87,7 +91,7 @@ module.exports = {
     'no-var': 'error',
     'object-shorthand': 'error',
     'one-var': ['error', 'never'],
-    'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
+    'prefer-arrow-callback': ['error', {allowNamedFunctions: true}],
     'prefer-destructuring': [
       'error',
       {
@@ -124,6 +128,5 @@ module.exports = {
     ],
     'react/jsx-curly-brace-presence': 'error',
     'react/self-closing-comp': 'error',
-
   },
 };

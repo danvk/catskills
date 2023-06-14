@@ -1,7 +1,7 @@
-import { UseQueryResult } from "@tanstack/react-query";
-import classNames from 'classnames';
-
 import './HikeList.css';
+
+import {UseQueryResult} from '@tanstack/react-query';
+import classNames from 'classnames';
 
 export interface Hike {
   title: string;
@@ -22,13 +22,13 @@ export interface Props {
 }
 
 export function HikeList(props: Props) {
-  const { status, data, error } = props.hikes;
+  const {status, data, error} = props.hikes;
 
   return (
     <div id="hike-list">
-      {status === "loading" ? (
-        "Loading…"
-      ) : status === "error" ? (
+      {status === 'loading' ? (
+        'Loading…'
+      ) : status === 'error' ? (
         String(error)
       ) : (
         <LoadedHikesList {...props} hikes={data} />
@@ -37,18 +37,18 @@ export function HikeList(props: Props) {
   );
 }
 
-type HikeProps = Omit<Props, "hikes"> & {
+type HikeProps = Omit<Props, 'hikes'> & {
   hikes: readonly Hike[];
 };
 
 function LoadedHikesList(props: HikeProps) {
   return (
     <>
-      {props.hikes.map((hike) => (
+      {props.hikes.map(hike => (
         <HikeCard
           hike={hike}
-          key={hike.slug}
           isSelected={hike.slug === props.selectedHikeSlug}
+          key={hike.slug}
           onSelect={() => props.onSelectHike(hike.slug)}
         />
       ))}
@@ -63,9 +63,13 @@ interface HikeCardProps {
 }
 
 function HikeCard(props: HikeCardProps) {
-  const { hike, isSelected, onSelect } = props;
+  const {hike, isSelected, onSelect} = props;
   return (
-    <div className={classNames("hike", isSelected && "selected")} key={hike.slug} onClick={onSelect}>
+    <div
+      className={classNames('hike', isSelected && 'selected')}
+      key={hike.slug}
+      onClick={onSelect}
+    >
       <span className="date">{hike.date}</span>
       <span className="stats">
         {hike.miles}mi {hike.type} / {hike.hike_hours}h
@@ -73,7 +77,7 @@ function HikeCard(props: HikeCardProps) {
       <h2>
         <a href={hike.url}>{hike.title}</a>
       </h2>
-      {hike.peaks.map((peak) => (
+      {hike.peaks.map(peak => (
         <span className="peak" key={peak}>
           {peak}
         </span>

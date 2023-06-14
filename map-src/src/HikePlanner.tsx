@@ -1,58 +1,58 @@
-import { Feature, FeatureCollection } from "geojson";
-import _ from 'lodash';
-import React from "react";
-import Map, { Layer, Source } from "react-map-gl";
-import { useSearchParams } from "react-router-dom";
-
-import { EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle } from "./HikeMap";
-
 import './HikePlanner.css';
 
+import {Feature, FeatureCollection} from 'geojson';
+import _ from 'lodash';
+import React from 'react';
+import Map, {Layer, Source} from 'react-map-gl';
+import {useSearchParams} from 'react-router-dom';
+
+import {EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle} from './HikeMap';
+
 const PEAKS = {
-  S: "Slide Mountain",
-  H: "Hunter Mountain",
-  BD: "Blackdome Mountain",
-  BH: "Blackhead Mountain",
-  TC: "Thomas Cole Mountain",
-  We: "West Kill Mountain",
-  C: "Cornell Mountain",
-  Ta: "Table Mountain",
-  Pk: "Peekamoose Mountain",
-  Pl: "Plateau Mountain",
-  Su: "Sugarloaf Mountain",
-  W: "Wittenberg Mountain",
-  SW: "Southwest Hunter",
-  L: "Lone Mountain",
-  BL: "Balsam Lake Mountain",
-  P: "Panther Mountain",
-  BI: "Big Indian Mountain",
-  Fr: "Friday Mountain",
-  Ru: "Rusk Mountain",
-  KHP: "Kaaterskill High Peak",
-  Tw: "Twin Mountain",
-  BC: "Balsam Cap Mountain",
-  Fi: "Fir Mountain",
-  ND: "North Dome Mountain",
-  B: "Balsam Mountain",
-  Bp: "Bearpen Mountain",
-  E: "Eagle Mountain",
-  IH: "Indian Head Mountain",
-  Sh: "Sherrill Mountain",
-  V: "Vly Mountain",
-  WHP: "Windham High Peak",
-  Ha: "Halcott Mountain",
-  Ro: "Rocky Mountain",
+  S: 'Slide Mountain',
+  H: 'Hunter Mountain',
+  BD: 'Blackdome Mountain',
+  BH: 'Blackhead Mountain',
+  TC: 'Thomas Cole Mountain',
+  We: 'West Kill Mountain',
+  C: 'Cornell Mountain',
+  Ta: 'Table Mountain',
+  Pk: 'Peekamoose Mountain',
+  Pl: 'Plateau Mountain',
+  Su: 'Sugarloaf Mountain',
+  W: 'Wittenberg Mountain',
+  SW: 'Southwest Hunter',
+  L: 'Lone Mountain',
+  BL: 'Balsam Lake Mountain',
+  P: 'Panther Mountain',
+  BI: 'Big Indian Mountain',
+  Fr: 'Friday Mountain',
+  Ru: 'Rusk Mountain',
+  KHP: 'Kaaterskill High Peak',
+  Tw: 'Twin Mountain',
+  BC: 'Balsam Cap Mountain',
+  Fi: 'Fir Mountain',
+  ND: 'North Dome Mountain',
+  B: 'Balsam Mountain',
+  Bp: 'Bearpen Mountain',
+  E: 'Eagle Mountain',
+  IH: 'Indian Head Mountain',
+  Sh: 'Sherrill Mountain',
+  V: 'Vly Mountain',
+  WHP: 'Windham High Peak',
+  Ha: 'Halcott Mountain',
+  Ro: 'Rocky Mountain',
 };
 type Peak = keyof typeof PEAKS;
 const ALL_PEAKS = Object.keys(PEAKS) as Peak[];
 
 const MODES = [
-  "unrestricted",
-  "loops-only",
-  "day-only",
-  "day-loop-only",
-  "prefer-loop",
-  "day-only-prefer-loop",
+  'unrestricted',
+  'loops-only',
+  'day-only',
+  'day-loop-only',
+  'prefer-loop',
+  'day-only-prefer-loop',
 ] as const;
 type Mode = (typeof MODES)[number];
 
@@ -73,26 +73,23 @@ interface HikePlannerResponse {
 
 // TODO: increase memory limit / timeout for function
 async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
-  const r = await fetch(
-    "https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes",
-    {
-      method: "post",
-      body: JSON.stringify(req),
-    }
-  );
+  const r = await fetch('https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes', {
+    method: 'post',
+    body: JSON.stringify(req),
+  });
   return r.json();
 }
 
 // TODO: use react-query for this
 export interface LoadingState {
-  state: "loading";
+  state: 'loading';
 }
 export interface ErrorState {
-  state: "error";
+  state: 'error';
   error: unknown;
 }
 export interface SuccessState<T> {
-  state: "ok";
+  state: 'ok';
   data: T;
 }
 /** A deferred/promised value can be in one of three states: loading, error or success. */
@@ -117,14 +114,12 @@ export function HikePlanner() {
     setPeaks([]);
   }, []);
   const selectInvert = React.useCallback(() => {
-    setPeaks((oldPeaks) => ALL_PEAKS.filter((code) => oldPeaks.includes(code)));
+    setPeaks(oldPeaks => ALL_PEAKS.filter(code => oldPeaks.includes(code)));
   }, []);
-  const togglePeak = React.useCallback<React.ChangeEventHandler>((e) => {
+  const togglePeak = React.useCallback<React.ChangeEventHandler>(e => {
     const peak = e.target.id as keyof typeof PEAKS;
-    setPeaks((oldPeaks) =>
-      oldPeaks.includes(peak)
-        ? oldPeaks.filter((p) => p !== peak)
-        : oldPeaks.concat([peak])
+    setPeaks(oldPeaks =>
+      oldPeaks.includes(peak) ? oldPeaks.filter(p => p !== peak) : oldPeaks.concat([peak]),
     );
   }, []);
 
@@ -133,15 +128,15 @@ export function HikePlanner() {
   const search = React.useCallback(async () => {
     let isInvalidated = false;
     const r: HikePlannerRequest = {peaks, mode};
-    setProposedHikes({ state: "loading" });
+    setProposedHikes({state: 'loading'});
     try {
       const proposals = await getHikes(r);
       if (!isInvalidated) {
-        setProposedHikes({ state: "ok", data: proposals });
+        setProposedHikes({state: 'ok', data: proposals});
       }
     } catch (e) {
       if (!isInvalidated) {
-        setProposedHikes({ state: "error", error: e });
+        setProposedHikes({state: 'error', error: e});
       }
     }
     return () => {
@@ -152,25 +147,28 @@ export function HikePlanner() {
   return (
     <div className="App hike-planner">
       <div className="hike-control-panel">
-        Hike Preference: <select value={mode} onChange={e => setMode(e.currentTarget.value as Mode)}>
-          {MODES.map(m => <option key={m}>{m}</option>)}
+        Hike Preference:{' '}
+        <select value={mode} onChange={e => setMode(e.currentTarget.value as Mode)}>
+          {MODES.map(m => (
+            <option key={m}>{m}</option>
+          ))}
         </select>
-        <br/>
+        <br />
         <button onClick={search}>Find Hikes</button>
         <br />
         <button onClick={selectAll}>All</button>
         <button onClick={selectNone}>None</button>
         <button onClick={selectInvert}>Invert</button>
         <br />
-        {ALL_PEAKS.map((code) => (
+        {ALL_PEAKS.map(code => (
           <React.Fragment key={code}>
             <label>
               <input
-                type="checkbox"
                 checked={peaks.includes(code)}
                 id={code}
+                type="checkbox"
                 onChange={togglePeak}
-              />{" "}
+              />{' '}
               {PEAKS[code]}
             </label>
             <br />
@@ -178,9 +176,9 @@ export function HikePlanner() {
         ))}
         {proposedHikes ? (
           <div className="proposed-hikes">
-            {proposedHikes.state === "loading" ? (
-              "Loading…"
-            ) : proposedHikes.state === "error" ? (
+            {proposedHikes.state === 'loading' ? (
+              'Loading…'
+            ) : proposedHikes.state === 'error' ? (
               `Error: ${proposedHikes.error}`
             ) : (
               <ProposedHikesList plan={proposedHikes.data} />
@@ -189,12 +187,8 @@ export function HikePlanner() {
         ) : null}
       </div>
       <HikePlannerMap
+        hikes={proposedHikes?.state === 'ok' ? proposedHikes.data.solution.features : null}
         peaks={peaks}
-        hikes={
-          proposedHikes?.state === "ok"
-            ? proposedHikes.data.solution.features
-            : null
-        }
       />
     </div>
   );
@@ -205,18 +199,26 @@ interface ProposedHikesProps {
 }
 
 function ProposedHikesList(props: ProposedHikesProps) {
-  const { plan } = props;
-  const { solution } = plan;
-  const idToName = _.fromPairs(solution.features.map(f => [f.properties?.id, f.properties?.name]));
+  const {plan} = props;
+  const {solution} = plan;
+  const idToName = _.fromPairs(
+    solution.features.map(f => [f.properties?.id, f.properties?.name]),
+  );
 
   return (
     <>
-      <hr/>
+      <hr />
       Proposed Hikes:
       {solution.num_hikes} hikes, {solution.d_mi.toFixed(1)} miles.
       <ul>
         {plan.solution.hikes.map((hike, i) => (
-          <li key={i}>{(hike[0] * 0.621371).toFixed(1)} mi: {hike[1].map(id => idToName[id]).filter(x => !!x).join('→')}</li>
+          <li key={i}>
+            {(hike[0] * 0.621371).toFixed(1)} mi:{' '}
+            {hike[1]
+              .map(id => idToName[id])
+              .filter(x => !!x)
+              .join('→')}
+          </li>
         ))}
       </ul>
     </>
@@ -229,14 +231,14 @@ interface HikePlannerMapProps {
 }
 
 const hikeStyle = {
-  type: "line",
+  type: 'line',
   layout: {
-    "line-join": "round",
-    "line-cap": "round",
+    'line-join': 'round',
+    'line-cap': 'round',
   },
   paint: {
-    "line-color": "rgb(28,109,163)",
-    "line-width": 3,
+    'line-color': 'rgb(28,109,163)',
+    'line-width': 3,
   },
 } satisfies Partial<mapboxgl.AnyLayer>;
 
@@ -245,29 +247,33 @@ const parkingLotStyle = {
   layout: {
     'icon-image': 'parking',
     'icon-allow-overlap': true,
-  }
-} satisfies Partial<mapboxgl.AnyLayer>
+  },
+} satisfies Partial<mapboxgl.AnyLayer>;
 
 function HikePlannerMap(props: HikePlannerMapProps) {
-  const { peaks, hikes } = props;
-  const hikeFeatures = React.useMemo((): FeatureCollection => {
-    return hikes
-      ? {
-          type: "FeatureCollection",
-          features: hikes.filter(
-            (f) =>
-              f.geometry.type === "LineString" ||
-              f.geometry.type === "MultiLineString"
-          ),
-        }
-      : EMPTY_FC;
-  }, [hikes]);
-  const parkingLotFeatures = React.useMemo((): FeatureCollection => {
-    return hikes ? {
-      type: 'FeatureCollection',
-      features: hikes.filter(f => f.properties?.type === 'parking-lot')
-    } : EMPTY_FC;
-  }, [hikes]);
+  const {peaks, hikes} = props;
+  const hikeFeatures = React.useMemo(
+    (): FeatureCollection =>
+      hikes
+        ? {
+            type: 'FeatureCollection',
+            features: hikes.filter(
+              f => f.geometry.type === 'LineString' || f.geometry.type === 'MultiLineString',
+            ),
+          }
+        : EMPTY_FC,
+    [hikes],
+  );
+  const parkingLotFeatures = React.useMemo(
+    (): FeatureCollection =>
+      hikes
+        ? {
+            type: 'FeatureCollection',
+            features: hikes.filter(f => f.properties?.type === 'parking-lot'),
+          }
+        : EMPTY_FC,
+    [hikes],
+  );
 
   return (
     <div id="map">
@@ -280,55 +286,55 @@ function HikePlannerMap(props: HikePlannerMapProps) {
         mapStyle="mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t"
         mapboxAccessToken={MAPBOX_TOKEN}
       >
-        <Source id="catskill-park" type="geojson" data="/catskills/map/catskill-park.geojson">
+        <Source data="/catskills/map/catskill-park.geojson" id="catskill-park" type="geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
-        <Source type="geojson" id="hikes" data={hikeFeatures}>
+        <Source data={hikeFeatures} id="hikes" type="geojson">
           <Layer id="hikes" {...hikeStyle} />
         </Source>
-        <Source type="geojson" id="lots" data={parkingLotFeatures}>
+        <Source data={parkingLotFeatures} id="lots" type="geojson">
           <Layer id="lots" {...parkingLotStyle} />
         </Source>
-        <MountainPeaks hiked={peaks.map((p) => SHORT_PEAKS[p])} />
+        <MountainPeaks hiked={peaks.map(p => SHORT_PEAKS[p])} />
       </Map>
     </div>
   );
 }
 
 const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
-  S: "Slide",
-  H: "Hunter",
-  BD: "Black Dome",
-  BH: "Blackhead",
-  TC: "Thomas Cole",
-  We: "Westkill",
-  C: "Cornell",
-  Ta: "Table",
-  Pk: "Peekamoose",
-  Pl: "Plateau",
-  Su: "Sugarloaf",
-  W: "Wittenberg",
-  SW: "Southwest Hunter",
-  L: "Lone",
-  BL: "Balsam Lake",
-  P: "Panther",
-  BI: "Big Indian",
-  Fr: "Friday",
-  Ru: "Rusk",
-  KHP: "Kaaterskill High Peak",
-  Tw: "Twin",
-  BC: "Balsam Cap",
-  Fi: "Fir",
-  ND: "North Dome",
-  B: "Balsam",
-  Bp: "Bearpen",
-  E: "Eagle",
-  IH: "Indian Head",
-  Sh: "Mount Sherrill",
-  V: "Vly",
-  WHP: "Windham",
-  Ha: "Halcott",
-  Ro: "Rocky",
+  S: 'Slide',
+  H: 'Hunter',
+  BD: 'Black Dome',
+  BH: 'Blackhead',
+  TC: 'Thomas Cole',
+  We: 'Westkill',
+  C: 'Cornell',
+  Ta: 'Table',
+  Pk: 'Peekamoose',
+  Pl: 'Plateau',
+  Su: 'Sugarloaf',
+  W: 'Wittenberg',
+  SW: 'Southwest Hunter',
+  L: 'Lone',
+  BL: 'Balsam Lake',
+  P: 'Panther',
+  BI: 'Big Indian',
+  Fr: 'Friday',
+  Ru: 'Rusk',
+  KHP: 'Kaaterskill High Peak',
+  Tw: 'Twin',
+  BC: 'Balsam Cap',
+  Fi: 'Fir',
+  ND: 'North Dome',
+  B: 'Balsam',
+  Bp: 'Bearpen',
+  E: 'Eagle',
+  IH: 'Indian Head',
+  Sh: 'Mount Sherrill',
+  V: 'Vly',
+  WHP: 'Windham',
+  Ha: 'Halcott',
+  Ro: 'Rocky',
 };
 
 const OSM_IDS: [string, number, string][] = [

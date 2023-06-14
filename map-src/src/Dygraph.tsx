@@ -1,7 +1,7 @@
+import 'dygraphs/dist/dygraph.css';
+
 import DygraphBase from 'dygraphs';
 import React from 'react';
-
-import 'dygraphs/dist/dygraph.css';
 
 type Options = Parameters<DygraphBase['updateOptions']>[0];
 export interface Props extends Options {
@@ -52,6 +52,6 @@ export class Dygraph extends React.Component<Props> {
   }
 
   render() {
-    return <div ref={this.divRef} style={this.props.style} className={this.props.className}></div>
+    return <div className={this.props.className} ref={this.divRef} style={this.props.style} />;
   }
 }

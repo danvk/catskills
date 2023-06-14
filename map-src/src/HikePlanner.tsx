@@ -2,6 +2,7 @@ import { Feature, FeatureCollection } from "geojson";
 import _ from 'lodash';
 import React from "react";
 import Map, { Layer, Source } from "react-map-gl";
+import { useSearchParams } from "react-router-dom";
 
 import { EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle } from "./HikeMap";
 
@@ -98,8 +99,16 @@ export interface SuccessState<T> {
 export type PromiseState<T> = LoadingState | ErrorState | SuccessState<T>;
 
 export function HikePlanner() {
-  const [peaks, setPeaks] = React.useState(ALL_PEAKS);
-  const [mode, setMode] = React.useState<Mode>('unrestricted');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const peaksParam = searchParams.get('peaks');
+  const peaks = peaksParam === null ? ALL_PEAKS : peaksParam.split(',');
+  // const [peaks, setPeaks] = React.useState(ALL_PEAKS);
+  const mode = (searchParams.get('mode') ?? 'unrestricted') as Mode;
+  // const [mode, setMode] = React.useState<Mode>('unrestricted');
+
+  const setPeaks = React.useCallback((newPeaks: string[]) => {
+    setSearchParams({peaks: newPeaks.join(','), mode});
+  }, []);
 
   const selectAll = React.useCallback(() => {
     setPeaks(ALL_PEAKS);

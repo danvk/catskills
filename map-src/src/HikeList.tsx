@@ -16,7 +16,7 @@ export interface Hike {
 }
 
 export interface Props {
-  hikes: UseQueryResult<readonly Hike[], unknown>;
+  hikes: UseQueryResult<readonly Hike[]>;
   selectedHikeSlug: string | null;
   onSelectHike: (slug: string) => void;
 }

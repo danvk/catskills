@@ -28,7 +28,7 @@ export interface Props {
 }
 
 export function HikeInfoPanel(props: Props) {
-  const {selectedHikeSlug, hike, trackFeatureProps} = props;
+  const {selectedHikeSlug: _, hike, trackFeatureProps} = props;
 
   const [selectedTrack, setSelectedTrack] = React.useState(0);
 

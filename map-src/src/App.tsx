@@ -32,9 +32,12 @@ function HikePage() {
 
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedHikeSlug = searchParams.get('hike');
-  const handleSelectHike = React.useCallback((hike: string | null) => {
-    setSearchParams(hike ? {hike} : {});
-  }, []);
+  const handleSelectHike = React.useCallback(
+    (hike: string | null) => {
+      setSearchParams(hike ? {hike} : {});
+    },
+    [setSearchParams],
+  );
 
   const [scrubPoint, setScrubPoint] = React.useState<ScrubPoint | null>(null);
 

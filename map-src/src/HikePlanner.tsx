@@ -4,7 +4,7 @@ import {Feature, FeatureCollection} from 'geojson';
 import _ from 'lodash';
 import React from 'react';
 import Map, {Layer, Source} from 'react-map-gl';
-import { useLocation, useNavigate } from 'react-router-dom';
+import {useLocation, useNavigate} from 'react-router-dom';
 
 import {EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle} from './HikeMap';
 
@@ -104,13 +104,13 @@ export function lightlyDecodeURIComponent(param: string) {
 }
 
 function createSearchParams(params?: Record<string, string>): string {
-  return Object.entries(params ?? {}).map(([k, v]) => k + '=' + lightlyEncodeURIComponent(v)).join('&');
+  return Object.entries(params ?? {})
+    .map(([k, v]) => k + '=' + lightlyEncodeURIComponent(v))
+    .join('&');
 }
 
 export type SetURLSearchParams = (
-  nextInit?:
-    | Record<string, string>
-    | ((prev: URLSearchParams) => Record<string, string>),
+  nextInit?: Record<string, string> | ((prev: URLSearchParams) => Record<string, string>),
 ) => void;
 
 // See https://github.com/remix-run/react-router/blob/fe661c5c0405c2212a5299b75af362df9f031b11/packages/react-router-dom/index.tsx#L904
@@ -122,7 +122,7 @@ function useLightlyEncodedSearchParams(): [URLSearchParams, SetURLSearchParams] 
   );
   const navigate = useNavigate();
   const setSearchParams = React.useCallback<SetURLSearchParams>(
-    (nextInit) => {
+    nextInit => {
       const newSearchParams = createSearchParams(
         typeof nextInit === 'function' ? nextInit(searchParams) : nextInit,
       );
@@ -326,7 +326,8 @@ function HikePlannerMap(props: HikePlannerMapProps) {
           zoom: 10,
         }}
         mapStyle="mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t"
-        mapboxAccessToken={MAPBOX_TOKEN}>
+        mapboxAccessToken={MAPBOX_TOKEN}
+      >
         <Source data="/catskills/map/catskill-park.geojson" id="catskill-park" type="geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>

@@ -14,8 +14,8 @@ export const MAPBOX_TOKEN =
   'pk.eyJ1IjoiZGFudmsiLCJhIjoiY2lrZzJvNDR0MDBhNXR4a2xqNnlsbWx3ciJ9.myJhweYd_hrXClbKk8XLgQ';
 
 export interface Props {
-  hikes: UseQueryResult<readonly Hike[], unknown>;
-  tracks: UseQueryResult<FeatureCollection<LineString, TrackProps>, unknown>;
+  hikes: UseQueryResult<readonly Hike[]>;
+  tracks: UseQueryResult<FeatureCollection<LineString, TrackProps>>;
   scrubPoint: ScrubPoint | null;
   selectedHikeSlug: string | null;
   onSelectHike: (slug: string) => void;
@@ -69,14 +69,14 @@ export function useMapImage({url, name, sdf = false}: UseMapImageOptions): MapIm
   const mapRef = useMap();
   React.useEffect(() => {
     if (mapRef.current) {
-      const map = mapRef.current.getMap() as mapboxgl.Map;
+      const map = mapRef.current.getMap();
 
       map.loadImage(url, (error, image) => {
         if (error) {
           throw error;
         }
         if (!image) {
-          throw 'Unable to load image';
+          throw new Error('Unable to load image');
         }
         if (!map.hasImage(name)) {
           map.addImage(name, image, {sdf});
@@ -84,14 +84,16 @@ export function useMapImage({url, name, sdf = false}: UseMapImageOptions): MapIm
         setState('ok');
       });
     }
-  }, [mapRef.current]);
+  }, [mapRef, name, sdf, url]);
 
   return state;
 }
 
-function noop() {}
+function noop() {
+  // intentionally blank
+}
 
-export const EMPTY_FC: FeatureCollection<any, any> = {
+export const EMPTY_FC: FeatureCollection<never, never> = {
   type: 'FeatureCollection',
   features: [],
 };
@@ -100,9 +102,7 @@ export function HikeMap(props: Props) {
   const {hikes, tracks, selectedHikeSlug, scrubPoint} = props;
   const hiked = React.useMemo(
     () =>
-      hikes.status === 'success'
-        ? [...new Set(hikes.data.flatMap((hike: any) => hike.peaks))]
-        : null,
+      hikes.status === 'success' ? [...new Set(hikes.data.flatMap(hike => hike.peaks))] : null,
     [hikes],
   );
 
@@ -139,7 +139,7 @@ export function HikeMap(props: Props) {
         onClick={e => {
           const {properties} = e.features?.[0] ?? {};
           if (properties?.slug) {
-            props.onSelectHike(properties.slug);
+            props.onSelectHike(properties.slug as string);
           }
         }}
       >

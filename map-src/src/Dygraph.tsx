@@ -19,7 +19,7 @@ export class Dygraph extends React.Component<Props> {
   }
 
   componentDidMount() {
-    const {file, style, className, ...others} = this.props;
+    const {file, style: _1, className: _2, ...others} = this.props;
     if (!file) {
       throw new Error('Must specify file prop');
     }
@@ -46,9 +46,7 @@ export class Dygraph extends React.Component<Props> {
   }
 
   componentWillUnmount() {
-    if (this.dygraph) {
-      this.dygraph.destroy();
-    }
+    this.dygraph.destroy();
   }
 
   render() {

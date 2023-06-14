@@ -98,50 +98,53 @@ export type PromiseState<T> = LoadingState | ErrorState | SuccessState<T>;
 export function HikePlanner() {
   const [searchParams, setSearchParams] = useSearchParams();
   const peaksParam = searchParams.get('peaks');
-  const peaks = peaksParam === null ? ALL_PEAKS : peaksParam.split(',');
-  // const [peaks, setPeaks] = React.useState(ALL_PEAKS);
+  const peaks = (peaksParam === null ? ALL_PEAKS : peaksParam.split(',')) as Peak[];
   const mode = (searchParams.get('mode') ?? 'unrestricted') as Mode;
-  // const [mode, setMode] = React.useState<Mode>('unrestricted');
 
-  const setPeaks = React.useCallback((newPeaks: string[]) => {
-    setSearchParams({peaks: newPeaks.join(','), mode});
-  }, []);
+  const setPeaks = React.useCallback(
+    (newPeaks: string[]) => {
+      setSearchParams({peaks: newPeaks.join(','), mode});
+    },
+    [mode, setSearchParams],
+  );
+  const setMode = React.useCallback(
+    (newMode: Mode) => {
+      setSearchParams({peaks: peaks.join(','), mode: newMode});
+    },
+    [peaks, setSearchParams],
+  );
 
   const selectAll = React.useCallback(() => {
     setPeaks(ALL_PEAKS);
-  }, []);
+  }, [setPeaks]);
   const selectNone = React.useCallback(() => {
     setPeaks([]);
-  }, []);
+  }, [setPeaks]);
   const selectInvert = React.useCallback(() => {
-    setPeaks(oldPeaks => ALL_PEAKS.filter(code => oldPeaks.includes(code)));
-  }, []);
-  const togglePeak = React.useCallback<React.ChangeEventHandler>(e => {
-    const peak = e.target.id as keyof typeof PEAKS;
-    setPeaks(oldPeaks =>
-      oldPeaks.includes(peak) ? oldPeaks.filter(p => p !== peak) : oldPeaks.concat([peak]),
-    );
-  }, []);
+    setPeaks(ALL_PEAKS.filter(code => peaks.includes(code)));
+  }, [peaks, setPeaks]);
+  const togglePeak = React.useCallback<React.ChangeEventHandler>(
+    e => {
+      const peak = e.target.id as keyof typeof PEAKS;
+      setPeaks(peaks.includes(peak) ? peaks.filter(p => p !== peak) : peaks.concat([peak]));
+    },
+    [peaks, setPeaks],
+  );
 
   const [proposedHikes, setProposedHikes] =
     React.useState<PromiseState<HikePlannerResponse> | null>(null);
-  const search = React.useCallback(async () => {
-    let isInvalidated = false;
-    const r: HikePlannerRequest = {peaks, mode};
-    setProposedHikes({state: 'loading'});
-    try {
-      const proposals = await getHikes(r);
-      if (!isInvalidated) {
+  const search = React.useCallback(() => {
+    (async () => {
+      const r: HikePlannerRequest = {peaks, mode};
+      setProposedHikes({state: 'loading'});
+      try {
+        const proposals = await getHikes(r);
+        // TODO: invalidate when there's a new query
         setProposedHikes({state: 'ok', data: proposals});
-      }
-    } catch (e) {
-      if (!isInvalidated) {
+      } catch (e) {
         setProposedHikes({state: 'error', error: e});
       }
-    }
-    return () => {
-      isInvalidated = true;
-    };
+    })();
   }, [peaks, mode]);
 
   return (
@@ -284,8 +287,7 @@ function HikePlannerMap(props: HikePlannerMapProps) {
           zoom: 10,
         }}
         mapStyle="mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t"
-        mapboxAccessToken={MAPBOX_TOKEN}
-      >
+        mapboxAccessToken={MAPBOX_TOKEN}>
         <Source data="/catskills/map/catskill-park.geojson" id="catskill-park" type="geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
@@ -337,6 +339,7 @@ const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
   Ro: 'Rocky',
 };
 
+/*
 const OSM_IDS: [string, number, string][] = [
   ['S', 2426171552, 'Slide Mountain'],
   ['H', 1938201532, 'Hunter Mountain'],
@@ -372,3 +375,4 @@ const OSM_IDS: [string, number, string][] = [
   ['Ha', 357563196, 'Halcott Mountain'],
   ['Ro', -538, 'Rocky Mountain'],
 ];
+*/

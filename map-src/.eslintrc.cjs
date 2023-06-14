@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import("@types/eslint").Linter.Config} */
 module.exports = {
   parser: '@typescript-eslint/parser',
@@ -72,6 +73,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
 
     // Built-in eslint rules where we'd like to be more strict.
     'arrow-body-style': 'warn',

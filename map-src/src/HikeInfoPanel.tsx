@@ -97,6 +97,7 @@ export interface ScrubPoint {
   eleMeters: number;
 }
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 type HighlightCallback = React.ComponentProps<typeof Dygraph>['highlightCallback'] & Function;
 
 function ElevationChart(props: {
@@ -133,7 +134,7 @@ function ElevationChart(props: {
   }, [table, viz]);
 
   const highlightCallback = React.useCallback<HighlightCallback>(
-    (this: Dygraph, _e, x, _pt, row) => {
+    (_e, x, _pt, row) => {
       const pt = gpx.tracks[0].points[row];
       onScrubPoint({
         lat: pt.lat,

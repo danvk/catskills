@@ -9,4 +9,4 @@ source catskills/bin/activate
 ./make_index.py
 
 cd map-src
-yarn build
+pnpm build

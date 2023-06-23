@@ -28,7 +28,7 @@ See the Catskill 3500 Club's [official list of peaks].
 | 13 | Southwest Hunter | 3740' | Untrailed | [2022-09-21: Hunter and Southwest Hunter aka the COVID hike][2022-09-21-hunter-sw] |
 | 14 | Balsam Lake Mountain | 3723' | Trailed | [2023-04-25: Balsam Lake Mountain, a Carpet of Trout Lilies][2023-04-25-balsam-lake] |
 | 15 | Lone | 3721' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
-| 16 | Panther | 3720' | Trailed | [2023-05-14: Panther Group Hike to Complete My 3500 List][2023-05-14-panther]<br>[2023-01-08: Panther (Winter)][2023-01-08-winter-panther] |
+| 16 | Panther | 3720' | Trailed | [2023-06-21: Panther Overnight for Breeding Bird Atlasing][2023-06-21-panther-bba]<br>[2023-05-14: Panther Group Hike to Complete My 3500 List][2023-05-14-panther]<br>[2023-01-08: Panther (Winter)][2023-01-08-winter-panther] |
 | 17 | Big Indian | 3700' | Trailed | [2023-05-08: Firbie Loop, A Flowery Finish for the High Peaks][2023-05-08-firbie] |
 | 18 | Friday | 3694' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 | 19 | Rusk | 3680' | Untrailed | [2023-04-04: Rusk Bushwhack: Snowshoes and a T-Shirt][2023-04-04-rusk] |
@@ -47,6 +47,7 @@ See the Catskill 3500 Club's [official list of peaks].
 | 32 | Windham High Peak | 3524' | Trailed | [2020-10-04: Fall Windham][2020-10-04-fall-windham]<br>[2020-05-22: Windham with Alex][2020-05-22-windham2]<br>[2020-05-14: Windham (solo)][2020-05-14-windham-solo]<br>[2016-08-06: Windham and Blackhead overnight][2016-08-06-windham-blackhead] |
 | 33 | Rocky | 3487' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 
+[2023-06-21-panther-bba]: /catskills/2023/06/21/2023-06-21-panther-bba.html
 [2023-06-10-dry-brook-ridge]: /catskills/2023/06/10/2023-06-10-dry-brook-ridge.html
 [2023-05-14-panther]: /catskills/2023/05/14/2023-05-14-panther.html
 [2023-05-08-firbie]: /catskills/2023/05/08/2023-05-08-firbie.html

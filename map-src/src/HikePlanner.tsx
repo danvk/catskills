@@ -71,7 +71,6 @@ interface HikePlannerResponse {
   };
 }
 
-// TODO: increase memory limit / timeout for function
 async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
   const r = await fetch('https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes', {
     method: 'post',
@@ -134,6 +133,7 @@ function useLightlyEncodedSearchParams(): [URLSearchParams, SetURLSearchParams] 
   return [searchParams, setSearchParams];
 }
 
+// TODO: load hikes automatically on page load (and add some kind of server cache)
 export function HikePlanner() {
   const [searchParams, setSearchParams] = useLightlyEncodedSearchParams();
   const peaksParam = searchParams.get('peaks');

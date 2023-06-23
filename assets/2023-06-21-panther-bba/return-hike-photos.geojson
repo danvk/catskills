@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5562.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+        "date": "2023:06:21 15:05:19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.39446944444445,
+          42.03613333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5563.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+        "date": "2023:06:21 15:26:21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.39148055555556,
+          42.02811111111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "file": "IMG_5564.HEIC",
+        "zipfile": "/Users/danvk/Downloads/Photos-001.zip",
+        "date": "2023:06:21 15:55:10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.401375,
+          42.026158333333335
+        ]
+      }
+    }
+  ]
+}

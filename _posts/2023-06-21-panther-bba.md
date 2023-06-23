@@ -44,13 +44,13 @@ The forecast looked iffy on Tuesday afternoon, but we drove up anyway and hoped 
 
 We started hiking at 5:40 PM. Since it was the longest day of the year, we had plenty of daylight to work with. Sunset wasn't until 8:35 PM. We heard lots of Hermit Thrushes, Ovenbirds and Red-eyed Vireos on the hike up.
 
-![Singing Hermit Thrush]({{site.baseurl}}/assets/2023-06-21-panther-bba/P1150690-singing-hermit.jpeg)
+![Singing Hermit Thrush]({{site.baseurl}}/assets/2023-06-21-panther-bba/P1150690-singing-hermit.jpeg) _Hermit Thrush Singing_
 
 On the way up we saw five gallon jugs of water with a curious note on them: "Please leave for Hungarian Scouts". We stopped by the spring to see whether it was running. I'd [asked] on the Catskills Trail Conditions Facebook group and been told that it was, but slowly. This was correct, it was just a trickle. We decided to go set up our tent and come back after to fill up. In retrospect this was a mistake: we would have had to carry more weight up the last quarter mile, but we would have saved at least twenty minutes of hiking back and forth.
 
 ![Our tent in the ferns]({{site.baseurl}}/assets/2023-06-21-panther-bba/tent-in-ferns.jpeg)
 
-We took the first camp site we found. After setting up our tent and finding a place for the bear bag, we took a few minutes to enjoy the view. We had the entire mountain to ourselves.
+We took the first camp site we found. After setting up our tent and finding a place for the bear bag, we took a few minutes to enjoy the view. We enjoyed hearing the evening chorus of birds coming up from the valley below us. We had the entire mountain to ourselves.
 
 ![Sunset from Giant Ledge]({{site.baseurl}}/assets/2023-06-21-panther-bba/2065-panther-sunset.jpeg)
 
@@ -60,11 +60,11 @@ As we made our way back to the tent it was pitch dark and the trails through the
 
 We eventually found our tent by making our way back to the entrance to Giant Ledge and retracing our steps. I put a pin on my map so that wouldn't happen again. Lesson learned: mark your tent site during the day! Talking about this later, our friend John had another suggestion: turn on a headlamp and hang it in the tent any time you leave it, so that it acts as a beacon.
 
-After all that, Alex was still keen on some night birding to contribute to the nocturnal hours for our block! Our block only started about 0.25 miles north from the camp site, so we had to do some hiking in the dark. It occurred to me as we were hiking that in all my Catskills hikes, night hiking was a new experience for me. I can't say I enjoyed it much, but I did appreciate that the trail markers were reflective! We heard a Barred Owl on the walk but not in our block. At least we tried! We had less trouble finding our tent on the way back thanks to my GPS pin.
+After all that, Alex was still keen on some night birding to contribute to the nocturnal hours for our block! Our block only started about 0.25 miles north from the camp site, so we had to do some hiking in the dark. It occurred to me that in all my time in the Catskills, night hiking was a new experience for me. I can't say I enjoyed it much, but I did appreciate that the trail markers were reflective! We heard a Barred Owl on the walk but not in our block. At least we tried! We had less trouble finding our tent on the way back thanks to my GPS pin.
 
 We were in bed around 11 PM and set our alarm for 5:00 AM so that we could have breakfast and get to our block for the dawn chorus. I never sleep well while camping and tonight was no exception. After all the stress of getting lost, I had trouble falling asleep. I kept checking my phone to see that time was passing. I fell asleep for a bit, was it close to dawn? Nope, 12:15 AM. Then 12:45 AM. Then 2:15 AM. Finally I started to sleep well, then woke up at 4:55 AM, turned off the alarm and woke up Alex to start the day.
 
-![Dan having morning coffee in the clouds]({{site.baseurl}}/assets/2023-06-21-panther-bba/2070-dan-misty-coffee.jpeg)
+![Dan having morning coffee in the clouds]({{site.baseurl}}/assets/2023-06-21-panther-bba/2070-dan-misty-coffee.jpeg) _Nice spot for morning coffee_
 
 It was a misty morning and the sunrise was completely spectacular as it burned away the fog.
 
@@ -76,11 +76,11 @@ After a breakfast of oatmeal and coffee we packed our day bags and set off. We w
 
 Within an hour we were up to 3500 ft elevation. This is an important threshold because it's where you have a chance to see the Bicknell's Thrush, a high altitude bird that's the unofficial mascot of the 3500 Club. We heard and saw lots and lots of birds. A few highlights were seeing baby Dark-eyed Juncos being fed and baby Hermit Thrushes. Recently fledged birds tend to have more spots and sit still perched on branches waiting for their parents to feed them. This makes them hard to spot but, once you do, they're much easier to photograph than their flighty parents!
 
-![Baby Hermit Thrush]({{site.baseurl}}/assets/2023-06-21-panther-bba/P1150803-baby-hermit.jpeg)
+![Baby Hermit Thrush]({{site.baseurl}}/assets/2023-06-21-panther-bba/P1150803-baby-hermit.jpeg) _Baby Hermit Thrush_
 
 At a clearing near the Panther summit we heard an unfamiliar bird. Alex pulled out Merlin to ID it. At first it said "Northern Cardinal" which seemed unlikely at 3600 ft. After the song got louder it changed to "Purple Finch". That's more like it! This was a regular backyard bird for us when we lived at 1100ft in the Northern Catskills, but we rarely see it at lower elevations. At Panther summit I heard an interesting trilling and pulled out Merlin. A Dark-eyed Junco, but it also picked up a distinct chip that it identified as a Yellow-bellied Flycatcher. That's an exciting one!
 
-![Panther Summit]({{site.baseurl}}/assets/2023-06-21-panther-bba/panther-summit.jpeg)
+![Panther Summit]({{site.baseurl}}/assets/2023-06-21-panther-bba/panther-summit.jpeg) _View from Panther Summit_
 
 Alex was determined to hike all the way to the northern end of our block so we kept going most of the way to Fox Hollow. After doing lots of peakbagging this past year, it struck me that this was a very unusual and arbitrary type of hike: go over a summit, hike down the other side, reach an arbitrary line and then hike back over the summit again. The dynamic felt wrong. But we wanted to see all the different habitats and there are different birds at 3000ft than 3500ft.
 
@@ -92,7 +92,7 @@ Just before our second time summiting Panther we ran into the first people we'd 
 
 Jim told me about some interesting possible places to bird in our block: Panther Meadow is a ~1 acre natural clearing on a minor peak about 1000ft below the summit that might have distinct wildlife. And there was a narrow easement to access the park on the west side of our block where there are some rivers. Alex showed Margaret how to use the NY Breeding Bird Atlas portal and answered some of her questions about eBird. Getting Jim and Margaret to contribute to the Atlas is probably the single best way we can help!
 
-On the way back to Giant Ledge we passed another pair of hikers who told us they'd encountered a bear on the trail a little ways back. This added some unexpected excitement to the tail end of our hike. We made lots of noise and did not encounter a bear. As we got close to Giant Ledge, we passed increasing large groups of kids. The Hungarian Scouts! We figured that the 50+ scouts had probably done a great job of flushing the bears all along the route.
+On the way back to Giant Ledge we passed another pair of hikers who told us they'd encountered a bear on the trail a little ways back. This added some unexpected excitement to the tail end of our hike. We made lots of noise and did not encounter said bear. As we got close to Giant Ledge, we passed increasing large groups of kids. The Hungarian Scouts! We figured that the 50+ scouts had probably done a great job of flushing the bears all along the route.
 
 After an uneventful hike back, Alex's first overnight trip was complete! While there were a few tense moments, it was a big success overall. While it feels odd to hike an arbitrary box that someone in the 1980s drew on a grid, it also has its perks: I'd hiked past the Giant Ledge camp site many times in the past but never had a reason to stay there. With the Breeding Bird Atlas, I did! I'm glad we camped at Giant Ledge and got to see such a spectacular sunrise.
 

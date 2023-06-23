@@ -46,7 +46,7 @@ We started hiking at 5:40 PM. Since it was the longest day of the year, we had p
 
 ![Singing Hermit Thrush]({{site.baseurl}}/assets/2023-06-21-panther-bba/P1150690-singing-hermit.jpeg)
 
-We stopped by the spring to see whether it was running. I'd [asked] on the Catskills Trail Conditions Facebook group and been told that it was, but slowly. This was correct, it was just a trickle. We decided to go set up our tent and come back after to fill up. In retrospect this was a mistake: we would have had to carry more weight up the last quarter mile, but we would have saved at least twenty minutes of hiking back and forth.
+On the way up we saw five gallon jugs of water with a curious note on them: "Please leave for Hungarian Scouts". We stopped by the spring to see whether it was running. I'd [asked] on the Catskills Trail Conditions Facebook group and been told that it was, but slowly. This was correct, it was just a trickle. We decided to go set up our tent and come back after to fill up. In retrospect this was a mistake: we would have had to carry more weight up the last quarter mile, but we would have saved at least twenty minutes of hiking back and forth.
 
 ![Our tent in the ferns]({{site.baseurl}}/assets/2023-06-21-panther-bba/tent-in-ferns.jpeg)
 

@@ -46,51 +46,12 @@ const PEAKS = {
 type Peak = keyof typeof PEAKS;
 const ALL_PEAKS = Object.keys(PEAKS) as Peak[];
 
-const SLIDE_PEAKS = [
-'S',
-'C',
-'Ta',
-'Pk',
-'W',
-'L',
-'P',
-'BC',
-'Fr',
-'Ro',
-] as const;
-const BIG_INDIAN_PEAKS = [
-  'BL',
-  'BI',
-  'Fi',
-  'B',
-  'E',
-] as const;
-const SPRUCETON_PEAKS = [
-  'H',
-  'We',
-  'SW',
-  'Ru',
-  'ND',
-  'Sh',
-  'Ha',
-] as const;
-const PLATTE_CLOVE_PEAKS = [
-  'Pl',
-  'Su',
-  'KHP',
-  'Tw',
-  'IH',
-] as const;
-const WINDHAM_BLACKHEAD_PEAKS = [
-  'BD',
-  'BH',
-  'TC',
-  'WHP',
-] as const;
-const BEARPEN_PEAKS = [
-  'Bp',
-  'V',
-] as const;
+const SLIDE_PEAKS = ['S', 'C', 'Ta', 'Pk', 'W', 'L', 'P', 'BC', 'Fr', 'Ro'] as const;
+const BIG_INDIAN_PEAKS = ['BL', 'BI', 'Fi', 'B', 'E'] as const;
+const SPRUCETON_PEAKS = ['H', 'We', 'SW', 'Ru', 'ND', 'Sh', 'Ha'] as const;
+const PLATTE_CLOVE_PEAKS = ['Pl', 'Su', 'KHP', 'Tw', 'IH'] as const;
+const WINDHAM_BLACKHEAD_PEAKS = ['BD', 'BH', 'TC', 'WHP'] as const;
+const BEARPEN_PEAKS = ['Bp', 'V'] as const;
 
 const MODES = [
   'unrestricted',
@@ -191,7 +152,7 @@ function HikeGroup(props: HikeGroupProps) {
   const {groupName, peaks, selectedPeaks, onSelectPeaks, onDeselectPeaks} = props;
   const checkRef = React.useRef<HTMLInputElement>(null);
   const numChecked = peaks.filter(peak => selectedPeaks.includes(peak)).length;
-  const isIndeterminate = (numChecked > 0 && numChecked < peaks.length);
+  const isIndeterminate = numChecked > 0 && numChecked < peaks.length;
 
   React.useEffect(() => {
     if (checkRef.current) {
@@ -232,7 +193,7 @@ function HikeGroup(props: HikeGroupProps) {
         <b>{groupName}</b>
       </label>
       <div className="peak-group-peaks">
-      {peaks.map(code => (
+        {peaks.map(code => (
           <React.Fragment key={code}>
             <label>
               <input
@@ -257,7 +218,13 @@ const EMPTY_SINGLETON: never[] = [];
 export function HikePlanner() {
   const [searchParams, setSearchParams] = useLightlyEncodedSearchParams();
   const peaksParam = searchParams.get('peaks');
-  const peaks = (peaksParam === null ? ALL_PEAKS : peaksParam === '' ? EMPTY_SINGLETON : peaksParam.split(',')) as Peak[];
+  const peaks = (
+    peaksParam === null
+      ? ALL_PEAKS
+      : peaksParam === ''
+      ? EMPTY_SINGLETON
+      : peaksParam.split(',')
+  ) as Peak[];
   const mode = (searchParams.get('mode') ?? 'unrestricted') as Mode;
 
   const setPeaks = React.useCallback(
@@ -327,23 +294,13 @@ export function HikePlanner() {
           ))}
         </select>
         <br />
-        <button onClick={search}>Find Hikes</button>
-        <br />
-        Select: <button onClick={selectAll}>All</button>{' '}
-        <button onClick={selectNone}>None</button>
-        <br />
-
-        <HikeGroup groupName='Slide Mountain Wilderness' peaks={SLIDE_PEAKS} {...CHECK_PROPS} />
-        <HikeGroup groupName='Big Indian Wilderness' peaks={BIG_INDIAN_PEAKS} {...CHECK_PROPS} />
-        <HikeGroup groupName='Spruceton Valley' peaks={SPRUCETON_PEAKS} {...CHECK_PROPS} />
-        <HikeGroup groupName='Platte Clove' peaks={PLATTE_CLOVE_PEAKS} {...CHECK_PROPS} />
-        <HikeGroup groupName='Windham Blackhead Range' peaks={WINDHAM_BLACKHEAD_PEAKS} {...CHECK_PROPS} />
-        <HikeGroup groupName='Bearpen State Forest' peaks={BEARPEN_PEAKS} {...CHECK_PROPS} />
-
+        <button disabled={proposedHikes?.state === 'loading'} onClick={search}>
+          {proposedHikes?.state !== 'loading' ? 'Find Hikes' : 'Searching…'}
+        </button>
         {proposedHikes ? (
           <div className="proposed-hikes">
             {proposedHikes.state === 'loading' ? (
-              'Loading…'
+              'Finding some great hikes for you, be patient.'
             ) : proposedHikes.state === 'error' ? (
               `Error: ${proposedHikes.error}`
             ) : (
@@ -351,6 +308,28 @@ export function HikePlanner() {
             )}
           </div>
         ) : null}
+        <hr />
+        Select: <button onClick={selectAll}>All</button>{' '}
+        <button onClick={selectNone}>None</button>
+        <br />
+        <HikeGroup
+          groupName="Slide Mountain Wilderness"
+          peaks={SLIDE_PEAKS}
+          {...CHECK_PROPS}
+        />
+        <HikeGroup
+          groupName="Big Indian Wilderness"
+          peaks={BIG_INDIAN_PEAKS}
+          {...CHECK_PROPS}
+        />
+        <HikeGroup groupName="Spruceton Valley" peaks={SPRUCETON_PEAKS} {...CHECK_PROPS} />
+        <HikeGroup groupName="Platte Clove" peaks={PLATTE_CLOVE_PEAKS} {...CHECK_PROPS} />
+        <HikeGroup
+          groupName="Windham Blackhead Range"
+          peaks={WINDHAM_BLACKHEAD_PEAKS}
+          {...CHECK_PROPS}
+        />
+        <HikeGroup groupName="Bearpen State Forest" peaks={BEARPEN_PEAKS} {...CHECK_PROPS} />
       </div>
       <HikePlannerMap
         hikes={proposedHikes?.state === 'ok' ? proposedHikes.data.solution.features : null}
@@ -372,11 +351,10 @@ function ProposedHikesList(props: ProposedHikesProps) {
   );
 
   return (
-    <>
+    <div className="proposed-hikes">
       <hr />
-      Proposed Hikes:
       {solution.num_hikes} hikes, {solution.d_mi.toFixed(1)} miles.
-      <ul>
+      <ol>
         {plan.solution.hikes.map((hike, i) => (
           <li key={i}>
             {(hike[0] * 0.621371).toFixed(1)} mi:{' '}
@@ -386,8 +364,8 @@ function ProposedHikesList(props: ProposedHikesProps) {
               .join('→')}
           </li>
         ))}
-      </ul>
-    </>
+      </ol>
+    </div>
   );
 }
 
@@ -450,8 +428,7 @@ function HikePlannerMap(props: HikePlannerMapProps) {
           zoom: 10,
         }}
         mapStyle="mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t"
-        mapboxAccessToken={MAPBOX_TOKEN}
-      >
+        mapboxAccessToken={MAPBOX_TOKEN}>
         <Source data="/catskills/map/catskill-park.geojson" id="catskill-park" type="geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
@@ -502,41 +479,3 @@ const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
   Ha: 'Halcott',
   Ro: 'Rocky',
 };
-
-/*
-const OSM_IDS: [string, number, string][] = [
-  ['S', 2426171552, 'Slide Mountain'],
-  ['H', 1938201532, 'Hunter Mountain'],
-  ['BD', 2473476912, 'Blackdome Mountain'],
-  ['BH', 2473476747, 'Blackhead Mountain'],
-  ['TC', 2473476927, 'Thomas Cole Mountain'],
-  ['We', 2955311547, 'West Kill Mountain'],
-  ['C', 2884119551, 'Cornell Mountain'],
-  ['Ta', 7292479776, 'Table Mountain'],
-  ['Pk', 2398015279, 'Peekamoose Mountain'],
-  ['Pl', 2882649917, 'Plateau Mountain'],
-  ['Su', 2882649730, 'Sugarloaf Mountain'],
-  ['W', 2884119672, 'Wittenberg Mountain'],
-  ['SW', 1938215682, 'Southwest Hunter'],
-  ['L', -1136, 'Lone Mountain'],
-  ['BL', 2897919022, 'Balsam Lake Mountain'],
-  ['P', 9147145385, 'Panther Mountain'],
-  ['BI', 357548762, 'Big Indian Mtn Mountain'],
-  ['Fr', 9953707705, 'Friday Mountain'],
-  ['Ru', 10033501291, 'Rusk Mountain'],
-  ['KHP', 9785950126, 'Kaaterskill High Peak'],
-  ['Tw', 7982977638, 'Twin Mountain'],
-  ['BC', 9953729846, 'Balsam Cap Mountain'],
-  ['Fi', 357559622, 'Fir Mountain'],
-  ['ND', 357574030, 'North Dome Mountain'],
-  ['B', 2845338212, 'Balsam Mountain'],
-  ['Bp', 212348771, 'Bearpen Mountain'],
-  ['E', 357557378, 'Eagle Mountain'],
-  ['IH', 7978185605, 'Indian Head Mountain'],
-  ['Sh', 10010091368, 'Sherrill Mountain'],
-  ['V', 10010051278, 'Vly Mountain'],
-  ['WHP', 2426236522, 'Windham High Peak'],
-  ['Ha', 357563196, 'Halcott Mountain'],
-  ['Ro', -538, 'Rocky Mountain'],
-];
-*/

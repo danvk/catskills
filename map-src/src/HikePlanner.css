@@ -15,3 +15,10 @@
 .peak-group-peaks {
   padding-left: 8px;
 }
+
+.proposed-hikes {
+  font-size: small;
+}
+.proposed-hikes ol {
+  padding-left: 24px;
+}

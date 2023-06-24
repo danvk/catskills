@@ -343,11 +343,17 @@ interface ProposedHikesProps {
   plan: HikePlannerResponse;
 }
 
+const ZWSP = '​';
+
 function ProposedHikesList(props: ProposedHikesProps) {
   const {plan} = props;
   const {solution} = plan;
   const idToName = _.fromPairs(
     solution.features.map(f => [f.properties?.id, f.properties?.name]),
+  );
+  const longToShort = React.useMemo(
+    () => _.fromPairs(ALL_PEAKS.map(p => [PEAKS[p], SHORT_PEAKS[p]])),
+    [],
   );
 
   return (
@@ -359,9 +365,9 @@ function ProposedHikesList(props: ProposedHikesProps) {
           <li key={i}>
             {(hike[0] * 0.621371).toFixed(1)} mi:{' '}
             {hike[1]
-              .map(id => idToName[id])
+              .map(id => longToShort[idToName[id]])
               .filter(x => !!x)
-              .join('→')}
+              .join(ZWSP + '→' + ZWSP)}
           </li>
         ))}
       </ol>

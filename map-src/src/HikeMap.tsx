@@ -141,8 +141,7 @@ export function HikeMap(props: Props) {
           if (properties?.slug) {
             props.onSelectHike(properties.slug as string);
           }
-        }}
-      >
+        }}>
         <Source data="/catskills/map/catskill-park.geojson" id="catskill-park" type="geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
@@ -198,6 +197,7 @@ export function MountainPeaks(props: {hiked: readonly string[] | null}) {
         },
         paint: {
           'icon-color': hikedColorExpr,
+          'icon-opacity': ['case', ['==', ['get', 'type'], 'closed'], 0.0, 1.0],
         },
       } satisfies Partial<mapboxgl.AnyLayer>),
     [hikedColorExpr],
@@ -208,6 +208,7 @@ export function MountainPeaks(props: {hiked: readonly string[] | null}) {
       ...peakLabelStyleBase,
       paint: {
         'text-color': hikedColorExpr,
+        'text-opacity': ['case', ['==', ['get', 'type'], 'closed'], 0.0, 1.0],
       },
     }),
     [hikedColorExpr],

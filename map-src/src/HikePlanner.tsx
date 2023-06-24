@@ -508,5 +508,9 @@ const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
 };
 
 function generateGpxForHike(solution: HikePlannerResponse['solution'], hikeIdx: number) {
-  return `GPX File goes here ${hikeIdx} ${Object.keys(solution).length}`;
+  const hikeNodes = solution.hikes[hikeIdx][1];
+  // Find the feature that corresponds to this hike.
+  // TODO: Make this easier from the backend
+  const hikeFeature = solution.features.filter(f => _.isEqual(hikeNodes, f.properties?.nodes));
+  return JSON.stringify(hikeFeature);
 }

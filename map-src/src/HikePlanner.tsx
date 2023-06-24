@@ -339,6 +339,17 @@ export function HikePlanner() {
   );
 }
 
+// See https://stackoverflow.com/a/33542499/388951
+function saveFile(filename: string, data: string) {
+  const blob = new Blob([data], {type: 'text/csv'});
+  const elem = window.document.createElement('a');
+  elem.href = window.URL.createObjectURL(blob);
+  elem.download = filename;
+  document.body.appendChild(elem);
+  elem.click();
+  document.body.removeChild(elem);
+}
+
 interface ProposedHikesProps {
   plan: HikePlannerResponse;
 }
@@ -356,6 +367,11 @@ function ProposedHikesList(props: ProposedHikesProps) {
     [],
   );
 
+  const downloadHike = (hikeIdx: number) => {
+    const gpx = generateGpxForHike(solution, hikeIdx);
+    saveFile('hike.gpx', gpx);
+  };
+
   return (
     <div className="proposed-hikes">
       <hr />
@@ -367,7 +383,12 @@ function ProposedHikesList(props: ProposedHikesProps) {
             {hike[1]
               .map(id => longToShort[idToName[id]])
               .filter(x => !!x)
-              .join(ZWSP + '→' + ZWSP)}
+              .join(ZWSP + '→' + ZWSP)}{' '}
+            (
+            <a href="#" onClick={() => downloadHike(i)}>
+              GPX
+            </a>
+            )
           </li>
         ))}
       </ol>
@@ -485,3 +506,7 @@ const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
   Ha: 'Halcott',
   Ro: 'Rocky',
 };
+
+function generateGpxForHike(solution: HikePlannerResponse['solution'], hikeIdx: number) {
+  return `GPX File goes here ${hikeIdx} ${Object.keys(solution).length}`;
+}

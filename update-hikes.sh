@@ -8,5 +8,6 @@ source catskills/bin/activate
 ./patch_progress.py
 ./make_index.py
 
+rm -rf map/assets
 cd map-src
 pnpm build

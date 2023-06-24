@@ -5,7 +5,7 @@ import bbox from '@turf/bbox';
 import {FeatureCollection, LineString, MultiLineString} from 'geojson';
 import type mapboxgl from 'mapbox-gl';
 import React from 'react';
-import Map, {Layer, Source, useMap} from 'react-map-gl';
+import Map, {Layer, LayerProps, Source, useMap} from 'react-map-gl';
 
 import {ScrubPoint, TrackProps} from './HikeInfoPanel';
 import {Hike} from './HikeList';
@@ -204,7 +204,7 @@ export function MountainPeaks(props: {hiked: readonly string[] | null}) {
   );
 
   const peakLabelStyle = React.useMemo(
-    () => ({
+    (): LayerProps => ({
       ...peakLabelStyleBase,
       paint: {
         'text-color': hikedColorExpr,

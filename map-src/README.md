@@ -2,14 +2,17 @@
 
 Quickstart:
 
-    yarn dev
+    pnpm dev
 
-Then open http://localhost:5173/catskills/map/ (note: trailing slash is required).
+Then open either:
+
+- http://localhost:5173/catskills/map/ (note: trailing slash is required).
+- http://localhost:5173/catskills/map/planner
 
 To use VS Code with this project, you need to open it from this directory.
 
 To push changes to the site:
 
-    yarn build
+    pnpm build
 
 This updates the `map` directory.

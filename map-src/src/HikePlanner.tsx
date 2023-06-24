@@ -46,6 +46,52 @@ const PEAKS = {
 type Peak = keyof typeof PEAKS;
 const ALL_PEAKS = Object.keys(PEAKS) as Peak[];
 
+const SLIDE_PEAKS = [
+'S',
+'C',
+'Ta',
+'Pk',
+'W',
+'L',
+'P',
+'BC',
+'Fr',
+'Ro',
+] as const;
+const BIG_INDIAN_PEAKS = [
+  'BL',
+  'BI',
+  'Fi',
+  'B',
+  'E',
+] as const;
+const SPRUCETON_PEAKS = [
+  'H',
+  'We',
+  'SW',
+  'Ru',
+  'ND',
+  'Sh',
+  'Ha',
+] as const;
+const PLATTE_CLOVE_PEAKS = [
+  'Pl',
+  'Su',
+  'KHP',
+  'Tw',
+  'IH',
+] as const;
+const WINDHAM_BLACKHEAD_PEAKS = [
+  'BD',
+  'BH',
+  'TC',
+  'WHP',
+] as const;
+const BEARPEN_PEAKS = [
+  'Bp',
+  'V',
+] as const;
+
 const MODES = [
   'unrestricted',
   'loops-only',
@@ -133,11 +179,85 @@ function useLightlyEncodedSearchParams(): [URLSearchParams, SetURLSearchParams] 
   return [searchParams, setSearchParams];
 }
 
+interface HikeGroupProps {
+  groupName: string;
+  peaks: readonly Peak[];
+  selectedPeaks: readonly Peak[];
+  onSelectPeaks: (peaks: readonly Peak[]) => void;
+  onDeselectPeaks: (peaks: readonly Peak[]) => void;
+}
+
+function HikeGroup(props: HikeGroupProps) {
+  const {groupName, peaks, selectedPeaks, onSelectPeaks, onDeselectPeaks} = props;
+  const checkRef = React.useRef<HTMLInputElement>(null);
+  const numChecked = peaks.filter(peak => selectedPeaks.includes(peak)).length;
+  const isIndeterminate = (numChecked > 0 && numChecked < peaks.length);
+
+  React.useEffect(() => {
+    if (checkRef.current) {
+      checkRef.current.indeterminate = isIndeterminate;
+    }
+  }, [isIndeterminate, checkRef]);
+
+  // Toggle all from an indeterminate state is "check all": https://ux.stackexchange.com/q/92070
+  const toggleAll = React.useCallback(() => {
+    if (numChecked === peaks.length) {
+      onDeselectPeaks(peaks);
+    } else {
+      onSelectPeaks(peaks);
+    }
+  }, [numChecked, onDeselectPeaks, onSelectPeaks, peaks]);
+
+  const toggleOnePeak = React.useCallback<React.ChangeEventHandler>(
+    e => {
+      const peak = e.target.id as keyof typeof PEAKS;
+      if (selectedPeaks.includes(peak)) {
+        onDeselectPeaks([peak]);
+      } else {
+        onSelectPeaks([peak]);
+      }
+    },
+    [onDeselectPeaks, onSelectPeaks, selectedPeaks],
+  );
+
+  return (
+    <div className="peak-group">
+      <label>
+        <input
+          checked={numChecked === peaks.length}
+          ref={checkRef}
+          type="checkbox"
+          onChange={toggleAll}
+        />{' '}
+        <b>{groupName}</b>
+      </label>
+      <div className="peak-group-peaks">
+      {peaks.map(code => (
+          <React.Fragment key={code}>
+            <label>
+              <input
+                checked={selectedPeaks.includes(code)}
+                id={code}
+                type="checkbox"
+                onChange={toggleOnePeak}
+              />{' '}
+              {PEAKS[code]}
+            </label>
+            <br />
+          </React.Fragment>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+const EMPTY_SINGLETON: never[] = [];
+
 // TODO: load hikes automatically on page load (and add some kind of server cache)
 export function HikePlanner() {
   const [searchParams, setSearchParams] = useLightlyEncodedSearchParams();
   const peaksParam = searchParams.get('peaks');
-  const peaks = (peaksParam === null ? ALL_PEAKS : peaksParam.split(',')) as Peak[];
+  const peaks = (peaksParam === null ? ALL_PEAKS : peaksParam === '' ? EMPTY_SINGLETON : peaksParam.split(',')) as Peak[];
   const mode = (searchParams.get('mode') ?? 'unrestricted') as Mode;
 
   const setPeaks = React.useCallback(
@@ -159,13 +279,18 @@ export function HikePlanner() {
   const selectNone = React.useCallback(() => {
     setPeaks([]);
   }, [setPeaks]);
-  const selectInvert = React.useCallback(() => {
-    setPeaks(ALL_PEAKS.filter(code => peaks.includes(code)));
-  }, [peaks, setPeaks]);
-  const togglePeak = React.useCallback<React.ChangeEventHandler>(
-    e => {
-      const peak = e.target.id as keyof typeof PEAKS;
-      setPeaks(peaks.includes(peak) ? peaks.filter(p => p !== peak) : peaks.concat([peak]));
+
+  const onSelectPeaks = React.useCallback(
+    (newlySelectedPeaks: readonly Peak[]) => {
+      const peaksToSet = newlySelectedPeaks.filter(p => !peaks.includes(p));
+      setPeaks(peaks.concat(peaksToSet));
+    },
+    [peaks, setPeaks],
+  );
+  const onDeselectPeaks = React.useCallback(
+    (newlyDeselectedPeaks: readonly Peak[]) => {
+      const newPeaks = peaks.filter(p => !newlyDeselectedPeaks.includes(p));
+      setPeaks(newPeaks);
     },
     [peaks, setPeaks],
   );
@@ -186,6 +311,12 @@ export function HikePlanner() {
     })();
   }, [peaks, mode]);
 
+  const CHECK_PROPS = {
+    selectedPeaks: peaks,
+    onSelectPeaks,
+    onDeselectPeaks,
+  };
+
   return (
     <div className="App hike-planner">
       <div className="hike-control-panel">
@@ -198,24 +329,17 @@ export function HikePlanner() {
         <br />
         <button onClick={search}>Find Hikes</button>
         <br />
-        <button onClick={selectAll}>All</button>
+        Select: <button onClick={selectAll}>All</button>{' '}
         <button onClick={selectNone}>None</button>
-        <button onClick={selectInvert}>Invert</button>
         <br />
-        {ALL_PEAKS.map(code => (
-          <React.Fragment key={code}>
-            <label>
-              <input
-                checked={peaks.includes(code)}
-                id={code}
-                type="checkbox"
-                onChange={togglePeak}
-              />{' '}
-              {PEAKS[code]}
-            </label>
-            <br />
-          </React.Fragment>
-        ))}
+
+        <HikeGroup groupName='Slide Mountain Wilderness' peaks={SLIDE_PEAKS} {...CHECK_PROPS} />
+        <HikeGroup groupName='Big Indian Wilderness' peaks={BIG_INDIAN_PEAKS} {...CHECK_PROPS} />
+        <HikeGroup groupName='Spruceton Valley' peaks={SPRUCETON_PEAKS} {...CHECK_PROPS} />
+        <HikeGroup groupName='Platte Clove' peaks={PLATTE_CLOVE_PEAKS} {...CHECK_PROPS} />
+        <HikeGroup groupName='Windham Blackhead Range' peaks={WINDHAM_BLACKHEAD_PEAKS} {...CHECK_PROPS} />
+        <HikeGroup groupName='Bearpen State Forest' peaks={BEARPEN_PEAKS} {...CHECK_PROPS} />
+
         {proposedHikes ? (
           <div className="proposed-hikes">
             {proposedHikes.state === 'loading' ? (

@@ -139,5 +139,8 @@ module.exports = {
     ],
     'react/jsx-curly-brace-presence': 'error',
     'react/self-closing-comp': 'error',
+
+    // This disallows use of _.noop, which is pretty annoying!
+    '@typescript-eslint/unbound-method': 'off',
   },
 };

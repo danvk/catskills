@@ -7,3 +7,11 @@
   padding: 4px;
   box-sizing: border-box;
 }
+
+.peak-group {
+  margin-top: 8px;
+  font-size: small;
+}
+.peak-group-peaks {
+  padding-left: 8px;
+}

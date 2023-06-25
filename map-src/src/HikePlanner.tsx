@@ -68,6 +68,47 @@ interface HikePlannerRequest {
   mode: Mode;
 }
 
+const NAMED_HIKES = [
+  ['Burroughs Range', 'S,C,W'],
+  ['Woodland Valley Quartet', 'S,C,W,P'],
+  ['The Six', 'Fr,BC,Ro,L,Ta,Pk'],
+  ['The Nine', 'S,C,W,Fr,BC,Ro,L,Ta,Pk'],
+  ['The Ocho', 'C,W,Fr,BC,Ro,L,Ta,Pk'],
+  ['Moonhaw Four', 'C,W,Fr,BC'],
+  ['Denning Four', 'Ro,L,Ta,Pk'],
+  ['Fisherman’s Four', 'Fr,BC,Ro,L'],
+  ['High Low', 'S,Ro'],
+  ['FirBBiE', 'Fi,BI,E,B'],
+  ['Burnham Hollow 3', 'Fi,BI,E'],
+  ['Triple Biscuit', 'Fi,BI,D'],
+  ['Biscuits and Gravy', 'Fi,BI,D,E,B'],
+  ['Pine Hill Trail Triple', 'BI,E,B'],
+  ['Double Beaver', 'D,BL'],
+  ['Double Balsam Plus', 'BL,E,B'],
+  ['Double Balsam', 'BL,B'],
+  ['Rusk Hunter Loop', 'Ru,H,SW'],
+  ['Spruceton Straightshot', 'Sh,ND,We'],
+  ['Spruceton Scattershot', 'Ha,We,Ru'],
+  ['Spruceton Trail Triple', 'We,H,SW'],
+  ['Spruceton Horseshoe', 'We,Ru,H,SW'],
+  ['Six West', 'Sh,ND,We,Ru,H,SW'],
+  ['The Shaft', 'Ha,Sh,ND'],
+  ['Spruceton Bushwhack Doubleshot', 'Sh,ND,Ru'],
+  ['The Other Nine', 'Sh,ND,We,H,SW,Pl,Su,Tw,IH'],
+  ['DPE4', 'Pl,Su,Tw,IH'],
+  ['Mink-Gillespie Horseshoe', 'Pl,Su,Tw,IH,KHP,RT'],
+  ['Devils Path', 'We,Pl,Su,Tw,IH'],
+  ['High Peaks Doubleshot', 'KHP,WHP,RT'],
+  ['Platte Clove Four', 'Tw,IH,KHP,RT'],
+  ['Blackhead Range', 'TC,BD,BH'],
+  ['Windham-Blackhead Horseshoe', 'TC,BD,BH,WHP'],
+  ['Escarpment Peaks', 'BH,WHP'],
+  ['Halvly', 'Ha,Bp,V'],
+];
+const PEAKS_TO_NAME = _.fromPairs(
+  NAMED_HIKES.map(([name, peaks]) => [_.sortBy(peaks.split(',')).join(','), name]),
+);
+
 interface HikePlannerResponse {
   solution: {
     d_km: number;
@@ -365,13 +406,16 @@ const ZWSP = '​';
 
 function getHikeName(
   nodes: number[],
-  idToName: Record<string, string>,
+  idToCode: Record<string, string>,
   idToLot: Record<string, string>,
 ) {
   const lot1 = nodes[0];
   const lot2 = nodes.at(-1)!;
   const peaks = nodes.slice(1, -1);
-  const peakStr = peaks.map(id => idToName[id]).join(ZWSP + '→' + ZWSP);
+  const sortedPeaks = _.sortBy(peaks.map(id => idToCode[id])).join(',');
+  const peakStr =
+    PEAKS_TO_NAME[sortedPeaks] ??
+    peaks.map(id => SHORT_PEAKS[idToCode[id] as Peak]).join(ZWSP + '→' + ZWSP);
   const lot1s = idToLot[lot1];
   if (lot1 === lot2) {
     return `${peakStr} from ${lot1s}`;
@@ -383,7 +427,7 @@ function getHikeName(
 function ProposedHikesList(props: ProposedHikesProps) {
   const {plan} = props;
   const {solution, peak_ids} = plan;
-  const idToName = _.fromPairs(peak_ids.map(([code, id]) => [id, SHORT_PEAKS[code]]));
+  const idToCode = _.fromPairs(peak_ids.map(([code, id]) => [id, code]));
   const idToLot: Record<string, string> = {};
   for (const f of solution.features) {
     const {properties} = f;
@@ -404,7 +448,7 @@ function ProposedHikesList(props: ProposedHikesProps) {
       <ol>
         {plan.solution.hikes.map((hike, i) => (
           <li key={i}>
-            {(hike[0] * 0.621371).toFixed(1)} mi: {getHikeName(hike[1], idToName, idToLot)} (
+            {(hike[0] * 0.621371).toFixed(1)} mi: {getHikeName(hike[1], idToCode, idToLot)} (
             <a href="#" onClick={() => downloadHike(i)}>
               GPX
             </a>

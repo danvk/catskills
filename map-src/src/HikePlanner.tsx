@@ -79,10 +79,16 @@ interface HikePlannerResponse {
   peak_ids: [Peak, number, string][];
 }
 
+const ENDPOINT = 'http://localhost:5000/find-hikes';
+// 'https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes'
+
 async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
-  const r = await fetch('https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes', {
+  const r = await fetch(ENDPOINT, {
     method: 'post',
     body: JSON.stringify(req),
+    headers: {
+      'Content-Type': 'application/json',
+    },
   });
   return r.json();
 }
@@ -361,6 +367,12 @@ function ProposedHikesList(props: ProposedHikesProps) {
   const {plan} = props;
   const {solution, peak_ids} = plan;
   const idToName = _.fromPairs(peak_ids.map(([code, id]) => [id, SHORT_PEAKS[code]]));
+  for (const f of solution.features) {
+    const {properties} = f;
+    if (properties?.type === 'parking-lot') {
+      idToName[properties.id] = properties.name;
+    }
+  }
 
   const downloadHike = (hikeIdx: number) => {
     const gpx = generateGpxForHike(solution, hikeIdx);
@@ -522,10 +534,7 @@ function escapeXml(unsafe: string) {
 }
 
 function generateGpxForHike(solution: HikePlannerResponse['solution'], hikeIdx: number) {
-  const hikeNodes = solution.hikes[hikeIdx][1];
-  // Find the feature that corresponds to this hike.
-  // TODO: Make this easier from the backend
-  const hikeFeature = solution.features.find(f => _.isEqual(hikeNodes, f.properties?.nodes));
+  const hikeFeature = solution.features.find(f => f.properties?.hikeIndex === hikeIdx);
   if (!hikeFeature) {
     throw new Error();
   }

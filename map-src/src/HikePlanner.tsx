@@ -1,6 +1,6 @@
 import './HikePlanner.css';
 
-import {Feature, FeatureCollection} from 'geojson';
+import {Feature, FeatureCollection, Geometry} from 'geojson';
 import _ from 'lodash';
 import React from 'react';
 import Map, {Layer, Source} from 'react-map-gl';
@@ -76,6 +76,7 @@ interface HikePlannerResponse {
     hikes: [number, number[]][];
     features: Feature[];
   };
+  peak_ids: [Peak, number, string][];
 }
 
 async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
@@ -358,14 +359,8 @@ const ZWSP = '​';
 
 function ProposedHikesList(props: ProposedHikesProps) {
   const {plan} = props;
-  const {solution} = plan;
-  const idToName = _.fromPairs(
-    solution.features.map(f => [f.properties?.id, f.properties?.name]),
-  );
-  const longToShort = React.useMemo(
-    () => _.fromPairs(ALL_PEAKS.map(p => [PEAKS[p], SHORT_PEAKS[p]])),
-    [],
-  );
+  const {solution, peak_ids} = plan;
+  const idToName = _.fromPairs(peak_ids.map(([code, id]) => [id, SHORT_PEAKS[code]]));
 
   const downloadHike = (hikeIdx: number) => {
     const gpx = generateGpxForHike(solution, hikeIdx);
@@ -381,8 +376,8 @@ function ProposedHikesList(props: ProposedHikesProps) {
           <li key={i}>
             {(hike[0] * 0.621371).toFixed(1)} mi:{' '}
             {hike[1]
-              .map(id => longToShort[idToName[id]])
-              .filter(x => !!x)
+              .map(id => idToName[id] ?? `?${id}?`)
+              // .filter(x => !!x)
               .join(ZWSP + '→' + ZWSP)}{' '}
             (
             <a href="#" onClick={() => downloadHike(i)}>
@@ -507,10 +502,66 @@ const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
   Ro: 'Rocky',
 };
 
+// See https://stackoverflow.com/a/27979933/388951
+function escapeXml(unsafe: string) {
+  return unsafe.replace(/[<>&'"]/g, c => {
+    switch (c) {
+      case '<':
+        return '&lt;';
+      case '>':
+        return '&gt;';
+      case '&':
+        return '&amp;';
+      case "'":
+        return '&apos;';
+      case '"':
+        return '&quot;';
+    }
+    throw new Error();
+  });
+}
+
 function generateGpxForHike(solution: HikePlannerResponse['solution'], hikeIdx: number) {
   const hikeNodes = solution.hikes[hikeIdx][1];
   // Find the feature that corresponds to this hike.
   // TODO: Make this easier from the backend
-  const hikeFeature = solution.features.filter(f => _.isEqual(hikeNodes, f.properties?.nodes));
-  return JSON.stringify(hikeFeature);
+  const hikeFeature = solution.features.find(f => _.isEqual(hikeNodes, f.properties?.nodes));
+  if (!hikeFeature) {
+    throw new Error();
+  }
+
+  const trkPts = getCoordinates(hikeFeature.geometry).map(
+    ([lng, lat]) => `<trkpt lat="${lat}" lon="${lng}"></trkpt>`,
+  );
+
+  return `<?xml version="1.0"?>
+  <gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="AllTrails.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+      <name><![CDATA[Hike title]]></name>
+      <desc><![CDATA[Hike description]]></desc>
+      <link href="${escapeXml(location.href)}">
+        <text>DanVK's Catskills Hike Planner</text>
+      </link>
+    </metadata>
+    <trk>
+      <name><![CDATA[Hike Name]]></name>
+      <src>DanVK's Catskills Hike Planner</src>
+      <trkseg>
+        ${trkPts.join('\n')}
+      </trkseg>
+    </trk>
+  </gpx>
+  `;
+}
+
+function getCoordinates(geom: Geometry) {
+  if (geom.type === 'Point') {
+    return [geom.coordinates];
+  } else if (geom.type === 'LineString') {
+    return geom.coordinates;
+  } else if (geom.type === 'MultiLineString') {
+    return _.flatten(geom.coordinates);
+  }
+
+  throw new Error(`Surprise geometry type: ${geom.type}`);
 }

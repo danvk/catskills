@@ -79,8 +79,8 @@ interface HikePlannerResponse {
   peak_ids: [Peak, number, string][];
 }
 
-const ENDPOINT = 'http://localhost:5000/find-hikes';
-// 'https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes'
+const ENDPOINT = 'https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes';
+// 'http://localhost:5000/find-hikes';
 
 async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
   const r = await fetch(ENDPOINT, {
@@ -363,14 +363,32 @@ interface ProposedHikesProps {
 
 const ZWSP = '​';
 
+function getHikeName(
+  nodes: number[],
+  idToName: Record<string, string>,
+  idToLot: Record<string, string>,
+) {
+  const lot1 = nodes[0];
+  const lot2 = nodes.at(-1)!;
+  const peaks = nodes.slice(1, -1);
+  const peakStr = peaks.map(id => idToName[id]).join(ZWSP + '→' + ZWSP);
+  const lot1s = idToLot[lot1];
+  if (lot1 === lot2) {
+    return `${peakStr} from ${lot1s}`;
+  }
+  const lot2s = idToLot[lot2];
+  return `${peakStr} from ${lot1s}${ZWSP}→${ZWSP}${lot2s}`;
+}
+
 function ProposedHikesList(props: ProposedHikesProps) {
   const {plan} = props;
   const {solution, peak_ids} = plan;
   const idToName = _.fromPairs(peak_ids.map(([code, id]) => [id, SHORT_PEAKS[code]]));
+  const idToLot: Record<string, string> = {};
   for (const f of solution.features) {
     const {properties} = f;
     if (properties?.type === 'parking-lot') {
-      idToName[properties.id] = properties.name;
+      idToLot[properties.id] = properties.name;
     }
   }
 
@@ -386,12 +404,7 @@ function ProposedHikesList(props: ProposedHikesProps) {
       <ol>
         {plan.solution.hikes.map((hike, i) => (
           <li key={i}>
-            {(hike[0] * 0.621371).toFixed(1)} mi:{' '}
-            {hike[1]
-              .map(id => idToName[id] ?? `?${id}?`)
-              // .filter(x => !!x)
-              .join(ZWSP + '→' + ZWSP)}{' '}
-            (
+            {(hike[0] * 0.621371).toFixed(1)} mi: {getHikeName(hike[1], idToName, idToLot)} (
             <a href="#" onClick={() => downloadHike(i)}>
               GPX
             </a>
@@ -534,7 +547,7 @@ function escapeXml(unsafe: string) {
 }
 
 function generateGpxForHike(solution: HikePlannerResponse['solution'], hikeIdx: number) {
-  const hikeFeature = solution.features.find(f => f.properties?.hikeIndex === hikeIdx);
+  const hikeFeature = solution.features.find(f => f.properties?.hike_index === hikeIdx);
   if (!hikeFeature) {
     throw new Error();
   }

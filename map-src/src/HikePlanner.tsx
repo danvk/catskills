@@ -109,6 +109,76 @@ const PEAKS_TO_NAME = _.fromPairs(
   NAMED_HIKES.map(([name, peaks]) => [_.sortBy(peaks.split(',')).join(','), name]),
 );
 
+const PA_SHORT_NAMES = {
+  233883906: 'MacDaniel Rd',
+  156124291: 'Elm Ridge PA',
+  2948008322: 'Condon Hollow Rd',
+  8072809861: 'Shaft Rd',
+  2897918982: 'South Side Spur',
+  816358666: 'Giant Ledge PA',
+  816358667: 'Slide Mountain PA',
+  7556678796: 'Winter Clove Rd',
+  909115024: 'Hunter North Picnic Area',
+  818552593: "Devil's Tombstone",
+  921890834: 'Circle W General Store',
+  899027859: 'Mink Hollow Rd S',
+  2910242580: 'Spruceton Rd',
+  995422357: 'Spruceton Rd',
+  10960189335: 'Barnum Rd',
+  2946719128: 'Dry Brook Trailhead PA',
+  7609349908: 'Moon Haw Rd',
+  9217245722: 'Platte Clove Rd',
+  1096163099: 'MacDaniel Rd',
+  8072997146: 'Halcott Falls PA',
+  826537380: 'Woodland Valley',
+  1273010086: 'Steenburg Rd',
+  256332838: 'Overlook Upper PA',
+  2948047400: 'Heisinger Rd',
+  2946665517: 'Hill Rd',
+  2426235822: 'Big Hollow Rd',
+  1273001263: 'Prediger Rd',
+  2897919153: 'Mill Brook Rd',
+  290543156: 'Belleayre Day Use Area',
+  2898347829: 'Kelly Hollow Ski Trail',
+  2940748598: 'Lost Clove Rd',
+  2939238969: 'Ploutz Rd',
+  2910254266: 'Spruceton Rd',
+  2426235833: 'Peck Rd',
+  4256942140: 'North Lake',
+  2898347834: 'Kelly Hollow Ski Trail',
+  4256942142: 'North Lake Rd',
+  842259390: 'Colgate Rd',
+  2948031554: 'County Rd 3 (North)',
+  2947971907: 'McKenley Hollow',
+  10091139141: 'Diamond Notch PA',
+  1118944455: 'Jesop Rd',
+  1075850833: 'Spruceton Horse Trail',
+  856841086: "Devil's Tombstone (S)",
+  515079893: 'North Lake',
+  338567127: 'Lane Rd',
+  1329053915: 'Storks Nest Rd',
+  286143196: 'Balsam Lake Trail PA',
+  231407451: 'Denning PA',
+  280416604: 'Rider Hollow',
+  2948020833: 'County Rd 3',
+  256331746: 'Belleayre Lot A',
+  2898368482: 'Black Bear Rd',
+  2908401254: 'Gillespie Rd',
+  2908401255: 'Cortina Ln',
+  7833211113: 'Mink Hollow',
+  2442957547: 'Biscuit Brook PA',
+  132056300: 'Peekamoose PA',
+  2422040557: 'Notch Inn Rd',
+  385488236: 'Lane Street',
+  385488238: 'Plank Rd',
+  238522992: 'Roaring Kill',
+  385488241: 'Plank Rd',
+  10942786419: 'Burnham Hollow',
+  834705779: 'Fox Hollow PA',
+  854537976: 'Scutt Rd PA',
+  2948008318: 'Elk Creek Rd',
+};
+
 interface HikePlannerResponse {
   solution: {
     d_km: number;
@@ -335,7 +405,8 @@ export function HikePlanner() {
   return (
     <div className="App hike-planner">
       <div className="hike-control-panel">
-        Hike Preference:{' '}
+        Hike Preference:
+        <br />
         <select value={mode} onChange={e => setMode(e.currentTarget.value as Mode)}>
           {MODES.map(m => (
             <option key={m}>{m}</option>
@@ -415,13 +486,29 @@ function getHikeName(
   const sortedPeaks = _.sortBy(peaks.map(id => idToCode[id])).join(',');
   const peakStr =
     PEAKS_TO_NAME[sortedPeaks] ??
-    peaks.map(id => SHORT_PEAKS[idToCode[id] as Peak]).join(ZWSP + '→' + ZWSP);
+    peaks
+      .map(id => SHORT_PEAKS[idToCode[id] as Peak])
+      .join(ZWSP + (peaks.length > 2 ? '→' : '/') + ZWSP);
   const lot1s = idToLot[lot1];
   if (lot1 === lot2) {
-    return `${peakStr} from ${lot1s}`;
+    return (
+      <>
+        <b>{peakStr}</b>
+        <br />
+        from {lot1s}
+      </>
+    );
   }
   const lot2s = idToLot[lot2];
-  return `${peakStr} from ${lot1s}${ZWSP}→${ZWSP}${lot2s}`;
+  return (
+    <>
+      <b>{peakStr}</b>
+      <br />
+      from {lot1s}
+      {ZWSP}→{ZWSP}
+      {lot2s}
+    </>
+  );
 }
 
 function ProposedHikesList(props: ProposedHikesProps) {
@@ -435,18 +522,22 @@ function ProposedHikesList(props: ProposedHikesProps) {
       idToLot[properties.id] = properties.name;
     }
   }
+  for (const [id, name] of Object.entries(PA_SHORT_NAMES)) {
+    idToLot[id] = name;
+  }
 
   const downloadHike = (hikeIdx: number) => {
     const gpx = generateGpxForHike(solution, hikeIdx);
     saveFile('hike.gpx', gpx);
   };
+  const sortedHikes = _.sortBy(plan.solution.hikes, h => -h[0]);
 
   return (
     <div className="proposed-hikes">
       <hr />
       {solution.num_hikes} hikes, {solution.d_mi.toFixed(1)} miles.
       <ol>
-        {plan.solution.hikes.map((hike, i) => (
+        {sortedHikes.map((hike, i) => (
           <li key={i}>
             {(hike[0] * 0.621371).toFixed(1)} mi: {getHikeName(hike[1], idToCode, idToLot)} (
             <a href="#" onClick={() => downloadHike(i)}>

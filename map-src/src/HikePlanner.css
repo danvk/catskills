@@ -1,5 +1,5 @@
 .hike-control-panel {
-  width: 300px;
+  width: 250px;
   top: 0;
   bottom: 0;
   position: absolute;
@@ -21,4 +21,11 @@
 }
 .proposed-hikes ol {
   padding-left: 24px;
+}
+.proposed-hikes li {
+  white-space: pre-line;
+}
+
+#map {
+  left: 250px;
 }

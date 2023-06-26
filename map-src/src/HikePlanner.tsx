@@ -396,6 +396,8 @@ export function HikePlanner() {
     })();
   }, [peaks, mode]);
 
+  const [selectedHikeIndex, setSelectedHikeIndex] = React.useState<number | null>(null);
+
   const CHECK_PROPS = {
     selectedPeaks: peaks,
     onSelectPeaks,
@@ -423,7 +425,11 @@ export function HikePlanner() {
             ) : proposedHikes.state === 'error' ? (
               `Error: ${proposedHikes.error}`
             ) : (
-              <ProposedHikesList plan={proposedHikes.data} />
+              <ProposedHikesList
+                plan={proposedHikes.data}
+                selectedHikeIndex={selectedHikeIndex}
+                onSelectHike={setSelectedHikeIndex}
+              />
             )}
           </div>
         ) : null}
@@ -453,6 +459,7 @@ export function HikePlanner() {
       <HikePlannerMap
         hikes={proposedHikes?.state === 'ok' ? proposedHikes.data.solution.features : null}
         peaks={peaks}
+        selectedHikeIndex={selectedHikeIndex}
       />
     </div>
   );
@@ -467,10 +474,6 @@ function saveFile(filename: string, data: string) {
   document.body.appendChild(elem);
   elem.click();
   document.body.removeChild(elem);
-}
-
-interface ProposedHikesProps {
-  plan: HikePlannerResponse;
 }
 
 const ZWSP = '​';
@@ -511,8 +514,14 @@ function getHikeName(
   );
 }
 
+interface ProposedHikesProps {
+  plan: HikePlannerResponse;
+  selectedHikeIndex: number | null;
+  onSelectHike: (selectedHikeIndex: number | null) => void;
+}
+
 function ProposedHikesList(props: ProposedHikesProps) {
-  const {plan} = props;
+  const {plan, selectedHikeIndex, onSelectHike} = props;
   const {solution, peak_ids} = plan;
   const idToCode = _.fromPairs(peak_ids.map(([code, id]) => [id, code]));
   const idToLot: Record<string, string> = {};
@@ -530,16 +539,22 @@ function ProposedHikesList(props: ProposedHikesProps) {
     const gpx = generateGpxForHike(solution, hikeIdx);
     saveFile('hike.gpx', gpx);
   };
-  const sortedHikes = _.sortBy(plan.solution.hikes, h => -h[0]);
+  const {hikes} = plan.solution;
+  const sortedHikeIndices = _.sortBy(_.range(0, hikes.length), i => -hikes[i][0]);
 
   return (
     <div className="proposed-hikes">
       <hr />
       {solution.num_hikes} hikes, {solution.d_mi.toFixed(1)} miles.
       <ol>
-        {sortedHikes.map((hike, i) => (
-          <li key={i}>
-            {(hike[0] * 0.621371).toFixed(1)} mi: {getHikeName(hike[1], idToCode, idToLot)} (
+        {sortedHikeIndices.map(i => (
+          <li
+            className={i === selectedHikeIndex ? 'selected' : ''}
+            key={i}
+            onMouseEnter={() => onSelectHike(i)}
+            onMouseLeave={() => onSelectHike(null)}>
+            {(hikes[i][0] * 0.621371).toFixed(1)} mi:{' '}
+            {getHikeName(hikes[i][1], idToCode, idToLot)} (
             <a href="#" onClick={() => downloadHike(i)}>
               GPX
             </a>
@@ -554,19 +569,8 @@ function ProposedHikesList(props: ProposedHikesProps) {
 interface HikePlannerMapProps {
   peaks: Peak[];
   hikes: Feature[] | null;
+  selectedHikeIndex: number | null;
 }
-
-const hikeStyle = {
-  type: 'line',
-  layout: {
-    'line-join': 'round',
-    'line-cap': 'round',
-  },
-  paint: {
-    'line-color': 'rgb(28,109,163)',
-    'line-width': 3,
-  },
-} satisfies Partial<mapboxgl.AnyLayer>;
 
 const parkingLotStyle = {
   type: 'symbol',
@@ -577,7 +581,7 @@ const parkingLotStyle = {
 } satisfies Partial<mapboxgl.AnyLayer>;
 
 function HikePlannerMap(props: HikePlannerMapProps) {
-  const {peaks, hikes} = props;
+  const {peaks, hikes, selectedHikeIndex} = props;
   const hikeFeatures = React.useMemo(
     (): FeatureCollection =>
       hikes
@@ -599,6 +603,26 @@ function HikePlannerMap(props: HikePlannerMapProps) {
           }
         : EMPTY_FC,
     [hikes],
+  );
+  const hikeStyle = React.useMemo(
+    () =>
+      ({
+        type: 'line',
+        layout: {
+          'line-join': 'round',
+          'line-cap': 'round',
+        },
+        paint: {
+          'line-color': [
+            'case',
+            ['==', ['get', 'hike_index'], selectedHikeIndex],
+            'darkblue',
+            'rgb(28,109,163)',
+          ],
+          'line-width': ['case', ['==', ['get', 'hike_index'], selectedHikeIndex], 6, 3],
+        },
+      } satisfies Partial<mapboxgl.AnyLayer>),
+    [selectedHikeIndex],
   );
 
   return (

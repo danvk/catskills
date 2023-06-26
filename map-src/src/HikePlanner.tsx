@@ -554,11 +554,17 @@ function ProposedHikesList(props: ProposedHikesProps) {
             onMouseEnter={() => onSelectHike(i)}
             onMouseLeave={() => onSelectHike(null)}>
             {(hikes[i][0] * 0.621371).toFixed(1)} mi:{' '}
-            {getHikeName(hikes[i][1], idToCode, idToLot)} (
-            <a href="#" onClick={() => downloadHike(i)}>
-              GPX
-            </a>
-            )
+            {getHikeName(hikes[i][1], idToCode, idToLot)}
+            {i === selectedHikeIndex ? (
+              <>
+                {' '}
+                (
+                <a href="#" onClick={() => downloadHike(i)}>
+                  ↓ GPX
+                </a>
+                )
+              </>
+            ) : null}
           </li>
         ))}
       </ol>

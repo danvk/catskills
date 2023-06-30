@@ -92,7 +92,7 @@ Just before our second time summiting Panther we ran into the first people we'd 
 
 Jim told me about some interesting possible places to bird in our block: Panther Meadow is a ~1 acre natural clearing on a minor peak about 1000ft below the summit that might have distinct wildlife. And there was a narrow easement to access the park on the west side of our block where there are some rivers. Alex showed Margaret how to use the NY Breeding Bird Atlas portal and answered some of her questions about eBird. Getting Jim and Margaret to contribute to the Atlas is probably the single best way we can help!
 
-On the way back to Giant Ledge we passed another pair of hikers who told us they'd encountered a bear on the trail a little ways back. This added some unexpected excitement to the tail end of our hike. We made lots of noise and did not encounter said bear. As we got close to Giant Ledge, we passed increasing large groups of kids. The Hungarian Scouts! We figured that the 50+ scouts had probably done a great job of flushing the bears all along the route.
+On the way back to Giant Ledge we passed another pair of hikers who told us they'd encountered a bear on the trail a little ways back. This added some unexpected excitement to the tail end of our hike. We made lots of noise and did not encounter said bear. As we got close to Giant Ledge, we passed increasing large groups of kids. The Hungarian Scouts! We figured that the 50+ scouts had probably done a great job of flushing the bears all along the route. (A few days later we saw the scouts [written up on ADK Fun Police]. This was an unauthorized large group and the leaders were ticketed.)
 
 After an uneventful hike back, Alex's first overnight trip was complete! While there were a few tense moments, it was a big success overall. While it feels odd to hike an arbitrary box that someone in the 1980s drew on a grid, it also has its perks: I'd hiked past the Giant Ledge camp site many times in the past but never had a reason to stay there. With the Breeding Bird Atlas, I did! I'm glad we camped at Giant Ledge and got to see such a spectacular sunrise.
 
@@ -106,3 +106,4 @@ After an uneventful hike back, Alex's first overnight trip was complete! While t
 [hiked every bit of it]: https://www.danvk.org/catskills/2023/04/15/2023-04-15-spruceton.html
 [spruceton]: https://hikersanonymous.org/combogrid.html
 [eBird Trip Report]: https://ebird.org/tripreport/140639
+[written up on ADK Fun Police]: https://www.instagram.com/p/CuAnAWbveRb/?hl=en

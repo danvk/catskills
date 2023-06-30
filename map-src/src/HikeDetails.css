@@ -20,6 +20,7 @@
 
 #elevation-legend {
   position: absolute;
-  top: 24px;
-  right: 12px;
+  right: 48px;
+  margin-top: -24px;
+  font-size: 14px;
 }

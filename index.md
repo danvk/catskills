@@ -111,6 +111,7 @@ Progress:
         <span class="complete" title="North Dome"></span>
         <span class="complete" title="Panther"></span>
         <span class="complete" title="Peekamoose"></span>
+        <span class="complete" title="Plateau"></span>
         <span class="complete" title="Rocky"></span>
         <span class="complete" title="Rusk"></span>
         <span class="complete" title="Slide"></span>
@@ -122,14 +123,13 @@ Progress:
         <span class="incomplete" title="Hunter"></span>
         <span class="incomplete" title="Indian Head"></span>
         <span class="incomplete" title="Kaaterskill High Peak"></span>
-        <span class="incomplete" title="Plateau"></span>
         <span class="incomplete" title="Southwest Hunter"></span>
         <span class="incomplete" title="Sugarloaf"></span>
         <span class="incomplete" title="Thomas Cole"></span>
         <span class="incomplete" title="Twin"></span>
         <span class="incomplete" title="Windham"></span>
         <span class="incomplete" title="Wittenberg"></span>
-        <span class="summary">22/33</span>
+        <span class="summary">23/33</span>
         <!--/progress-2023-->
     </div>
 </div>

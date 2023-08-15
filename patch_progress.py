@@ -15,7 +15,12 @@ winter_peaks = [
     'Blackhead'
 ]
 
-others = ['Pisgah', 'Hayden', 'None', 'Dry Brook Ridge']
+others = [
+    # Catskills-adjacent
+    'Pisgah', 'Hayden', 'None', 'Dry Brook Ridge',
+    # White Mountains
+    'Mt. Washington', 'Mt. Monroe'
+]
 known_peaks = set(peaks).union(set(others))
 
 assert len(peaks) == 33

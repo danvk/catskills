@@ -722,7 +722,7 @@ function generateGpxForHike(solution: HikePlannerResponse['solution'], hikeIdx: 
   );
 
   return `<?xml version="1.0"?>
-  <gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="AllTrails.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="danvk.org/catskills" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
     <metadata>
       <name><![CDATA[Hike title]]></name>
       <desc><![CDATA[Hike description]]></desc>

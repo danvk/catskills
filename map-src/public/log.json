@@ -1,5 +1,23 @@
 [
   {
+    "date": "2023-07-12",
+    "slug": "2023-07-12-washington",
+    "title": "Mt. Washington via Tucherman's Ravine",
+    "type": "Loop",
+    "miles": 11,
+    "hike_hours": 10,
+    "elevation_ft": 5130,
+    "peaks": [
+      "Mt. Washington",
+      "Mt. Monroe"
+    ],
+    "hikers": [
+      "Dan and Alex"
+    ],
+    "excerpt": "A birthday hike in the White Mountains, a first for both of us. After a steep, difficult ascent, we're rewarded with incredible alpine landscapes and memorable lodging at the Lakes of the Clouds hut.",
+    "url": "/catskills/2023/07/12/2023-07-12-washington.html"
+  },
+  {
     "date": "2023-06-28",
     "slug": "2023-06-28-plateau",
     "title": "Plateau from Notch Inn: A Gamble with the Weather Pays Off",

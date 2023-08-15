@@ -108,6 +108,8 @@ Progress:
         <span class="complete" title="Halcott"></span>
         <span class="complete" title="Lone"></span>
         <span class="complete" title="Mount Sherrill"></span>
+        <span class="complete" title="Mt. Monroe"></span>
+        <span class="complete" title="Mt. Washington"></span>
         <span class="complete" title="North Dome"></span>
         <span class="complete" title="Panther"></span>
         <span class="complete" title="Peekamoose"></span>
@@ -129,7 +131,7 @@ Progress:
         <span class="incomplete" title="Twin"></span>
         <span class="incomplete" title="Windham"></span>
         <span class="incomplete" title="Wittenberg"></span>
-        <span class="summary">23/33</span>
+        <span class="summary">25/33</span>
         <!--/progress-2023-->
     </div>
 </div>

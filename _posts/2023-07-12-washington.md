@@ -128,3 +128,7 @@ So our first two New Hampshire 4000 footers are in the books. Will I eventually 
 ["ten essentials"]: https://www.rei.com/learn/expert-advice/ten-essentials.html
 [huge rainstorms]: https://www.weather.gov/btv/The-Great-Vermont-Flood-of-10-11-July-2023-Preliminary-Meteorological-Summary#:~:text=July%20rainfall%20at%20Montpelier%20set,Tropical%20Storm%20Irene%20in%202011.
 [schist]: https://en.wikipedia.org/wiki/Schist
+[Adirondacks 46ers]: https://adk46er.org/peaks/
+[New Hampshire high peaks]: http://4000footers.com/nh.shtml
+[White Bog Orchid]: https://www.fs.usda.gov/wildflowers/plant-of-the-week/platanthera_dilatata.shtml
+[White Mountain Arctic]: https://vtecostudies.org/wildlife/invertebrates/butterflies/white-mountain-arctic/

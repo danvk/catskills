@@ -16,6 +16,20 @@
                 "showReuseMessage": true,
                 "clear": false
             }
+        },
+        {
+            "label": "Add missing links",
+            "type": "shell",
+            "command": "./add_links.py ${file}",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
         }
     ]
 }

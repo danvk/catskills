@@ -8,7 +8,7 @@ import React from 'react';
 import {Dygraph} from './Dygraph';
 import {fetchText} from './fetch';
 import {Hike} from './HikeList';
-import {tuple} from './util';
+import {rowRange, tuple} from './util';
 
 export interface TrackProps {
   slug: string;
@@ -157,13 +157,16 @@ function ElevationChart(props: {
     setVisibleRange([minDate, maxDate]);
   }, []);
 
-  const visibleRangeStats = React.useMemo(() => {
-    const [lowMs, highMs] = visibleRange ?? [
-      table[0][0].getTime(),
-      table.at(-1)![0].getTime(),
-    ];
-    const elapsedTimeMin = (highMs - lowMs) / 1000 / 60;
-    return [elapsedTimeMin];
+  const [elapsedTimeMin, eleGainFt, cumDMi] = React.useMemo(() => {
+    const [a, b] = visibleRange ? rowRange(table, visibleRange) : [0, table.length - 1];
+    const [aMs, aEleFt, aCumMi] = table[a];
+    const [bMs, bEleFt, bCumMi] = table[b];
+
+    return tuple(
+      (bMs.getTime() - aMs.getTime()) / 1000 / 60,
+      bEleFt - aEleFt,
+      bCumMi - aCumMi,
+    );
   }, [table, visibleRange]);
 
   return (
@@ -192,7 +195,10 @@ function ElevationChart(props: {
         ylabel="Elevation (ft)"
         zoomCallback={zoomCallback}
       />
-      <div className="visible-range-stats">{visibleRangeStats[0]} minutes</div>
+      <div className="visible-range-stats">
+        {elapsedTimeMin.toFixed(0)} min, {cumDMi.toFixed(1)}mi{eleGainFt > 0 ? '+' : ''}
+        {eleGainFt.toFixed(0)}ft
+      </div>
     </div>
   );
 }

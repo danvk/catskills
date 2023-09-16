@@ -95,6 +95,7 @@ export interface ScrubPoint {
   lat: number;
   lng: number;
   eleMeters: number;
+  cumDMiles: number;
 }
 
 // eslint-disable-next-line @typescript-eslint/ban-types
@@ -141,6 +142,7 @@ function ElevationChart(props: {
         lng: pt.lon,
         time: pt.time,
         eleMeters: pt.ele,
+        cumDMiles: table[row][2],
       });
     },
     [gpx, onScrubPoint],

@@ -8,6 +8,7 @@ import React from 'react';
 import {Dygraph} from './Dygraph';
 import {fetchText} from './fetch';
 import {Hike} from './HikeList';
+import {tuple} from './util';
 
 export interface TrackProps {
   slug: string;
@@ -121,7 +122,7 @@ function ElevationChart(props: {
         cumD += d;
       }
       lastPt = pt;
-      rows.push([pt.time, pt.ele * FT_IN_M, cumD]);
+      rows.push(tuple(pt.time, pt.ele * FT_IN_M, cumD));
     }
     return rows;
   }, [gpx]);
@@ -145,10 +146,25 @@ function ElevationChart(props: {
         cumDMiles: table[row][2],
       });
     },
-    [gpx, onScrubPoint],
+    [gpx.tracks, onScrubPoint, table],
   );
 
   const unhighlightCallback = React.useCallback(() => onScrubPoint(null), [onScrubPoint]);
+
+  const [visibleRange, setVisibleRange] = React.useState<[number, number] | null>(null);
+
+  const zoomCallback = React.useCallback((minDate: number, maxDate: number) => {
+    setVisibleRange([minDate, maxDate]);
+  }, []);
+
+  const visibleRangeStats = React.useMemo(() => {
+    const [lowMs, highMs] = visibleRange ?? [
+      table[0][0].getTime(),
+      table.at(-1)![0].getTime(),
+    ];
+    const elapsedTimeMin = (highMs - lowMs) / 1000 / 60;
+    return [elapsedTimeMin];
+  }, [table, visibleRange]);
 
   return (
     <div id="elevation-chart">
@@ -156,7 +172,8 @@ function ElevationChart(props: {
         {scrubPoint ? (
           <>
             {scrubPoint.time.toLocaleTimeString()}:{' '}
-            {Math.round(scrubPoint.eleMeters * FT_IN_M)}ft
+            {Math.round(scrubPoint.eleMeters * FT_IN_M)}ft ({scrubPoint.cumDMiles.toFixed(1)}{' '}
+            mi)
           </>
         ) : null}
       </div>
@@ -173,7 +190,9 @@ function ElevationChart(props: {
         style={DYGRAPH_STYLE}
         unhighlightCallback={unhighlightCallback}
         ylabel="Elevation (ft)"
+        zoomCallback={zoomCallback}
       />
+      <div className="visible-range-stats">{visibleRangeStats[0]} minutes</div>
     </div>
   );
 }

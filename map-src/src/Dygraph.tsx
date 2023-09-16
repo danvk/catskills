@@ -9,6 +9,8 @@ export interface Props extends Options {
   className?: string;
 }
 
+export type UnwrappedDygraph = DygraphBase;
+
 export class Dygraph extends React.Component<Props> {
   dygraph!: DygraphBase;
   divRef: React.RefObject<HTMLDivElement>;

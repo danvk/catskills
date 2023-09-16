@@ -68,9 +68,8 @@ function HikeCard(props: HikeCardProps) {
     <div
       className={classNames('hike', isSelected && 'selected')}
       key={hike.slug}
-      onClick={onSelect}
-    >
-      <span className="date">{hike.date}</span>
+      onClick={onSelect}>
+      <span className="date">{hike.date}</span>{' '}
       <span className="stats">
         {hike.miles}mi {hike.type} / {hike.hike_hours}h
       </span>

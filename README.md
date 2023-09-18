@@ -23,6 +23,7 @@ Things to include:
 ## Publishing updates
 
     ./update-hikes.sh
+    git add .
     git commit -a -m '...'
     git push
 

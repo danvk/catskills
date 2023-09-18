@@ -20,6 +20,12 @@ Things to include:
 
     bundle exec jekyll serve
 
+## Publishing updates
+
+    ./update-hikes.sh
+    git commit -a -m '...'
+    git push
+
 ## Writing posts
 
 Links and image sources should start with `{{site.baseurl}}`.

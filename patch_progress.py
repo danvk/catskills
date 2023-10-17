@@ -38,6 +38,8 @@ for hike in LOG:
     hike_peaks = set(hike['peaks'])
     for peak in hike_peaks:
         assert peak in known_peaks, f'Unknown peak: "{peak}"'
+    if not hike_peaks.intersection(peaks):
+        continue  # no Catskills high peaks
     if extract_season(hike['date']) == 'winter':
         completed_winter_peaks.update(hike_peaks)
     else:

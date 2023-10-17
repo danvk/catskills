@@ -8,7 +8,7 @@ import React from 'react';
 import {Dygraph} from './Dygraph';
 import {fetchText} from './fetch';
 import {Hike} from './HikeList';
-import {rowRange, tuple} from './util';
+import {addPace, rowRange, tuple} from './util';
 
 export interface TrackProps {
   slug: string;
@@ -17,7 +17,7 @@ export interface TrackProps {
   season: 'spring' | 'summer' | 'fall' | 'winter';
 }
 
-type Viz = 'ele-vs-time' | 'ele-vs-distance' | 'distance-vs-time';
+type Viz = 'ele-vs-time' | 'ele-vs-distance' | 'distance-vs-time' | 'pace-mph';
 
 export interface Props {
   selectedHikeSlug: string;
@@ -58,9 +58,9 @@ export function HikeInfoPanel(props: Props) {
       </div>
       <h3>{hike.title}</h3>
       {trackFeatureProps.length > 1 ? (
-        <select onChange={e => setSelectedTrack(Number(e.target.value))}>
+        <select value={selectedTrack} onChange={e => setSelectedTrack(Number(e.target.value))}>
           {trackFeatureProps.map((t, i) => (
-            <option key={i} selected={i === selectedTrack} value={i}>
+            <option key={i} value={i}>
               {t.path}
             </option>
           ))}
@@ -70,6 +70,7 @@ export function HikeInfoPanel(props: Props) {
         <option value="ele-vs-time">Elevation vs. Time</option>
         <option value="ele-vs-distance">Elevation vs. Distance</option>
         <option value="distance-vs-time">Distance vs. Time</option>
+        <option value="pace-mph">Pace vs. Time</option>
       </select>
       {gpx ? (
         <ElevationChart
@@ -89,7 +90,7 @@ const DYGRAPH_STYLE: React.CSSProperties = {
   width: 550,
   height: 160,
 };
-const CHART_LABELS = ['Date/Time', 'Elevation (ft)', 'Distance (miles)'];
+const CHART_LABELS = ['Date/Time', 'Elevation (ft)', 'Distance (miles)', 'Pace (mph)'];
 
 export interface ScrubPoint {
   time: Date;
@@ -124,11 +125,18 @@ function ElevationChart(props: {
       lastPt = pt;
       rows.push(tuple(pt.time, pt.ele * FT_IN_M, cumD));
     }
-    return rows;
+    return addPace(rows);
   }, [gpx]);
 
   const [labels, tableViz] = React.useMemo(() => {
-    const cols = viz === 'ele-vs-time' ? [0, 1] : viz === 'ele-vs-distance' ? [2, 1] : [0, 2];
+    const cols =
+      viz === 'ele-vs-time'
+        ? [0, 1]
+        : viz === 'ele-vs-distance'
+        ? [2, 1]
+        : viz === 'pace-mph'
+        ? [0, 3]
+        : [0, 2];
     return [
       [CHART_LABELS[cols[0]], CHART_LABELS[cols[1]]],
       table.map(row => [row[cols[0]], row[cols[1]]]),

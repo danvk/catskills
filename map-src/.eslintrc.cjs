@@ -142,5 +142,15 @@ module.exports = {
 
     // This disallows use of _.noop, which is pretty annoying!
     '@typescript-eslint/unbound-method': 'off',
+
+    // Prefer the typescript-eslint version
+    'no-constant-condition': 'off',
+    '@typescript-eslint/no-unnecessary-condition': [
+      'error',
+      {
+        // allow while(true)
+        allowConstantLoopConditions: true,
+      },
+    ],
   },
 };

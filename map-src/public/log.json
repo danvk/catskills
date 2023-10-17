@@ -1,5 +1,24 @@
 [
   {
+    "date": "2023-10-16",
+    "slug": "2023-10-16-wittenberg-cornell",
+    "title": "Fall Wittenberg and Cornell",
+    "type": "Out & Back",
+    "miles": 9.8,
+    "hike_hours": 7,
+    "elevation_ft": 1780,
+    "peaks": [
+      "Wittenberg",
+      "Cornell"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "excerpt": "We're surprised by rapidly shifting weather but otherwise have a lovely leaf peeping adventure.",
+    "url": "/catskills/2023/10/16/2023-10-16-wittenberg-cornell.html"
+  },
+  {
     "date": "2023-07-12",
     "slug": "2023-07-12-washington",
     "title": "Mt. Washington via Tucherman's Ravine",

@@ -19,12 +19,12 @@ See the Catskill 3500 Club's [official list of peaks].
 | 4 | Thomas Cole | 3940' | Trailed | [2022-10-19: Late Fall in the Blackhead Range][2022-10-19-blackhead-range] |
 | 5 | Blackhead | 3940' | Trailed | [2023-03-05: Blackhead Snowshoe Adventure][2023-03-05-winter-blackhead]<br>[2022-10-19: Late Fall in the Blackhead Range][2022-10-19-blackhead-range]<br>[2016-08-06: Windham and Blackhead overnight][2016-08-06-windham-blackhead] |
 | 6 | Westkill | 3880' | Trailed | [2023-04-15: Spruceton Straightshot, a Race Against the Storm][2023-04-15-spruceton] |
-| 7 | Cornell | 3860' | Trailed | [2022-09-28: The Nine][2022-09-28-the-nine] |
+| 7 | Cornell | 3860' | Trailed | [2023-10-16: Fall Wittenberg and Cornell][2023-10-16-wittenberg-cornell]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 | 8 | Table | 3847' | Trailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine]<br>[2022-07-10: Table & Peekamoose aka "The Blackburnian Hike"][2022-07-10-table-peekamoose] |
 | 9 | Peekamoose | 3843' | Trailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine]<br>[2022-07-10: Table & Peekamoose aka "The Blackburnian Hike"][2022-07-10-table-peekamoose] |
 | 10 | Plateau | 3840' | Trailed | [2023-06-28: Plateau from Notch Inn: A Gamble with the Weather Pays Off][2023-06-28-plateau]<br>[2022-10-09: Plateau: Peak Fall][2022-10-09-plateau] |
 | 11 | Sugarloaf | 3800' | Trailed | [2016-05-28: Sugarloaf and Twin overnight (my first Catskills hike)][2016-05-28-sugarloaf-twin] |
-| 12 | Wittenberg | 3780' | Trailed | [2022-09-28: The Nine][2022-09-28-the-nine] |
+| 12 | Wittenberg | 3780' | Trailed | [2023-10-16: Fall Wittenberg and Cornell][2023-10-16-wittenberg-cornell]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 | 13 | Southwest Hunter | 3740' | Untrailed | [2022-09-21: Hunter and Southwest Hunter aka the COVID hike][2022-09-21-hunter-sw] |
 | 14 | Balsam Lake Mountain | 3723' | Trailed | [2023-04-25: Balsam Lake Mountain, a Carpet of Trout Lilies][2023-04-25-balsam-lake] |
 | 15 | Lone | 3721' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
@@ -47,6 +47,7 @@ See the Catskill 3500 Club's [official list of peaks].
 | 32 | Windham High Peak | 3524' | Trailed | [2020-10-04: Fall Windham][2020-10-04-fall-windham]<br>[2020-05-22: Windham with Alex][2020-05-22-windham2]<br>[2020-05-14: Windham (solo)][2020-05-14-windham-solo]<br>[2016-08-06: Windham and Blackhead overnight][2016-08-06-windham-blackhead] |
 | 33 | Rocky | 3487' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 
+[2023-10-16-wittenberg-cornell]: /catskills/2023/10/16/2023-10-16-wittenberg-cornell.html
 [2023-07-12-washington]: /catskills/2023/07/12/2023-07-12-washington.html
 [2023-06-28-plateau]: /catskills/2023/06/28/2023-06-28-plateau.html
 [2023-06-21-panther-bba]: /catskills/2023/06/21/2023-06-21-panther-bba.html

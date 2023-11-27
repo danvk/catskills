@@ -26,7 +26,7 @@ Tracks: [AllTrails], [eBird]
 
 It's been a while since my [last hike] in the Catskills—almost four months! This break wasn't exactly planned or expected, but I've found myself spending more time climbing, swimming and working on a new edition of [my book]. There's also been the weather. I'd planned to do a seven peak overnight adventure (Rusk/Hunter Loop + Devils Path East) with two friends at the end of September, but a tropical storm rained us out. The colors are starting to change, though, and that got me thinking about the Catskills. Alex marked a few days on her calendar as "Possible Catskills Hike" and I took her up on it today.
 
-Which hike to do? With [various goals], this feels a bit like playing Tetris. The ideal hike would help Alex towards her 3500, help me tick all the peaks in 2023 and also help me with my fall list. Of the 33 high peaks, the only one that checks all those boxes is… Sugarloaf! But Sugarloaf on its own is a very short hike and with a full day I wanted to do something a bit longer. So I decided on Wittenberg and Cornell. Alex hadn't done either, and I hadn't done them this year. I had [done both in the Fall] last year, though. We'd definitely do Wittenberg and then have an option to add Cornell if we had the time and energy.
+Which hike to do? With [various goals], this feels a bit like playing Tetris. The ideal hike would help Alex towards her 3500, help me tick all the peaks in 2023 and also help me with my fall list. Of the 33 high peaks, the only one that checks all those boxes is… [Sugarloaf]! But Sugarloaf on its own is a very short hike and with a full day I wanted to do something a bit longer. So I decided on Wittenberg and Cornell. Alex hadn't done either, and I hadn't done them this year. I had [done both in the Fall] last year, though. We'd definitely do Wittenberg and then have an option to add Cornell if we had the time and energy.
 
 ![View on the way up]({{site.baseurl}}/assets/2023-10-16-wittenberg-cornell/6147-view-on-way-up.jpeg)
 
@@ -85,3 +85,4 @@ Overall a beautiful hike with some more exciting than expected weather. Alex has
 [in a cloud]: https://www.danvk.org/catskills/2020/09/27/2020-09-27-blackdome.html
 [a little weather]: https://www.danvk.org/catskills/2023/06/28/2023-06-28-plateau.html
 [first experienced]: https://www.danvk.org/catskills/2022/09/28/2022-09-28-the-nine.html
+[sugarloaf]: https://www.danvk.org/catskills/2023/11/26/2023-11-26-sugarloaf.html

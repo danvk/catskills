@@ -19,7 +19,9 @@ others = [
     # Catskills-adjacent
     'Pisgah', 'Hayden', 'None', 'Dry Brook Ridge',
     # White Mountains
-    'Mt. Washington', 'Mt. Monroe'
+    'Mt. Washington', 'Mt. Monroe',
+    # Jokes
+    'Lone Wolf',
 ]
 known_peaks = set(peaks).union(set(others))
 

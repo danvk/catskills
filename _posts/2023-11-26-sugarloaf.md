@@ -7,7 +7,7 @@ hike_hours: 4.7
 elevation_ft: 2211
 peaks: Sugarloaf, Lone Wolf
 hikers: Dan, Alex
-title: Suarloaf and Lone Wolf (Don't Go Chasin' Waterfalls)
+title: Sugarloaf and Lone Wolf (Don't Go Chasin' Waterfalls)
 excerpt: A steep, wintery ascent in the fall helps both of us with our hiking goals.
 ---
 

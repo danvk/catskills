@@ -78,7 +78,7 @@ _Who's happy and who's exhausted?_
 
 It felt great to be descending instead of climbing. It felt like we were flying along the gentle downhill terrain. The descent towards Pecoy Notch was steep in places but nowhere near as bad as the ascent from Mink Hollow. We spotted a [Hermit Thrush] foraging on the ground along this stretch.
 
-The terrain along the Pecoy Notch hike was pretty interesting in its own right. There was an old quarry where some people (hikers? cub scouts?) had built a blue stone throne.
+The terrain along the Pecoy Notch hike was pretty interesting in its own right. There was an old quarry where some people (hikers? cub scouts?) had built a blue stone throne (apparently this is [Dibble's Quarry]).
 
 ![Bluestone Throne]({{site.baseurl}}/assets/2023-11-26-sugarloaf/6417-bluestone-throne.jpeg)
 
@@ -109,3 +109,4 @@ Alex has 13 peaks left for her 3500 list and I have eight left for 2023. Between
 [All Trails Challenge]: https://catskillmountainclub.org/the-all-trails-hiking-challenge-redlining-the-catskills/
 [Hermit Thrush]: https://www.allaboutbirds.org/guide/Hermit_Thrush/id
 [back in 2016]: https://www.danvk.org/catskills/2016/05/28/2016-05-28-sugarloaf-twin.html
+[dibble's quarry]: https://www.scenichudson.org/explore-the-valley/outdoor-adventures/adventure/dibble-quarry/

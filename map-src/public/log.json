@@ -1,5 +1,24 @@
 [
   {
+    "date": "2023-11-28",
+    "slug": "2023-11-28-khp-tw-ih",
+    "type": "Doubleshot (Out and Back, T)",
+    "miles": 13.3,
+    "hike_hours": 7.75,
+    "elevation_ft": 3595,
+    "peaks": [
+      "Kaaterskill High Peak",
+      "Twin",
+      "Indian Head"
+    ],
+    "hikers": [
+      "Dan"
+    ],
+    "title": "Kaaterskill, Twin/Indian Head Doubleshot",
+    "excerpt": "An ambitious solo \"doubleshot\" hike goes perfectly to plan.",
+    "url": "/catskills/2023/11/28/2023-11-28-khp-tw-ih.html"
+  },
+  {
     "date": "2023-11-26",
     "slug": "2023-11-26-sugarloaf",
     "type": "Loop",

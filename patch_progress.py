@@ -40,15 +40,16 @@ for hike in LOG:
     hike_peaks = set(hike['peaks'])
     for peak in hike_peaks:
         assert peak in known_peaks, f'Unknown peak: "{peak}"'
-    if not hike_peaks.intersection(peaks):
+    catskill_hike_peaks = hike_peaks.intersection(peaks)
+    if not catskill_hike_peaks:
         continue  # no Catskills high peaks
     if extract_season(hike['date']) == 'winter':
-        completed_winter_peaks.update(hike_peaks)
+        completed_winter_peaks.update(catskill_hike_peaks)
     else:
-        completed_nonwinter_peaks.update(hike_peaks)
+        completed_nonwinter_peaks.update(catskill_hike_peaks)
     if hike['date'].startswith('2023'):
-        completed_2023.update(hike_peaks)
-    completed_peaks.update(hike_peaks)
+        completed_2023.update(catskill_hike_peaks)
+    completed_peaks.update(catskill_hike_peaks)
 
 qualifying = set()
 for peak in set(peaks).intersection(completed_peaks):

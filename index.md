@@ -62,11 +62,13 @@ Progress:
         <span class="winter complete" title="Blackhead"></span>
         <span class="winter complete" title="Fir"></span>
         <span class="winter complete" title="Friday"></span>
+        <span class="winter complete" title="Hunter"></span>
         <span class="winter complete" title="Lone"></span>
         <span class="winter complete" title="Panther"></span>
         <span class="winter complete" title="Peekamoose"></span>
         <span class="winter complete" title="Rocky"></span>
         <span class="winter complete" title="Slide"></span>
+        <span class="winter complete" title="Southwest Hunter"></span>
         <span class="winter complete" title="Table"></span>
         <span class="winter complete" title="Vly"></span>
         <span class="winter incomplete" title="Balsam Lake"></span>
@@ -75,21 +77,19 @@ Progress:
         <span class="winter incomplete" title="Cornell"></span>
         <span class="winter incomplete" title="Eagle"></span>
         <span class="winter incomplete" title="Halcott"></span>
-        <span class="winter incomplete" title="Hunter"></span>
         <span class="winter incomplete" title="Indian Head"></span>
         <span class="winter incomplete" title="Kaaterskill High Peak"></span>
         <span class="winter incomplete" title="Mount Sherrill"></span>
         <span class="winter incomplete" title="North Dome"></span>
         <span class="winter incomplete" title="Plateau"></span>
         <span class="winter incomplete" title="Rusk"></span>
-        <span class="winter incomplete" title="Southwest Hunter"></span>
         <span class="winter incomplete" title="Sugarloaf"></span>
         <span class="winter incomplete" title="Thomas Cole"></span>
         <span class="winter incomplete" title="Twin"></span>
         <span class="winter incomplete" title="Westkill"></span>
         <span class="winter incomplete" title="Windham"></span>
         <span class="winter incomplete" title="Wittenberg"></span>
-        <span class="summary">13/33</span>
+        <span class="summary">15/33</span>
         <!--/progress-winter-->
     </div>
     <div class="progress-label">2023 Peaks:</div>
@@ -106,6 +106,7 @@ Progress:
         <span class="complete" title="Fir"></span>
         <span class="complete" title="Friday"></span>
         <span class="complete" title="Halcott"></span>
+        <span class="complete" title="Hunter"></span>
         <span class="complete" title="Indian Head"></span>
         <span class="complete" title="Kaaterskill High Peak"></span>
         <span class="complete" title="Lone"></span>
@@ -117,6 +118,7 @@ Progress:
         <span class="complete" title="Rocky"></span>
         <span class="complete" title="Rusk"></span>
         <span class="complete" title="Slide"></span>
+        <span class="complete" title="Southwest Hunter"></span>
         <span class="complete" title="Sugarloaf"></span>
         <span class="complete" title="Table"></span>
         <span class="complete" title="Twin"></span>
@@ -124,11 +126,9 @@ Progress:
         <span class="complete" title="Westkill"></span>
         <span class="complete" title="Wittenberg"></span>
         <span class="incomplete" title="Black Dome"></span>
-        <span class="incomplete" title="Hunter"></span>
-        <span class="incomplete" title="Southwest Hunter"></span>
         <span class="incomplete" title="Thomas Cole"></span>
         <span class="incomplete" title="Windham"></span>
-        <span class="summary">28/33</span>
+        <span class="summary">30/33</span>
         <!--/progress-2023-->
     </div>
 </div>

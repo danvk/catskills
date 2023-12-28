@@ -19,7 +19,7 @@ if __name__ == '__main__':
         f'![Alt Text]({baseurl}/{path})'
         for path in assets_dir.glob('*.jpeg')
     ]
-    images_md = '\n'.join(images)
+    images_md = '\n'.join(sorted(images))
 
     old_post = open(md_file).read()
 

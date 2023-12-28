@@ -1,5 +1,23 @@
 [
   {
+    "date": "2023-12-26",
+    "slug": "2023-12-26-hunter-sw",
+    "type": "T",
+    "miles": 10.1,
+    "hike_hours": 5,
+    "elevation_ft": 2375,
+    "peaks": [
+      "Southwest Hunter",
+      "Hunter"
+    ],
+    "hikers": [
+      "Dan"
+    ],
+    "title": "Hunter and SW Hunter: April in December",
+    "excerpt": "A surprisingly warm day for my first December hike.",
+    "url": "/catskills/2023/12/26/2023-12-26-hunter-sw.html"
+  },
+  {
     "date": "2023-11-28",
     "slug": "2023-11-28-khp-tw-ih",
     "type": "Doubleshot (Out and Back, T)",

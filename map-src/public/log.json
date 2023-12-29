@@ -1,5 +1,26 @@
 [
   {
+    "date": "2023-12-28",
+    "slug": "2023-12-28-bd-tc",
+    "type": "Out and Back",
+    "miles": 7.9,
+    "hike_hours": 5,
+    "elevation_ft": 2680,
+    "peaks": [
+      "Black Dome",
+      "Thomas Cole",
+      "Blackhead"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex",
+      "Vincent"
+    ],
+    "title": "Misty Blackhead Range",
+    "excerpt": "A foggy day with no views on the Blackhead Range. Alex surprises everyone by agreeing to do a third peak.",
+    "url": "/catskills/2023/12/28/2023-12-28-bd-tc.html"
+  },
+  {
     "date": "2023-12-26",
     "slug": "2023-12-26-hunter-sw",
     "type": "T",

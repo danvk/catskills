@@ -9,7 +9,7 @@ def extract_slug(slug: str) -> [str, str]:
     """e.g. 2023-12-26-hunter-sw -> 2023-12-26, 2023-12-26-hunter-sw"""
     m = re.match(r'(\d{4}-\d\d-\d\d)-.*', slug)
     assert m
-    return (m.group(0), slug)
+    return (m.group(1), slug)
 
 
 def write_stub(out, date: str, slug: str):
@@ -18,9 +18,9 @@ def write_stub(out, date: str, slug: str):
 date: {date}
 slug: {slug}
 type: Loop?
-miles: 12
-hike_hours: 3
-elevation_ft: 456
+miles: 12?
+hike_hours: 3?
+elevation_ft: 456?
 peaks: ???
 hikers: Dan
 title: '...'

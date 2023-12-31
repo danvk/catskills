@@ -73,6 +73,7 @@ Progress:
         <span class="winter complete" title="Table"></span>
         <span class="winter complete" title="Thomas Cole"></span>
         <span class="winter complete" title="Vly"></span>
+        <span class="winter complete" title="Windham"></span>
         <span class="winter incomplete" title="Balsam Lake"></span>
         <span class="winter incomplete" title="Big Indian"></span>
         <span class="winter incomplete" title="Cornell"></span>
@@ -87,9 +88,8 @@ Progress:
         <span class="winter incomplete" title="Sugarloaf"></span>
         <span class="winter incomplete" title="Twin"></span>
         <span class="winter incomplete" title="Westkill"></span>
-        <span class="winter incomplete" title="Windham"></span>
         <span class="winter incomplete" title="Wittenberg"></span>
-        <span class="summary">17/33</span>
+        <span class="summary">18/33</span>
         <!--/progress-winter-->
     </div>
     <div class="progress-label">2023 Peaks:</div>
@@ -126,9 +126,9 @@ Progress:
         <span class="complete" title="Twin"></span>
         <span class="complete" title="Vly"></span>
         <span class="complete" title="Westkill"></span>
+        <span class="complete" title="Windham"></span>
         <span class="complete" title="Wittenberg"></span>
-        <span class="incomplete" title="Windham"></span>
-        <span class="summary">32/33</span>
+        <span class="summary">33/33</span>
         <!--/progress-2023-->
     </div>
 </div>

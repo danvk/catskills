@@ -1,5 +1,24 @@
 [
   {
+    "date": "2023-12-29",
+    "slug": "2023-12-29-windham",
+    "type": "Out & Back",
+    "miles": 6.5,
+    "hike_hours": 3,
+    "elevation_ft": 1500,
+    "peaks": [
+      "Windham"
+    ],
+    "hikers": [
+      "Dan",
+      "Max",
+      "John G"
+    ],
+    "title": "Windham Closes Out a Very Catskills 2023",
+    "excerpt": "A wet, misty winter hike with John and Max completes my goal of hiking all the Catskills high peaks in 2023.",
+    "url": "/catskills/2023/12/29/2023-12-29-windham.html"
+  },
+  {
     "date": "2023-12-28",
     "slug": "2023-12-28-bd-tc",
     "type": "Out and Back",

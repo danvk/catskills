@@ -48,7 +48,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/ban-ts-comment': ['warn', {minimumDescriptionLength: 10}],
-    '@typescript-eslint/no-parameter-properties': 'error',
+    '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/no-floating-promises': [
       'error',

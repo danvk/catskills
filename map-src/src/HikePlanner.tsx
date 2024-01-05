@@ -488,6 +488,7 @@ function getHikeName(
   const peaks = nodes.slice(1, -1);
   const sortedPeaks = _.sortBy(peaks.map(id => idToCode[id])).join(',');
   const peakStr =
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
     PEAKS_TO_NAME[sortedPeaks] ??
     peaks
       .map(id => SHORT_PEAKS[idToCode[id] as Peak])

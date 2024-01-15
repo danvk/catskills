@@ -32,17 +32,17 @@ With 2023 finished, I could set aside my goal of hiking all the high peaks in a 
 
 As the date got closer, the conditions looked iffy. Heavy rain overnight but maybe only a drizzle by morning. Marv pushed the hike start back to 8:30 AM to give it a little more time to dry off. Things weren't looking promising as I drove through a torrential downpour on I-87 on the drive up. I had to put my windshield wipers on the fastest setting to see in front of me. But by the time I got off the Thruway and drove past Phoenicia, the rain had slowed to a drizzle and there were a few patches of blue sky visible.
 
-I'd done the [FirBiE loop with John last May] but Marv planned a different starting point, Mable Hollow. I didn't know it yet, but he also planned a very different descent from Eagle. I was curious to see what this version of the hike looked like. I was getting ready in my car when Marv announced that we were leaving, hurry up! Apparently he's known for prompt departures. I scrounged my things together and hopped in another car to shuttle over to the start point. The only thing I forgot was a charging cable for my phone. Not a big deal.
+I'd done the [FirBiE loop with John last May] but Marv planned a different starting point, Maben Hollow. I didn't know it yet, but he also planned a very different descent from Eagle. I was curious to see what this version of the hike looked like. I was getting ready in my car when Marv announced that we were leaving, hurry up! Apparently he's known for prompt departures. I scrounged my things together and hopped in another car to shuttle over to the start point. The only thing I forgot was a charging cable for my phone. Not a big deal.
 
 ![Assembling in the parking area]({{site.baseurl}}/assets/2024-01-13-winter-firbie/IMG_6744-parking-lot.jpeg)
 
-We parked right off the main road at Mable Hollow and did quick intros. Everyone was working on some list, whether it was the 3500, their winter peaks, or their grid. There was a bit of rain at the start so I began wearing a fleece and a rain jacket. I put toe warmers in my boots. It was in the 40s and I probably didn't need them, but I figured I'd rather keep my toes warm if they got wet later.
+We parked right off the main road at Maben Hollow and did quick intros. Everyone was working on some list, whether it was the 3500, their winter peaks, or their grid. There was a bit of rain at the start so I began wearing a fleece and a rain jacket. I put toe warmers in my boots. It was in the 40s and I probably didn't need them, but I figured I'd rather keep my toes warm if they got wet later.
 
 ![Steep ascent with no snow]({{site.baseurl}}/assets/2024-01-13-winter-firbie/IMG_6745-steep-no-snow.jpeg)
 
 We were quickly off the paved road and following an old logging road that paralleled a stream through an easement into state lands. Thanks to the heavy rains last night, the streams were roaring. Marv set a very deliberate pace. He said that hikers were always starting too fast and then running out of steam.
 
-The weather quickly improved as we hiked and we started to get nice views of Panther and Giant Ledge behind us. We lost the logging road and ascended into snowier terrain. Marv said that there _was_ a herd path, even if it was hard to see. You should look for clean, white snow and openings. There's no trees in the path. Don't fight through branches unless you see a clearing up ahead. Follow the "rule of up:" up is good, there are no false summits on Fir.
+The weather quickly improved as we hiked and we started to get nice views of [Panther] and Giant Ledge behind us. We lost the logging road and ascended into snowier terrain. Marv said that there _was_ a herd path, even if it was hard to see. You should look for clean, white snow and openings. There's no trees in the path. Don't fight through branches unless you see a clearing up ahead. Follow the "rule of up:" up is good, there are no false summits on Fir.
 
 ![Emerging view of Panther with Beech tree]({{site.baseurl}}/assets/2024-01-13-winter-firbie/IMG_6751-snow-beech-view.jpeg)
 
@@ -50,7 +50,7 @@ As we got closer to Fir we put on our snowshoes and Marv tried to institute a ro
 
 ![Sunny Snowshoeing]({{site.baseurl}}/assets/2024-01-13-winter-firbie/IMG_6753-sunny-snowshoes.jpeg)
 
-The herd path got a bit clearer as we approached Fir and it was a relief when we finally saw the canister. The notebook had been swapped out in September so I couldn't find my [previous] [entries]. When I did my first 3500 hike with Maple last March, we spent very little time at each summit. If you spent ten minutes at each of the six summits on that hike, it would add an hour and you'd be hiking down in the dark. Makes sense! Marv had a very different approach. He announced that we'd be spending "at least ten minutes" at this summit and then disappeared. We wound up spending 20 minutes there.
+The herd path got a bit clearer as we approached Fir and it was a relief when we finally saw the canister. The notebook had been swapped out in September so I couldn't find my [previous] [entries]. When I did my first 3500 hike with Maple [last March], we spent very little time at each summit. If you spent ten minutes at each of the six summits on that hike, it would add an hour and you'd be hiking down in the dark. Makes sense! Marv had a very different approach. He announced that we'd be spending "at least ten minutes" at this summit and then disappeared. We wound up spending 20 minutes there.
 
 ![Fir Summit]({{site.baseurl}}/assets/2024-01-13-winter-firbie/IMG_6757-fir-summit.jpeg)
 
@@ -62,7 +62,7 @@ The trek over to Big Indian took longer than I remembered and finished with a st
 
 ![Big Indian canister]({{site.baseurl}}/assets/2024-01-13-winter-firbie/IMG_6762-big-indian-canister.jpeg)
 
-Soon we were back on the blazed trail. Herd paths are often nicer than the official ones, and that was definitely the case here. The herd path was clean snow, but the blazed path was snow mixed with open water. Marv said that during the summer he'd be a stickler for making people hike in the middle of the path no matter what. But in the winter it's OK to hike a parallel side track because you're not going to disturb the frozen soil or plants. He said this is the same reason that you're allowed to camp above 3500 feet in the winter: since everything is frozen, it's less likely that you'll disturb delicate vegetation. I think the set of people interested in doing this is also much smaller!
+Soon we were back on the blazed trail. Herd paths are often nicer than the official ones, and that was definitely the case here. The herd path was clean snow, but the blazed path was snow mixed with open water. Marv said that during the summer he'd be a stickler for making people hike in the middle of the path no matter what. But in the winter it's OK to hike a parallel side track because you're not going to disturb the frozen soil or plants. He said this is also the reason that you're allowed to camp above 3500 feet in the winter: since everything is frozen, it's less likely that you'll disturb delicate vegetation. I imagine many fewer people are interested in camping that high up in the winter than in the summer!
 
 ![Back on the trail]({{site.baseurl}}/assets/2024-01-13-winter-firbie/IMG_6763-back-on-trail.jpeg)
 
@@ -74,7 +74,7 @@ The sun was setting by the time we summitted Eagle. There was a brand new notebo
 
 ![Losing light]({{site.baseurl}}/assets/2024-01-13-winter-firbie/IMG_6766-losing-light.jpeg)
 
-We followed the trail for about a quarter mile past Eagle before stepping off onto a kind of "tongue". This was a narrow enough ridge that you could see it fall off steeply on either side. I really like these kinds of formations where you can see where you are in space. Or at least you could while there was still light. Within about half it was pitch dark and we put our headlights on.
+We followed the trail for about a quarter mile past Eagle before stepping off onto a kind of "tongue". This was a narrow enough ridge that you could see it fall off steeply on either side. I really like these kinds of formations where you can see where you are in space. Or at least you could while there was still light. Within about half an hour it was pitch dark and we put our headlights on.
 
 ![Snowy bushwhack]({{site.baseurl}}/assets/2024-01-13-winter-firbie/IMG_6767-snowy-bushwhack.jpeg)
 
@@ -112,3 +112,5 @@ _📸 Photo by Karol Andino_
 [previous]: https://www.danvk.org/catskills/2023/03/18/2023-03-18-fir.html
 [entries]: https://www.danvk.org/catskills/2023/05/08/2023-05-08-firbie.html
 [only a year old]: https://www.danvk.org/catskills/2023/02/18/2023-02-18-winter-slide.html
+[Panther]: https://www.danvk.org/catskills/2023/06/21/2023-06-21-panther-bba.html
+[last March]: https://www.danvk.org/catskills/2023/03/09/2023-03-09-winter-six.html

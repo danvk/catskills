@@ -24,3 +24,13 @@
   margin-top: -24px;
   font-size: 14px;
 }
+
+@media (prefers-color-scheme: dark) {
+  #hike-details {
+    background: #242424;
+    border-color: #999;
+  }
+  .dygraph-axis-label {
+    color: #ddd !important;
+  }
+}

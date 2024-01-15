@@ -1,10 +1,30 @@
 [
   {
+    "date": "2024-01-13",
+    "slug": "2024-01-13-winter-firbie",
+    "type": "Loop?",
+    "miles": 10.4,
+    "hike_hours": 10.25,
+    "elevation_ft": "456?",
+    "peaks": [
+      "Fir",
+      "Big Indian",
+      "Eagle"
+    ],
+    "hikers": [
+      "Dan",
+      "Marv and 7 others from the 3500 Club"
+    ],
+    "title": "Winter FirBiE with the 3500 Club",
+    "excerpt": "...",
+    "url": "/catskills/2024/01/13/2024-01-13-winter-firbie.html"
+  },
+  {
     "date": "2023-12-29",
     "slug": "2023-12-29-windham",
     "type": "Out & Back",
     "miles": 6.5,
-    "hike_hours": 3,
+    "hike_hours": 3.5,
     "elevation_ft": 1500,
     "peaks": [
       "Windham"

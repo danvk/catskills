@@ -59,8 +59,10 @@ Progress:
         <span class="winter complete" title="Balsam"></span>
         <span class="winter complete" title="Balsam Cap"></span>
         <span class="winter complete" title="Bearpen"></span>
+        <span class="winter complete" title="Big Indian"></span>
         <span class="winter complete" title="Black Dome"></span>
         <span class="winter complete" title="Blackhead"></span>
+        <span class="winter complete" title="Eagle"></span>
         <span class="winter complete" title="Fir"></span>
         <span class="winter complete" title="Friday"></span>
         <span class="winter complete" title="Hunter"></span>
@@ -75,9 +77,7 @@ Progress:
         <span class="winter complete" title="Vly"></span>
         <span class="winter complete" title="Windham"></span>
         <span class="winter incomplete" title="Balsam Lake"></span>
-        <span class="winter incomplete" title="Big Indian"></span>
         <span class="winter incomplete" title="Cornell"></span>
-        <span class="winter incomplete" title="Eagle"></span>
         <span class="winter incomplete" title="Halcott"></span>
         <span class="winter incomplete" title="Indian Head"></span>
         <span class="winter incomplete" title="Kaaterskill High Peak"></span>
@@ -89,7 +89,7 @@ Progress:
         <span class="winter incomplete" title="Twin"></span>
         <span class="winter incomplete" title="Westkill"></span>
         <span class="winter incomplete" title="Wittenberg"></span>
-        <span class="summary">18/33</span>
+        <span class="summary">20/33</span>
         <!--/progress-winter-->
     </div>
     <div class="progress-label">2023 Peaks:</div>

@@ -41,7 +41,11 @@ text
 
 
 if __name__ == '__main__':
-    date, slug = extract_slug(sys.argv[1])
+    try:
+        date, slug = extract_slug(sys.argv[1])
+    except IndexError:
+        print('Usage: ./new_post.py YYYY-MM-DD-slug')
+        sys.exit(1)
 
     post = Path('_posts') / f'{slug}.md'
     with open(post, 'w') as out:

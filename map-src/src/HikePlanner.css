@@ -26,6 +26,6 @@
   white-space: pre-line;
 }
 
-#map {
+.hike-planner #map {
   left: 250px;
 }

@@ -1,5 +1,23 @@
 [
   {
+    "date": "2024-04-13",
+    "slug": "2024-04-13-panther-meadow",
+    "type": "Loop",
+    "miles": 8.7,
+    "hike_hours": 7,
+    "elevation_ft": 3100,
+    "peaks": [
+      "None"
+    ],
+    "hikers": [
+      "Dan",
+      "John G"
+    ],
+    "title": "Panther Meadow from Menla",
+    "excerpt": "Two attempts to find a clearing below Panther yield two very different results.",
+    "url": "/catskills/2024/04/13/2024-04-13-panther-meadow.html"
+  },
+  {
     "date": "2024-02-10",
     "slug": "2024-02-10-dpe4",
     "type": "Through (Car Stack)",

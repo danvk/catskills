@@ -17,7 +17,7 @@ Timeline:
 - 3:30 PM Summit Halcott, 15 minute break
 - 5:00 PM Back at car
 
-- Tracks: [AllTrails], [eBird]
+- Tracks: [AllTrails], [eBird], [eBird 2]
 - Conditions: Cool (60 degrees), dry
 
 [![GPS Track of the hike]({{site.baseurl}}/assets/2024-06-10-alex-halcott/track.png)]({{site.baseurl}}/map/?hike=2024-06-10-alex-halcott)
@@ -34,7 +34,7 @@ I remembered the critical trail junction clearly from last year: cross the water
 
 ![In the woods]({{site.baseurl}}/assets/2024-06-10-alex-halcott/IMG_7472-in-the-woods.jpeg)
 
-We passed through the giant Hemlock grove that I remembered and continued to hear huge numbers of birds. It felt like early spring: cool weather and singing birds. We heard lots of Red-eyed Vireos, Indigo Buntings, Ovenbirds, Blackburnian Warblers, Hermit Thrush and Swainson's Thrush. We saw a Blue-headed Vireo and a pair of American Redstarts. We heard a Rose-breasted Grosbeak but didn't see it on the hike.
+We passed through the giant Hemlock grove that I remembered and continued to hear huge numbers of birds. It felt like early spring: cool weather and singing birds. We heard lots of Red-eyed Vireos, Indigo Buntings, Ovenbirds, Blackburnian Warblers, Hermit Thrush, Swainson's Thrush, and Veery. We saw a Blue-headed Vireo and a pair of American Redstarts. We heard a Rose-breasted Grosbeak but didn't see it on the hike.
 
 ![Amongst the Nettles]({{site.baseurl}}/assets/2024-06-10-alex-halcott/IMG_7473-amongst-nettles.jpeg)
 
@@ -46,7 +46,7 @@ We saw huge numbers of Trilliums near the path, but they all looked a few weeks 
 
 Even though the path was clear and relatively short, it was still quite steep! There's a moment near the top where it looks like you hit a vertical wall. We were very happy to reach the summit canister and break for lunch. We were the first people there since the weekend.
 
-![Summit Canister]({{site.baseurl}}/assets/2024-06-10-alex-halcott/IMG_7475-canister.jpeg)
+![Dan with Summit Canister]({{site.baseurl}}/assets/2024-06-10-alex-halcott/IMG_4996-dan-summit.jpeg)
 
 I had a vague memory from [last time] that there was a possible viewpoint I should scout out. The AllTrails map had one marked right next to the summit, so we had our lunch there. Re-reading my post from last year, the Avenza map had a star farther away from the summit. So I'll have to check that out another time.
 
@@ -64,4 +64,5 @@ A summer bushwhack in the books. No spectacular viewpoints, but it was nice to b
 [surprise 90° days]: /catskills/2023/04/15/2023-04-15-spruceton.html
 [last time]: /catskills/2023/04/14/2023-04-14-halcott.html
 [Nettle eating contest]: https://www.youtube.com/watch?v=8MqLMrDVyjc
-[eBird]:
+[eBird]: https://ebird.org/atlasny/checklist/S181277958
+[eBird 2]: https://ebird.org/atlasny/checklist/S181277964

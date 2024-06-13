@@ -30,7 +30,7 @@ We were the only car in the Halcott lot and we never saw anyone else the whole d
 
 ![Halcott Waterfall]({{site.baseurl}}/assets/2024-06-10-alex-halcott/IMG_7471-waterfall.jpeg)
 
-I remembered the critical trail junction clearly from last year: cross the waterfall and got _left_, not right, whatever direction the herd path looks like it's going. This part of the path was a bit unclear and muddy. Alex asked if I was lost. But soon we started to gain altitude and the path cleared up. It was crystal clear all the way to the summit canister.
+I remembered the critical trail junction clearly from last year: cross the waterfall and go _left_, not right, whatever direction the herd path looks like it's going. This part of the path was a bit unclear and muddy. Alex asked if I was lost. But soon we started to gain altitude and the path cleared up. It was crystal clear all the way to the summit canister.
 
 ![In the woods]({{site.baseurl}}/assets/2024-06-10-alex-halcott/IMG_7472-in-the-woods.jpeg)
 

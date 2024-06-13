@@ -1,5 +1,23 @@
 [
   {
+    "date": "2024-06-10",
+    "slug": "2024-06-10-alex-halcott",
+    "type": "Out and Back",
+    "miles": 4.4,
+    "hike_hours": 3.5,
+    "elevation_ft": 1850,
+    "peaks": [
+      "Halcott"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "title": "A Birdy Hike on Halcott",
+    "excerpt": "Alex makes progress towards the 3500 club as we enjoy a cool, secluded, bird-filled hike up Halcott.",
+    "url": "/catskills/2024/06/10/2024-06-10-alex-halcott.html"
+  },
+  {
     "date": "2024-04-13",
     "slug": "2024-04-13-panther-meadow",
     "type": "Loop",

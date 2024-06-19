@@ -46,12 +46,22 @@ const PEAKS = {
 type Peak = keyof typeof PEAKS;
 const ALL_PEAKS = Object.keys(PEAKS) as Peak[];
 
-const SLIDE_PEAKS = ['S', 'C', 'Ta', 'Pk', 'W', 'L', 'P', 'BC', 'Fr', 'Ro'] as const;
-const BIG_INDIAN_PEAKS = ['BL', 'BI', 'Fi', 'B', 'E'] as const;
-const SPRUCETON_PEAKS = ['H', 'We', 'SW', 'Ru', 'ND', 'Sh', 'Ha'] as const;
-const PLATTE_CLOVE_PEAKS = ['Pl', 'Su', 'KHP', 'Tw', 'IH'] as const;
-const WINDHAM_BLACKHEAD_PEAKS = ['BD', 'BH', 'TC', 'WHP'] as const;
-const BEARPEN_PEAKS = ['Bp', 'V'] as const;
+interface HikeArea {
+  areaName: string;
+  peaks: readonly Peak[];
+}
+
+const HIKE_AREAS: HikeArea[] = [
+  {
+    areaName: 'Slide Mountain Wilderness',
+    peaks: ['S', 'C', 'Ta', 'Pk', 'W', 'L', 'P', 'BC', 'Fr', 'Ro'],
+  },
+  {areaName: 'Big Indian Wilderness', peaks: ['BL', 'BI', 'Fi', 'B', 'E']},
+  {areaName: 'Spruceton Valley', peaks: ['H', 'We', 'SW', 'Ru', 'ND', 'Sh', 'Ha']},
+  {areaName: 'Platte Clove', peaks: ['Pl', 'Su', 'KHP', 'Tw', 'IH']},
+  {areaName: 'Windham Blackhead Range', peaks: ['BD', 'BH', 'TC', 'WHP']},
+  {areaName: 'Bearpen State Forest', peaks: ['Bp', 'V']},
+];
 
 const MODES = [
   'unrestricted',
@@ -437,24 +447,9 @@ export function HikePlanner() {
         Select: <button onClick={selectAll}>All</button>{' '}
         <button onClick={selectNone}>None</button>
         <br />
-        <HikeGroup
-          groupName="Slide Mountain Wilderness"
-          peaks={SLIDE_PEAKS}
-          {...CHECK_PROPS}
-        />
-        <HikeGroup
-          groupName="Big Indian Wilderness"
-          peaks={BIG_INDIAN_PEAKS}
-          {...CHECK_PROPS}
-        />
-        <HikeGroup groupName="Spruceton Valley" peaks={SPRUCETON_PEAKS} {...CHECK_PROPS} />
-        <HikeGroup groupName="Platte Clove" peaks={PLATTE_CLOVE_PEAKS} {...CHECK_PROPS} />
-        <HikeGroup
-          groupName="Windham Blackhead Range"
-          peaks={WINDHAM_BLACKHEAD_PEAKS}
-          {...CHECK_PROPS}
-        />
-        <HikeGroup groupName="Bearpen State Forest" peaks={BEARPEN_PEAKS} {...CHECK_PROPS} />
+        {HIKE_AREAS.map((area, i) => (
+          <HikeGroup groupName={area.areaName} key={i} peaks={area.peaks} {...CHECK_PROPS} />
+        ))}
       </div>
       <HikePlannerMap
         hikes={proposedHikes?.state === 'ok' ? proposedHikes.data.solution.features : null}

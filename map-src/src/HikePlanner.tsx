@@ -140,14 +140,14 @@ interface HikePlannerResponse {
     d_km: number;
     d_mi: number;
     num_hikes: number;
-    hikes: [number, number[]][];
+    hikes: [number, number, number[]][];
     features: Feature[];
   };
   peak_ids: [Peak, number, string][];
 }
 
-const ENDPOINT = 'https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes';
-// 'http://localhost:5000/find-hikes';
+// const ENDPOINT = 'https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes';
+const ENDPOINT = 'http://localhost:5000/find-hikes';
 
 async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
   const r = await fetch(ENDPOINT, {
@@ -495,8 +495,8 @@ function ProposedHikesList(props: ProposedHikesProps) {
             key={i}
             onMouseEnter={() => onSelectHike(i)}
             onMouseLeave={() => onSelectHike(null)}>
-            {(hikes[i][0] * 0.621371).toFixed(1)} mi:{' '}
-            {getHikeName(hikes[i][1], idToCode, idToLot)}
+            {(hikes[i][0] * 0.621371).toFixed(1)} mi: +{Math.round(hikes[i][1] * 3.28084)}ft
+            {getHikeName(hikes[i][2], idToCode, idToLot)}
             {i === selectedHikeIndex ? (
               <>
                 {' '}
@@ -598,41 +598,14 @@ function HikePlannerMap(props: HikePlannerMapProps) {
   );
 }
 
-const SHORT_PEAKS: Record<keyof typeof PEAKS, string> = {
-  S: 'Slide',
-  H: 'Hunter',
-  BD: 'Black Dome',
-  BH: 'Blackhead',
-  TC: 'Thomas Cole',
-  We: 'Westkill',
-  C: 'Cornell',
-  Ta: 'Table',
-  Pk: 'Peekamoose',
-  Pl: 'Plateau',
-  Su: 'Sugarloaf',
-  W: 'Wittenberg',
-  SW: 'Southwest Hunter',
-  L: 'Lone',
-  BL: 'Balsam Lake',
-  P: 'Panther',
-  BI: 'Big Indian',
-  Fr: 'Friday',
-  Ru: 'Rusk',
-  KHP: 'Kaaterskill High Peak',
-  Tw: 'Twin',
-  BC: 'Balsam Cap',
-  Fi: 'Fir',
-  ND: 'North Dome',
-  B: 'Balsam',
-  Bp: 'Bearpen',
-  E: 'Eagle',
-  IH: 'Indian Head',
-  Sh: 'Mount Sherrill',
-  V: 'Vly',
-  WHP: 'Windham',
-  Ha: 'Halcott',
-  Ro: 'Rocky',
-};
+// Matches generate_web_data.py
+const SHORT_PEAKS = {} as Record<Peak, string>;
+for (const [code, long] of Object.entries(PEAKS)) {
+  SHORT_PEAKS[code as Peak] = long
+    .replace(' Mountain', '')
+    .replace('Mount ', '')
+    .replace(' Peak', '');
+}
 
 // See https://stackoverflow.com/a/27979933/388951
 function escapeXml(unsafe: string) {

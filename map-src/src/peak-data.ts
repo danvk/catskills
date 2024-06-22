@@ -56,8 +56,44 @@ export interface HikeArea {
 
 export const HIKE_AREAS: HikeArea[] = [
   {
-    areaName: 'Adirondacks',
-    peaks: Object.keys(PEAKS) as Peak[],
+    areaName: 'Marcy Group',
+    peaks: ['M', 'H', 'Sk', 'G', 'C', 'Re', 'Al', 'Cl'],
+  },
+  {
+    areaName: 'MacIntyre',
+    peaks: ['A', 'I', 'Wr', 'MM'],
+  },
+  {
+    areaName: 'Whiteface Mountain Area',
+    peaks: ['WF', 'E'],
+  },
+  {
+    areaName: 'Dix Range',
+    peaks: ['D', 'Mb', 'Ho', 'SD', 'ED'],
+  },
+  {
+    areaName: 'Great Range',
+    peaks: ['B', 'Go', 'Sa', 'Ar', 'UW', 'LW', 'Sw'],
+  },
+  {
+    areaName: 'Giant Range',
+    peaks: ['Gi', 'RP'],
+  },
+  {
+    areaName: 'Colvin Range',
+    peaks: ['N', 'Co', 'DL', 'Bl'],
+  },
+  {
+    areaName: 'Northern High Peaks',
+    peaks: ['T', 'BS', 'Ph', 'Ca', 'Po'],
+  },
+  {
+    areaName: 'Santanoni Range',
+    peaks: ['SP', 'P', 'Cu'],
+  },
+  {
+    areaName: 'Seward Range',
+    peaks: ['Se', 'Do', 'Sy', 'Em'],
   },
 ];
 

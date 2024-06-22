@@ -495,7 +495,7 @@ function ProposedHikesList(props: ProposedHikesProps) {
             key={i}
             onMouseEnter={() => onSelectHike(i)}
             onMouseLeave={() => onSelectHike(null)}>
-            {(hikes[i][0] * 0.621371).toFixed(1)} mi: +{Math.round(hikes[i][1] * 3.28084)}ft
+            {(hikes[i][0] * 0.621371).toFixed(1)} mi +{Math.round(hikes[i][1] * 3.28084)}ft{' '}
             {getHikeName(hikes[i][2], idToCode, idToLot)}
             {i === selectedHikeIndex ? (
               <>
@@ -577,13 +577,13 @@ function HikePlannerMap(props: HikePlannerMapProps) {
     <div id="map">
       <Map
         initialViewState={{
-          latitude: 42.0922169187148,
-          longitude: -74.36398700976565,
+          latitude: 44.1957,
+          longitude: -73.9867,
           zoom: 10,
         }}
         mapStyle="mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t"
         mapboxAccessToken={MAPBOX_TOKEN}>
-        <Source data="/catskills/map/catskill-park.geojson" id="catskill-park" type="geojson">
+        <Source data="/catskills/map/adk-park.geojson" id="catskill-park" type="geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
         <Source data={hikeFeatures} id="hikes" type="geojson">

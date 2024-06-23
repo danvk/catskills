@@ -6,8 +6,9 @@ import GpxParser from 'gpxparser';
 import React from 'react';
 
 import {Dygraph} from './Dygraph';
-import {fetchText} from './fetch';
 import {Hike} from './HikeList';
+import {FT_PER_M} from './constants';
+import {fetchText} from './fetch';
 import {addPace, rowRange, tuple} from './util';
 
 export interface TrackProps {
@@ -84,8 +85,6 @@ export function HikeInfoPanel(props: Props) {
   );
 }
 
-const FT_IN_M = 3.28084;
-
 const DYGRAPH_STYLE: React.CSSProperties = {
   width: 550,
   height: 160,
@@ -123,7 +122,7 @@ function ElevationChart(props: {
         cumD += d;
       }
       lastPt = pt;
-      rows.push(tuple(pt.time, pt.ele * FT_IN_M, cumD));
+      rows.push(tuple(pt.time, pt.ele * FT_PER_M, cumD));
     }
     return addPace(rows);
   }, [gpx]);
@@ -183,7 +182,7 @@ function ElevationChart(props: {
         {scrubPoint ? (
           <>
             {scrubPoint.time.toLocaleTimeString()}:{' '}
-            {Math.round(scrubPoint.eleMeters * FT_IN_M)}ft ({scrubPoint.cumDMiles.toFixed(1)}{' '}
+            {Math.round(scrubPoint.eleMeters * FT_PER_M)}ft ({scrubPoint.cumDMiles.toFixed(1)}{' '}
             mi)
           </>
         ) : null}

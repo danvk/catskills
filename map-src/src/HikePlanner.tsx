@@ -7,6 +7,7 @@ import Map, {Layer, Source} from 'react-map-gl';
 import {useLocation, useNavigate} from 'react-router-dom';
 
 import {EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle} from './HikeMap';
+import {FT_PER_M, MI_PER_KM} from './constants';
 import {ALL_PEAKS, HIKE_AREAS, PEAKS, Peak} from './peak-data';
 
 const MODES = [
@@ -495,7 +496,7 @@ function ProposedHikesList(props: ProposedHikesProps) {
             key={i}
             onMouseEnter={() => onSelectHike(i)}
             onMouseLeave={() => onSelectHike(null)}>
-            {(hikes[i][0] * 0.621371).toFixed(1)} mi +{Math.round(hikes[i][1] * 3.28084)}ft{' '}
+            {(hikes[i][0] * MI_PER_KM).toFixed(1)} mi +{Math.round(hikes[i][1] * FT_PER_M)}ft{' '}
             {getHikeName(hikes[i][2], idToCode, idToLot)}
             {i === selectedHikeIndex ? (
               <>

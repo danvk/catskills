@@ -165,8 +165,8 @@ export function HikeMap(props: Props) {
   );
 }
 
-export function MountainPeaks(props: {hiked: readonly string[] | null}) {
-  const {hiked} = props;
+export function MountainPeaks(props: {peaksGeoJSON: string; hiked: readonly string[] | null}) {
+  const {peaksGeoJSON, hiked} = props;
   const mountainIcon = useMapImage({
     url: '/catskills/map/mountain-solid.png',
     name: 'mountain-solid',
@@ -215,7 +215,7 @@ export function MountainPeaks(props: {hiked: readonly string[] | null}) {
   );
 
   return (
-    <Source data="/catskills/map/high-peaks.geojson" id="high-peaks" type="geojson">
+    <Source data={peaksGeoJSON} id="high-peaks" type="geojson">
       <Layer id="peak-labels" {...peakLabelStyle} />
       {mountainIcon === 'ok' ? (
         <Layer id="peaks" {...peakSymbols} beforeId="peak-labels" />

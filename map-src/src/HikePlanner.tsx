@@ -8,19 +8,14 @@ import {useLocation, useNavigate} from 'react-router-dom';
 
 import {EMPTY_FC, MAPBOX_TOKEN, MountainPeaks, parkStyle} from './HikeMap';
 import {FT_PER_M, MI_PER_KM} from './constants';
-import {ALL_PEAKS, HIKE_AREAS, PEAKS, Peak} from './peak-data';
+import {AREAS, HikingArea, HikingAreaCode, Peak} from './peak-data';
 
-const MODES = [
-  'unrestricted',
-  'loops-only',
-  'day-only',
-  'day-loop-only',
-  'prefer-loop',
-  'day-only-prefer-loop',
-] as const;
+const MODES = ['unrestricted', 'loops-only', 'prefer-loop'] as const;
 type Mode = (typeof MODES)[number];
 
 interface HikePlannerRequest {
+  area: HikingAreaCode;
+  max_length_km: number;
   peaks: Peak[];
   mode: Mode;
 }
@@ -217,6 +212,7 @@ function useLightlyEncodedSearchParams(): [URLSearchParams, SetURLSearchParams] 
 
 interface HikeGroupProps {
   groupName: string;
+  peakNames: Record<string, string>;
   peaks: readonly Peak[];
   selectedPeaks: readonly Peak[];
   onSelectPeaks: (peaks: readonly Peak[]) => void;
@@ -277,7 +273,7 @@ function HikeGroup(props: HikeGroupProps) {
                 type="checkbox"
                 onChange={toggleOnePeak}
               />{' '}
-              {PEAKS[code]}
+              {props.peakNames[code]}
             </label>
             <br />
           </React.Fragment>
@@ -289,13 +285,18 @@ function HikeGroup(props: HikeGroupProps) {
 
 const EMPTY_SINGLETON: never[] = [];
 
+export interface HikePlannerProps {
+  area: HikingAreaCode;
+}
+
 // TODO: load hikes automatically on page load (and add some kind of server cache)
-export function HikePlanner() {
+export function HikePlanner({area}: HikePlannerProps) {
   const [searchParams, setSearchParams] = useLightlyEncodedSearchParams();
+  const spec = AREAS.find(a => a.code === area)!;
   const peaksParam = searchParams.get('peaks');
   const peaks = (
     peaksParam === null
-      ? ALL_PEAKS
+      ? spec.all_peaks
       : peaksParam === ''
       ? EMPTY_SINGLETON
       : peaksParam.split(',')
@@ -316,8 +317,8 @@ export function HikePlanner() {
   );
 
   const selectAll = React.useCallback(() => {
-    setPeaks(ALL_PEAKS);
-  }, [setPeaks]);
+    setPeaks(spec.all_peaks);
+  }, [spec, setPeaks]);
   const selectNone = React.useCallback(() => {
     setPeaks([]);
   }, [setPeaks]);
@@ -341,7 +342,8 @@ export function HikePlanner() {
     React.useState<PromiseState<HikePlannerResponse> | null>(null);
   const search = React.useCallback(() => {
     (async () => {
-      const r: HikePlannerRequest = {peaks, mode};
+      // TODO: Add UI element for max hike length
+      const r: HikePlannerRequest = {peaks, mode, area, max_length_km: 30};
       setProposedHikes({state: 'loading'});
       try {
         const proposals = await getHikes(r);
@@ -394,13 +396,20 @@ export function HikePlanner() {
         Select: <button onClick={selectAll}>All</button>{' '}
         <button onClick={selectNone}>None</button>
         <br />
-        {HIKE_AREAS.map((area, i) => (
-          <HikeGroup groupName={area.areaName} key={i} peaks={area.peaks} {...CHECK_PROPS} />
+        {spec.ranges.map((range, i) => (
+          <HikeGroup
+            groupName={range.areaName}
+            key={i}
+            peakNames={spec.peaks}
+            peaks={range.peaks}
+            {...CHECK_PROPS}
+          />
         ))}
       </div>
       <HikePlannerMap
         hikes={proposedHikes?.state === 'ok' ? proposedHikes.data.solution.features : null}
         peaks={peaks}
+        spec={spec}
         selectedHikeIndex={selectedHikeIndex}
       />
     </div>
@@ -420,10 +429,12 @@ function saveFile(filename: string, data: string) {
 
 const ZWSP = '​';
 
+// TODO: idToCode and codeToName feels pretty roundabout
 function getHikeName(
   nodes: number[],
   idToCode: Record<string, string>,
   idToLot: Record<string, string>,
+  codeToName: Record<string, string>,
 ) {
   const lot1 = nodes[0];
   const lot2 = nodes.at(-1)!;
@@ -433,7 +444,7 @@ function getHikeName(
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
     PEAKS_TO_NAME[sortedPeaks] ??
     peaks
-      .map(id => SHORT_PEAKS[idToCode[id] as Peak])
+      .map(id => shortPeakName(codeToName[idToCode[id]]))
       .join(ZWSP + (peaks.length > 2 ? '→' : '/') + ZWSP);
   const lot1s = idToLot[lot1];
   if (lot1 === lot2) {
@@ -468,6 +479,7 @@ function ProposedHikesList(props: ProposedHikesProps) {
   const {solution, peak_ids} = plan;
   const idToCode = _.fromPairs(peak_ids.map(([code, id]) => [id, code]));
   const idToLot: Record<string, string> = {};
+  const codeToName = _.fromPairs(peak_ids.map(([code, _id, name]) => [code, name]));
   for (const f of solution.features) {
     const {properties} = f;
     if (properties?.type === 'parking-lot') {
@@ -497,7 +509,7 @@ function ProposedHikesList(props: ProposedHikesProps) {
             onMouseEnter={() => onSelectHike(i)}
             onMouseLeave={() => onSelectHike(null)}>
             {(hikes[i][0] * MI_PER_KM).toFixed(1)} mi +{Math.round(hikes[i][1] * FT_PER_M)}ft{' '}
-            {getHikeName(hikes[i][2], idToCode, idToLot)}
+            {getHikeName(hikes[i][2], idToCode, idToLot, codeToName)}
             {i === selectedHikeIndex ? (
               <>
                 {' '}
@@ -517,6 +529,7 @@ function ProposedHikesList(props: ProposedHikesProps) {
 
 interface HikePlannerMapProps {
   peaks: Peak[];
+  spec: HikingArea;
   hikes: Feature[] | null;
   selectedHikeIndex: number | null;
 }
@@ -530,7 +543,7 @@ const parkingLotStyle = {
 } satisfies Partial<mapboxgl.AnyLayer>;
 
 function HikePlannerMap(props: HikePlannerMapProps) {
-  const {peaks, hikes, selectedHikeIndex} = props;
+  const {spec, peaks, hikes, selectedHikeIndex} = props;
   const hikeFeatures = React.useMemo(
     (): FeatureCollection =>
       hikes
@@ -577,14 +590,11 @@ function HikePlannerMap(props: HikePlannerMapProps) {
   return (
     <div id="map">
       <Map
-        initialViewState={{
-          latitude: 44.1957,
-          longitude: -73.9867,
-          zoom: 10,
-        }}
+        key={spec.code}
+        initialViewState={spec.initialViewState}
         mapStyle="mapbox://styles/danvk/clf7a8rz5001j01qerupylm4t"
         mapboxAccessToken={MAPBOX_TOKEN}>
-        <Source data="/catskills/map/adk-park.geojson" id="catskill-park" type="geojson">
+        <Source data={spec.boundaryGeoJSON} id="catskill-park" type="geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
         <Source data={hikeFeatures} id="hikes" type="geojson">
@@ -593,19 +603,17 @@ function HikePlannerMap(props: HikePlannerMapProps) {
         <Source data={parkingLotFeatures} id="lots" type="geojson">
           <Layer id="lots" {...parkingLotStyle} />
         </Source>
-        <MountainPeaks hiked={peaks.map(p => SHORT_PEAKS[p])} />
+        <MountainPeaks
+          peaksGeoJSON={spec.peaksGeoJSON}
+          hiked={peaks.map(p => shortPeakName(spec.peaks[p]))}
+        />
       </Map>
     </div>
   );
 }
 
-// Matches generate_web_data.py
-const SHORT_PEAKS = {} as Record<Peak, string>;
-for (const [code, long] of Object.entries(PEAKS)) {
-  SHORT_PEAKS[code as Peak] = long
-    .replace(' Mountain', '')
-    .replace('Mount ', '')
-    .replace(' Peak', '');
+function shortPeakName(long: string) {
+  return long.replace(' Mountain', '').replace('Mount ', '').replace(' Peak', '');
 }
 
 // See https://stackoverflow.com/a/27979933/388951

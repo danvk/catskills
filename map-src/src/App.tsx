@@ -15,7 +15,8 @@ function App() {
   return (
     <Routes>
       <Route element={<HikePage />} path="/catskills/map" />
-      <Route element={<HikePlanner />} path="/catskills/map/planner" />
+      <Route element={<HikePlanner area="catskills" />} path="/catskills/map/planner" />
+      <Route element={<HikePlanner area="adk" />} path="/catskills/map/planner/adk" />
     </Routes>
   );
 }

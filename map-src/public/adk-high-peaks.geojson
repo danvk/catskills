@@ -1,0 +1,1252 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7202371,
+          44.1611619
+        ]
+      },
+      "properties": {
+        "id": 54,
+        "type": "dec",
+        "ele": 1405.2678045521548,
+        "gnis:feature_id": "2611110",
+        "name": "Giant",
+        "natural": "peak",
+        "website": "https://www.dec.ny.gov/lands/100750.html",
+        "wikidata": "Q8524323",
+        "code": "Gi",
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 1978958101
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7802392,
+          44.0516916
+        ]
+      },
+      "properties": {
+        "id": 41,
+        "type": "dec",
+        "ele": 1333.6702541311836,
+        "gnis:feature_id": "971960",
+        "name": "Macomb",
+        "natural": "peak",
+        "note": "Wooden sign stating \"macomb Mt\" is the peak.",
+        "wikidata": "Q6724801",
+        "code": "Mb",
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 357598246
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7743571,
+          44.0599388
+        ]
+      },
+      "properties": {
+        "id": 40,
+        "type": "dec",
+        "ele": 1229.9673077373322,
+        "gnis:feature_id": "965737",
+        "name": "South Dix",
+        "natural": "peak",
+        "note": "Peak is a tree with carving \"S Dix\" and a very small circle placard above eye level on the same tree.",
+        "wikidata": "Q7567063",
+        "code": "SD",
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 357590152
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7572439,
+          44.0650526
+        ]
+      },
+      "properties": {
+        "id": 44,
+        "type": "dec",
+        "ele": 1210.4695976544429,
+        "gnis:feature_id": "949060",
+        "name": "Grace",
+        "natural": "peak",
+        "note": "absolutely gorgeous views;about 45/way from S. Dix.",
+        "old_name": "East Dix",
+        "wikidata": "Q5328237",
+        "code": "ED",
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 357557474
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.886555,
+          44.1211738
+        ]
+      },
+      "properties": {
+        "id": 11,
+        "type": "dec",
+        "ele": 1464.3778500800568,
+        "gnis:feature_id": "973341",
+        "name": "Basin",
+        "natural": "peak",
+        "wikidata": "Q4867492",
+        "wikipedia": "en:Basin Mountain (New York)",
+        "code": "B",
+        "original_node": 357598499,
+        "original_d_m": 6.45,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 2726757619
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7865188,
+          44.0822884
+        ]
+      },
+      "properties": {
+        "id": 43,
+        "type": "dec",
+        "ele": 1472.0521009152676,
+        "gnis:feature_id": "973347",
+        "name": "Dix",
+        "natural": "peak",
+        "wikidata": "Q5284763",
+        "code": "D",
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 357598514
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.870873,
+          44.182217
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "type": "dec",
+        "ele": 1280.346969280391,
+        "gnis:feature_id": "943955",
+        "name": "Big Slide",
+        "natural": "peak",
+        "wikidata": "Q4906374",
+        "code": "BS",
+        "original_node": 357548909,
+        "original_d_m": 2.33,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 2463475014
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8750294,
+          44.1263442
+        ]
+      },
+      "properties": {
+        "id": 19,
+        "type": "dec",
+        "ele": 1365.4678898429636,
+        "gnis:feature_id": "970556",
+        "name": "Saddleback",
+        "natural": "peak",
+        "wikidata": "Q7397752",
+        "wikipedia": "en:Saddleback Mountain (Keene, New York)",
+        "code": "Sa",
+        "original_node": 357596504,
+        "original_d_m": 7.0,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 2726757750
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9029577,
+          44.3658053
+        ]
+      },
+      "properties": {
+        "id": 55,
+        "type": "dec",
+        "ele": 1475.0136562928592,
+        "gnis:feature_id": "973364",
+        "name": "Whiteface",
+        "natural": "peak",
+        "wikidata": "Q3434515",
+        "wikipedia": "en:Whiteface Mountain",
+        "code": "WF",
+        "original_node": 357598568,
+        "original_d_m": 3.19,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 3,
+        "original_id": 3264497128
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8330823,
+          44.1480835
+        ]
+      },
+      "properties": {
+        "id": 20,
+        "type": "dec",
+        "ele": 1267.7229938560322,
+        "gnis:feature_id": "956118",
+        "name": "Lower Wolfjaw",
+        "natural": "peak",
+        "wikidata": "Q6693909",
+        "wikipedia": "en:Lower Wolfjaw Mountain",
+        "code": "LW",
+        "original_node": 357569866,
+        "original_d_m": 1.16,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 2726757933
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9866479,
+          44.1435272
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "type": "dec",
+        "ele": 1551.4487829504333,
+        "gnis:feature_id": "973340",
+        "name": "Algonquin",
+        "natural": "peak",
+        "wikidata": "Q4724340",
+        "code": "A",
+        "original_node": 357598496,
+        "original_d_m": 7.32,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 4244366977
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9311761,
+          44.0994688
+        ]
+      },
+      "properties": {
+        "id": 18,
+        "type": "dec",
+        "ele": 1496.9197080639299,
+        "gnis:feature_id": "973360",
+        "name": "Skylight",
+        "natural": "peak",
+        "wikidata": "Q6923718",
+        "code": "Sk",
+        "original_node": 357598556,
+        "original_d_m": 4.74,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 4200777834
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.027025,
+          44.1793564
+        ]
+      },
+      "properties": {
+        "id": 60,
+        "type": "dec",
+        "ele": 1259.2737215999675,
+        "gnis:feature_id": "966631",
+        "name": "Street",
+        "natural": "peak",
+        "website": "https://en.wikipedia.org/wiki/Street_Mountain_(New_York)",
+        "wikidata": "Q7622887",
+        "wikipedia": "en:Street Mountain (New York)",
+        "code": "St",
+        "original_node": 2419904333,
+        "original_d_m": 6.98,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 8997316933
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2142037,
+          44.1439016
+        ]
+      },
+      "properties": {
+        "id": 36,
+        "type": "dec",
+        "ele": 1227.0330407235037,
+        "gnis:feature_id": "949645",
+        "name": "Emmons",
+        "natural": "peak",
+        "wikidata": "Q6920641",
+        "code": "Em",
+        "original_node": 357558429,
+        "original_d_m": 28.86,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 3757615498
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.17266,
+          44.1577544
+        ]
+      },
+      "properties": {
+        "id": 34,
+        "type": "dec",
+        "ele": 1238.2344000000157,
+        "gnis:feature_id": "964894",
+        "name": "Seymour",
+        "natural": "peak",
+        "wikidata": "Q8525969",
+        "code": "Sy",
+        "original_node": 357589061,
+        "original_d_m": 5.26,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 3757615519
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9794899,
+          44.1516339
+        ]
+      },
+      "properties": {
+        "id": 16,
+        "type": "dec",
+        "ele": 1388.0121999999974,
+        "gnis:feature_id": "971754",
+        "name": "Wright",
+        "natural": "peak",
+        "wikidata": "Q8038240",
+        "code": "Wr",
+        "original_node": 357597986,
+        "original_d_m": 0.0,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 9000430304
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8497709,
+          44.1345639
+        ]
+      },
+      "properties": {
+        "id": 25,
+        "type": "dec",
+        "ele": 1344.2309604192515,
+        "gnis:feature_id": "942572",
+        "name": "Armstrong",
+        "natural": "peak",
+        "wikidata": "Q4793955",
+        "code": "Ar",
+        "original_node": 357545178,
+        "original_d_m": 4.73,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 3115879358
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.845104,
+          44.140343
+        ]
+      },
+      "properties": {
+        "id": 22,
+        "type": "dec",
+        "ele": 1265.0015273603644,
+        "gnis:feature_id": "968312",
+        "name": "Upper Wolfjaw",
+        "natural": "peak",
+        "wikidata": "Q7899016",
+        "wikipedia": "en:Upper Wolfjaw Mountain",
+        "code": "UW",
+        "original_node": 2463436929,
+        "original_d_m": 13.35,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 3115879636
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2112548,
+          44.1540796
+        ]
+      },
+      "properties": {
+        "id": 31,
+        "type": "dec",
+        "ele": 1243.0754249730498,
+        "gnis:feature_id": "948566",
+        "name": "Donaldson",
+        "natural": "peak",
+        "wikidata": "Q5295363",
+        "code": "Do",
+        "original_node": 357556889,
+        "original_d_m": 7.69,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 3762105626
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1322278,
+          44.0983559
+        ]
+      },
+      "properties": {
+        "id": 33,
+        "type": "dec",
+        "ele": 1351.2286461023168,
+        "gnis:feature_id": "959830",
+        "name": "Panther",
+        "natural": "peak",
+        "wikidata": "Q7131804",
+        "code": "P",
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 357576084
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9750872,
+          44.103266
+        ]
+      },
+      "properties": {
+        "id": 13,
+        "type": "dec",
+        "ele": 1200.8610915841268,
+        "gnis:feature_id": "946865",
+        "name": "Cliff",
+        "natural": "peak",
+        "note": "Trail ends at summit with a signpost and no views on the wooded summit.",
+        "wikidata": "Q5132708",
+        "code": "Cl",
+        "original_node": 3151231652,
+        "original_d_m": 0.0,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 9002585786
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0238094,
+          44.187222
+        ]
+      },
+      "properties": {
+        "id": 59,
+        "type": "dec",
+        "ele": 1173.245148928422,
+        "gnis:feature_id": "959076",
+        "name": "Nye",
+        "natural": "peak",
+        "website": "https://en.wikipedia.org/wiki/Nye_Mountain",
+        "wikidata": "Q7071055",
+        "wikipedia": "en:Nye Mountain",
+        "code": "Ny",
+        "original_node": 4379698296,
+        "original_d_m": 1.52,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 2419904493
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9491766,
+          44.0953569
+        ]
+      },
+      "properties": {
+        "id": 12,
+        "type": "dec",
+        "ele": 1392.8156164864054,
+        "gnis:feature_id": "962328",
+        "name": "Redfield",
+        "natural": "peak",
+        "wikidata": "Q6923164",
+        "code": "Re",
+        "original_node": 357581829,
+        "original_d_m": 7.27,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 4211027969
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1309292,
+          44.082474
+        ]
+      },
+      "properties": {
+        "id": 35,
+        "type": "dec",
+        "ele": 1395.1138232321032,
+        "gnis:feature_id": "964468",
+        "name": "Santanoni",
+        "natural": "peak",
+        "wikidata": "Q7420073",
+        "code": "SP",
+        "original_node": 357588004,
+        "original_d_m": 1.82,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 4285509882
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9214113,
+          44.1568572
+        ]
+      },
+      "properties": {
+        "id": 7,
+        "type": "dec",
+        "ele": 1256.7025998975514,
+        "gnis:feature_id": "960289",
+        "name": "Phelps",
+        "natural": "peak",
+        "wikidata": "Q7181274",
+        "code": "Ph",
+        "original_node": 357576773,
+        "original_d_m": 5.31,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 4203671832
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9360819,
+          44.1112807
+        ]
+      },
+      "properties": {
+        "id": 15,
+        "type": "dec",
+        "ele": 1460.3790959825928,
+        "gnis:feature_id": "973351",
+        "name": "Gray",
+        "natural": "peak",
+        "wikidata": "Q5598218",
+        "code": "G",
+        "original_node": 357598527,
+        "original_d_m": 0.0,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 9610015198
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9160581,
+          44.1403344
+        ]
+      },
+      "properties": {
+        "id": 5,
+        "type": "dec",
+        "ele": 1341.6962808256037,
+        "gnis:feature_id": "966981",
+        "name": "Table Top",
+        "natural": "peak",
+        "wikidata": "Q7673183",
+        "code": "T",
+        "original_node": 357592172,
+        "original_d_m": 2.65,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 4203672106
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8449958,
+          44.0812762
+        ]
+      },
+      "properties": {
+        "id": 47,
+        "type": "dec",
+        "ele": 1208.0810400000191,
+        "gnis:feature_id": "944215",
+        "name": "Blake",
+        "natural": "peak",
+        "wikidata": "Q4924459",
+        "code": "Bl",
+        "original_node": 357549296,
+        "original_d_m": 2.11,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 4331180665
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8345338,
+          44.0942414
+        ]
+      },
+      "properties": {
+        "id": 42,
+        "type": "dec",
+        "ele": 1238.9415656384167,
+        "gnis:feature_id": "947211",
+        "name": "Colvin",
+        "natural": "peak",
+        "wikidata": "Q6920213",
+        "code": "Co",
+        "original_node": 357554870,
+        "original_d_m": 7.13,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 3115987720
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8601703,
+          44.2185789
+        ]
+      },
+      "properties": {
+        "id": 58,
+        "type": "dec",
+        "ele": 1236.1772220542075,
+        "gnis:feature_id": "945952",
+        "name": "Cascade",
+        "natural": "peak",
+        "tourism": "viewpoint",
+        "wikidata": "Q5048152",
+        "code": "Ca",
+        "original_node": 357552549,
+        "original_d_m": 0.0,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 8949314320
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8896718,
+          44.3871575
+        ]
+      },
+      "properties": {
+        "id": 56,
+        "type": "dec",
+        "ele": 1288.6886534400933,
+        "gnis:feature_id": "949720",
+        "name": "Esther",
+        "natural": "peak",
+        "wikidata": "Q5401250",
+        "code": "E",
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 4317115220
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1993376,
+          44.1597901
+        ]
+      },
+      "properties": {
+        "id": 30,
+        "type": "dec",
+        "ele": 1315.753258739262,
+        "gnis:feature_id": "964885",
+        "name": "Seward",
+        "natural": "peak",
+        "wikidata": "Q7458181",
+        "wikipedia": "en:Seward Mountain (New York)",
+        "code": "Se",
+        "original_node": 357589026,
+        "original_d_m": 1.6,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 4374721536
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9006199,
+          44.1058646
+        ]
+      },
+      "properties": {
+        "id": 6,
+        "type": "dec",
+        "ele": 1504.0202399991103,
+        "gnis:feature_id": "973353",
+        "name": "Haystack",
+        "natural": "peak",
+        "wikidata": "Q6921097",
+        "code": "H",
+        "original_node": 357598534,
+        "original_d_m": 18.59,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 4098774353
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7053688,
+          44.1542143
+        ]
+      },
+      "properties": {
+        "id": 53,
+        "type": "dec",
+        "ele": 1334.4706211327614,
+        "gnis:feature_id": "962786",
+        "name": "Rocky Ridge",
+        "natural": "peak",
+        "website": "https://www.dec.ny.gov/lands/100750.html",
+        "wikidata": "Q7355957",
+        "wikipedia": "en:Rocky Peak Ridge",
+        "code": "RP",
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 1431484619
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8574171,
+          44.127806
+        ]
+      },
+      "properties": {
+        "id": 23,
+        "type": "dec",
+        "ele": 1428.3970705280597,
+        "gnis:feature_id": "973349",
+        "name": "Gothics",
+        "natural": "peak",
+        "wikidata": "Q5587893",
+        "code": "Go",
+        "original_node": 357598520,
+        "original_d_m": 3.46,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 2726680860
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9398616,
+          44.0707955
+        ]
+      },
+      "properties": {
+        "id": 67,
+        "type": "dec",
+        "ele": 1313.2804388482377,
+        "gnis:feature_id": "942362",
+        "name": "Allen",
+        "natural": "peak",
+        "wikidata": "Q4731793",
+        "code": "Al",
+        "original_node": 357544674,
+        "original_d_m": 1.32,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 4238179016
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7777685,
+          44.0695534
+        ]
+      },
+      "properties": {
+        "id": 39,
+        "type": "dec",
+        "ele": 1334.49215836754,
+        "gnis:feature_id": "953279",
+        "name": "Hough",
+        "natural": "peak",
+        "wikidata": "Q5912859",
+        "wikipedia": "en:Hough Peak",
+        "code": "Ho",
+        "original_node": 357565545,
+        "original_d_m": 1.09,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 4939422459
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8163104,
+          44.0890801
+        ]
+      },
+      "properties": {
+        "id": 45,
+        "type": "dec",
+        "ele": 1398.5777350080023,
+        "gnis:feature_id": "958617",
+        "name": "Nippletop",
+        "natural": "peak",
+        "wikidata": "Q7039599",
+        "code": "N",
+        "original_node": 357573649,
+        "original_d_m": 3.38,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 2738428726
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7965507,
+          44.1061435
+        ]
+      },
+      "properties": {
+        "id": 46,
+        "type": "dec",
+        "ele": 1220.409958168016,
+        "gnis:feature_id": "948403",
+        "name": "Dial",
+        "natural": "peak",
+        "wikidata": "Q5270468",
+        "code": "DL",
+        "original_node": 357556604,
+        "original_d_m": 7.13,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 2738428796
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9594768,
+          44.126995
+        ]
+      },
+      "properties": {
+        "id": 8,
+        "type": "dec",
+        "ele": 1424.5156432001336,
+        "gnis:feature_id": "947091",
+        "name": "Colden",
+        "natural": "peak",
+        "wikidata": "Q6920203",
+        "code": "C",
+        "original_node": 357554607,
+        "original_d_m": 5.98,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 3151231983
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01115,
+          44.1276117
+        ]
+      },
+      "properties": {
+        "id": 14,
+        "type": "dec",
+        "ele": 1329.851150400184,
+        "gnis:feature_id": "956573",
+        "name": "Marshall",
+        "natural": "peak",
+        "wikidata": "Q6922027",
+        "code": "MM",
+        "original_node": 357570629,
+        "original_d_m": 2.87,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 2419956945
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1606609,
+          44.0961509
+        ]
+      },
+      "properties": {
+        "id": 32,
+        "type": "dec",
+        "ele": 1153.794164675139,
+        "gnis:feature_id": "947539",
+        "name": "Couchsachraga",
+        "natural": "peak",
+        "wikidata": "Q5175966",
+        "code": "Cu",
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 1,
+        "original_id": 357555420
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8503699,
+          44.1145433
+        ]
+      },
+      "properties": {
+        "id": 24,
+        "type": "dec",
+        "ele": 1258.9082799999742,
+        "gnis:feature_id": "964537",
+        "name": "Sawteeth",
+        "natural": "peak",
+        "wikidata": "Q7428687",
+        "code": "Sw",
+        "original_node": 4299228062,
+        "original_d_m": 7.15,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 4234427647
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9236969,
+          44.112766
+        ]
+      },
+      "properties": {
+        "id": 4,
+        "type": "dec",
+        "description": "Highest Mountain in New York State",
+        "ele": 1620.3564348159798,
+        "gnis:feature_id": "973357",
+        "name": "Marcy",
+        "natural": "peak",
+        "wikidata": "Q1858227",
+        "wikipedia": "en:Mount Marcy",
+        "code": "M",
+        "original_node": 357598546,
+        "original_d_m": 1.31,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 1735425606
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8539188,
+          44.2123955
+        ]
+      },
+      "properties": {
+        "id": 57,
+        "type": "dec",
+        "ele": 1239.0485692159987,
+        "gnis:feature_id": "960994",
+        "name": "Porter",
+        "natural": "peak",
+        "wikidata": "Q7231640",
+        "wikipedia": "en:Porter Mountain",
+        "code": "Po",
+        "original_node": 357577812,
+        "original_d_m": 0.63,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 4344520293
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9980534,
+          44.1368059
+        ]
+      },
+      "properties": {
+        "id": 17,
+        "type": "dec",
+        "ele": 1463.4829007550934,
+        "gnis:feature_id": "973355",
+        "name": "Iroquois",
+        "natural": "peak",
+        "wikidata": "Q6073461",
+        "code": "I",
+        "original_node": 357598540,
+        "original_d_m": 2.62,
+        "connected": true,
+        "marker-color": "#0000ff",
+        "marker-size": "medium",
+        "degree": 2,
+        "original_id": 748723821
+      }
+    }
+  ]
+}

@@ -1,4 +1,42 @@
-export const PEAKS = {
+import {ViewState} from 'react-map-gl';
+
+const CATSKILLS_PEAKS = {
+  S: 'Slide Mountain',
+  H: 'Hunter Mountain',
+  BD: 'Blackdome Mountain',
+  BH: 'Blackhead Mountain',
+  TC: 'Thomas Cole Mountain',
+  We: 'West Kill Mountain',
+  C: 'Cornell Mountain',
+  Ta: 'Table Mountain',
+  Pk: 'Peekamoose Mountain',
+  Pl: 'Plateau Mountain',
+  Su: 'Sugarloaf Mountain',
+  W: 'Wittenberg Mountain',
+  SW: 'Southwest Hunter',
+  L: 'Lone Mountain',
+  BL: 'Balsam Lake Mountain',
+  P: 'Panther Mountain',
+  BI: 'Big Indian Mountain',
+  Fr: 'Friday Mountain',
+  Ru: 'Rusk Mountain',
+  KHP: 'Kaaterskill High Peak',
+  Tw: 'Twin Mountain',
+  BC: 'Balsam Cap Mountain',
+  Fi: 'Fir Mountain',
+  ND: 'North Dome Mountain',
+  B: 'Balsam Mountain',
+  Bp: 'Bearpen Mountain',
+  E: 'Eagle Mountain',
+  IH: 'Indian Head Mountain',
+  Sh: 'Sherrill Mountain',
+  V: 'Vly Mountain',
+  WHP: 'Windham High Peak',
+  Ha: 'Halcott Mountain',
+  Ro: 'Rocky Mountain',
+};
+
+const ADK_PEAKS = {
   Gi: 'Giant Mountain',
   Mb: 'Macomb Mountain',
   SD: 'South Dix',
@@ -46,15 +84,15 @@ export const PEAKS = {
   Po: 'Porter Mountain',
   I: 'Iroquois Peak',
 };
-export type Peak = keyof typeof PEAKS;
-export const ALL_PEAKS = Object.keys(PEAKS) as Peak[];
 
-export interface HikeArea {
+export type Peak = keyof typeof CATSKILLS_PEAKS | keyof typeof ADK_PEAKS;
+
+export interface MountainRange {
   areaName: string;
   peaks: readonly Peak[];
 }
 
-export const HIKE_AREAS: HikeArea[] = [
+export const ADK_RANGES: MountainRange[] = [
   {
     areaName: 'Marcy Group',
     peaks: ['M', 'H', 'Sk', 'G', 'C', 'Re', 'Al', 'Cl'],
@@ -97,8 +135,7 @@ export const HIKE_AREAS: HikeArea[] = [
   },
 ];
 
-/*
-export const HIKE_AREAS: HikeArea[] = [
+export const CATSKILLS_RANGES: MountainRange[] = [
   {
     areaName: 'Slide Mountain Wilderness',
     peaks: ['S', 'C', 'Ta', 'Pk', 'W', 'L', 'P', 'BC', 'Fr', 'Ro'],
@@ -109,4 +146,47 @@ export const HIKE_AREAS: HikeArea[] = [
   {areaName: 'Windham Blackhead Range', peaks: ['BD', 'BH', 'TC', 'WHP']},
   {areaName: 'Bearpen State Forest', peaks: ['Bp', 'V']},
 ];
-*/
+
+export type HikingAreaCode = 'catskills' | 'adk';
+
+export interface HikingArea {
+  code: HikingAreaCode;
+  displayName: string;
+  peaks: Record<string, string>;
+  all_peaks: string[];
+  ranges: MountainRange[];
+  initialViewState: Pick<ViewState, 'latitude' | 'longitude' | 'zoom'>;
+  boundaryGeoJSON: string;
+  peaksGeoJSON: string;
+}
+
+export const AREAS: HikingArea[] = [
+  {
+    code: 'catskills',
+    displayName: 'Catskills',
+    peaks: CATSKILLS_PEAKS,
+    all_peaks: Object.keys(CATSKILLS_PEAKS), // here for reference equality
+    ranges: CATSKILLS_RANGES,
+    initialViewState: {
+      latitude: 42.0922169187148,
+      longitude: -74.36398700976565,
+      zoom: 10,
+    },
+    boundaryGeoJSON: '/catskills/map/catskill-park.geojson',
+    peaksGeoJSON: '/catskills/map/catskills-high-peaks.geojson',
+  },
+  {
+    code: 'adk',
+    displayName: 'Adirondacks',
+    peaks: ADK_PEAKS,
+    all_peaks: Object.keys(ADK_PEAKS), // here for reference equality
+    ranges: ADK_RANGES,
+    initialViewState: {
+      latitude: 44.1957,
+      longitude: -73.9867,
+      zoom: 10,
+    },
+    boundaryGeoJSON: '/catskills/map/adk-park.geojson',
+    peaksGeoJSON: '/catskills/map/adk-high-peaks.geojson',
+  },
+];

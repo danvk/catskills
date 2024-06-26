@@ -335,7 +335,7 @@ export function HikePlanner() {
       ? EMPTY_SINGLETON
       : peaksParam.split(',')
   ) as Peak[];
-  const mode = (searchParams.get('mode') ?? 'unrestricted') as Mode;
+  const mode = (searchParams.get('mode') ?? 'loops-only') as Mode;
 
   const setArea = React.useCallback(
     (area: HikingAreaCode) => {

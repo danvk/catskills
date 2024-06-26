@@ -13,9 +13,15 @@ import {AREAS, HikingArea, HikingAreaCode, Peak} from './peak-data';
 const MODES = ['unrestricted', 'loops-only', 'prefer-loop'] as const;
 type Mode = (typeof MODES)[number];
 
+const MODE_NAMES: Record<Mode, string> = {
+  unrestricted: 'Allow Through Hikes',
+  'loops-only': 'Only Loop Hikes',
+  'prefer-loop': 'Prefer Loop Hikes',
+};
+
 interface HikePlannerRequest {
   area: HikingAreaCode;
-  max_length_km: number;
+  max_len_km: number;
   peaks: Peak[];
   mode: Mode;
 }
@@ -308,6 +314,7 @@ export function HikePlanner() {
   const [searchParams, setSearchParams] = useLightlyEncodedSearchParams();
   const area = (searchParams.get('area') ?? 'catskills') as HikingAreaCode;
   const spec = AREAS.find(a => a.code === area)!;
+  const maxMi = Number(searchParams.get('max_mi') ?? 18);
   const peaksParam = searchParams.get('peaks');
   const peaks = (
     peaksParam === null
@@ -322,22 +329,35 @@ export function HikePlanner() {
     (area: HikingAreaCode) => {
       setProposedHikes(null);
       setSelectedHikeIndex(null);
-      setSearchParams({mode, area}); // drop peaks
+      setSearchParams({mode, area, max_mi: String(maxMi)}); // drop peaks
     },
-    [mode, setSearchParams],
+    [mode, maxMi, setSearchParams],
   );
 
   const setPeaks = React.useCallback(
     (newPeaks: string[]) => {
-      setSearchParams({peaks: newPeaks.join(','), mode, area});
+      setSearchParams({peaks: newPeaks.join(','), mode, area, max_mi: String(maxMi)});
     },
-    [area, mode, setSearchParams],
+    [area, mode, maxMi, setSearchParams],
   );
   const setMode = React.useCallback(
     (newMode: Mode) => {
-      setSearchParams({peaks: peaks.join(','), mode: newMode, area});
+      setSearchParams({peaks: peaks.join(','), mode: newMode, area, max_mi: String(maxMi)});
     },
-    [area, peaks, setSearchParams],
+    [area, peaks, maxMi, setSearchParams],
+  );
+  const setMaxMi = React.useCallback(
+    (maxMi: number) => {
+      setSearchParams({peaks: peaks.join(','), mode, area, max_mi: String(maxMi)});
+    },
+    [area, peaks, mode, setSearchParams],
+  );
+
+  const handleChangeMaxMi = React.useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setMaxMi(e.currentTarget.valueAsNumber);
+    },
+    [setMaxMi],
   );
 
   const selectAll = React.useCallback(() => {
@@ -366,8 +386,8 @@ export function HikePlanner() {
     React.useState<PromiseState<HikePlannerResponse> | null>(null);
   const search = React.useCallback(() => {
     (async () => {
-      // TODO: Add UI element for max hike length
-      const r: HikePlannerRequest = {peaks, mode, area, max_length_km: 30};
+      const maxKm = maxMi / MI_PER_KM;
+      const r: HikePlannerRequest = {peaks, mode, area, max_len_km: maxKm};
       setProposedHikes({state: 'loading'});
       try {
         const proposals = await getHikes(r);
@@ -377,7 +397,7 @@ export function HikePlanner() {
         setProposedHikes({state: 'error', error: e});
       }
     })();
-  }, [peaks, mode]);
+  }, [peaks, area, mode, maxMi]);
 
   const [selectedHikeIndex, setSelectedHikeIndex] = React.useState<number | null>(null);
 
@@ -401,14 +421,31 @@ export function HikePlanner() {
             />
           ))}
         </div>
-        Hike Preference:
-        <br />
-        <select value={mode} onChange={e => setMode(e.currentTarget.value as Mode)}>
-          {MODES.map(m => (
-            <option key={m}>{m}</option>
-          ))}
-        </select>
-        <br />
+        <div className="hike-option">
+          <label htmlFor="hike-mode">Style:</label>
+          <select
+            id="hike-mode"
+            value={mode}
+            onChange={e => setMode(e.currentTarget.value as Mode)}>
+            {MODES.map(m => (
+              <option key={m} value={m}>
+                {MODE_NAMES[m]}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="hike-option">
+          <label htmlFor="max-len">Max:</label>
+          <input
+            id="max-len"
+            type="number"
+            value={maxMi}
+            onChange={handleChangeMaxMi}
+            min={5}
+            max={100}
+          />{' '}
+          mi
+        </div>
         <button disabled={proposedHikes?.state === 'loading'} onClick={search}>
           {proposedHikes?.state !== 'loading' ? 'Find Hikes' : 'Searching…'}
         </button>
@@ -648,7 +685,13 @@ function HikePlannerMap(props: HikePlannerMapProps) {
 }
 
 function shortPeakName(long: string) {
-  return long.replace(' Mountain', '').replace('Mount ', '').replace(' Peak', '');
+  // Matches generate_web_data.py in computing-in-the-catskills
+  return long
+    .replace(' High Point', '')
+    .replace(' High Peak', '')
+    .replace(' Mountain', '')
+    .replace('Mount ', '')
+    .replace(' Peak', '');
 }
 
 // See https://stackoverflow.com/a/27979933/388951

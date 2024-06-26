@@ -13,6 +13,7 @@
   display: flex;
   width: 100%;
   border-bottom: 1px solid var(--border-color);
+  margin-bottom: 0.25em;
 }
 .hike-area {
   padding: 0.25em 0.5em;
@@ -26,6 +27,12 @@
   font-weight: bold;
   border: 1px solid var(--border-color);
   border-bottom: 1px solid white;
+}
+.hike-option {
+  padding: 0.25em 0;
+}
+label {
+  padding-right: 0.25em;
 }
 
 .peak-group {

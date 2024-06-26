@@ -3,7 +3,7 @@ import {ViewState} from 'react-map-gl';
 const CATSKILLS_PEAKS = {
   S: 'Slide Mountain',
   H: 'Hunter Mountain',
-  BD: 'Blackdome Mountain',
+  BD: 'Black Dome Mountain',
   BH: 'Blackhead Mountain',
   TC: 'Thomas Cole Mountain',
   We: 'West Kill Mountain',
@@ -34,6 +34,10 @@ const CATSKILLS_PEAKS = {
   WHP: 'Windham High Peak',
   Ha: 'Halcott Mountain',
   Ro: 'Rocky Mountain',
+  RT: 'Roundtop',
+  D: 'Doubletop - South',
+  MR: 'Millbrook Ridge',
+  DB: 'Dry Brook Ridge',
 };
 
 const ADK_PEAKS = {
@@ -135,6 +139,8 @@ export const ADK_RANGES: MountainRange[] = [
   },
 ];
 
+const CATSKILLS_ALT_PEAKS: Peak[] = ['MR', 'DB', 'D', 'RT'];
+
 export const CATSKILLS_RANGES: MountainRange[] = [
   {
     areaName: 'Slide Mountain Wilderness',
@@ -145,6 +151,7 @@ export const CATSKILLS_RANGES: MountainRange[] = [
   {areaName: 'Platte Clove', peaks: ['Pl', 'Su', 'KHP', 'Tw', 'IH']},
   {areaName: 'Windham Blackhead Range', peaks: ['BD', 'BH', 'TC', 'WHP']},
   {areaName: 'Bearpen State Forest', peaks: ['Bp', 'V']},
+  {areaName: 'Alternate Peaks', peaks: CATSKILLS_ALT_PEAKS},
 ];
 
 export type HikingAreaCode = 'catskills' | 'adk';
@@ -165,7 +172,9 @@ export const AREAS: HikingArea[] = [
     code: 'catskills',
     displayName: 'Catskills',
     peaks: CATSKILLS_PEAKS,
-    all_peaks: Object.keys(CATSKILLS_PEAKS), // here for reference equality
+    all_peaks: Object.keys(CATSKILLS_PEAKS).filter(
+      code => !CATSKILLS_ALT_PEAKS.includes(code as Peak),
+    ), // here for reference equality
     ranges: CATSKILLS_RANGES,
     initialViewState: {
       latitude: 42.0922169187148,

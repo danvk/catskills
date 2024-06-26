@@ -14,6 +14,7 @@ export const MAPBOX_TOKEN =
   'pk.eyJ1IjoiZGFudmsiLCJhIjoiY2lrZzJvNDR0MDBhNXR4a2xqNnlsbWx3ciJ9.myJhweYd_hrXClbKk8XLgQ';
 
 export interface Props {
+  peaksGeoJSON: string;
   hikes: UseQueryResult<readonly Hike[]>;
   tracks: UseQueryResult<FeatureCollection<LineString, TrackProps>>;
   scrubPoint: ScrubPoint | null;
@@ -145,7 +146,7 @@ export function HikeMap(props: Props) {
         <Source data="/catskills/map/catskill-park.geojson" id="catskill-park" type="geojson">
           <Layer id="catskill-park" {...parkStyle} />
         </Source>
-        <MountainPeaks hiked={hiked} />
+        <MountainPeaks peaksGeoJSON={props.peaksGeoJSON} hiked={hiked} />
         <HikeTracks
           selectedHikeSlug={props.selectedHikeSlug}
           tracks={

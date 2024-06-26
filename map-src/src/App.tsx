@@ -15,8 +15,7 @@ function App() {
   return (
     <Routes>
       <Route element={<HikePage />} path="/catskills/map" />
-      <Route element={<HikePlanner area="catskills" />} path="/catskills/map/planner" />
-      <Route element={<HikePlanner area="adk" />} path="/catskills/map/planner/adk" />
+      <Route element={<HikePlanner />} path="/catskills/map/planner" />
     </Routes>
   );
 }
@@ -50,6 +49,7 @@ function HikePage() {
         onSelectHike={handleSelectHike}
       />
       <HikeMap
+        peaksGeoJSON="/catskills/map/catskills-high-peaks.geojson"
         hikes={hikeResource}
         scrubPoint={scrubPoint}
         selectedHikeSlug={selectedHikeSlug}

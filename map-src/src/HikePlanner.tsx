@@ -285,13 +285,28 @@ function HikeGroup(props: HikeGroupProps) {
 
 const EMPTY_SINGLETON: never[] = [];
 
-export interface HikePlannerProps {
-  area: HikingAreaCode;
+interface HikeAreaLinkProps {
+  displayName: string;
+  code: HikingAreaCode;
+  isSelected: boolean;
+  onClick: (code: HikingAreaCode) => void;
+}
+
+function HikeAreaLink(props: HikeAreaLinkProps) {
+  const {isSelected} = props;
+  const className = 'hike-area' + (isSelected ? ' selected' : '');
+  const onClick = isSelected ? undefined : () => props.onClick(props.code);
+  return (
+    <div className={className} onClick={onClick}>
+      {props.displayName}
+    </div>
+  );
 }
 
 // TODO: load hikes automatically on page load (and add some kind of server cache)
-export function HikePlanner({area}: HikePlannerProps) {
+export function HikePlanner() {
   const [searchParams, setSearchParams] = useLightlyEncodedSearchParams();
+  const area = (searchParams.get('area') ?? 'catskills') as HikingAreaCode;
   const spec = AREAS.find(a => a.code === area)!;
   const peaksParam = searchParams.get('peaks');
   const peaks = (
@@ -303,17 +318,26 @@ export function HikePlanner({area}: HikePlannerProps) {
   ) as Peak[];
   const mode = (searchParams.get('mode') ?? 'unrestricted') as Mode;
 
-  const setPeaks = React.useCallback(
-    (newPeaks: string[]) => {
-      setSearchParams({peaks: newPeaks.join(','), mode});
+  const setArea = React.useCallback(
+    (area: HikingAreaCode) => {
+      setProposedHikes(null);
+      setSelectedHikeIndex(null);
+      setSearchParams({mode, area}); // drop peaks
     },
     [mode, setSearchParams],
   );
+
+  const setPeaks = React.useCallback(
+    (newPeaks: string[]) => {
+      setSearchParams({peaks: newPeaks.join(','), mode, area});
+    },
+    [area, mode, setSearchParams],
+  );
   const setMode = React.useCallback(
     (newMode: Mode) => {
-      setSearchParams({peaks: peaks.join(','), mode: newMode});
+      setSearchParams({peaks: peaks.join(','), mode: newMode, area});
     },
-    [peaks, setSearchParams],
+    [area, peaks, setSearchParams],
   );
 
   const selectAll = React.useCallback(() => {
@@ -366,6 +390,17 @@ export function HikePlanner({area}: HikePlannerProps) {
   return (
     <div className="App hike-planner">
       <div className="hike-control-panel">
+        <div className="area-selector">
+          {AREAS.map(a => (
+            <HikeAreaLink
+              key={a.code}
+              code={a.code}
+              onClick={setArea}
+              displayName={a.displayName}
+              isSelected={a.code === area}
+            />
+          ))}
+        </div>
         Hike Preference:
         <br />
         <select value={mode} onChange={e => setMode(e.currentTarget.value as Mode)}>

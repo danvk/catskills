@@ -148,8 +148,8 @@ interface HikePlannerResponse {
   peak_ids: [Peak, number, string][];
 }
 
-// const ENDPOINT = 'https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes';
-const ENDPOINT = 'http://localhost:5000/find-hikes';
+const ENDPOINT = 'https://qa0q1ij69f.execute-api.us-east-1.amazonaws.com/find-hikes';
+// const ENDPOINT = 'http://localhost:5000/find-hikes';
 
 async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
   const r = await fetch(ENDPOINT, {
@@ -159,6 +159,18 @@ async function getHikes(req: HikePlannerRequest): Promise<HikePlannerResponse> {
       'Content-Type': 'application/json',
     },
   });
+  if (!r.ok) {
+    let text;
+    try {
+      const body = await r.json();
+      if (body.message) {
+        text = body.message;
+      }
+    } catch {
+      text = 'Error';
+    }
+    throw new Error(`${r.statusText}: ${text}`);
+  }
   return r.json();
 }
 
@@ -580,8 +592,10 @@ function ProposedHikesList(props: ProposedHikesProps) {
             key={i}
             onMouseEnter={() => onSelectHike(i)}
             onMouseLeave={() => onSelectHike(null)}>
-            {(hikes[i][0] * MI_PER_KM).toFixed(1)} mi +{Math.round(hikes[i][1] * FT_PER_M)}ft{' '}
             {getHikeName(hikes[i][2], idToCode, idToLot, codeToName)}
+            <br />
+            {(hikes[i][0] * MI_PER_KM).toFixed(1)} mi +
+            {Math.round(hikes[i][1] * FT_PER_M).toLocaleString()}ft
             {i === selectedHikeIndex ? (
               <>
                 {' '}

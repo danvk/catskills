@@ -559,6 +559,12 @@ function getHikeName(
   );
 }
 
+// This is "book time", a variation on Naismith's Rule. See
+// https://adventurenerds.com/article/hiking-time-calculator-and-how-to-estimate-hiking-time/
+function hikeTimeHours(km: number, eleM: number) {
+  return Math.round((km * MI_PER_KM) / 2 + (eleM * FT_PER_M) / 2000);
+}
+
 interface ProposedHikesProps {
   plan: HikePlannerResponse;
   selectedHikeIndex: number | null;
@@ -601,8 +607,9 @@ function ProposedHikesList(props: ProposedHikesProps) {
             onMouseLeave={() => onSelectHike(null)}>
             {getHikeName(hikes[i][2], idToCode, idToLot, codeToName)}
             <br />
-            {(hikes[i][0] * MI_PER_KM).toFixed(1)} mi +
-            {Math.round(hikes[i][1] * FT_PER_M).toLocaleString()}ft
+            {(hikes[i][0] * MI_PER_KM).toFixed(1)}mi +
+            {Math.round(hikes[i][1] * FT_PER_M).toLocaleString()}ft ~
+            {hikeTimeHours(hikes[i][0], hikes[i][1])}h
             {i === selectedHikeIndex ? (
               <>
                 {' '}

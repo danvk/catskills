@@ -34,6 +34,11 @@
 label {
   padding-right: 0.25em;
 }
+.error {
+  color: red;
+  margin-left: 1em;
+  font-size: small;
+}
 
 .peak-group {
   margin-top: 8px;

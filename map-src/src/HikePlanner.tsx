@@ -419,6 +419,8 @@ export function HikePlanner() {
     onDeselectPeaks,
   };
 
+  const isValid = peaks.length > 0 && maxMi >= 5 && maxMi <= 30;
+
   return (
     <div className="App hike-planner">
       <div className="hike-control-panel">
@@ -454,11 +456,16 @@ export function HikePlanner() {
             value={maxMi}
             onChange={handleChangeMaxMi}
             min={5}
-            max={100}
+            max={30}
           />{' '}
           mi
+          {maxMi < 5 ? (
+            <span className="error">Must be &gt;= 5 mi</span>
+          ) : maxMi > 30 ? (
+            <span className="error">Must be &lt;= 30 mi</span>
+          ) : null}
         </div>
-        <button disabled={proposedHikes?.state === 'loading'} onClick={search}>
+        <button disabled={proposedHikes?.state === 'loading' || !isValid} onClick={search}>
           {proposedHikes?.state !== 'loading' ? 'Find Hikes' : 'Searching…'}
         </button>
         {proposedHikes ? (

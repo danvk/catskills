@@ -131,7 +131,7 @@ Progress:
         <span class="summary">33/33</span>
         <!--/progress-2023-->
     </div>
-    <div class="progress-label">Four Seasons (HA):</div>
+    <div class="progress-label">Four Seasons (<a href="https://hikersanonymous.org/index.html#4-seasons">HA</a>):</div>
     <div id="progress-4seasons-ha">
         <!--progress-4seasons-ha-->
         <div class="season winter"><span class="progress-bar"><span class="complete" title="Slide: winter"></span>
@@ -281,7 +281,7 @@ Progress:
         </div><span class="summary">Total: 68/140</span>
         <!--/progress-4seasons-ha-->
     </div>
-    <div class="progress-label">Four Seasons (CMC):</div>
+    <div class="progress-label">Four Seasons (<a href="https://www.catskillmountainclub.org/the-catskills-4-seasons-140-the-catskills-grid-420">CMC</a>):</div>
     <div id="progress-4seasons-cmc">
         <!--progress-4seasons-cmc-->
         <div class="season winter"><span class="progress-bar"><span class="complete" title="Slide: winter"></span>

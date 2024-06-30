@@ -46,6 +46,9 @@
     background: lightgreen;
 }
 
+.season {
+    height: 17px;
+}
 .winter .complete {
     background: #ddd;
 }

@@ -62,7 +62,7 @@
     background: orange;
 }
 
-#progress {
+.progress {
     display: grid;
     grid-template-columns: 100px auto;
     grid-gap: 10px;

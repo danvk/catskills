@@ -1,5 +1,25 @@
 [
   {
+    "date": "2024-06-29",
+    "slug": "2024-06-29-rainy-hunter",
+    "type": "Loop",
+    "miles": 10,
+    "hike_hours": 6,
+    "elevation_ft": 2600,
+    "peaks": [
+      "Hunter",
+      "Southwest Hunter"
+    ],
+    "hikers": [
+      "Dan",
+      "John G",
+      "Kenny"
+    ],
+    "title": "Rain and fog on Hunter",
+    "excerpt": "Rain cuts short a planned seven peak overnight adventure.",
+    "url": "/catskills/2024/06/29/2024-06-29-rainy-hunter.html"
+  },
+  {
     "date": "2024-06-10",
     "slug": "2024-06-10-alex-halcott",
     "type": "Out and Back",

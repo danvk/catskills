@@ -199,32 +199,28 @@ num_total = len(peaks)
 year_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
 
 # Four Seasons
-def four_seasons_sort(peak_season: str, completed: set[str]):
-    peak, season = peak_season.split(': ')
-    return (SEASONS.index(season), peak_season not in completed, peak)
+def seasons_html(group, group_peaks):
+    html = ''
+    for season in SEASONS:
+        num_season = 0
+        html += f'<div class="season {season}">'
+        html += '<span class="progress-bar">'
+        for peak in sorted(group_peaks, key=lambda peak: f'{peak}: {season}' not in group):
+            peak_season = f'{peak}: {season}'
+            completed = peak_season in group
+            state = 'complete' if completed else 'incomplete'
+            num_season += (1 if completed else 0)
+            html += f'<span class="{state}" title="{peak_season}"></span>\n'
+        html += '</span>'
+        html += f'<span class="summary">{season}: {num_season}/{len(group_peaks)}</span>\n'
+        html += '</div>'
+    num_done = len(group)
+    num_total = len(group_peaks) * len(SEASONS)
+    html += f'<span class="summary">Total: {num_done}/{num_total}</span>\n'
+    return html
 
-
-seasons_ha = [*sorted(
-    [f'{peak}: {season}' for season in SEASONS for peak in peaks_ha],
-    key=lambda ps: four_seasons_sort(ps, completed_4seasons_ha)
-)]
-ha_html = ''
-for season in SEASONS:
-    num_season = 0
-    ha_html += f'<div class="season {season}">'
-    ha_html += '<span class="progress-bar">'
-    for peak in sorted(peaks_ha, key=lambda peak: f'{peak}: {season}' not in completed_4seasons_ha):
-        peak_season = f'{peak}: {season}'
-        completed = peak_season in completed_4seasons_ha
-        state = 'complete' if completed else 'incomplete'
-        num_season += (1 if completed else 0)
-        ha_html += f'<span class="{state}" title="{peak_season}"></span>\n'
-    ha_html += '</span>'
-    ha_html += f'<span class="summary">{season}: {num_season}/{len(peaks_ha)}</span>\n'
-    ha_html += '</div>'
-num_done = len(completed_4seasons_ha)
-num_total = len(seasons_ha)
-ha_html += f'<span class="summary">Total: {num_done}/{num_total}</span>\n'
+ha_html = seasons_html(completed_4seasons_ha, peaks_ha)
+cmc_html = seasons_html(completed_4seasons_cmc, peaks_cmc)
 
 # Patch index.md
 NEW8 = '\n        '
@@ -233,5 +229,6 @@ contents = sub(contents, 'progress-3500', NEW8 + club_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-winter', NEW8 + winter_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-2023', NEW8 + year_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-4seasons-ha', NEW8 + ha_html.replace('\n', NEW8))
+contents = sub(contents, 'progress-4seasons-cmc', NEW8 + cmc_html.replace('\n', NEW8))
 with open('index.md', 'w') as out:
     out.write(contents)

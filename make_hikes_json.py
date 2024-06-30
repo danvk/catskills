@@ -36,6 +36,7 @@ def format_meta(meta: dict) -> dict:
         **meta,
         'date': dashed_date,
         'peaks': meta['peaks'].split(', '),
+        **({'day2peaks': meta['day2peaks'].split(', ')} if 'day2peaks' in meta else {}),
         'hikers': meta['hikers'].split(', '),
         'url': f'/catskills/{slashed_date}/{slug}.html'
     }

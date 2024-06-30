@@ -7,6 +7,7 @@ miles: 12.5
 hike_hours: 11
 elevation_ft: 3281
 peaks: Panther
+days: 2
 hikers: Dan, Alex
 excerpt: Alex's first overnight camping trip lets us observe a spectacular sunrise and lots of breeding bird behavior. Some lessons are learned!
 ---

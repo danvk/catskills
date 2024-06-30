@@ -257,6 +257,7 @@
     "peaks": [
       "Panther"
     ],
+    "days": 2,
     "hikers": [
       "Dan",
       "Alex"
@@ -590,6 +591,15 @@
       "Slide",
       "Cornell",
       "Wittenberg",
+      "Friday",
+      "Balsam Cap",
+      "Rocky",
+      "Lone",
+      "Peekamoose",
+      "Table"
+    ],
+    "days": 2,
+    "day2peaks": [
       "Friday",
       "Balsam Cap",
       "Rocky",

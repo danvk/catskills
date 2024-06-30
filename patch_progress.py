@@ -145,9 +145,11 @@ for hike in LOG:
             completed_4seasons_cmc.add(f'{peak}: {season_cmc}')
 
 
-print(f'HA: {len(completed_4seasons_ha)}: {completed_4seasons_ha}')
-print(f'CMC: {len(completed_4seasons_cmc)}: {completed_4seasons_cmc}')
+# print(f'HA: {len(completed_4seasons_ha)}: {completed_4seasons_ha}')
+# print(f'CMC: {len(completed_4seasons_cmc)}: {completed_4seasons_cmc}')
 
+# print('\n'.join(sorted(completed_4seasons_ha)))
+# print('\n'.join(sorted(completed_4seasons_cmc)))
 
 qualifying = set()
 for peak in set(peaks).intersection(completed_peaks):
@@ -196,11 +198,40 @@ num_done = len([*completed_2023])
 num_total = len(peaks)
 year_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
 
+# Four Seasons
+def four_seasons_sort(peak_season: str, completed: set[str]):
+    peak, season = peak_season.split(': ')
+    return (SEASONS.index(season), peak_season not in completed, peak)
+
+
+seasons_ha = [*sorted(
+    [f'{peak}: {season}' for season in SEASONS for peak in peaks_ha],
+    key=lambda ps: four_seasons_sort(ps, completed_4seasons_ha)
+)]
+ha_html = ''
+for season in SEASONS:
+    num_season = 0
+    ha_html += f'<div class="season {season}">'
+    ha_html += '<span class="progress-bar">'
+    for peak in sorted(peaks_ha, key=lambda peak: f'{peak}: {season}' not in completed_4seasons_ha):
+        peak_season = f'{peak}: {season}'
+        completed = peak_season in completed_4seasons_ha
+        state = 'complete' if completed else 'incomplete'
+        num_season += (1 if completed else 0)
+        ha_html += f'<span class="{state}" title="{peak_season}"></span>\n'
+    ha_html += '</span>'
+    ha_html += f'<span class="summary">{season}: {num_season}/{len(peaks_ha)}</span>\n'
+    ha_html += '</div>'
+num_done = len(completed_4seasons_ha)
+num_total = len(seasons_ha)
+ha_html += f'<span class="summary">Total: {num_done}/{num_total}</span>\n'
+
 # Patch index.md
 NEW8 = '\n        '
 contents = open('index.md').read()
 contents = sub(contents, 'progress-3500', NEW8 + club_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-winter', NEW8 + winter_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-2023', NEW8 + year_html.replace('\n', NEW8))
+contents = sub(contents, 'progress-4seasons-ha', NEW8 + ha_html.replace('\n', NEW8))
 with open('index.md', 'w') as out:
     out.write(contents)

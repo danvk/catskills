@@ -46,8 +46,17 @@
     background: lightgreen;
 }
 
-.winter.complete {
+.winter .complete {
     background: #ddd;
+}
+.spring .complete {
+    background: pink;
+}
+.summer .complete {
+    background: yellow;
+}
+.fall .complete {
+    background: orange;
 }
 
 #progress {

@@ -42,7 +42,7 @@ Due to some packing issues, we got a much later start than planned, and we only 
 
 ![Foggy Ascent]({{site.baseurl}}/assets/2024-06-29-rainy-hunter/7548-foggy-ascent.jpeg)
 
-Halfway up the hike, we hit a wall of fog. We heard quite a few birds along this stretch: Black-throated Green Warbler, Black-throated Blue Warbler, Ovenbird, Winter Wren, Ovenbird, Hermit Thrush and Swainson's Thrush. We even saw one of the Black-throated Greens foraging in the path ahead of us. It's a poorly-named bird: it's bright yellow!
+Halfway up the hike, we hit a wall of fog. We heard quite a few birds along this stretch: Black-throated Green Warbler, Black-throated Blue Warbler, Winter Wren, Ovenbird, Hermit Thrush and Swainson's Thrush. We even saw one of the Black-throated Greens foraging in the path ahead of us. It's a poorly-named bird: it's bright yellow!
 
 After what felt like a very long hike (it was 1.5h), we finally made it to the Hunter Mountain fire tower. This was John's first [Catskills fire tower], so we had to climb it. We'd experienced the fog on the hike up, but the trees had shielded us from the wind. Not so atop the fire tower! It was blowing hard. We quickly touched the top as I tried my best to keep my hat from blowing away. Needless to say, there were no views.
 

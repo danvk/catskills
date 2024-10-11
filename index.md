@@ -350,10 +350,93 @@ Active Goals:
         <!--/progress-4seasons-cmc-->
     </div>
 
-    <div class="progress-label">3500 Club (Alex):</div>
+    <div class="progress-label">Alex 3500:</div>
     <div id="progress-3500-alex" class="progress-bar">
         <!--progress-3500-alex-->
+        <span class="winter complete" title="Balsam (Winter)"></span>
+        <span class="winter complete" title="Blackhead (Winter)"></span>
+        <span class="winter complete" title="Panther (Winter)"></span>
+        <span class="winter complete" title="Slide (Winter)"></span>
+        <span class="3500 complete" title="Balsam"></span>
+        <span class="3500 complete" title="Balsam Lake"></span>
+        <span class="3500 complete" title="Bearpen"></span>
+        <span class="3500 complete" title="Black Dome"></span>
+        <span class="3500 complete" title="Blackhead"></span>
+        <span class="3500 complete" title="Cornell"></span>
+        <span class="3500 complete" title="Fir"></span>
+        <span class="3500 complete" title="Halcott"></span>
+        <span class="3500 complete" title="Hunter"></span>
+        <span class="3500 complete" title="Indian Head"></span>
+        <span class="3500 complete" title="Kaaterskill High Peak"></span>
+        <span class="3500 complete" title="Panther"></span>
+        <span class="3500 complete" title="Peekamoose"></span>
+        <span class="3500 complete" title="Plateau"></span>
+        <span class="3500 complete" title="Slide"></span>
+        <span class="3500 complete" title="Southwest Hunter"></span>
+        <span class="3500 complete" title="Sugarloaf"></span>
+        <span class="3500 complete" title="Table"></span>
+        <span class="3500 complete" title="Thomas Cole"></span>
+        <span class="3500 complete" title="Twin"></span>
+        <span class="3500 complete" title="Vly"></span>
+        <span class="3500 complete" title="Westkill"></span>
+        <span class="3500 complete" title="Windham"></span>
+        <span class="3500 complete" title="Wittenberg"></span>
+        <span class="3500 incomplete" title="Balsam Cap"></span>
+        <span class="3500 incomplete" title="Big Indian"></span>
+        <span class="3500 incomplete" title="Eagle"></span>
+        <span class="3500 incomplete" title="Friday"></span>
+        <span class="3500 incomplete" title="Lone"></span>
+        <span class="3500 incomplete" title="Mount Sherrill"></span>
+        <span class="3500 incomplete" title="North Dome"></span>
+        <span class="3500 incomplete" title="Rocky"></span>
+        <span class="3500 incomplete" title="Rusk"></span>
+        <span class="summary">28/37</span>
         <!--/progress-3500-alex-->
+    </div>
+
+
+    <div class="progress-label">John 3500:</div>
+    <div id="progress-3500-john" class="progress-bar">
+        <!--progress-3500-john-->
+        <span class="winter complete" title="Blackhead (Winter)"></span>
+        <span class="winter incomplete" title="Balsam (Winter)"></span>
+        <span class="winter incomplete" title="Panther (Winter)"></span>
+        <span class="winter incomplete" title="Slide (Winter)"></span>
+        <span class="3500 complete" title="Balsam Cap"></span>
+        <span class="3500 complete" title="Big Indian"></span>
+        <span class="3500 complete" title="Black Dome"></span>
+        <span class="3500 complete" title="Blackhead"></span>
+        <span class="3500 complete" title="Cornell"></span>
+        <span class="3500 complete" title="Eagle"></span>
+        <span class="3500 complete" title="Fir"></span>
+        <span class="3500 complete" title="Friday"></span>
+        <span class="3500 complete" title="Hunter"></span>
+        <span class="3500 complete" title="Kaaterskill High Peak"></span>
+        <span class="3500 complete" title="Lone"></span>
+        <span class="3500 complete" title="Mount Sherrill"></span>
+        <span class="3500 complete" title="North Dome"></span>
+        <span class="3500 complete" title="Panther"></span>
+        <span class="3500 complete" title="Peekamoose"></span>
+        <span class="3500 complete" title="Rocky"></span>
+        <span class="3500 complete" title="Slide"></span>
+        <span class="3500 complete" title="Southwest Hunter"></span>
+        <span class="3500 complete" title="Table"></span>
+        <span class="3500 complete" title="Thomas Cole"></span>
+        <span class="3500 complete" title="Westkill"></span>
+        <span class="3500 complete" title="Windham"></span>
+        <span class="3500 complete" title="Wittenberg"></span>
+        <span class="3500 incomplete" title="Balsam"></span>
+        <span class="3500 incomplete" title="Balsam Lake"></span>
+        <span class="3500 incomplete" title="Bearpen"></span>
+        <span class="3500 incomplete" title="Halcott"></span>
+        <span class="3500 incomplete" title="Indian Head"></span>
+        <span class="3500 incomplete" title="Plateau"></span>
+        <span class="3500 incomplete" title="Rusk"></span>
+        <span class="3500 incomplete" title="Sugarloaf"></span>
+        <span class="3500 incomplete" title="Twin"></span>
+        <span class="3500 incomplete" title="Vly"></span>
+        <span class="summary">24/37</span>
+        <!--/progress-3500-john-->
     </div>
 </div>
 

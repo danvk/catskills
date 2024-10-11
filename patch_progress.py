@@ -110,15 +110,12 @@ peaks_ha = peaks_3500 + ['Doubletop', 'Roundtop']
 peaks_cmc = peaks_3500 + ['Millbrook Ridge', 'Dry Brook Ridge']
 all_catskill_peaks = set(peaks_ha + peaks_cmc)
 
-completed_peaks = Counter()
-completed_nonwinter_peaks = set()
-completed_winter_peaks = set()
+completed_peaks = {'dan': Counter(), 'alex': Counter(), 'john': Counter()}
+completed_nonwinter_peaks = {'dan': set(), 'alex': set(), 'john': set()}
+completed_winter_peaks = {'dan': set(), 'alex': set(), 'john': set()}
 completed_2023 = set()
 completed_4seasons_ha = set()
 completed_4seasons_cmc = set()
-completed_peaks_alex = Counter()
-completed_winter_peaks_alex = set()
-completed_nonwinter_peaks_alex = set()
 
 for hike in LOG:
     hike_peaks = set(hike['peaks'])
@@ -130,20 +127,17 @@ for hike in LOG:
 
     catskill_3500 = listable_peaks.intersection(peaks)
     if catskill_3500:
-        if extract_season(hike['date']) == 'winter':
-            completed_winter_peaks.update(catskill_3500)
-        else:
-            completed_nonwinter_peaks.update(catskill_3500)
         if hike['date'].startswith('2023'):
             completed_2023.update(catskill_3500)
-        completed_peaks.update(catskill_3500)
 
-        if 'Alex' in hike['hikers']:
-            completed_peaks_alex.update(catskill_3500)
+        for hiker in ('dan', 'alex', 'john'):
+            if not any(hiker in h.lower() for h in hike['hikers']):
+                continue
             if extract_season(hike['date']) == 'winter':
-                completed_winter_peaks_alex.update(catskill_3500)
+                completed_winter_peaks[hiker].update(catskill_3500)
             else:
-                completed_nonwinter_peaks_alex.update(catskill_3500)
+                completed_nonwinter_peaks[hiker].update(catskill_3500)
+            completed_peaks[hiker].update(catskill_3500)
 
     # Four Seasons
     dated_hikes = get_peak_dates(hike)
@@ -154,12 +148,6 @@ for hike in LOG:
         if peak in peaks_cmc:
             completed_4seasons_cmc.add(f'{peak}: {season_cmc}')
 
-
-# print(f'HA: {len(completed_4seasons_ha)}: {completed_4seasons_ha}')
-# print(f'CMC: {len(completed_4seasons_cmc)}: {completed_4seasons_cmc}')
-
-# print('\n'.join(sorted(completed_4seasons_ha)))
-# print('\n'.join(sorted(completed_4seasons_cmc)))
 
 def get_qualifying_peaks(completed_peaks, completed_nonwinter_peaks):
     """Get peaks that count towards the 33 peaks in the 3500 club.
@@ -176,11 +164,7 @@ def get_qualifying_peaks(completed_peaks, completed_nonwinter_peaks):
     return qualifying
 
 
-# qualifying_alex = get_qualifying_peaks(completed_peaks_alex, completed_nonwinter_peaks_alex)
-# print(len(qualifying), qualifying)
-# print(len(qualifying_alex), qualifying_alex)
-
-def get_3500club_html(completed_peaks, completed_nonwinter_peaks):
+def get_3500club_html(completed_peaks, completed_winter_peaks, completed_nonwinter_peaks):
     qualifying = get_qualifying_peaks(completed_peaks, completed_nonwinter_peaks)
 
     club_html = ''
@@ -202,10 +186,12 @@ def get_3500club_html(completed_peaks, completed_nonwinter_peaks):
     club_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
     return club_html
 
-club_html = get_3500club_html(completed_peaks, completed_nonwinter_peaks)
-club_html_alex = get_3500club_html(completed_peaks_alex, completed_nonwinter_peaks_alex)
+club_html = get_3500club_html(completed_peaks['dan'], completed_winter_peaks['dan'], completed_nonwinter_peaks['dan'])
+club_html_alex = get_3500club_html(completed_peaks['alex'], completed_winter_peaks['alex'], completed_nonwinter_peaks['alex'])
+club_html_john = get_3500club_html(completed_peaks['john'], completed_winter_peaks['john'], completed_nonwinter_peaks['john'])
 
 # Winter peaks
+completed_winter_peaks = completed_winter_peaks['dan']
 winter_html = ''
 for peak in sorted(completed_winter_peaks):
     winter_html += f'<span class="winter complete" title="{peak}"></span>\n'
@@ -254,6 +240,7 @@ NEW8 = '\n        '
 contents = open('index.md').read()
 contents = sub(contents, 'progress-3500', NEW8 + club_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-3500-alex', NEW8 + club_html_alex.replace('\n', NEW8))
+contents = sub(contents, 'progress-3500-john', NEW8 + club_html_john.replace('\n', NEW8))
 contents = sub(contents, 'progress-winter', NEW8 + winter_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-2023', NEW8 + year_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-4seasons-ha', NEW8 + ha_html.replace('\n', NEW8))

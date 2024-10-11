@@ -169,6 +169,7 @@ Active Goals:
         <span class="complete" title="Lone: fall"></span>
         <span class="complete" title="Table: fall"></span>
         <span class="complete" title="Peekamoose: fall"></span>
+        <span class="complete" title="Westkill: fall"></span>
         <span class="complete" title="Plateau: fall"></span>
         <span class="complete" title="Sugarloaf: fall"></span>
         <span class="complete" title="Indian Head: fall"></span>
@@ -190,13 +191,12 @@ Active Goals:
         <span class="incomplete" title="North Dome: fall"></span>
         <span class="incomplete" title="Mount Sherrill: fall"></span>
         <span class="incomplete" title="Rusk: fall"></span>
-        <span class="incomplete" title="Westkill: fall"></span>
         <span class="incomplete" title="Southwest Hunter: fall"></span>
         <span class="incomplete" title="Hunter: fall"></span>
         <span class="incomplete" title="Doubletop: fall"></span>
         <span class="incomplete" title="Roundtop: fall"></span>
-        </span><span class="summary">fall: 18/35</span>
-        </div><span class="summary">Total: 68/140</span>
+        </span><span class="summary">fall: 19/35</span>
+        </div><span class="summary">Total: 69/140</span>
         <!--/progress-4seasons-ha-->
     </div>
     <div class="progress-label">Four Seasons (<a href="https://www.catskillmountainclub.org/the-catskills-4-seasons-140-the-catskills-grid-420">CMC</a>):</div>
@@ -319,6 +319,7 @@ Active Goals:
         <span class="complete" title="Lone: fall"></span>
         <span class="complete" title="Table: fall"></span>
         <span class="complete" title="Peekamoose: fall"></span>
+        <span class="complete" title="Westkill: fall"></span>
         <span class="complete" title="Southwest Hunter: fall"></span>
         <span class="complete" title="Hunter: fall"></span>
         <span class="complete" title="Plateau: fall"></span>
@@ -342,11 +343,10 @@ Active Goals:
         <span class="incomplete" title="North Dome: fall"></span>
         <span class="incomplete" title="Mount Sherrill: fall"></span>
         <span class="incomplete" title="Rusk: fall"></span>
-        <span class="incomplete" title="Westkill: fall"></span>
         <span class="incomplete" title="Millbrook Ridge: fall"></span>
         <span class="incomplete" title="Dry Brook Ridge: fall"></span>
-        </span><span class="summary">fall: 20/35</span>
-        </div><span class="summary">Total: 72/140</span>
+        </span><span class="summary">fall: 21/35</span>
+        </div><span class="summary">Total: 73/140</span>
         <!--/progress-4seasons-cmc-->
     </div>
 </div>

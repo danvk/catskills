@@ -1,5 +1,23 @@
 [
   {
+    "date": "2024-10-10",
+    "slug": "2024-10-10-westkill",
+    "type": "Out and Back",
+    "miles": 6.7,
+    "hike_hours": 3.5,
+    "elevation_ft": 2000,
+    "peaks": [
+      "Westkill"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "title": "Peak Fall at Westkill",
+    "excerpt": "A spontaneous hike to see peak fall colors at Buck Ridge lookout and Westkill",
+    "url": "/catskills/2024/10/10/2024-10-10-westkill.html"
+  },
+  {
     "date": "2024-06-29",
     "slug": "2024-06-29-rainy-hunter",
     "type": "Loop",

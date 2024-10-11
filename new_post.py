@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 
-def extract_slug(slug: str) -> [str, str]:
+def extract_slug(slug: str) -> tuple[str, str]:
     """e.g. 2023-12-26-hunter-sw -> 2023-12-26, 2023-12-26-hunter-sw"""
     m = re.match(r'(\d{4}-\d\d-\d\d)-.*', slug)
     assert m

@@ -349,6 +349,12 @@ Active Goals:
         </div><span class="summary">Total: 73/140</span>
         <!--/progress-4seasons-cmc-->
     </div>
+
+    <div class="progress-label">3500 Club (Alex):</div>
+    <div id="progress-3500-alex" class="progress-bar">
+        <!--progress-3500-alex-->
+        <!--/progress-3500-alex-->
+    </div>
 </div>
 
 <details>

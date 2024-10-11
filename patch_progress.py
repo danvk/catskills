@@ -116,6 +116,9 @@ completed_winter_peaks = set()
 completed_2023 = set()
 completed_4seasons_ha = set()
 completed_4seasons_cmc = set()
+completed_peaks_alex = Counter()
+completed_winter_peaks_alex = set()
+completed_nonwinter_peaks_alex = set()
 
 for hike in LOG:
     hike_peaks = set(hike['peaks'])
@@ -135,6 +138,13 @@ for hike in LOG:
             completed_2023.update(catskill_3500)
         completed_peaks.update(catskill_3500)
 
+        if 'Alex' in hike['hikers']:
+            completed_peaks_alex.update(catskill_3500)
+            if extract_season(hike['date']) == 'winter':
+                completed_winter_peaks_alex.update(catskill_3500)
+            else:
+                completed_nonwinter_peaks_alex.update(catskill_3500)
+
     # Four Seasons
     dated_hikes = get_peak_dates(hike)
     for peak, date in dated_hikes:
@@ -151,32 +161,49 @@ for hike in LOG:
 # print('\n'.join(sorted(completed_4seasons_ha)))
 # print('\n'.join(sorted(completed_4seasons_cmc)))
 
-qualifying = set()
-for peak in set(peaks).intersection(completed_peaks):
-    if peak in winter_peaks:
-        if peak in completed_nonwinter_peaks or completed_peaks.get(peak) >= 2:
-            qualifying.add(peak)
-    else:
-        qualifying.add(peak)
+def get_qualifying_peaks(completed_peaks, completed_nonwinter_peaks):
+    """Get peaks that count towards the 33 peaks in the 3500 club.
 
-# 3500 Club
-club_html = ''
-num_done = 0
-num_left = 0
-for peak in sorted(completed_winter_peaks.intersection(winter_peaks)):
-    club_html += f'<span class="winter complete" title="{peak} (Winter)"></span>\n'
-    num_done += 1
-for peak in sorted(set(winter_peaks).difference(completed_winter_peaks)):
-    club_html += f'<span class="winter incomplete" title="{peak} (Winter)"></span>\n'
-    num_left += 1
-for peak in sorted(qualifying):
-    club_html += f'<span class="3500 complete" title="{peak}"></span>\n'
-    num_done += 1
-for peak in sorted(set(peaks).difference(qualifying)):
-    num_left += 1
-    club_html += f'<span class="3500 incomplete" title="{peak}"></span>\n'
-num_total = num_left + num_done
-club_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
+    Winter peaks count if done twice.
+    """
+    qualifying = set()
+    for peak in set(peaks).intersection(completed_peaks):
+        if peak in winter_peaks:
+            if peak in completed_nonwinter_peaks or completed_peaks.get(peak) >= 2:
+                qualifying.add(peak)
+        else:
+            qualifying.add(peak)
+    return qualifying
+
+
+# qualifying_alex = get_qualifying_peaks(completed_peaks_alex, completed_nonwinter_peaks_alex)
+# print(len(qualifying), qualifying)
+# print(len(qualifying_alex), qualifying_alex)
+
+def get_3500club_html(completed_peaks, completed_nonwinter_peaks):
+    qualifying = get_qualifying_peaks(completed_peaks, completed_nonwinter_peaks)
+
+    club_html = ''
+    num_done = 0
+    num_left = 0
+    for peak in sorted(completed_winter_peaks.intersection(winter_peaks)):
+        club_html += f'<span class="winter complete" title="{peak} (Winter)"></span>\n'
+        num_done += 1
+    for peak in sorted(set(winter_peaks).difference(completed_winter_peaks)):
+        club_html += f'<span class="winter incomplete" title="{peak} (Winter)"></span>\n'
+        num_left += 1
+    for peak in sorted(qualifying):
+        club_html += f'<span class="3500 complete" title="{peak}"></span>\n'
+        num_done += 1
+    for peak in sorted(set(peaks).difference(qualifying)):
+        num_left += 1
+        club_html += f'<span class="3500 incomplete" title="{peak}"></span>\n'
+    num_total = num_left + num_done
+    club_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
+    return club_html
+
+club_html = get_3500club_html(completed_peaks, completed_nonwinter_peaks)
+club_html_alex = get_3500club_html(completed_peaks_alex, completed_nonwinter_peaks_alex)
 
 # Winter peaks
 winter_html = ''
@@ -226,6 +253,7 @@ cmc_html = seasons_html(completed_4seasons_cmc, peaks_cmc)
 NEW8 = '\n        '
 contents = open('index.md').read()
 contents = sub(contents, 'progress-3500', NEW8 + club_html.replace('\n', NEW8))
+contents = sub(contents, 'progress-3500-alex', NEW8 + club_html_alex.replace('\n', NEW8))
 contents = sub(contents, 'progress-winter', NEW8 + winter_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-2023', NEW8 + year_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-4seasons-ha', NEW8 + ha_html.replace('\n', NEW8))

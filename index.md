@@ -29,6 +29,7 @@ Active Goals:
         <span class="winter complete" title="Peekamoose"></span>
         <span class="winter complete" title="Plateau"></span>
         <span class="winter complete" title="Rocky"></span>
+        <span class="winter complete" title="Rusk"></span>
         <span class="winter complete" title="Slide"></span>
         <span class="winter complete" title="Southwest Hunter"></span>
         <span class="winter complete" title="Sugarloaf"></span>
@@ -43,10 +44,9 @@ Active Goals:
         <span class="winter incomplete" title="Kaaterskill High Peak"></span>
         <span class="winter incomplete" title="Mount Sherrill"></span>
         <span class="winter incomplete" title="North Dome"></span>
-        <span class="winter incomplete" title="Rusk"></span>
         <span class="winter incomplete" title="Westkill"></span>
         <span class="winter incomplete" title="Wittenberg"></span>
-        <span class="summary">24/33</span>
+        <span class="summary">25/33</span>
         <!--/progress-winter-->
     </div>
     <div class="progress-label">Four Seasons (<a href="https://hikersanonymous.org/index.html#4-seasons">HA</a>):</div>
@@ -66,6 +66,7 @@ Active Goals:
         <span class="complete" title="Fir: winter"></span>
         <span class="complete" title="Bearpen: winter"></span>
         <span class="complete" title="Vly: winter"></span>
+        <span class="complete" title="Rusk: winter"></span>
         <span class="complete" title="Southwest Hunter: winter"></span>
         <span class="complete" title="Hunter: winter"></span>
         <span class="complete" title="Plateau: winter"></span>
@@ -82,12 +83,11 @@ Active Goals:
         <span class="incomplete" title="Halcott: winter"></span>
         <span class="incomplete" title="North Dome: winter"></span>
         <span class="incomplete" title="Mount Sherrill: winter"></span>
-        <span class="incomplete" title="Rusk: winter"></span>
         <span class="incomplete" title="Westkill: winter"></span>
         <span class="incomplete" title="Kaaterskill High Peak: winter"></span>
         <span class="incomplete" title="Doubletop: winter"></span>
         <span class="incomplete" title="Roundtop: winter"></span>
-        </span><span class="summary">winter: 24/35</span>
+        </span><span class="summary">winter: 25/35</span>
         </div><div class="season spring"><span class="progress-bar"><span class="complete" title="Slide: spring"></span>
         <span class="complete" title="Panther: spring"></span>
         <span class="complete" title="Eagle: spring"></span>
@@ -196,7 +196,7 @@ Active Goals:
         <span class="incomplete" title="Doubletop: fall"></span>
         <span class="incomplete" title="Roundtop: fall"></span>
         </span><span class="summary">fall: 19/35</span>
-        </div><span class="summary">Total: 69/140</span>
+        </div><span class="summary">Total: 70/140</span>
         <!--/progress-4seasons-ha-->
     </div>
     <div class="progress-label">Four Seasons (<a href="https://www.catskillmountainclub.org/the-catskills-4-seasons-140-the-catskills-grid-420">CMC</a>):</div>
@@ -214,6 +214,7 @@ Active Goals:
         <span class="complete" title="Eagle: winter"></span>
         <span class="complete" title="Big Indian: winter"></span>
         <span class="complete" title="Fir: winter"></span>
+        <span class="complete" title="Rusk: winter"></span>
         <span class="complete" title="Southwest Hunter: winter"></span>
         <span class="complete" title="Hunter: winter"></span>
         <span class="complete" title="Plateau: winter"></span>
@@ -232,12 +233,11 @@ Active Goals:
         <span class="incomplete" title="Halcott: winter"></span>
         <span class="incomplete" title="North Dome: winter"></span>
         <span class="incomplete" title="Mount Sherrill: winter"></span>
-        <span class="incomplete" title="Rusk: winter"></span>
         <span class="incomplete" title="Westkill: winter"></span>
         <span class="incomplete" title="Kaaterskill High Peak: winter"></span>
         <span class="incomplete" title="Millbrook Ridge: winter"></span>
         <span class="incomplete" title="Dry Brook Ridge: winter"></span>
-        </span><span class="summary">winter: 22/35</span>
+        </span><span class="summary">winter: 23/35</span>
         </div><div class="season spring"><span class="progress-bar"><span class="complete" title="Panther: spring"></span>
         <span class="complete" title="Eagle: spring"></span>
         <span class="complete" title="Big Indian: spring"></span>
@@ -346,7 +346,7 @@ Active Goals:
         <span class="incomplete" title="Millbrook Ridge: fall"></span>
         <span class="incomplete" title="Dry Brook Ridge: fall"></span>
         </span><span class="summary">fall: 21/35</span>
-        </div><span class="summary">Total: 73/140</span>
+        </div><span class="summary">Total: 74/140</span>
         <!--/progress-4seasons-cmc-->
     </div>
 
@@ -371,6 +371,7 @@ Active Goals:
         <span class="3500 complete" title="Panther"></span>
         <span class="3500 complete" title="Peekamoose"></span>
         <span class="3500 complete" title="Plateau"></span>
+        <span class="3500 complete" title="Rusk"></span>
         <span class="3500 complete" title="Slide"></span>
         <span class="3500 complete" title="Southwest Hunter"></span>
         <span class="3500 complete" title="Sugarloaf"></span>
@@ -389,8 +390,7 @@ Active Goals:
         <span class="3500 incomplete" title="Mount Sherrill"></span>
         <span class="3500 incomplete" title="North Dome"></span>
         <span class="3500 incomplete" title="Rocky"></span>
-        <span class="3500 incomplete" title="Rusk"></span>
-        <span class="summary">28/37</span>
+        <span class="summary">29/37</span>
         <!--/progress-3500-alex-->
     </div>
 

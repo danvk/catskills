@@ -1,5 +1,23 @@
 [
   {
+    "date": "2025-01-18",
+    "slug": "2025-01-18-winter-rusk",
+    "type": "Loop",
+    "miles": 6,
+    "hike_hours": 4,
+    "elevation_ft": 1700,
+    "peaks": [
+      "Rusk"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "title": "Winter Rusk",
+    "excerpt": "The push towards my Winter 3500 peaks begins with an enjoyable snowshoe adventure.",
+    "url": "/catskills/2025/01/18/2025-01-18-winter-rusk.html"
+  },
+  {
     "date": "2024-10-10",
     "slug": "2024-10-10-westkill",
     "type": "Out and Back",

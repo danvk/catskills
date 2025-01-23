@@ -53,9 +53,11 @@ The turnoff from the blue trail was easy to find. After the bridge, right before
 
 ![Alex in snowshoe track]({{site.baseurl}}/assets/2025-01-18-winter-rusk/IMG_8577-alex-in-track.jpeg)
 
-There wasn't much animal activity in the woods, but Alex was excited to see this [snow flea]:
+There wasn't much animal activity in the woods, but Alex was excited to see this [snow fly]:
 
-![Snow flea]({{site.baseurl}}/assets/2025-01-18-winter-rusk/IMG_6689-snow-flea.jpeg)
+![Snow fly]({{site.baseurl}}/assets/2025-01-18-winter-rusk/IMG_6689-snow-flea.jpeg)
+
+As we learned later, snow flies are quite interesting! They're flightless insects that are adapted to freezing temperatures. In their adult form, they don't eat. They just try to find a mate before they freeze!
 
 As we gained altitude, the terrain grew steeper and we had to pull past a few rock ledges.
 
@@ -90,7 +92,7 @@ Despite our misgivings, we had a lovely time and were both glad we did the hike.
 [Ancient DMs]: https://99percentinvisible.org/episode/611-ancient-dms/
 [Esarhaddon]: https://en.wikipedia.org/wiki/Esarhaddon
 [Assyriologist]: https://en.wikipedia.org/wiki/Assyriology
-[snow flea]: https://en.wikipedia.org/wiki/Hypogastrura_nivicola
+[snow fly]: https://depts.washington.edu/snowflyproject/snow-fly-basics/
 [Chleo]: https://www.chleovin.com/
 [posted]: https://www.facebook.com/groups/CatskillsTrailConditions/?multi_permalinks=2704490489751163
 [Hairy Woodpeckers]: https://en.wikipedia.org/wiki/Hairy_woodpecker

@@ -26,7 +26,7 @@ See the Catskill 3500 Club's [official list of peaks].
 | 11 | Sugarloaf | 3800' | Trailed | [2024-02-10: Mashed Potatoes Conditions: Eastern Devil's Path with the 3500 Club][2024-02-10-dpe4]<br>[2023-11-26: Sugarloaf and Lone Wolf (Don't Go Chasin' Waterfalls)][2023-11-26-sugarloaf]<br>[2016-05-28: Sugarloaf and Twin overnight (my first Catskills hike)][2016-05-28-sugarloaf-twin] |
 | 12 | Wittenberg | 3780' | Trailed | [2023-10-16: Fall Wittenberg and Cornell][2023-10-16-wittenberg-cornell]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 | 13 | Southwest Hunter | 3740' | Untrailed | [2024-06-29: Rain and fog on Hunter][2024-06-29-rainy-hunter]<br>[2023-12-26: Hunter and SW Hunter: April in December][2023-12-26-hunter-sw]<br>[2022-09-21: Hunter and Southwest Hunter aka the COVID hike][2022-09-21-hunter-sw] |
-| 14 | Balsam Lake Mountain | 3723' | Trailed | [2023-04-25: Balsam Lake Mountain, a Carpet of Trout Lilies][2023-04-25-balsam-lake] |
+| 14 | Balsam Lake Mountain | 3723' | Trailed | [2025-01-29: Winter Balsam Lake: A Windy Adventure][2025-01-29-winter-balsam-lake]<br>[2023-04-25: Balsam Lake Mountain, a Carpet of Trout Lilies][2023-04-25-balsam-lake] |
 | 15 | Lone | 3721' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 | 16 | Panther | 3720' | Trailed | [2023-06-21: Panther Overnight for Breeding Bird Atlasing][2023-06-21-panther-bba]<br>[2023-05-14: Panther Group Hike to Complete My 3500 List][2023-05-14-panther]<br>[2023-01-08: Panther (Winter)][2023-01-08-winter-panther] |
 | 17 | Big Indian | 3700' | Trailed | [2024-01-13: Winter FirBiE with the 3500 Club][2024-01-13-winter-firbie]<br>[2023-05-08: Firbie Loop, A Flowery Finish for the High Peaks][2023-05-08-firbie] |
@@ -47,6 +47,7 @@ See the Catskill 3500 Club's [official list of peaks].
 | 32 | Windham High Peak | 3524' | Trailed | [2023-12-29: Windham Closes Out a Very Catskills 2023][2023-12-29-windham]<br>[2020-10-04: Fall Windham][2020-10-04-fall-windham]<br>[2020-05-22: Windham with Alex][2020-05-22-windham2]<br>[2020-05-14: Windham (solo)][2020-05-14-windham-solo]<br>[2016-08-06: Windham and Blackhead overnight][2016-08-06-windham-blackhead] |
 | 33 | Rocky | 3487' | Untrailed | [2023-03-09: Winter Six (Catskills 3500 Club)][2023-03-09-winter-six]<br>[2022-09-28: The Nine][2022-09-28-the-nine] |
 
+[2025-01-29-winter-balsam-lake]: /catskills/2025/01/29/2025-01-29-winter-balsam-lake.html
 [2025-01-18-winter-rusk]: /catskills/2025/01/18/2025-01-18-winter-rusk.html
 [2024-10-10-westkill]: /catskills/2024/10/10/2024-10-10-westkill.html
 [2024-06-29-rainy-hunter]: /catskills/2024/06/29/2024-06-29-rainy-hunter.html

@@ -15,6 +15,7 @@ Active Goals:
         <!--progress-winter-->
         <span class="winter complete" title="Balsam"></span>
         <span class="winter complete" title="Balsam Cap"></span>
+        <span class="winter complete" title="Balsam Lake"></span>
         <span class="winter complete" title="Bearpen"></span>
         <span class="winter complete" title="Big Indian"></span>
         <span class="winter complete" title="Black Dome"></span>
@@ -38,7 +39,6 @@ Active Goals:
         <span class="winter complete" title="Twin"></span>
         <span class="winter complete" title="Vly"></span>
         <span class="winter complete" title="Windham"></span>
-        <span class="winter incomplete" title="Balsam Lake"></span>
         <span class="winter incomplete" title="Cornell"></span>
         <span class="winter incomplete" title="Halcott"></span>
         <span class="winter incomplete" title="Kaaterskill High Peak"></span>
@@ -46,7 +46,7 @@ Active Goals:
         <span class="winter incomplete" title="North Dome"></span>
         <span class="winter incomplete" title="Westkill"></span>
         <span class="winter incomplete" title="Wittenberg"></span>
-        <span class="summary">25/33</span>
+        <span class="summary">26/33</span>
         <!--/progress-winter-->
     </div>
     <div class="progress-label">Four Seasons (<a href="https://hikersanonymous.org/index.html#4-seasons">HA</a>):</div>
@@ -64,6 +64,7 @@ Active Goals:
         <span class="complete" title="Eagle: winter"></span>
         <span class="complete" title="Big Indian: winter"></span>
         <span class="complete" title="Fir: winter"></span>
+        <span class="complete" title="Balsam Lake: winter"></span>
         <span class="complete" title="Bearpen: winter"></span>
         <span class="complete" title="Vly: winter"></span>
         <span class="complete" title="Rusk: winter"></span>
@@ -79,7 +80,6 @@ Active Goals:
         <span class="complete" title="Windham: winter"></span>
         <span class="incomplete" title="Wittenberg: winter"></span>
         <span class="incomplete" title="Cornell: winter"></span>
-        <span class="incomplete" title="Balsam Lake: winter"></span>
         <span class="incomplete" title="Halcott: winter"></span>
         <span class="incomplete" title="North Dome: winter"></span>
         <span class="incomplete" title="Mount Sherrill: winter"></span>
@@ -87,7 +87,7 @@ Active Goals:
         <span class="incomplete" title="Kaaterskill High Peak: winter"></span>
         <span class="incomplete" title="Doubletop: winter"></span>
         <span class="incomplete" title="Roundtop: winter"></span>
-        </span><span class="summary">winter: 25/35</span>
+        </span><span class="summary">winter: 26/35</span>
         </div><div class="season spring"><span class="progress-bar"><span class="complete" title="Slide: spring"></span>
         <span class="complete" title="Panther: spring"></span>
         <span class="complete" title="Eagle: spring"></span>
@@ -196,7 +196,7 @@ Active Goals:
         <span class="incomplete" title="Doubletop: fall"></span>
         <span class="incomplete" title="Roundtop: fall"></span>
         </span><span class="summary">fall: 19/35</span>
-        </div><span class="summary">Total: 70/140</span>
+        </div><span class="summary">Total: 71/140</span>
         <!--/progress-4seasons-ha-->
     </div>
     <div class="progress-label">Four Seasons (<a href="https://www.catskillmountainclub.org/the-catskills-4-seasons-140-the-catskills-grid-420">CMC</a>):</div>
@@ -214,6 +214,7 @@ Active Goals:
         <span class="complete" title="Eagle: winter"></span>
         <span class="complete" title="Big Indian: winter"></span>
         <span class="complete" title="Fir: winter"></span>
+        <span class="complete" title="Balsam Lake: winter"></span>
         <span class="complete" title="Rusk: winter"></span>
         <span class="complete" title="Southwest Hunter: winter"></span>
         <span class="complete" title="Hunter: winter"></span>
@@ -227,7 +228,6 @@ Active Goals:
         <span class="complete" title="Windham: winter"></span>
         <span class="incomplete" title="Wittenberg: winter"></span>
         <span class="incomplete" title="Cornell: winter"></span>
-        <span class="incomplete" title="Balsam Lake: winter"></span>
         <span class="incomplete" title="Bearpen: winter"></span>
         <span class="incomplete" title="Vly: winter"></span>
         <span class="incomplete" title="Halcott: winter"></span>
@@ -237,7 +237,7 @@ Active Goals:
         <span class="incomplete" title="Kaaterskill High Peak: winter"></span>
         <span class="incomplete" title="Millbrook Ridge: winter"></span>
         <span class="incomplete" title="Dry Brook Ridge: winter"></span>
-        </span><span class="summary">winter: 23/35</span>
+        </span><span class="summary">winter: 24/35</span>
         </div><div class="season spring"><span class="progress-bar"><span class="complete" title="Panther: spring"></span>
         <span class="complete" title="Eagle: spring"></span>
         <span class="complete" title="Big Indian: spring"></span>
@@ -346,7 +346,7 @@ Active Goals:
         <span class="incomplete" title="Millbrook Ridge: fall"></span>
         <span class="incomplete" title="Dry Brook Ridge: fall"></span>
         </span><span class="summary">fall: 21/35</span>
-        </div><span class="summary">Total: 74/140</span>
+        </div><span class="summary">Total: 75/140</span>
         <!--/progress-4seasons-cmc-->
     </div>
 

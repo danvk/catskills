@@ -1,5 +1,24 @@
 [
   {
+    "date": "2025-02-01",
+    "slug": "2025-02-01-roundtop-kaaterskill",
+    "type": "Loop",
+    "miles": 7.7,
+    "hike_hours": 6,
+    "elevation_ft": 1700,
+    "peaks": [
+      "Roundtop",
+      "Kaaterskill High Peak"
+    ],
+    "hikers": [
+      "Dan",
+      "Max"
+    ],
+    "title": "Roundtop/Kaaterskill Adventure",
+    "excerpt": "A hike in which the bushwhacks are the easy part.",
+    "url": "/catskills/2025/02/01/2025-02-01-roundtop-kaaterskill.html"
+  },
+  {
     "date": "2025-01-29",
     "slug": "2025-01-29-winter-balsam-lake",
     "type": "Loop",

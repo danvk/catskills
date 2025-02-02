@@ -18,7 +18,7 @@ winter_peaks = [
 
 others = [
     # Catskills-adjacent
-    'Pisgah', 'Hayden', 'None', 'Dry Brook Ridge',
+    'Pisgah', 'Hayden', 'None', 'Dry Brook Ridge', 'Roundtop',
     # White Mountains
     'Mt. Washington', 'Mt. Monroe',
     # Jokes

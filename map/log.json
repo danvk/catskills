@@ -1,5 +1,23 @@
 [
   {
+    "date": "2025-02-12",
+    "slug": "2025-02-12-sleeping-lion-halcott",
+    "type": "Loop",
+    "miles": 6,
+    "hike_hours": 5,
+    "elevation_ft": "456?",
+    "peaks": [
+      "Sleeping Lion",
+      "Halcott"
+    ],
+    "hikers": [
+      "Dan"
+    ],
+    "title": "...",
+    "excerpt": "...",
+    "url": "/catskills/2025/02/12/2025-02-12-sleeping-lion-halcott.html"
+  },
+  {
     "date": "2025-02-01",
     "slug": "2025-02-01-roundtop-kaaterskill",
     "type": "Loop",

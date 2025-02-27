@@ -1,5 +1,24 @@
 [
   {
+    "date": "2025-02-26",
+    "slug": "2025-02-26-north-dome-sherrill",
+    "type": "Out and back",
+    "miles": 10,
+    "hike_hours": 8,
+    "elevation_ft": 3300,
+    "peaks": [
+      "Mount Sherrill",
+      "North Dome"
+    ],
+    "hikers": [
+      "Dan",
+      "Max"
+    ],
+    "title": "A Beautiful Winter Day and Two Spectacular Views",
+    "excerpt": "A perfect, sunny winter day for a snowshoe. My last two winter bushwhacks, and two spectacular viewpoints that I missed last time.",
+    "url": "/catskills/2025/02/26/2025-02-26-north-dome-sherrill.html"
+  },
+  {
     "date": "2025-02-12",
     "slug": "2025-02-12-sleeping-lion-halcott",
     "type": "Loop",

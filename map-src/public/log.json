@@ -1,5 +1,22 @@
 [
   {
+    "date": "2025-03-04",
+    "slug": "2025-03-04-winter-westkill",
+    "type": "Out and Back",
+    "miles": 6.7,
+    "hike_hours": 3,
+    "elevation_ft": 2000,
+    "peaks": [
+      "Westkill"
+    ],
+    "hikers": [
+      "Dan"
+    ],
+    "title": "Winter Westkill",
+    "excerpt": "A quick hike gets me my third-to-last winter peak.",
+    "url": "/catskills/2025/03/04/2025-03-04-winter-westkill.html"
+  },
+  {
     "date": "2025-02-26",
     "slug": "2025-02-26-north-dome-sherrill",
     "type": "Out and back",

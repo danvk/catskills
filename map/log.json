@@ -1,5 +1,25 @@
 [
   {
+    "date": "2025-03-09",
+    "slug": "2025-03-09-cornell-wittenberg",
+    "type": "Out and Back",
+    "miles": 10,
+    "hike_hours": 8,
+    "elevation_ft": 3750,
+    "peaks": [
+      "Friday",
+      "Cornell",
+      "Wittenberg"
+    ],
+    "hikers": [
+      "Dan",
+      "John G"
+    ],
+    "title": "Friday, Cornell and Wittenberg",
+    "excerpt": "A hard but rewarding hike to close out my Winter 35ers.",
+    "url": "/catskills/2025/03/09/2025-03-09-cornell-wittenberg.html"
+  },
+  {
     "date": "2025-03-04",
     "slug": "2025-03-04-winter-westkill",
     "type": "Out and Back",

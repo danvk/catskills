@@ -37,7 +37,7 @@ Aside: why is it called "Friday"? Most of the other mountain names in the Catski
 
 In our haste to get away from the Rip Van Winkle group, we went the wrong direction from the summit canister and soon found ourselves in dense woods with no tracks. We doubled back and found a path with some footprints along the summit ridge. This section was snowier and less trafficked, and we hemmed and hawed about switching to snowshoes.
 
-We ran into two hikers here. I was 98% sure one of them was Sarah Zheng, whose AllTrails hikes I've [frequently] drawn [inspiration] from. To confirm, I asked whether they were working on any lists. No, they'd done them all already. Her only project was hiking [The Nine] every month. She was currently on month 36. Well that confirmed it, nobody else is doing that! Sarah was in spikes and told us not to follow their tracks too closely, they'd gotten lost around Dink. (Looking at [her track][sarahtrack] later, wow!) She also told us to go to the right of the Cornell crack, which would prove helpful later.
+We ran into two hikers here. I was 98% sure one of them was Sarah Zheng, whose [AllTrails hikes] I've [frequently] drawn [inspiration] from. To confirm, I asked whether they were working on any lists. No, they'd done them all already. Her only project was hiking [The Nine] every month. She was currently on month 36. Well that confirmed it, nobody else is doing that! Sarah was in spikes and told us not to follow their tracks too closely, they'd gotten lost around Dink. (Looking at [her track][sarahtrack] later, wow!) She also told us to go to the right of the Cornell crack, which would prove helpful later.
 
 The section of woods between Friday and Cornell is dense and difficult to navigate. We occasionally found tracks but would usually lose them again soon after. We did eventually switch to snowshoes here. This gave us more support on bare snow, but also meant that they didn't get caught on trees as I ducked between them. This was the [first bushwhack] I did in the Catskills and I think it remains the hardest.
 
@@ -57,7 +57,7 @@ We missed the turnoff from the red Cornell trail into the woods and improvised i
 
 The Rip Van Winkle crew told us that they'd planned to visit the B-25 wreck by snowshoeing straight down from the pregnant tree. We hoped to find their tracks on our way back, but there were none. We improvised and were mostly fine in our spikes. The snow was crustier here and usually enough to support our weight.
 
-After dropping about 500 feet, we found the crash. It's pretty hard to miss if you're in the right spot. It is large and there are many pieces. You can read more about the crash on the [wreckchasing] site, but the gist is that they were on their way to Stewart air base in 1948 and went off course. Three people died.
+After dropping about 500 feet, we found the crash. It's pretty hard to miss if you're in the right spot. It is large and there are many pieces. You can read more about the crash on the [wreckchasing] site, but the gist is that they were on their way to Stewart air base in 1948 when they made a [navigation error] due to poor conditions, mistaking the Ashokan Reservoir for the Hudson. Three people died.
 
 We saw the shadow of Friday Mountain across the valley during the descent. Seeing your own mountain's shadow is always dramatic, but also a sign that you need to hurry up to get to the car before sunset.
 
@@ -66,7 +66,16 @@ We met up with Alex and Sam for a celebratory dinner at Ollie's. Sam arranged th
 I submitted my tally sheet in the evening. Hopefully I'll get my winter number soon!
 
 [AllTrails]: https://www.alltrails.com/explore/recording/evening-hike-38d67c3-238
-[facebook]: https://www.facebook.com/groups/CatskillsTrailConditions/posts/2750523241814554
 [sarahtrack]: https://www.alltrails.com/explore/recording/evening-hike-5ef78f6-241
 [hike planner]: https://www.danvk.org/catskills/map/planner/?peaks=W,C
-[wreckchasing]: https://wreckchasing.websitetoolbox.com/post/b25j-mitchell-wreck-located-between-balsam-cap-and-friday-mountain-catskill-mountain-wreck-7009802
+[wreckchasing]: https://wreckchasing.websitetoolbox.com/post/b25j-mitchell-wreck-located-between-balsam-cap-and-friday-mountain-catskill-mountain-wreck-7009802#post_message_1283731844
+[navigation error]: https://mountain-hiking.com/friday-balsam-cap-b25/#:~:text=home%20territory%2C%20a-,navigation%20error,-led%20to%20this
+[typically hiked]: https://www.danvk.org/catskills/2023/10/16/2023-10-16-wittenberg-cornell.html
+[last hike]: https://www.danvk.org/catskills/2023/03/09/2023-03-09-winter-six.html
+[last summer]: https://www.danvk.org/catskills/2024/06/29/2024-06-29-rainy-hunter.html
+[said]: https://www.facebook.com/groups/CatskillsTrailConditions/posts/2750523241814554
+[frequently]: https://www.danvk.org/catskills/2023/04/15/2023-04-15-spruceton.html
+[inspiration]: https://www.danvk.org/catskills/2025/02/01/2025-02-01-roundtop-kaaterskill.html
+[The Nine]: https://www.danvk.org/catskills/2022/09/28/2022-09-28-the-nine.html
+[first bushwhack]: https://www.danvk.org/catskills/2022/09/28/2022-09-28-the-nine.html#:~:text=my%20first%20time%20truly%20bushwhacking
+[AllTrails hikes]: https://www.alltrails.com/members/sarah-z--2/recordings

@@ -36,6 +36,8 @@ Timeline:
 - Tracks: [AllTrails], [eBird]
 - Conditions: ...
 
+[![GPS Track of the hike]({{site.baseurl}}/assets/{slug}/track.png)]({{site.baseurl}}/map/?hike={slug})
+
 text
     '''.strip())
 

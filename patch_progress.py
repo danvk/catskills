@@ -18,7 +18,10 @@ winter_peaks = [
 
 others = [
     # Catskills-adjacent
-    'Pisgah', 'Hayden', 'None', 'Dry Brook Ridge', 'Roundtop', 'Sleeping Lion',
+    'Pisgah', 'Hayden', 'None', 'Dry Brook Ridge',
+    # TODO: add CHH as a distinct list
+    'Roundtop', 'Sleeping Lion',
+    'Carl', 'Hoyt Hollow', 'Mt. Tremper',
     # White Mountains
     'Mt. Washington', 'Mt. Monroe',
     # Jokes

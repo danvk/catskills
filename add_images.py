@@ -28,7 +28,6 @@ if __name__ == '__main__':
         frontmatter = f'date: {date}\nslug: {slug}{frontmatter}'
 
     new_post = f'''---{frontmatter}---
-[![GPS Track of the hike]({baseurl}/assets/{slug}/track.png)]({baseurl}/map/?hike={slug})
 
 {images_md}{post}'''
     with open(md_file, 'w') as out:

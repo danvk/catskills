@@ -1,5 +1,24 @@
 [
   {
+    "date": "2025-11-02",
+    "slug": "2025-11-02-gothics",
+    "type": "Loop",
+    "miles": 11,
+    "hike_hours": 8.5,
+    "elevation_ft": 3600,
+    "peaks": [
+      "Gothics"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex",
+      "John W"
+    ],
+    "title": "Gothics and Pyramid Peak: Winter Comes Early in the Adirondacks",
+    "excerpt": "...",
+    "url": "/catskills/2025/11/02/2025-11-02-gothics.html"
+  },
+  {
     "date": "2025-04-04",
     "slug": "2025-04-04-carl-hoyt-tremper",
     "type": "Through (car shuttle)",

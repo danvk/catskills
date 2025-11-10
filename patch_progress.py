@@ -26,6 +26,8 @@ others = [
     'Mt. Washington', 'Mt. Monroe',
     # Jokes
     'Lone Wolf',
+    # Adirondacks
+    "Gothics",
 ]
 known_peaks = set(peaks).union(set(others))
 

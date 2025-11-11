@@ -4,8 +4,9 @@
 import json
 from collections import Counter
 import datetime
+import sys
 
-from constants import peaks
+from constants import peaks, adk_peaks
 from make_geojson import extract_season
 from utils import sub
 
@@ -26,10 +27,8 @@ others = [
     'Mt. Washington', 'Mt. Monroe',
     # Jokes
     'Lone Wolf',
-    # Adirondacks
-    "Gothics",
 ]
-known_peaks = set(peaks).union(set(others))
+known_peaks = set(peaks + adk_peaks + others)
 
 assert len(peaks) == 33
 assert len(winter_peaks) == 4
@@ -121,16 +120,15 @@ completed_winter_peaks = {'dan': set(), 'alex': set(), 'john': set()}
 completed_2023 = set()
 completed_4seasons_ha = set()
 completed_4seasons_cmc = set()
+completed_adk = set()
 
 for hike in LOG:
     hike_peaks = set(hike['peaks'])
     for peak in hike_peaks:
         assert peak in known_peaks, f'Unknown peak: "{peak}"'
-    listable_peaks = hike_peaks.intersection(all_catskill_peaks)
-    if not listable_peaks:
-        continue
+    catskills_peaks = hike_peaks.intersection(all_catskill_peaks)
 
-    catskill_3500 = listable_peaks.intersection(peaks)
+    catskill_3500 = catskills_peaks.intersection(peaks)
     if catskill_3500:
         if hike['date'].startswith('2023'):
             completed_2023.update(catskill_3500)
@@ -152,6 +150,10 @@ for hike in LOG:
             completed_4seasons_ha.add(f'{peak}: {season_ha}')
         if peak in peaks_cmc:
             completed_4seasons_cmc.add(f'{peak}: {season_cmc}')
+
+    # ADKs
+    if peak in adk_peaks:
+        completed_adk.add(peak)
 
 
 def get_qualifying_peaks(completed_peaks, completed_nonwinter_peaks):
@@ -206,6 +208,17 @@ num_done = len([*completed_winter_peaks])
 num_total = len(peaks)
 winter_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
 
+# ADKs
+adk_html = ''
+sys.stderr.write(f'{completed_adk=}\n')
+for peak in sorted(completed_adk):
+    adk_html += f'<span class="adk complete" title="{peak}"></span>\n'
+for peak in sorted(set(adk_peaks).difference(completed_adk)):
+    adk_html += f'<span class="adk incomplete" title="{peak}"></span>\n'
+num_done = len([*completed_adk])
+num_total = len(adk_peaks)
+adk_html += f'<span class="summary">{num_done}/{num_total}</span>\n'
+
 # 2023
 year_html = ''
 for peak in sorted(completed_2023):
@@ -244,6 +257,7 @@ cmc_html = seasons_html(completed_4seasons_cmc, peaks_cmc)
 NEW8 = '\n        '
 contents = open('index.md').read()
 contents = sub(contents, 'progress-3500', NEW8 + club_html.replace('\n', NEW8))
+contents = sub(contents, 'progress-adk', NEW8 + adk_html.replace('\n', NEW8))
 contents = sub(contents, 'progress-3500-alex', NEW8 + club_html_alex.replace('\n', NEW8))
 contents = sub(contents, 'progress-3500-john', NEW8 + club_html_john.replace('\n', NEW8))
 contents = sub(contents, 'progress-winter', NEW8 + winter_html.replace('\n', NEW8))

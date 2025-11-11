@@ -10,45 +10,6 @@ This site chronicles my hiking in New York's Catskills Mountains and my progress
 Active Goals:
 
 <div id="progress" class="progress">
-    <div class="progress-label">Winter Peaks:</div>
-    <div id="progress-winter" class="progress-bar">
-        <!--progress-winter-->
-        <span class="winter complete" title="Balsam"></span>
-        <span class="winter complete" title="Balsam Cap"></span>
-        <span class="winter complete" title="Balsam Lake"></span>
-        <span class="winter complete" title="Bearpen"></span>
-        <span class="winter complete" title="Big Indian"></span>
-        <span class="winter complete" title="Black Dome"></span>
-        <span class="winter complete" title="Blackhead"></span>
-        <span class="winter complete" title="Cornell"></span>
-        <span class="winter complete" title="Eagle"></span>
-        <span class="winter complete" title="Fir"></span>
-        <span class="winter complete" title="Friday"></span>
-        <span class="winter complete" title="Halcott"></span>
-        <span class="winter complete" title="Hunter"></span>
-        <span class="winter complete" title="Indian Head"></span>
-        <span class="winter complete" title="Kaaterskill High Peak"></span>
-        <span class="winter complete" title="Lone"></span>
-        <span class="winter complete" title="Mount Sherrill"></span>
-        <span class="winter complete" title="North Dome"></span>
-        <span class="winter complete" title="Panther"></span>
-        <span class="winter complete" title="Peekamoose"></span>
-        <span class="winter complete" title="Plateau"></span>
-        <span class="winter complete" title="Rocky"></span>
-        <span class="winter complete" title="Rusk"></span>
-        <span class="winter complete" title="Slide"></span>
-        <span class="winter complete" title="Southwest Hunter"></span>
-        <span class="winter complete" title="Sugarloaf"></span>
-        <span class="winter complete" title="Table"></span>
-        <span class="winter complete" title="Thomas Cole"></span>
-        <span class="winter complete" title="Twin"></span>
-        <span class="winter complete" title="Vly"></span>
-        <span class="winter complete" title="Westkill"></span>
-        <span class="winter complete" title="Windham"></span>
-        <span class="winter complete" title="Wittenberg"></span>
-        <span class="summary">33/33</span>
-        <!--/progress-winter-->
-    </div>
     <div class="progress-label">Adirondacks 46ers:</div>
     <div id="progress-adk" class="progress-bar">
         <!--progress-adk-->
@@ -496,6 +457,45 @@ Active Goals:
 <summary>Completed Goals:</summary>
 
 <div id="archived-progress" class="progress">
+    <div class="progress-label">Winter Peaks:</div>
+    <div id="progress-winter" class="progress-bar">
+        <!--progress-winter-->
+        <span class="winter complete" title="Balsam"></span>
+        <span class="winter complete" title="Balsam Cap"></span>
+        <span class="winter complete" title="Balsam Lake"></span>
+        <span class="winter complete" title="Bearpen"></span>
+        <span class="winter complete" title="Big Indian"></span>
+        <span class="winter complete" title="Black Dome"></span>
+        <span class="winter complete" title="Blackhead"></span>
+        <span class="winter complete" title="Cornell"></span>
+        <span class="winter complete" title="Eagle"></span>
+        <span class="winter complete" title="Fir"></span>
+        <span class="winter complete" title="Friday"></span>
+        <span class="winter complete" title="Halcott"></span>
+        <span class="winter complete" title="Hunter"></span>
+        <span class="winter complete" title="Indian Head"></span>
+        <span class="winter complete" title="Kaaterskill High Peak"></span>
+        <span class="winter complete" title="Lone"></span>
+        <span class="winter complete" title="Mount Sherrill"></span>
+        <span class="winter complete" title="North Dome"></span>
+        <span class="winter complete" title="Panther"></span>
+        <span class="winter complete" title="Peekamoose"></span>
+        <span class="winter complete" title="Plateau"></span>
+        <span class="winter complete" title="Rocky"></span>
+        <span class="winter complete" title="Rusk"></span>
+        <span class="winter complete" title="Slide"></span>
+        <span class="winter complete" title="Southwest Hunter"></span>
+        <span class="winter complete" title="Sugarloaf"></span>
+        <span class="winter complete" title="Table"></span>
+        <span class="winter complete" title="Thomas Cole"></span>
+        <span class="winter complete" title="Twin"></span>
+        <span class="winter complete" title="Vly"></span>
+        <span class="winter complete" title="Westkill"></span>
+        <span class="winter complete" title="Windham"></span>
+        <span class="winter complete" title="Wittenberg"></span>
+        <span class="summary">33/33</span>
+        <!--/progress-winter-->
+    </div>
     <div class="progress-label">3500 Club:</div>
     <div id="progress-3500" class="progress-bar">
         <!--progress-3500-->

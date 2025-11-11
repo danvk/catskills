@@ -13,20 +13,22 @@ Active Goals:
     <div class="progress-label">Adirondacks 46ers:</div>
     <div id="progress-adk" class="progress-bar">
         <!--progress-adk-->
+        <span class="adk complete" title="Blake"></span>
+        <span class="adk complete" title="Cascade Mountain"></span>
+        <span class="adk complete" title="Giant Mountain"></span>
         <span class="adk complete" title="Gothics"></span>
+        <span class="adk complete" title="Mount Colvin"></span>
+        <span class="adk complete" title="Porter Mountain"></span>
         <span class="adk incomplete" title="Algonquin Peak"></span>
         <span class="adk incomplete" title="Allen Mountain"></span>
         <span class="adk incomplete" title="Armstrong Mountain"></span>
         <span class="adk incomplete" title="Basin Mountain"></span>
         <span class="adk incomplete" title="Big Slide Mountain"></span>
-        <span class="adk incomplete" title="Blake"></span>
-        <span class="adk incomplete" title="Cascade Mountain"></span>
         <span class="adk incomplete" title="Cliff Mountain"></span>
         <span class="adk incomplete" title="Couchsachraga Peak"></span>
         <span class="adk incomplete" title="Dial Mountain"></span>
         <span class="adk incomplete" title="Dix Mountain"></span>
         <span class="adk incomplete" title="Esther Mountain"></span>
-        <span class="adk incomplete" title="Giant Mountain"></span>
         <span class="adk incomplete" title="Grace Peak / East Dix"></span>
         <span class="adk incomplete" title="Gray Peak"></span>
         <span class="adk incomplete" title="Hough Peak"></span>
@@ -34,7 +36,6 @@ Active Goals:
         <span class="adk incomplete" title="Lower Wolfjaw"></span>
         <span class="adk incomplete" title="Macomb Mountain"></span>
         <span class="adk incomplete" title="Mount Colden"></span>
-        <span class="adk incomplete" title="Mount Colvin"></span>
         <span class="adk incomplete" title="Mount Donaldson"></span>
         <span class="adk incomplete" title="Mount Emmons"></span>
         <span class="adk incomplete" title="Mount Haystack"></span>
@@ -46,7 +47,6 @@ Active Goals:
         <span class="adk incomplete" title="Nye Mountain"></span>
         <span class="adk incomplete" title="Panther Peak"></span>
         <span class="adk incomplete" title="Phelps Mountain"></span>
-        <span class="adk incomplete" title="Porter Mountain"></span>
         <span class="adk incomplete" title="Rocky Peak Ridge"></span>
         <span class="adk incomplete" title="Saddleback Mountain"></span>
         <span class="adk incomplete" title="Santanoni Peak"></span>
@@ -59,7 +59,7 @@ Active Goals:
         <span class="adk incomplete" title="Upper Wolfjaw"></span>
         <span class="adk incomplete" title="Whiteface Mountain"></span>
         <span class="adk incomplete" title="Wright Peak"></span>
-        <span class="summary">1/46</span>
+        <span class="summary">6/46</span>
         <!--/progress-adk-->
     </div>
     <div class="progress-label">Four Seasons (<a href="https://hikersanonymous.org/index.html#4-seasons">HA</a>):</div>

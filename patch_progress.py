@@ -152,8 +152,9 @@ for hike in LOG:
             completed_4seasons_cmc.add(f'{peak}: {season_cmc}')
 
     # ADKs
-    if peak in adk_peaks:
-        completed_adk.add(peak)
+    for peak in hike_peaks:
+        if peak in adk_peaks:
+            completed_adk.add(peak)
 
 
 def get_qualifying_peaks(completed_peaks, completed_nonwinter_peaks):

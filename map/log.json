@@ -893,6 +893,25 @@
     "url": "/catskills/2022/04/24/2022-04-24-giant-ledge.html"
   },
   {
+    "date": "2021-07-06",
+    "slug": "2021-07-06-porter-cascade",
+    "type": "Loop?",
+    "miles": "12?",
+    "hike_hours": "3?",
+    "elevation_ft": "456?",
+    "peaks": [
+      "Porter Mountain",
+      "Cascade Mountain"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "title": "Porter and Cascade",
+    "excerpt": "...",
+    "url": "/catskills/2021/07/06/2021-07-06-porter-cascade.html"
+  },
+  {
     "date": "2020-10-04",
     "slug": "2020-10-04-fall-windham",
     "title": "Fall Windham",
@@ -960,6 +979,24 @@
     ],
     "excerpt": "A dinner in Delaware county presents an opportunity for a beautiful summer day hike.",
     "url": "/catskills/2020/09/03/2020-09-03-balsam.html"
+  },
+  {
+    "date": "2020-07-02",
+    "slug": "2020-07-02-giant",
+    "type": "Loop?",
+    "miles": "12?",
+    "hike_hours": "3?",
+    "elevation_ft": "456?",
+    "peaks": [
+      "Giant Mountain"
+    ],
+    "hikers": [
+      "Dan",
+      "Alex"
+    ],
+    "title": "Giant Mountain: A Big Summer Day in the Adirondacks",
+    "excerpt": "...",
+    "url": "/catskills/2020/07/02/2020-07-02-giant.html"
   },
   {
     "date": "2020-06-21",
@@ -1047,6 +1084,27 @@
     ],
     "excerpt": "A pit stop for a hike and a waterfall on our way back from Delaware County.",
     "url": "/catskills/2018/07/08/2018-07-08-indian-head.html"
+  },
+  {
+    "date": "2017-09-02",
+    "slug": "2017-09-02-blake-colvin",
+    "type": "Loop?",
+    "miles": "12?",
+    "hike_hours": "3?",
+    "elevation_ft": "456?",
+    "peaks": [
+      "Blake",
+      "Mount Colvin"
+    ],
+    "hikers": [
+      "Dan",
+      "John",
+      "Micah",
+      "two others"
+    ],
+    "title": "Blake and Colvin: My First Hike in the Adirondacks",
+    "excerpt": "...",
+    "url": "/catskills/2017/09/02/2017-09-02-blake-colvin.html"
   },
   {
     "title": "Indian Head and Plattekill Falls Rest Day",

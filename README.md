@@ -18,7 +18,20 @@ Things to include:
 
 ## Development
 
+This site is built by GitHub Pages, so it uses the `github-pages` gem, which
+pins Jekyll 3.x. Its dependency chain (`commonmarker` 0.x) does not support
+Ruby 4, so local previews need Ruby 3.3:
+
+    brew install ruby@3.3
+    export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
+    bundle install
     bundle exec jekyll serve
+
+Then open <http://127.0.0.1:4000/catskills/>.
+
+If a gem fails to load with `Library not loaded: .../libruby.3.3.dylib`, its
+native extension was built against a Homebrew Ruby that has since been
+upgraded. Rebuild it with `gem pristine <gem> --version <version>`.
 
 ## Publishing updates
 
